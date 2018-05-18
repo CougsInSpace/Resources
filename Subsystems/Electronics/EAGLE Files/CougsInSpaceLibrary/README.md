@@ -86,17 +86,17 @@ and JTAG interface for on-chip-debug. The device achieves up to 16 MIPS throughp
     - Outline the **courtyard excess** of a part, *see below*.
     - Mark pin one or polarity with an appropriate symbol, often a triangle
 	- Silkscreen within a footprint or board should NOT go over pads or metal that will be exposed.
-	- Silkscreen of footprint should have a **width of 0.13 mm**. Make it look good.
+	- Silkscreen of footprint should have a **width of 0.15 mm**. Make it look good.
 	- No silkscreen under part - this may affect reflow negatively.
 
 INSERT IMAGE
 _Here are several footprints in use. Notice that the specifics of each part change from package to package, but the style stays consistent. Silk widths, polarity markings, paste reduction, and QFN pad windowing is illustrated._
 
 - IPC defines standards for **courtyard excess** for component footprints.
-  - These are drawn as rectangles (0.13 mm wide lines) on the **tKeepout**, or possibly **bKeepout** layers. Odd shapes are okay, i.e. magnetorquer form.
+  - These are drawn as rectangles (0.15 mm wide lines) on the **tKeepout**, or possibly **bKeepout** layers. Odd shapes are okay, i.e. magnetorquer form.
 	- The courtyard is defined as the smallest rectangular area that can contain the component and its land pattern.
 	- Courtyard excess is a buffer around this to mark the minimum electrical and mechanical clearances around the courtyard.
-	- Use 0.2 mm courtyard excess rounded to the nearest 0.05 mm. This is roughly the nominal defined by the standard. 
+	- Use 0.25 mm courtyard excess rounded to the nearest 0.05 mm. This is nominal defined by the standard. 
 
 INSERT IMAGE
 _Example of 0.2 mm courtyard excess for an 1608 package_
