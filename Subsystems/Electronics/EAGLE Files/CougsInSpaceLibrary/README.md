@@ -172,6 +172,7 @@ International Standard Reference Designators (and some others we've agreed upon)
 
 <table>
 <tr><th>Designator</th><th>Acceptable Parts</th></tr>
+<tr><td>B</td><td>Board, Module</td></tr>
 <tr><td>BT</td><td>Battery</td></tr>
 <tr><td>C</td><td>Capacitor</td></tr>
 <tr><td>CN</td><td>Capacitor Network</td></tr>
@@ -186,7 +187,7 @@ International Standard Reference Designators (and some others we've agreed upon)
 <tr><td>JP</td><td>Jumper</td></tr>
 <tr><td>K</td><td>Relay</td></tr>
 <tr><td>L</td><td>Inductor (_not_ including ferrite bead), Coil</td></tr>
-<tr><td>LOGO</td><td>Silk Logos</td></tr>
+<tr><td>LOGO</td><td>Artwork, Logo</td></tr>
 <tr><td>LS</td><td>Loudspeaker, Buzzer</td></tr>
 <tr><td>M</td><td>Motor</td></tr>
 <tr><td>MK</td><td>Microphone</td></tr>
