@@ -9,13 +9,13 @@ These are the footprints used in Cougs in Space. These libraries are based off o
 
 ## Library Descriptions
 - **Aesthetics** - Non-functional items such as logos, build/ordering notes, frame blocks, etc.
-- **Batteries** - Battery clips, connectors, and appropriately sized silk outlines for LiPo batteries.
 - **Boards** - Standard boards, non-RF modules, etc.
 - **Capacitors** - Various capacitor types, sizes, and values.
 - **Clocks** - Real-time clocks, oscillators, resonators, and crystals.
 - **Coils** - Inductors, ferrites, transformers, etc.
 - **Connectors** - Various PTH and SMD connectors. Also has test points.
 - **DiscreteSemi** - Diodes, optoisolators, TRIACs, MOSFETs, transistors, etc.
+- **Energy** - Energy sources, i.e. solar cells, batteries
 - **Fuses** - Resettable fuses, i.e. PTCs.
 - **Hardware** - Stand offs, heatsinks, etc.
 - **IC-Amplifiers** - Mostly operational amplifiers but also has some headphone and audio amps with more specific applications
@@ -41,7 +41,8 @@ These are the guidelines that every part added to the libary must follow (or try
 ### Symbols
 - All symbols need `>Name` (on the **Names** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
 - All symbols need `>Value` (on the **Values** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
-- Most symbols need `>SKU` (on the **Values** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
+- Most symbols need `>SKU` (on the **Info** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
+- Add attributes as logical (on the **Info** layer), i.e. capacity, voltage, temperature coefficient
 - Symbol Names
 	- Should be the most basic name which can describe the component - reserve part numbers for technologies under the device (if applicable).
 	- Center names/values on top/bottom of symbol for resistors, capacitors.
@@ -51,6 +52,16 @@ These are the guidelines that every part added to the libary must follow (or try
 	- Names should follow datasheet conventions set by the manufacturer.
 	- Use an exclamation point to indicate **active low** signals- e.g., `!RESET` will produce a pin name with a bar over it. `!R!/W` will place a bar over the 'R' only.
 	- Don't be afraid to use **gates** to divide large pin count packages into smaller groups when necessary.
+	- Be sure to match a pins direction properly
+		- `nc` - Not connected
+		- `in` - Input
+		- `out` - Output (totem-pole)
+		- `io` - Input / output (bidirectional)
+		- `oc` - Open collector or open drain
+		- `hiz` - High impedance (i.e 3-state)
+		- `pas` - Passive (for resistors, capacitors, etc.)
+		- `pwr` - Power input pin(Vcc, gnd, Vss, Vdd, etc.)
+		- `sup` - Supply (reserve for supply symbols)
 - Symbol Origin:
 	- Headers:
 		- Centered (above/below)

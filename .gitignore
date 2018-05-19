@@ -1,0 +1,5 @@
+# EAGLE old versions
+*.b#*
+*.s#*
+*.epf
+*.l#*

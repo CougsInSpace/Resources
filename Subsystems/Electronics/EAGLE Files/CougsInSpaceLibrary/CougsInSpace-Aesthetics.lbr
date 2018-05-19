@@ -158,6 +158,8 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;h3&gt;Aesthetics&lt;/h3&gt;
+&lt;p&gt;Non-functional items such as logos, build/ordering notes, frame blocks, etc.&lt;/p&gt;</description>
 <packages>
 <package name="CIS-TEXT" urn="urn:adsk.eagle:footprint:614012/5" locally_modified="yes">
 <description>&lt;h3&gt;CIS Text Silkscreen&lt;/h3&gt;</description>
@@ -2571,28 +2573,28 @@
 <gate name="G$1" symbol="COUGSINSPACELOGO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PATCH-1" package="CIS-PATCH-1">
+<device name="-PATCH-1" package="CIS-PATCH-1">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="CougSat-1 Patch" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="SATELLITE-16MM" package="CIS-SATELLITE-16MM">
+<device name="-SATELLITE-16MM" package="CIS-SATELLITE-16MM">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="Satellite 16mm" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="SATELLITE-60MM" package="CIS-SATELLITE-60MM">
+<device name="-SATELLITE-60MM" package="CIS-SATELLITE-60MM">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="Satellite 60mm" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="TEXT" package="CIS-TEXT">
+<device name="-TEXT" package="CIS-TEXT">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="Text" constant="no"/>
@@ -2608,14 +2610,14 @@
 <gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="1MM" package="FIDUCIAL-1MM">
+<device name="-1MM" package="FIDUCIAL-1MM">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="1mm" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="500µM" package="FIDUCIAL-500µM">
+<device name="-500µM" package="FIDUCIAL-500µM">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="500µm" constant="no"/>
