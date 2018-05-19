@@ -39,14 +39,12 @@ These are the footprints used in Cougs in Space. These libraries are based off o
 These are the guidelines that every part added to the libary must follow (or try to)
 
 ### Symbols
-- All symbols need `>Name` (on the **Names** layer). **Size: 0.07 Ratio: 8% Font: Vector**
-- All symbols need `>Value` (on the **Values** layer). **Size: 0.07 Ratio: 8% Font: Vector**
+- All symbols need `>Name` (on the **Names** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
+- All symbols need `>Value` (on the **Values** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
+- Most symbols need `>SKU` (on the **Values** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
 - Symbol Names
 	- Should be the most basic name which can describe the component - reserve part numbers for technologies under the device (if applicable).
 	- Center names/values on top/bottom of symbol for resistors, capacitors.
-	- Headers.
-		- Name position: origin point bottom left, X:-0.1, Y:0.12 (this ensures clearance from symbol outline wire - and allows for a net to be drawn above with sufficient clearance)
-		- Value position: origin point bottom left, X:-0.1, Y:.-0.19 (this ensures clearance from symbol outline wire - and allows for a net to be drawn below with sufficient clearance)
 - Pins
 	- Group pins **logically by function**, or place them **in the order** they appear on the physical package.
 	- Aim to use **SHORT pins** if possible (bump to MEDIUM if necessary).
