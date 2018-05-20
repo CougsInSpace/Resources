@@ -163,7 +163,7 @@
 &lt;p&gt;SKUs:&lt;/p&gt;
 03-xxxx: All boards</description>
 <packages>
-<package name="CARD-FULL" urn="urn:adsk.eagle:footprint:1533168/3" locally_modified="yes">
+<package name="CARD-FULL">
 <description>&lt;h3&gt;CougSat Card - Full Length&lt;/h3&gt;</description>
 <wire x1="12.5" y1="47.9" x2="91.4" y2="47.9" width="0" layer="20"/>
 <wire x1="91.4" y1="47.9" x2="91.4" y2="-47.9" width="0" layer="20"/>
@@ -633,11 +633,4 @@
 </devicesets>
 </library>
 </drawing>
-<compatibility>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
