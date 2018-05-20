@@ -43,6 +43,7 @@ These are the guidelines that every part added to the libary must follow (or try
 - All symbols need `>Value` (on the **Values** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
 - Most symbols need `>SKU` (on the **Info** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
 - Add attributes as logical (on the **Info** layer), i.e. capacity, voltage, temperature coefficient
+- Small symbols (i.e. passives) can use size 0.05 text
 - Symbol Names
 	- Should be the most basic name which can describe the component - reserve part numbers for technologies under the device (if applicable).
 	- Center names/values on top/bottom of symbol for resistors, capacitors.
