@@ -39,14 +39,13 @@ These are the footprints used in Cougs in Space. These libraries are based off o
 These are the guidelines that every part added to the libary must follow (or try to)
 
 ### Symbols
-- All symbols need `>Name` (on the **Names** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
-- All symbols need `>Value` (on the **Values** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
-- Most symbols need `>SKU` (on the **Info** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center**
-- Add attributes as logical (on the **Info** layer), i.e. capacity, voltage, temperature coefficient
+- All symbols need `>Name` (on the **Names** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center** located above the symbol.
+- All symbols need `>Value` (on the **Values** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center** locate below the symbol.
+- Most symbols need `>SKU` (on the **Info** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center** locate below the symbol.
+- Add attributes as logical (on the **Info** layer), i.e. capacity, voltage, temperature coefficient locate below the symbol.
 - Small symbols (i.e. passives) can use size 0.05 text
 - Symbol Names
 	- Should be the most basic name which can describe the component - reserve part numbers for technologies under the device (if applicable).
-	- Center names/values on top/bottom of symbol for resistors, capacitors.
 - Pins
 	- Group pins **logically by function**, or place them **in the order** they appear on the physical package.
 	- Aim to use **SHORT pins** if possible (bump to MEDIUM if necessary).
