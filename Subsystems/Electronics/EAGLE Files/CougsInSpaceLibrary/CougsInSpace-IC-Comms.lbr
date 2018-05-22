@@ -72,6 +72,10 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;h3&gt;Communication ICs&lt;/h3&gt;
+&lt;p&gt;USB to serial conversion ICs, like the FTDI line, plus high speed line drivers, level shifters, bus drivers, CAN transceivers and ethernet PHYs.&lt;/p&gt;
+&lt;p&gt;SKUs&lt;br&gt;
+09-xxxx: Communication ICs</description>
 <packages>
 </packages>
 <symbols>
