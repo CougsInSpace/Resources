@@ -172,7 +172,7 @@
 &lt;p&gt;First 3 characters in SKU is the frequency in Hz (i.e. 224 = 22*10^4Hz = 220kHz)&lt;br&gt;
 Last character is an incremented letter for each variant of the same value A-Z. Namely different packages&lt;/p&gt;</description>
 <packages>
-<package name="SMD-3.2X1.5">
+<package name="SMD-3215">
 <description>&lt;h3&gt;SMD Crystal 3.2 x 1.5 mm&lt;/h3&gt;</description>
 <smd name="1" x="-1.25" y="0" dx="1.1" dy="1.9" layer="1"/>
 <smd name="2" x="1.25" y="0" dx="1.1" dy="1.9" layer="1"/>
@@ -192,7 +192,7 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <wire x1="-2.125" y1="-1.275" x2="-2.125" y2="1.275" width="0.15" layer="39"/>
 <text x="0" y="1.8" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
-<package name="SMD-4.0X2.5">
+<package name="SMD-4025">
 <description>&lt;h3&gt;SMD Crystal 4.0 x 2.5 mm&lt;/h3&gt;</description>
 <smd name="4" x="-1.5" y="0.8" dx="1.4" dy="1.15" layer="1"/>
 <smd name="3" x="1.5" y="0.8" dx="1.4" dy="1.15" layer="1"/>
@@ -279,7 +279,7 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-SMD3.2X1.5" package="SMD-3.2X1.5">
+<device name="-SMD3.2X1.5" package="SMD-3215">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -300,7 +300,7 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <gate name="G$1" symbol="CRYSTAL-GROUNDED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-SMD3.2X1.5" package="SMD-4.0X2.5">
+<device name="-SMD3.2X1.5" package="SMD-4025">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>

@@ -161,14 +161,14 @@
 <description>&lt;h3&gt;Aesthetics&lt;/h3&gt;
 &lt;p&gt;Non-functional items such as logos, build/ordering notes, frame blocks, etc.&lt;/p&gt;</description>
 <packages>
-<package name="FIDUCIAL-1MM">
+<package name="FIDUCIAL-1">
 <description>&lt;h3&gt;Fiducal 1mm&lt;\h3&gt;</description>
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
 <circle x="0" y="0" radius="0.5" width="1" layer="29"/>
 <circle x="0" y="0" radius="0.9" width="0.2" layer="39"/>
 <circle x="0" y="0" radius="0.9" width="0.2" layer="41"/>
 </package>
-<package name="FIDUCIAL-500µM">
+<package name="FIDUCIAL-0.5">
 <description>&lt;h3&gt;Fiducial 500µm&lt;\h3&gt;</description>
 <smd name="1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
 <circle x="0" y="0" radius="0.25" width="0.5" layer="29"/>
@@ -772,7 +772,7 @@
 <vertex x="-5.5" y="1.7"/>
 </polygon>
 </package>
-<package name="CIS-SATELLITE-16MM">
+<package name="CIS-SATELLITE-16">
 <description>&lt;h3&gt;CIS Satellite 16mm Slikscreen&lt;/h3&gt;</description>
 <wire x1="-3.5355375" y1="7.778171875" x2="-2.121325" y2="6.36395625" width="0.15" layer="21"/>
 <wire x1="-2.121325" y1="6.36395625" x2="-0.7071125" y2="4.949746875" width="0.15" layer="21"/>
@@ -1025,7 +1025,7 @@
 <vertex x="-2.722365625" y="-0.7424625"/>
 </polygon>
 </package>
-<package name="CIS-SATELLITE-60MM">
+<package name="CIS-SATELLITE-60">
 <description>&lt;h3&gt;CIS Satellite 60mm Silkscreen&lt;/h3&gt;</description>
 <wire x1="-15.556353125" y1="26.870053125" x2="-13.435034375" y2="24.74873125" width="0.3" layer="21"/>
 <wire x1="-13.435034375" y1="24.74873125" x2="-11.3137125" y2="22.6274125" width="0.3" layer="21"/>
@@ -2754,14 +2754,14 @@
 </technology>
 </technologies>
 </device>
-<device name="-SATELLITE-16MM" package="CIS-SATELLITE-16MM">
+<device name="-SATELLITE-16MM" package="CIS-SATELLITE-16">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="Satellite 16mm" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="-SATELLITE-60MM" package="CIS-SATELLITE-60MM">
+<device name="-SATELLITE-60MM" package="CIS-SATELLITE-60">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="Satellite 60mm" constant="no"/>
@@ -2784,14 +2784,14 @@
 <gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-1MM" package="FIDUCIAL-1MM">
+<device name="-1MM" package="FIDUCIAL-1">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="1mm" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="-500µM" package="FIDUCIAL-500µM">
+<device name="-500µM" package="FIDUCIAL-0.5">
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="500µm" constant="no"/>
