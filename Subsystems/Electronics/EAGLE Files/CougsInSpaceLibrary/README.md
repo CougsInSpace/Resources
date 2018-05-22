@@ -25,8 +25,7 @@ These are the footprints used in Cougs in Space. These libraries are based off o
 - **IC-Memory** - Volatile and non-volatile memory. i.e FLASH, EEPROM, RAM
 - **IC-Other** - 555 timers, LED drivers, Motor Control, etc. ICs that do not really fit into the other, more generic categories. Basically, anything that serves some function but has a bunch of brains or special bias circuitry that prevents it from being used as a general part qualifies for this category.
 - **IC-Power** - Anything that has to do with power delivery, or making power supplies.
-- **IC-µController** - Various microcontrollers
-- **Jumpers** - Semipermanent means of changing current paths.
+- **IC-µController** - Various microcontrollers, and CLPD, FPGA, etc. Essentially any programmable IC.
 - **LED** - Illumination or indication
 - **PowerSymbols** - Power, ground, and voltage-supply symbols.
 - **Resistors** - Various resistor types, sizes, and values.
