@@ -22,7 +22,7 @@ These are the footprints used in Cougs in Space. These libraries are based off o
 - **IC-Comms** - USB to serial conversion ICs, like the FTDI line, plus high speed line drivers, level shifters, bus drivers, CAN transceivers and ethernet PHYs.
 - **IC-Conversion** - Analog to digital conversion, as well as digital to analog. This includes not only strict ADCs, but audio in and out converters, decoders, thermocouple measurement ics the like. Anything that is a single part that works between the two domains goes here.
 - **IC-Logic** - Standard logic IC families.
-- **IC-Memory** - SPI, FLASH and EEPROM based memories
+- **IC-Memory** - Volatile and non-volatile memory. i.e FLASH, EEPROM, RAM
 - **IC-Other** - 555 timers, LED drivers, Motor Control, etc. ICs that do not really fit into the other, more generic categories. Basically, anything that serves some function but has a bunch of brains or special bias circuitry that prevents it from being used as a general part qualifies for this category.
 - **IC-Power** - Anything that has to do with power delivery, or making power supplies.
 - **IC-µController** - Various microcontrollers
