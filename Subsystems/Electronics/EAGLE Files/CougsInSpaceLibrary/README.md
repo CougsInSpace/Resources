@@ -14,7 +14,7 @@ These are the footprints used in Cougs in Space. These libraries are based off o
 - **Clocks** - Real-time clocks, oscillators, resonators, and crystals.
 - **Coils** - Inductors, ferrites, transformers, etc.
 - **Connectors** - Various PTH and SMD connectors. Also has test points.
-- **DiscreteSemi** - Diodes, optoisolators, TRIACs, MOSFETs, transistors, etc.
+- **DiscreteSemi** - Diodes, optoisolators, thyristors, MOSFETs, transistors, etc. excluding LEDs
 - **Energy** - Energy sources, i.e. solar cells, batteries
 - **Fuses** - Resettable fuses, i.e. PTCs.
 - **Hardware** - Stand offs, heatsinks, etc.
