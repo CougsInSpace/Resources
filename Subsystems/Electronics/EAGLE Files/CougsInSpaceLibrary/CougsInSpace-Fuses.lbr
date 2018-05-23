@@ -166,7 +166,7 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="INDUCTOR">
+<symbol name="FUSE">
 <description>&lt;h3&gt;Fuse&lt;/h3&gt;</description>
 <pin name="2" x="0" y="5.08" visible="off" length="point" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="1" x="0" y="-2.54" visible="off" length="point" direction="pas" swaplevel="1" rot="R90"/>

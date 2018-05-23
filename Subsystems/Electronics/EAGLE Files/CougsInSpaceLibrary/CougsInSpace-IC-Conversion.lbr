@@ -161,7 +161,7 @@
 <description>&lt;h3&gt;Conversion ICs&lt;/h3&gt;
 &lt;p&gt;Analog to digital conversion, as well as digital to analog. This includes not only strict ADCs, but audio in and out converters, decoders, thermocouple measurement ics the like. Anything that is a single part that works between the two domains goes here.&lt;/p&gt;
 &lt;p&gt;SKUs&lt;br&gt;
-27-xxxx: Communication ICs</description>
+27-xxxx: Conversion ICs</description>
 <packages>
 <package name="QFN-24-4040">
 <description>&lt;h3&gt;Quad Flat No-Leads (QFN) - 24 pins - 4.0 x 4.0 mm&lt;/h3&gt;</description>
@@ -457,7 +457,10 @@
 <connect gate="G$1" pin="VCC" pad="28"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SKU" value="27-0002"/>
+<attribute name="VALUE" value="LTC2499"/>
+</technology>
 </technologies>
 </device>
 </devices>
