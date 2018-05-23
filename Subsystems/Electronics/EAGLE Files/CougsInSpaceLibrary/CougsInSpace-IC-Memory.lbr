@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -165,36 +165,44 @@
 <packages>
 <package name="SO8">
 <description>&lt;h3&gt;Small-Outline (SO) - 8 Pins&lt;/h3&gt;</description>
-<smd name="2" x="-3.15" y="0.635" dx="1.2" dy="0.8" layer="1"/>
-<smd name="3" x="-3.15" y="-0.635" dx="1.2" dy="0.8" layer="1"/>
-<smd name="6" x="3.15" y="-0.635" dx="1.2" dy="0.8" layer="1"/>
-<smd name="7" x="3.15" y="0.635" dx="1.2" dy="0.8" layer="1"/>
-<smd name="1" x="-3.15" y="1.905" dx="1.2" dy="0.8" layer="1"/>
-<smd name="8" x="3.15" y="1.905" dx="1.2" dy="0.8" layer="1"/>
-<smd name="5" x="3.15" y="-1.905" dx="1.2" dy="0.8" layer="1"/>
-<smd name="4" x="-3.15" y="-1.905" dx="1.2" dy="0.8" layer="1"/>
-<wire x1="-2.275" y1="2.57" x2="-2.275" y2="-2.57" width="0.15" layer="51"/>
-<wire x1="-2.275" y1="-2.57" x2="2.275" y2="-2.57" width="0.15" layer="51"/>
-<wire x1="2.275" y1="-2.57" x2="2.275" y2="2.57" width="0.15" layer="51"/>
-<wire x1="2.275" y1="2.57" x2="-2.275" y2="2.57" width="0.15" layer="51"/>
-<wire x1="-2.275" y1="2.57" x2="-2.275" y2="-2.57" width="0.15" layer="21"/>
-<wire x1="-2.275" y1="-2.57" x2="2.275" y2="-2.57" width="0.15" layer="21"/>
-<wire x1="2.275" y1="-2.57" x2="2.275" y2="2.57" width="0.15" layer="21"/>
-<wire x1="2.275" y1="2.57" x2="-2.275" y2="2.57" width="0.15" layer="21"/>
-<wire x1="-4.075" y1="2.975" x2="-4.075" y2="-2.975" width="0.15" layer="21"/>
-<wire x1="-4.075" y1="-2.975" x2="4.075" y2="-2.975" width="0.15" layer="21"/>
-<wire x1="4.075" y1="-2.975" x2="4.075" y2="2.975" width="0.15" layer="21"/>
-<wire x1="4.075" y1="2.975" x2="-4.075" y2="2.975" width="0.15" layer="21"/>
-<wire x1="-4.075" y1="2.975" x2="-4.075" y2="-2.975" width="0.15" layer="39"/>
-<wire x1="-4.075" y1="-2.975" x2="4.075" y2="-2.975" width="0.15" layer="39"/>
-<wire x1="4.075" y1="-2.975" x2="4.075" y2="2.975" width="0.15" layer="39"/>
-<wire x1="4.075" y1="2.975" x2="-4.075" y2="2.975" width="0.15" layer="39"/>
+<smd name="2" x="-2.7" y="0.635" dx="1.55" dy="0.6" layer="1"/>
+<smd name="3" x="-2.7" y="-0.635" dx="1.55" dy="0.6" layer="1"/>
+<smd name="6" x="2.7" y="-0.635" dx="1.55" dy="0.6" layer="1"/>
+<smd name="7" x="2.7" y="0.635" dx="1.55" dy="0.6" layer="1"/>
+<smd name="1" x="-2.7" y="1.905" dx="1.55" dy="0.6" layer="1"/>
+<smd name="8" x="2.7" y="1.905" dx="1.55" dy="0.6" layer="1"/>
+<smd name="5" x="2.7" y="-1.905" dx="1.55" dy="0.6" layer="1"/>
+<smd name="4" x="-2.7" y="-1.905" dx="1.55" dy="0.6" layer="1"/>
+<wire x1="-1.95" y1="-2.45" x2="1.95" y2="-2.45" width="0.15" layer="51"/>
+<wire x1="1.95" y1="2.45" x2="-1.95" y2="2.45" width="0.15" layer="51"/>
+<wire x1="-1.95" y1="-2.45" x2="1.95" y2="-2.45" width="0.15" layer="21"/>
+<wire x1="1.95" y1="2.45" x2="-1.95" y2="2.45" width="0.15" layer="21"/>
+<wire x1="-3.8" y1="2.85" x2="-3.8" y2="-2.85" width="0.15" layer="21"/>
+<wire x1="-3.8" y1="-2.85" x2="3.8" y2="-2.85" width="0.15" layer="21"/>
+<wire x1="3.8" y1="-2.85" x2="3.8" y2="2.85" width="0.15" layer="21"/>
+<wire x1="3.8" y1="2.85" x2="-3.8" y2="2.85" width="0.15" layer="21"/>
+<wire x1="-3.8" y1="2.85" x2="-3.8" y2="-2.85" width="0.15" layer="39"/>
+<wire x1="-3.8" y1="-2.85" x2="3.8" y2="-2.85" width="0.15" layer="39"/>
+<wire x1="3.8" y1="-2.85" x2="3.8" y2="2.85" width="0.15" layer="39"/>
+<wire x1="3.8" y1="2.85" x2="-3.8" y2="2.85" width="0.15" layer="39"/>
 <polygon width="0.15" layer="21">
-<vertex x="-4.075" y="2.975"/>
-<vertex x="-4.075" y="2.3"/>
-<vertex x="-3.4" y="2.975"/>
+<vertex x="-3.8" y="2.85"/>
+<vertex x="-3.8" y="2.2"/>
+<vertex x="-3.15" y="2.85"/>
 </polygon>
-<text x="0" y="3.5" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="3.4" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-1.95" y1="2.45" x2="-1.95" y2="-2.45" width="0.15" layer="51"/>
+<wire x1="1.95" y1="-2.45" x2="1.95" y2="2.45" width="0.15" layer="51"/>
+<wire x1="-1.95" y1="2.45" x2="-1.95" y2="2.4" width="0.15" layer="21"/>
+<wire x1="-1.95" y1="1.4" x2="-1.95" y2="1.125" width="0.15" layer="21"/>
+<wire x1="1.95" y1="1.4" x2="1.95" y2="1.125" width="0.15" layer="21"/>
+<wire x1="1.95" y1="2.45" x2="1.95" y2="2.4" width="0.15" layer="21"/>
+<wire x1="-1.95" y1="-1.4" x2="-1.95" y2="-1.125" width="0.15" layer="21"/>
+<wire x1="1.95" y1="-1.4" x2="1.95" y2="-1.125" width="0.15" layer="21"/>
+<wire x1="-1.95" y1="-2.45" x2="-1.95" y2="-2.4" width="0.15" layer="21"/>
+<wire x1="1.95" y1="-2.45" x2="1.95" y2="-2.4" width="0.15" layer="21"/>
+<wire x1="-1.95" y1="0.15" x2="-1.95" y2="-0.15" width="0.15" layer="21"/>
+<wire x1="1.95" y1="0.15" x2="1.95" y2="-0.15" width="0.15" layer="21"/>
 </package>
 </packages>
 <symbols>
