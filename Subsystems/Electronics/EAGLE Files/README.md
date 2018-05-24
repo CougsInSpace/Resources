@@ -1,0 +1,75 @@
+# Cougs in Space EAGLE Guidelines #
+These are the guidelines that every schematic and board created must follow (unless there is a good reason)
+- [Schematics](#schematics)
+- [Boards](#boards)
+
+## Schematics
+- The follow global attributes shall be set (Edit>Global Attributes>New:
+	- DESIGNER: Your name
+	- PART_NUMBER: CIS boards have the SKU 68-xxxx. The x's start at 1 and are incremented every new board.
+	- PROJECT: [Satellite name]: [Board name] (i.e. CougSat-1: EPS)
+	- REV: Schematic revision number [Major].[Minor].[Patch]. Start at 1.0.0 and increment the major every schematic redesign, increment the minor every schematic iteration (usually a new PCB is made) and increment the patch every github pull request.
+- Every schematic shall use a frame, size A (letter) placed at the origin.
+	- Add the attribute TITLE to the frame (right click>attribute>new). This is the sheet title (i.e. Block Diagram).
+- Sheet 1: **Block Diagram**
+	- Create a functional block diagram explaining the schematic to follow.
+	- Add page numbers next to blocks that correspond to their location in the document.
+	- Create a table of contents in the area to the left of the title block. Use `info` layer with **Size: 0.07 Ratio: 8% Font: Vector** text. 
+- Sheets 2 and on: **Circuits Galore**
+	- Logically arrange the sheets, they can be reordered but update the page numbers
+- Name every net descriptively. There should be no default names "N$". This makes layout easier as you can tell what type of signal it is and how to route it
+- A label does not need to be placed on a net if it is continous. A net that breaks, either between sections or sheets, needs a label, appropiate off sheet connector (Aesthetics library), and locations of the other flag(s), use sheet number and coordinate (i.e. 12A4). Use `info` label with **Size: 0.07 Ratio: 8% Font: Vector** text.
+- On a generic connector, label the nets beside the connector. Connected supply symbols should be placed nearby and do not need a labeled net.
+- Do not rotate a symbol unless necessary. Replace the part with the other orientation from the library or mirror the part to flip it. If rotating needs to be done, `smash` the symbol and adjust the labels to be horizontal
+- Place a component's decoupling capactitors near its power pins.
+- Write notes on the schematic to explain circuit operations, load options, etc. Use `info` layer with **Size: 0.07 Ratio: 8% Font: Vector** text. Example comments:
+	- Vref: 1.25V
+	- 50? impedance
+	- I2C address: B0110101x = 0x6A | R/W
+	- Limit: 1A
+- Have chained devices flow left to right. Inputs on the left and outputs on the right
+- If a sheet is getting too cramped, separate the circuit onto multiple sheets if possible
+- Consider using a bus to connect a lot of grouped signals
+- Use separate grounds to isolate sensitve circuits. Be sure to connect them (95% of the time necessary) using an appropriate jumper, (0? resistor or low resistance resistor, with tolerances a 0? resistor can be upwards of 20m?).
+- Add `CAD Note:` to inform layout specifications
+- Do not change the default setting of net widths or grid size
+
+## Boards
+The following are guidelines as the circuit behavior will dictate specifics of layout, impedance and such.
+- **Once a board is created from a schematic, ensure both documents are open when editing** `F/B Annotation has been severed!` is a error and sometimes impossible to fix without redoing the entire board.
+- Stick to 2 layers unless necessary
+- Place components aligned to a 0.25mm grid. Hold `Ctrl` when selecting a component to snap it to the grid.
+- Keep as many (read all) SMD components on the top side (or bottom, just a single side) to make soldering easier.
+- Keep components rotated horizontally or vertically. Wierd angles are wierd.
+- Use the [CougsInSpace design rules](https://github.com/CougsInSpace/Resources/tree/master/Subsystems/Electronics/EAGLE%20Files/CougsInSpace.dru) to verify manufacturability. Run it often, errors usually appear as you are routing too. Our PCB manufacturer can go smaller so use their [DRU](https://github.com/CougsInSpace/Resources/blob/master/Subsystems/Electronics/EAGLE%20Files/Elecrow_2-layer_PCB_eagle_rule.dru) if necessary but try to stick to ours:
+	- Minimum 0.2mm trace width with 0.2mm clearance
+	- Minimum 0.35mm drill
+	- Minimum 0.15mm silkscreen width
+	- Tented vias < 1.0mm, unless specified
+- Keep traces horizontal, vertical, or 45°. Wierd angles are wierd and the DRU checks for this.
+- Use mitered corners instead of a plain right angle. Consider a round corner for high speed signals.
+- Isolate analog, digital, power, and RF sections to reduce noise.
+- Use polygons for large traces if appropriate.
+- Understand how return currents will flow (low impedance to ground is good)
+- Some components provide a suggested layout in their datasheet. Follow this if able.
+- For power traces (>200mA) use a [calculator](http://circuitcalculator.com/wordpress/2006/01/31/pcb-trace-width-calculator/) to figure the required trace width. A 200mA line works for a 0.2mm trace. Use the following parameters:
+	- 1 oz thickness
+	- 10°C rise
+	- 25°C ambient
+	- Read the internal layers results and derate the result by doubling the minimum trace width
+- There are a lot of guidelines for laying out specific situations. This document would be too long so research the specific situation when you get there. Topics include:
+	- Microstrip transmission lines for RF
+	- Via stiching
+	- Decoupling capacitors
+	- Kelvin connections
+	- When to ground pour
+	- Using multiple vias for power or signal
+	- Thermal vias
+	- RF shielding cans
+	- Propigatation delay with meandering traces
+- This is a [tutorial](https://learnemc.com/pcb-layout) on laying out a PCB to minimize EMI
+- **Trace layout is complete**
+	- No DRC errors?
+	- Ensure critical layout is correct (i.e. high frequency)
+	- Renumber all of the parts in a logical order (i.e. left to right, then up to down) to ease soldering. Can run ULP `cmd-renumber` to do this, might have to play with settings to get nice results.
+	- `Smash` all of the components and move their name labels to be readable. Place them logically, use arrows or blocks if necessary. Make it look good.
