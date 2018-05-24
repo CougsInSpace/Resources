@@ -166,8 +166,8 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="FUSE">
-<description>&lt;h3&gt;Fuse&lt;/h3&gt;</description>
+<symbol name="FUSE-V">
+<description>&lt;h3&gt;Fuse Vertical&lt;/h3&gt;</description>
 <pin name="2" x="0" y="5.08" visible="off" length="point" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="1" x="0" y="-2.54" visible="off" length="point" direction="pas" swaplevel="1" rot="R90"/>
 <text x="1.27" y="5.08" size="1.27" layer="95" font="vector" align="center-left">&gt;NAME</text>
@@ -181,6 +181,24 @@
 <wire x1="1.016" y1="-1.27" x2="-1.016" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="-1.016" y1="-1.27" x2="-1.016" y2="3.81" width="0.1524" layer="94"/>
 <wire x1="0" y1="5.08" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="FUSE-H">
+<description>&lt;h3&gt;Fuse Horizontal&lt;/h3&gt;</description>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<text x="-1.27" y="1.778" size="1.27" layer="95" font="vector" align="center">&gt;NAME</text>
+<text x="-1.778" y="-2.032" size="1.27" layer="96" font="vector" align="center-right">&gt;VALUE</text>
+<text x="-0.762" y="-2.032" size="1.27" layer="97" font="vector" align="center-left">&gt;VOLTAGE</text>
+<text x="-1.778" y="-3.556" size="1.27" layer="97" font="vector" align="center-right">&gt;IHOLD</text>
+<text x="-0.762" y="-3.556" size="1.27" layer="97" font="vector" align="center-left">&gt;ITRIP</text>
+<text x="-1.27" y="-5.08" size="1.27" layer="97" font="vector" align="center">&gt;SKU</text>
+<wire x1="1.27" y1="1.016" x2="1.27" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-1.016" x2="-3.81" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-1.016" x2="-3.81" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<text x="-1.27" y="-2.032" size="1.27" layer="97" font="vector" align="center">/</text>
+<text x="-1.27" y="-3.556" size="1.27" layer="97" font="vector" align="center">/</text>
 </symbol>
 </symbols>
 <devicesets>
