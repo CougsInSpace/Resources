@@ -38,9 +38,9 @@ These are the footprints used in Cougs in Space. These libraries are based off o
 These are the guidelines that every part added to the libary must follow (or try to)
 
 ### Symbols
-- All symbols need `>Name` (on the **Names** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center** located above the symbol.
-- All symbols need `>Value` (on the **Values** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center** locate below the symbol.
-- Most symbols need `>SKU` (on the **Info** layer). **Size: 0.07 Ratio: 8% Font: Vector Align: Center** locate below the symbol.
+- All symbols need `>Name` (on the **Names** layer). **Size: 0.07, Ratio: 8%, Font: Vector, Align: Center** located above the symbol.
+- All symbols need `>Value` (on the **Values** layer). **Size: 0.07, Ratio: 8%, Font: Vector, Align: Center** locate below the symbol.
+- Most symbols need `>SKU` (on the **Info** layer). **Size: 0.07, Ratio: 8%, Font: Vector, Align: Center** locate below the symbol.
 - Add attributes as logical (on the **Info** layer), i.e. capacity, voltage, temperature coefficient locate below the symbol.
 - Small symbols (i.e. passives) can use size 0.05 text
 - Symbol Names
@@ -62,28 +62,29 @@ These are the guidelines that every part added to the libary must follow (or try
 		- `pwr` - Power input pin(Vcc, gnd, Vss, Vdd, etc.)
 		- `sup` - Supply (reserve for supply symbols)
 - Symbol Origin:
-	- Headers:
-		- Centered (above/below)
-		- Pin 1 at top, pins to the right
-		- Cross-hairs should be centered on box
+	- Centered (above/below)
+	- Cross-hairs should be centered on box
+	- Connectors: pin 1 at top, pins to the right
 - Symbol Outline
 	- Default to 0.01 for outline width
+![Various Symbols](https://github.com/CougsInSpace/Resources/blob/master/Subsystems/Electronics/EAGLE%20Files/Images/VariousSymbols.png)
+_Here are several symbols in use. Notice that the specifics of each part change from symbol to symbol, but the style stays consistent._
 - Description
 	- Use the following format:
 
 ```html
-<h3>[Manufacturer (if applicable)] [General Part Number (if applicable)] [Short Part Description (required)]</h3>
-<p>[Few-sentence description of part(s)</p>
-Example: SparkFun-DigitalIC - ATMEGA32U4
-<h3>Atmel ATmega32U4 - 8-Bit Microcontroller w/ USB 2.0</h3>
-<p>The low-power Atmel 8-bit AVR RISC-based microcontroller featuring 32KB self-programming flash 
-program memory, 2.5KB SRAM, 1KB EEPROM, USB 2.0 full-speed/low speed device, 12-channel 10-bit A/D-converter, 
-and JTAG interface for on-chip-debug. The device achieves up to 16 MIPS throughput at 16 MHz. 2.7 - 5.5 Volt operation. </p>
+<h3>Short Part Description (required)</h3>
+<p>Few-sentence description of part(s)</p>
+
+Example: SparkFun-IC-µController: STM32BASE-64
+<h3>STM 32b µController - 64 Pin Base</h3>
+<p><a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/ST/STM32L476.pdf">STM32L476Rx</a><br>
+<a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/ST/STM32L496.pdf">STM32L496Rx</a></p>
 ```
 
 ### Packages
 - Name/Value
-	- All footprints need `>Name` (on the **tNames** layer). Size should be **0.8 mm, 15% ratio, vector, align center**.
+	- All footprints need `>Name` (on the **tNames** layer). Size should be **Size: 0.8mm, Ratio: 15%, Font: Vector, Align: Center**.
 	- No footprint should have `>Value`.
 	- Place it above the package, the location will change during the `smash` process (final PCB layout).
 
@@ -97,22 +98,20 @@ and JTAG interface for on-chip-debug. The device achieves up to 16 MIPS throughp
 	- Silkscreen of footprint should have a **width of 0.15 mm**. Make it look good.
 	- No silkscreen under part - this may affect reflow negatively.
 
-INSERT IMAGE
-_Here are several footprints in use. Notice that the specifics of each part change from package to package, but the style stays consistent. Silk widths, polarity markings, paste reduction, and QFN pad windowing is illustrated._
+![Various Packages](https://github.com/CougsInSpace/Resources/blob/master/Subsystems/Electronics/EAGLE%20Files/Images/VariousPackages.png)
+
+_Here are several footprints in use. Notice that the specifics of each part change from package to package, but the style stays consistent._
 
 - IPC defines standards for **courtyard excess** for component footprints.
-  - These are drawn as rectangles (0.15 mm wide lines) on the **tKeepout**, or possibly **bKeepout** layers. Odd shapes are okay, i.e. magnetorquer form.
+  - These are drawn as rectangles (0.15 mm wide lines) on the **tKeepout**, or possibly **bKeepout** layers. Odd shapes are okay, i.e. magnetorquer form. See image above for examples.
 	- The courtyard is defined as the smallest rectangular area that can contain the component and its land pattern.
 	- Courtyard excess is a buffer around this to mark the minimum electrical and mechanical clearances around the courtyard.
 	- Use 0.25 mm courtyard excess rounded to the nearest 0.05 mm. This is nominal defined by the standard. 
 
-INSERT IMAGE
-_Example of 0.2 mm courtyard excess for an 1608 package_
-
 - Pins
 	- Make pin names numeric.
 		- BGA pins should be labeled by their standard alphanumeric code.
-	- Components with exposed pads on the underside should use "EPAD" for that pin.
+	- Components with exposed pads on the underside should use "PAD" for that pin.
 	- Include a **polarity/pin 1 marking** on the **tPlace** (silkscreen).
 		- Ensure this marking is visible after the component is placed on board.
 		- Draw a triangle, cathode stripe, or fill in the courtyard excess area on the cathode side.
@@ -127,16 +126,10 @@ _Example of 0.2 mm courtyard excess for an 1608 package_
 
 ```html
 <h3>[Package Name] - [Package Short Description]</h3>
-<p>Specifications:
-<ul><li>Pin count: [PIN COUNT]</li>
-<li>Pin pitch: [PIN PITCH]</li>
-<li>Area: [WIDTH x LENGTH]</li>
-</ul></p>
-<p><a href=””>Datasheet referenced for footprint</a></p>
-<p>Example device(s):
-<ul><li>[EXAMPLE DEVICE 1]</li>
-<li>[EXAMPLE DEVICE 2]</li>
-</ul></p>
+<p>[More details if applicable]</p>
+
+Example: CougsInSpace-IC-µController: QFN-32-5050
+<h3>Quad Flat No-Leads (QFN) - 32 pins - 5.0 x 5.0 mm</h3>
 ```
 
 ### Devices
@@ -147,8 +140,9 @@ _Example of 0.2 mm courtyard excess for an 1608 package_
 	- If a part automatically puts a **"$" in the name**, it needs to be fixed. Open the library, click on the "device." Select the problem device. Click on "Prefix" button. Type the correct prefix letter. Save and update the library.
 - Split devices into **gates** when appropriate (e.g., 7400 logic chips, op-amps, etc). Name the gates to avoid the $ in the gate name. Set swap flag if valid.
 - Use **Attributes** to record the following pieces of information about the device:
-	- `PROD_ID` - **Production part number** (if applicable; otherwise, assign this value NA),
-	- `VALUE` - The **value** of the part (1k, 0.1uF, etc).
+	- `SKU` - **Stock Keeping Unit** see the library description or the inventory spreadsheet for numberings,
+	- `VALUE` - The **value** of the part (1kΩ 1%, 0.1µF 10%, etc).
+	- Any other attributes show on the symbol (i.e. `PACKAGE`, `TEMP`, `DCR`, etc.)
 - Description
 	- Device descriptions should include:
 		- A brief description ("12-bit one-channel SPI/I2C ADC"). This should be on the first line, so it shows up when one is browsing the library.
@@ -159,11 +153,13 @@ _Example of 0.2 mm courtyard excess for an 1608 package_
 ```html
 <h3>[Manufacturer (if applicable)] [General Part Number (if applicable)] - [Short Part Description (required)]</h3>
 <p>[Few-sentence description of part(s)]</p>
-<p><b>SparkFun Products:</b>
-<ul><li><a href=”[DATASHEETLINK to Resources Github Repository]”>[Variant 1]</a></li>
-<li><a href=”[DATASHEETLINK]”>[Variant 2]</a></li>
-<li><a href=”[DATASHEETLINK]”>[Variant 3]</a></li>
-</ul></p>
+<p><a href=”[DATASHEETLINK to Resources Github Repository]”>[Variant 1]</a><br></li>
+<a href=”[DATASHEETLINK]”>[Variant 2]</a></p>
+
+Example: CougsInSpace-IC-µController: STM32-p4P-?*
+<h3>STM 32b µController - 64 Pin</h3>
+<p><a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/ST/STM32L476.pdf">STM32L476Rx</a><br>
+<a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/ST/STM32L496.pdf">STM32L496Rx</a></p>
 ```
 
 #### Reference Designators
