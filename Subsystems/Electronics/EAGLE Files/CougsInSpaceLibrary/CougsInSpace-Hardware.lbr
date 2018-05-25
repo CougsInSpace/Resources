@@ -181,7 +181,11 @@
 <pad name="V7" x="0" y="-2.3" drill="0.45" stop="no" thermals="no"/>
 <pad name="V6" x="-1.626346875" y="-1.626346875" drill="0.45" stop="no" thermals="no"/>
 <pad name="V8" x="1.626346875" y="-1.626346875" drill="0.45" stop="no" thermals="no"/>
-<text x="0" y="3.6" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="4" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="3.5" width="0.15" layer="21"/>
+<circle x="0" y="0" radius="3.5" width="0.15" layer="22"/>
+<circle x="0" y="0" radius="3.5" width="0.15" layer="39"/>
+<circle x="0" y="0" radius="3.5" width="0.15" layer="40"/>
 </package>
 </packages>
 <symbols>
