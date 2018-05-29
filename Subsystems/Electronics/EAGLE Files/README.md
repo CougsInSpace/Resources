@@ -88,8 +88,8 @@ The following are guidelines as the circuit behavior will dictate specifics of l
 	- Renumber all of the parts in a logical order (i.e. left to right, then up to down) to ease soldering. Can run ULP `cmd-renumber` to do this, might have to play with settings to get nice results.
 	- `Smash` all of the components and move their name labels to be readable. Place them logically, use arrows or blocks if necessary. Make it look good.
 	- Add the following markings:
-		- Cougs in Space ;ogo (Your choice, I go with text, patch, and satellite-15)
-		- Board Name, revision, and week code (i.e. EPS V2.1 1806). The revision on the board lacks the patch number as the schematic will not change once the board is made and a new board will change the minor number. The week code is YYWK, this [site](https://whatweekisit.com/) will help.
+		- Cougs in Space logo (Your choice, I go with text, patch, and satellite-15)
+		- Board Name, revision, and week code (i.e. EPS V2.1.3 1806). The week code is YYWK, this [site](https://whatweekisit.com/) will help.
 		- Your name, usually a signature found in the Aesthetics library
 	- Print it out blown up and visually check it
 	- Schedule and pass a design review then generate gerber files and order it!
