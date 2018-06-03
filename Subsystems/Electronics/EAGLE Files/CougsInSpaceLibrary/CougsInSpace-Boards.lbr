@@ -1228,8 +1228,8 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="03-0001" constant="no"/>
-<attribute name="VALUE" value="Full Card" constant="no"/>
+<attribute name="SKU" value="[OVERRIDE]" constant="no"/>
+<attribute name="VALUE" value="CougSat Card"/>
 </technology>
 </technologies>
 </device>
@@ -1292,7 +1292,10 @@
 <connect gate="POWER" pin="PWR_CTRL_SW" pad="161 163"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SKU" value="[OVERRIDE]" constant="no"/>
+<attribute name="VALUE" value="CougSat Card"/>
+</technology>
 </technologies>
 </device>
 </devices>
