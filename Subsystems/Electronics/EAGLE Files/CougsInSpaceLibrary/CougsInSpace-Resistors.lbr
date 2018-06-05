@@ -371,7 +371,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RESISTOR-H" prefix="R">
+<deviceset name="RES-H" prefix="R">
 <description>&lt;h3&gt;Resistor Horizontal&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR-H" x="0" y="0"/>
@@ -599,7 +599,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR-V" prefix="R">
+<deviceset name="RES-V" prefix="R">
 <description>&lt;h3&gt;Resistor Horizontal&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR-V" x="0" y="0"/>
@@ -827,7 +827,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR-4-H" prefix="RN">
+<deviceset name="RES-4-H" prefix="RN">
 <description>&lt;h3&gt;Resistor Array - 4 - Horizontal&lt;/h3&gt;</description>
 <gates>
 <gate name="A" symbol="RESISTOR-H" x="0" y="0"/>
@@ -866,7 +866,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR-4-V" prefix="RN">
+<deviceset name="RES-4-V" prefix="RN">
 <description>&lt;h3&gt;Resistor Array - 4 - Vertical&lt;/h3&gt;</description>
 <gates>
 <gate name="A" symbol="RESISTOR-V" x="0" y="0"/>
