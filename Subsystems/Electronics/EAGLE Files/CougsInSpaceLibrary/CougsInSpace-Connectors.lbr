@@ -741,6 +741,65 @@
 <wire x1="-40.3" y1="4.5" x2="40.3" y2="4.5" width="0.15" layer="39"/>
 <text x="-17.9" y="3.9" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="PICOLOCK1.5-07">
+<description>&lt;h3&gt;PicoLock 1.5mm - 7 Conductor&lt;/h3&gt;</description>
+<smd name="6" x="-3" y="0" dx="0.6" dy="1" layer="1"/>
+<smd name="7" x="-4.5" y="0" dx="0.6" dy="1" layer="1"/>
+<smd name="5" x="-1.5" y="0" dx="0.6" dy="1" layer="1"/>
+<smd name="4" x="0" y="0" dx="0.6" dy="1" layer="1"/>
+<smd name="PAD@1" x="7.105" y="5.2" dx="1.25" dy="1.8" layer="1"/>
+<smd name="PAD@2" x="-7.105" y="5.2" dx="1.25" dy="1.8" layer="1"/>
+<smd name="3" x="1.5" y="0" dx="0.6" dy="1" layer="1"/>
+<smd name="2" x="3" y="0" dx="0.6" dy="1" layer="1"/>
+<smd name="1" x="4.5" y="0" dx="0.6" dy="1" layer="1"/>
+<wire x1="-7.15" y1="0" x2="7.15" y2="0" width="0.15" layer="51"/>
+<wire x1="7.15" y1="0" x2="7.15" y2="6.1" width="0.15" layer="51"/>
+<wire x1="7.15" y1="6.1" x2="-7.15" y2="6.1" width="0.15" layer="51"/>
+<wire x1="-7.15" y1="6.1" x2="-7.15" y2="0" width="0.15" layer="51"/>
+<wire x1="-5" y1="0" x2="-7.15" y2="0" width="0.15" layer="21"/>
+<wire x1="-7.15" y1="0" x2="-7.15" y2="4.1" width="0.15" layer="21"/>
+<wire x1="-6.25" y1="6.1" x2="6.25" y2="6.1" width="0.15" layer="21"/>
+<wire x1="7.15" y1="4.1" x2="7.15" y2="0" width="0.15" layer="21"/>
+<wire x1="7.15" y1="0" x2="5" y2="0" width="0.15" layer="21"/>
+<wire x1="-0.5" y1="0" x2="-1" y2="0" width="0.15" layer="21"/>
+<wire x1="-2" y1="0" x2="-2.5" y2="0" width="0.15" layer="21"/>
+<wire x1="-3.5" y1="0" x2="-4" y2="0" width="0.15" layer="21"/>
+<wire x1="-7.15" y1="6.3" x2="-7.15" y2="7.85" width="0.15" layer="51"/>
+<wire x1="-7.15" y1="7.85" x2="-5.65" y2="7.85" width="0.15" layer="51"/>
+<wire x1="-5.65" y1="7.85" x2="5.65" y2="7.85" width="0.15" layer="51"/>
+<wire x1="5.65" y1="7.85" x2="7.15" y2="7.85" width="0.15" layer="51"/>
+<wire x1="7.15" y1="7.85" x2="7.15" y2="6.3" width="0.15" layer="51"/>
+<wire x1="-8.05" y1="6.425" x2="-8.05" y2="-0.825" width="0.15" layer="21"/>
+<wire x1="-8.05" y1="-0.825" x2="8.05" y2="-0.825" width="0.15" layer="21"/>
+<wire x1="8.05" y1="-0.825" x2="8.05" y2="6.425" width="0.15" layer="21"/>
+<wire x1="8.05" y1="6.425" x2="-8.05" y2="6.425" width="0.15" layer="21"/>
+<wire x1="1" y1="0" x2="0.5" y2="0" width="0.15" layer="21"/>
+<wire x1="2.5" y1="0" x2="2" y2="0" width="0.15" layer="21"/>
+<wire x1="4" y1="0" x2="3.5" y2="0" width="0.15" layer="21"/>
+<text x="0" y="7.1" size="1.016" layer="51" align="center">Plug</text>
+<polygon width="0.15" layer="21">
+<vertex x="8.05" y="-0.825"/>
+<vertex x="6.65" y="-0.825"/>
+<vertex x="8.05" y="0.575"/>
+</polygon>
+<wire x1="-5.65" y1="7.85" x2="-5.65" y2="9.6" width="0.15" layer="51"/>
+<wire x1="-5.65" y1="9.6" x2="5.65" y2="9.6" width="0.15" layer="51"/>
+<wire x1="5.65" y1="9.6" x2="5.65" y2="7.85" width="0.15" layer="51"/>
+<text x="0" y="8.7" size="1.016" layer="51" align="center">Wires</text>
+<wire x1="-8.05" y1="6.425" x2="-8.05" y2="-0.825" width="0.15" layer="39"/>
+<wire x1="-8.05" y1="-0.825" x2="8.05" y2="-0.825" width="0.15" layer="39"/>
+<wire x1="8.05" y1="-0.825" x2="8.05" y2="6.425" width="0.15" layer="39"/>
+<wire x1="8.05" y1="6.425" x2="7.15" y2="6.425" width="0.15" layer="39"/>
+<wire x1="-7.15" y1="6.425" x2="-8.05" y2="6.425" width="0.15" layer="39"/>
+<wire x1="-7.15" y1="6.425" x2="-7.15" y2="7.85" width="0.15" layer="39"/>
+<wire x1="-7.15" y1="7.85" x2="-5.65" y2="7.85" width="0.15" layer="39"/>
+<wire x1="-5.65" y1="7.85" x2="-5.65" y2="9.6" width="0.15" layer="39"/>
+<wire x1="-5.65" y1="9.6" x2="5.65" y2="9.6" width="0.15" layer="39"/>
+<wire x1="5.65" y1="9.6" x2="5.65" y2="7.85" width="0.15" layer="39"/>
+<wire x1="5.65" y1="7.85" x2="7.15" y2="7.85" width="0.15" layer="39"/>
+<wire x1="7.15" y1="7.85" x2="7.15" y2="6.425" width="0.15" layer="39"/>
+<text x="0" y="-1.4" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="1X04">
@@ -964,6 +1023,31 @@ Mode</text>
 <text x="0" y="29.21" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
 <text x="0" y="-31.75" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
 <text x="0" y="-33.782" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+</symbol>
+<symbol name="1X07">
+<description>&lt;h3&gt;7 Pin Connection&lt;/h3&gt;</description>
+<wire x1="3.81" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="2.54" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="3.81" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="3.81" y2="10.16" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<text x="0.635" y="-11.43" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
+<text x="0.635" y="11.43" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<pin name="1" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0.635" y="-13.462" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0.635" y="-15.494" size="1.778" layer="97" font="vector" align="center">&gt;PACKAGE</text>
+<pin name="5" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="2.54" y2="7.62" width="0.6096" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1201,6 +1285,31 @@ Mode</text>
 <technology name="">
 <attribute name="SKU" value="04-0006"/>
 <attribute name="VALUE" value="CougSat Socket"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X07" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;Generic Connector - 7 Conductor&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="1X07" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-PICOLOCK" package="PICOLOCK1.5-07">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PACKAGE" value="PicoLock"/>
+<attribute name="SKU" value="04-0003"/>
 </technology>
 </technologies>
 </device>
