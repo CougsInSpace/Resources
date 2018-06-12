@@ -434,7 +434,7 @@ Last character is an incremented letter for each variant of the same value and p
 <rectangle x1="-2.54" y1="0.127" x2="2.54" y2="0.889" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="0.127" width="0.1524" layer="94"/>
 <text x="2.794" y="-1.016" size="1.27" layer="97" font="vector" align="center-left">&gt;VOLTAGE</text>
-<text x="2.794" y="-2.54" size="1.27" layer="97" font="vector" align="center-left">&gt;TEMP</text>
+<text x="2.794" y="-2.54" size="1.27" layer="97" font="vector" align="center-left">&gt;ESR</text>
 <wire x1="-2.413" y1="2.286" x2="2.413" y2="2.286" width="0.254" layer="94"/>
 <wire x1="2.413" y1="2.286" x2="2.413" y2="1.524" width="0.254" layer="94"/>
 <wire x1="2.413" y1="1.524" x2="-2.413" y2="1.524" width="0.254" layer="94"/>
@@ -580,6 +580,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="100nF 10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="-10UF">
+<attribute name="PACKAGE" value="3216" constant="no"/>
+<attribute name="SKU" value="13-106A" constant="no"/>
+<attribute name="TEMP" value="X7R" constant="no"/>
+<attribute name="VALUE" value="10µF 10%" constant="no"/>
+<attribute name="VOLTAGE" value="10V" constant="no"/>
+</technology>
 <technology name="-4.7UF">
 <attribute name="PACKAGE" value="3216"/>
 <attribute name="SKU" value="13-475A"/>
@@ -724,6 +731,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="100nF 10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="-10UF">
+<attribute name="PACKAGE" value="3216" constant="no"/>
+<attribute name="SKU" value="13-106A" constant="no"/>
+<attribute name="TEMP" value="X7R" constant="no"/>
+<attribute name="VALUE" value="10µF 10%" constant="no"/>
+<attribute name="VOLTAGE" value="10V" constant="no"/>
+</technology>
 <technology name="-4.7UF">
 <attribute name="PACKAGE" value="3216"/>
 <attribute name="SKU" value="13-475A"/>
@@ -750,7 +764,7 @@ Last character is an incremented letter for each variant of the same value and p
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAP-POL-V">
+<deviceset name="CAP-POL-V" prefix="C">
 <description>&lt;h3&gt;Capacitor Polarized - Vertical Orientation&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAP-POL-V" x="0" y="0"/>
@@ -763,23 +777,23 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-10UF">
+<attribute name="ESR" value="Max 850Ω" constant="no"/>
 <attribute name="PACKAGE" value="Tant-B" constant="no"/>
 <attribute name="SKU" value="16-106A" constant="no"/>
-<attribute name="TEMP" value="-55 to 85°C" constant="no"/>
 <attribute name="VALUE" value="10µF" constant="no"/>
 <attribute name="VOLTAGE" value="20V" constant="no"/>
 </technology>
 <technology name="-4.7UF">
+<attribute name="ESR" value="Max 900mΩ" constant="no"/>
 <attribute name="PACKAGE" value="Tant-B" constant="no"/>
 <attribute name="SKU" value="16-475A" constant="no"/>
-<attribute name="TEMP" value="-55 to 85°C" constant="no"/>
 <attribute name="VALUE" value="4.7µF 10%" constant="no"/>
 <attribute name="VOLTAGE" value="20V" constant="no"/>
 </technology>
 <technology name="-47UF">
+<attribute name="ESR" value="Max 400mΩ" constant="no"/>
 <attribute name="PACKAGE" value="Tant-B" constant="no"/>
 <attribute name="SKU" value="16-476A" constant="no"/>
-<attribute name="TEMP" value="-55 to 85°C" constant="no"/>
 <attribute name="VALUE" value="47µF" constant="no"/>
 <attribute name="VOLTAGE" value="10V" constant="no"/>
 </technology>
@@ -792,9 +806,9 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-220UF">
+<attribute name="ESR" value="Max 80mΩ" constant="no"/>
 <attribute name="PACKAGE" value="Tant-C" constant="no"/>
 <attribute name="SKU" value="16-227A" constant="no"/>
-<attribute name="TEMP" value="-55 to 85°C" constant="no"/>
 <attribute name="VALUE" value="220µF 10%" constant="no"/>
 <attribute name="VOLTAGE" value="6.3V" constant="no"/>
 </technology>
