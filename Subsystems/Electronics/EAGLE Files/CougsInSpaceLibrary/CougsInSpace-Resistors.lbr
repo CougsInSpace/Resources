@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -488,6 +488,13 @@
 <attribute name="TEMP" value="±25ppm/°C" constant="no"/>
 <attribute name="VALUE" value="3.3kΩ 0.1%" constant="no"/>
 </technology>
+<technology name="-30M">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="POWER" value="1/10W" constant="no"/>
+<attribute name="SKU" value="21-3005" constant="no"/>
+<attribute name="TEMP" value="±500ppm/°C" constant="no"/>
+<attribute name="VALUE" value="30MΩ 5%" constant="no"/>
+</technology>
 <technology name="-316K">
 <attribute name="PACKAGE" value="1608" constant="no"/>
 <attribute name="POWER" value="1/8W" constant="no"/>
@@ -607,7 +614,7 @@
 </devices>
 </deviceset>
 <deviceset name="RES-V" prefix="R">
-<description>&lt;h3&gt;Resistor Horizontal&lt;/h3&gt;</description>
+<description>&lt;h3&gt;Resistor Vertical&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR-V" x="0" y="0"/>
 </gates>
@@ -722,6 +729,13 @@
 <attribute name="SKU" value="21-3301" constant="no"/>
 <attribute name="TEMP" value="±25ppm/°C" constant="no"/>
 <attribute name="VALUE" value="3.3kΩ 0.1%" constant="no"/>
+</technology>
+<technology name="-30M">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="POWER" value="1/10W" constant="no"/>
+<attribute name="SKU" value="21-3005" constant="no"/>
+<attribute name="TEMP" value="±500ppm/°C" constant="no"/>
+<attribute name="VALUE" value="30MΩ 5%" constant="no"/>
 </technology>
 <technology name="-316K">
 <attribute name="PACKAGE" value="1608" constant="no"/>

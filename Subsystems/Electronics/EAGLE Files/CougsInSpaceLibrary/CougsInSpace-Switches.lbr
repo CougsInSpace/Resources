@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -231,6 +231,33 @@
 <wire x1="-2" y1="4.3" x2="2" y2="4.3" width="0.15" layer="22"/>
 <wire x1="2" y1="1.3" x2="-2" y2="1.3" width="0.15" layer="22"/>
 </package>
+<package name="B3U-1000P">
+<text x="0" y="2.2" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<smd name="1" x="-1.7" y="0" dx="0.8" dy="1.7" layer="1"/>
+<smd name="2" x="1.7" y="0" dx="0.8" dy="1.7" layer="1"/>
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.15" layer="51"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.15" layer="51"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.15" layer="51"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.15" layer="51"/>
+<rectangle x1="-2" y1="-0.7" x2="-1.5" y2="0.7" layer="51"/>
+<rectangle x1="1.5" y1="-0.7" x2="2" y2="0.7" layer="51"/>
+<wire x1="-1.5" y1="1.03" x2="-1.5" y2="1.25" width="0.15" layer="21"/>
+<wire x1="-1.5" y1="1.25" x2="-1.24" y2="1.25" width="0.15" layer="21"/>
+<wire x1="-1.24" y1="1.25" x2="1.5" y2="1.25" width="0.15" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="1.03" width="0.15" layer="21"/>
+<wire x1="1.5" y1="-1.03" x2="1.5" y2="-1.25" width="0.15" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-0.36" y2="-1.25" width="0.15" layer="21"/>
+<wire x1="-0.36" y1="-1.25" x2="-1.5" y2="-1.25" width="0.15" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="-1.03" width="0.15" layer="21"/>
+<wire x1="-2.42" y1="1.65" x2="-2.42" y2="-1.65" width="0.15" layer="21"/>
+<wire x1="-2.42" y1="-1.65" x2="2.43" y2="-1.65" width="0.15" layer="21"/>
+<wire x1="2.43" y1="-1.65" x2="2.43" y2="1.65" width="0.15" layer="21"/>
+<wire x1="2.43" y1="1.65" x2="-2.42" y2="1.65" width="0.15" layer="21"/>
+<wire x1="-2.42" y1="1.65" x2="-2.42" y2="-1.65" width="0.15" layer="39"/>
+<wire x1="-2.42" y1="-1.65" x2="2.43" y2="-1.65" width="0.15" layer="39"/>
+<wire x1="2.43" y1="-1.65" x2="2.43" y2="1.65" width="0.15" layer="39"/>
+<wire x1="2.43" y1="1.65" x2="-2.42" y2="1.65" width="0.15" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPDT">
@@ -246,12 +273,22 @@
 <text x="0" y="-1.778" size="1.27" layer="96" font="vector" align="center">&gt;VALUE</text>
 <text x="0" y="-3.302" size="1.27" layer="97" font="vector" align="center">&gt;SKU</text>
 </symbol>
+<symbol name="SPST-NO">
+<description>&lt;h3&gt;Single Pole Single Throw (SPST) - NO&lt;/h3&gt;</description>
+<pin name="COM" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<circle x="-2.54" y="0" radius="0.762" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.286" y2="3.302" width="0.254" layer="94"/>
+<pin name="NO" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="0" y="4.318" size="1.27" layer="95" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-1.778" size="1.27" layer="96" font="vector" align="center">&gt;VALUE</text>
+<text x="0" y="-3.302" size="1.27" layer="97" font="vector" align="center">&gt;SKU</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SWITCH-DPST" prefix="SW">
 <description>&lt;h3&gt;Single Pole Dual Throw (SPDT)&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/OMRON/MicroSwitch.pdf"&gt;D2MQ-1-TL
-&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/OMRON/MicroSwitch.pdf"&gt;D2MQ-1-TL&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SPDT" x="0" y="0"/>
 </gates>
@@ -266,6 +303,27 @@
 <technology name="">
 <attribute name="SKU" value="49-0001"/>
 <attribute name="VALUE" value="D2MQ-1-TL"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH-SPST-NO" prefix="SW">
+<description>&lt;h3&gt;Single Pole Dual Throw (SPST)&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/OMRON/TactileSwitch_SMD.pdf"&gt;B3U-1000P&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SPST-NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-B3U-1000P" package="B3U-1000P">
+<connects>
+<connect gate="G$1" pin="COM" pad="1"/>
+<connect gate="G$1" pin="NO" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SKU" value="49-0002" constant="no"/>
+<attribute name="VALUE" value="B2U-1000P" constant="no"/>
 </technology>
 </technologies>
 </device>
