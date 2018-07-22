@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -453,47 +453,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="STM32L432">
-<pin name="PA0/ADC_IN0" x="-25.4" y="22.86" length="middle"/>
-<pin name="PA1/ADC_IN1" x="-25.4" y="20.32" length="middle"/>
-<pin name="PA2/ADC_IN2" x="-25.4" y="17.78" length="middle"/>
-<pin name="PA3/ADC_IN3" x="-25.4" y="15.24" length="middle"/>
-<pin name="PA4/ADC_IN4" x="-25.4" y="12.7" length="middle"/>
-<pin name="PA5/SPI1_SCK" x="-25.4" y="10.16" length="middle"/>
-<pin name="PA6/SPI1_MISO" x="-25.4" y="7.62" length="middle"/>
-<pin name="PA7/SPI1_MOSI" x="-25.4" y="5.08" length="middle"/>
-<pin name="PA8/TIM1_CH1" x="-25.4" y="2.54" length="middle"/>
-<pin name="PA9/I2C1_SCL" x="-25.4" y="0" length="middle"/>
-<pin name="PA10/I2C1_SDA" x="-25.4" y="-2.54" length="middle"/>
-<pin name="PA11/TIM1_CH4" x="-25.4" y="-5.08" length="middle"/>
-<pin name="PA12" x="-25.4" y="-7.62" length="middle"/>
-<pin name="PA13/JTMS_SWDIO" x="-25.4" y="-10.16" length="middle"/>
-<pin name="PA14/JTCK_SWCLK" x="-25.4" y="-12.7" length="middle"/>
-<pin name="PA15/JTDI" x="-25.4" y="-15.24" length="middle"/>
-<pin name="PC14/OSC32_IN" x="-25.4" y="-20.32" length="middle"/>
-<pin name="PC15/OSC32_OUT" x="-25.4" y="-22.86" length="middle"/>
-<pin name="TIM3_CH3/PB0" x="25.4" y="10.16" length="middle" rot="R180"/>
-<pin name="TIM14_CH1/PB1" x="25.4" y="7.62" length="middle" rot="R180"/>
-<pin name="JTDO_SWO/PB3" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="JNTRST/PB4" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="USART1_CK/PB5" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="USART1_TX/PB6" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="USART1_RX/PB7" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="BOOT0/PH3" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="VDD@1" x="25.4" y="22.86" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND@1" x="25.4" y="-17.78" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND@2" x="25.4" y="-20.32" length="middle" direction="pwr" rot="R180"/>
-<pin name="VDD@2" x="25.4" y="20.32" length="middle" direction="pwr" rot="R180"/>
-<pin name="!RESET" x="25.4" y="-10.16" length="middle" direction="in" rot="R180"/>
-<pin name="VDDA/VREF+" x="25.4" y="15.24" length="middle" direction="in" rot="R180"/>
-<pin name="PAD" x="25.4" y="-22.86" length="middle" direction="pwr" rot="R180"/>
-<wire x1="-20.32" y1="25.4" x2="20.32" y2="25.4" width="0.254" layer="94"/>
-<wire x1="20.32" y1="25.4" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-25.4" x2="-20.32" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-25.4" x2="-20.32" y2="25.4" width="0.254" layer="94"/>
-<text x="-20.32" y="25.908" size="1.778" layer="95">&gt;NAME</text>
-<text x="-20.32" y="-25.908" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-</symbol>
 <symbol name="STM32BASE-64">
 <description>&lt;h3&gt;STM 32b µController - 64 Pin Base&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/ST/STM32L476.pdf"&gt;STM32L476Rx&lt;/a&gt;&lt;br&gt;
@@ -518,9 +477,9 @@
 <pin name="BOOT0" x="-20.32" y="-12.7" length="short" direction="in"/>
 <pin name="VSSA/VREF-" x="20.32" y="0" length="short" direction="pwr" rot="R180"/>
 <pin name="EXTRA_PIN" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
-<text x="0" y="16.51" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-16.51" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-18.542" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="16.51" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-16.51" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-18.542" size="1.778" layer="97" align="center">&gt;SKU</text>
 <text x="15.494" y="7.62" size="1.524" layer="95" align="center-right">&gt;EXTRAPIN</text>
 </symbol>
 <symbol name="STM32BASE-100">
@@ -551,9 +510,9 @@
 <pin name="!NRST" x="20.32" y="15.24" length="short" direction="in" rot="R180"/>
 <pin name="BOOT0" x="-20.32" y="-15.24" length="short" direction="in"/>
 <pin name="VSSA" x="20.32" y="2.54" length="short" direction="pwr" rot="R180"/>
-<text x="0" y="19.05" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-19.05" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-21.082" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="19.05" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-19.05" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-21.082" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 <symbol name="GPIO_A-16">
 <description>&lt;h3&gt;GPIO Bank A - 16b&lt;/h3&gt;</description>
@@ -577,9 +536,9 @@
 <wire x1="5.08" y1="22.86" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-20.32" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-20.32" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
-<text x="0" y="24.13" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-21.59" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-23.622" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="24.13" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-21.59" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-23.622" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 <symbol name="GPIO_B-16">
 <description>&lt;h3&gt;GPIO Bank B - 16b&lt;/h3&gt;</description>
@@ -603,9 +562,9 @@
 <wire x1="5.08" y1="22.86" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-20.32" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-20.32" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
-<text x="0" y="24.13" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-21.59" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-23.622" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="24.13" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-21.59" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-23.622" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 <symbol name="GPIO_C-16">
 <description>&lt;h3&gt;GPIO Bank C - 16b&lt;/h3&gt;</description>
@@ -629,9 +588,9 @@
 <wire x1="5.08" y1="22.86" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-20.32" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-20.32" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
-<text x="0" y="24.13" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-21.59" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-23.622" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="24.13" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-21.59" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-23.622" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 <symbol name="GPIO_D-16">
 <description>&lt;h3&gt;GPIO Bank D - 16b&lt;/h3&gt;</description>
@@ -655,9 +614,9 @@
 <wire x1="5.08" y1="22.86" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-20.32" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-20.32" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
-<text x="0" y="24.13" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-21.59" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-23.622" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="24.13" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-21.59" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-23.622" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 <symbol name="GPIO_E-16">
 <description>&lt;h3&gt;GPIO Bank E - 16b&lt;/h3&gt;</description>
@@ -681,9 +640,9 @@
 <wire x1="5.08" y1="22.86" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-20.32" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-20.32" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
-<text x="0" y="24.13" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-21.59" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-23.622" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="24.13" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-21.59" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-23.622" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 <symbol name="STM32BASE-32">
 <description>&lt;h3&gt;STM 32b µController - 32 Pin Base&lt;/h3&gt;
@@ -702,9 +661,9 @@
 <pin name="VSS@1" x="20.32" y="-2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="!NRST" x="20.32" y="7.62" length="short" direction="in" rot="R180"/>
 <pin name="BOOT0" x="-20.32" y="-7.62" length="short" direction="in"/>
-<text x="0" y="11.43" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-11.43" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-13.462" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="11.43" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-13.462" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 <symbol name="GPIO_B-8-2">
 <description>&lt;h3&gt;GPIO Bank B - 8b - No PB2&lt;/h3&gt;</description>
@@ -719,9 +678,9 @@
 <wire x1="5.08" y1="12.7" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-10.16" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-<text x="0" y="13.97" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-11.43" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-13.462" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="13.97" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-13.462" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 </symbols>
 <devicesets>

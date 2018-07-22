@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -250,10 +250,10 @@
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="6.35" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-6.35" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-8.382" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
-<text x="0" y="-10.414" size="1.778" layer="97" font="vector" align="center">&gt;VOLTAGE</text>
+<text x="0" y="6.35" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-8.382" size="1.778" layer="97" align="center">&gt;SKU</text>
+<text x="0" y="-10.414" size="1.778" layer="97" align="center">&gt;VOLTAGE</text>
 </symbol>
 <symbol name="DRV8837">
 <description>&lt;h3&gt;H-Bridge Driver&lt;/h3&gt;
@@ -270,9 +270,9 @@
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="0" y="11.43" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-11.43" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-13.462" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="11.43" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-13.462" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -296,6 +296,11 @@
 <attribute name="SKU" value="62-0001"/>
 <attribute name="VALUE" value="MCP1501-10"/>
 <attribute name="VOLTAGE" value="1.024V"/>
+</technology>
+<technology name="-18">
+<attribute name="SKU" value="62-0004" constant="no"/>
+<attribute name="VALUE" value="MCP1501-18" constant="no"/>
+<attribute name="VOLTAGE" value="1.800V" constant="no"/>
 </technology>
 </technologies>
 </device>

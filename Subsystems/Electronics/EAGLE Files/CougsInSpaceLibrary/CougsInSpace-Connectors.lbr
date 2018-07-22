@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -184,20 +184,20 @@
 <wire x1="1.75" y1="0" x2="1.25" y2="0" width="0.15" layer="21"/>
 <wire x1="0.25" y1="0" x2="-0.25" y2="0" width="0.15" layer="21"/>
 <wire x1="-1.25" y1="0" x2="-1.75" y2="0" width="0.15" layer="21"/>
-<wire x1="-4.9" y1="6.3" x2="-4.9" y2="7.85" width="0.15" layer="49"/>
-<wire x1="-4.9" y1="7.85" x2="-3.4" y2="7.85" width="0.15" layer="49"/>
-<wire x1="-3.4" y1="7.85" x2="3.4" y2="7.85" width="0.15" layer="49"/>
-<wire x1="3.4" y1="7.85" x2="4.9" y2="7.85" width="0.15" layer="49"/>
-<wire x1="4.9" y1="7.85" x2="4.9" y2="6.3" width="0.15" layer="49"/>
+<wire x1="-4.9" y1="6.3" x2="-4.9" y2="7.85" width="0.15" layer="51"/>
+<wire x1="-4.9" y1="7.85" x2="-3.4" y2="7.85" width="0.15" layer="51"/>
+<wire x1="-3.4" y1="7.85" x2="3.4" y2="7.85" width="0.15" layer="51"/>
+<wire x1="3.4" y1="7.85" x2="4.9" y2="7.85" width="0.15" layer="51"/>
+<wire x1="4.9" y1="7.85" x2="4.9" y2="6.3" width="0.15" layer="51"/>
 <wire x1="-5.8" y1="6.425" x2="-5.8" y2="-0.825" width="0.15" layer="21"/>
 <wire x1="-5.8" y1="-0.825" x2="5.8" y2="-0.825" width="0.15" layer="21"/>
 <wire x1="5.8" y1="-0.825" x2="5.8" y2="6.425" width="0.15" layer="21"/>
 <wire x1="5.8" y1="6.425" x2="-5.8" y2="6.425" width="0.15" layer="21"/>
-<text x="0" y="7.1" size="1.016" layer="49" align="center">Plug</text>
-<wire x1="-3.4" y1="7.85" x2="-3.4" y2="9.6" width="0.15" layer="49"/>
-<wire x1="-3.4" y1="9.6" x2="3.4" y2="9.6" width="0.15" layer="49"/>
-<wire x1="3.4" y1="9.6" x2="3.4" y2="7.85" width="0.15" layer="49"/>
-<text x="0" y="8.7" size="1.016" layer="49" align="center">Wires</text>
+<text x="0" y="7.1" size="1.016" layer="51" align="center">Plug</text>
+<wire x1="-3.4" y1="7.85" x2="-3.4" y2="9.6" width="0.15" layer="51"/>
+<wire x1="-3.4" y1="9.6" x2="3.4" y2="9.6" width="0.15" layer="51"/>
+<wire x1="3.4" y1="9.6" x2="3.4" y2="7.85" width="0.15" layer="51"/>
+<text x="0" y="8.7" size="1.016" layer="51" align="center">Wires</text>
 <polygon width="0.15" layer="21">
 <vertex x="5.8" y="-0.825"/>
 <vertex x="4.4" y="-0.825"/>
@@ -812,14 +812,14 @@
 <wire x1="3.81" y1="-5.08" x2="3.81" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="7.62" x2="3.81" y2="7.62" width="0.254" layer="94"/>
 <wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
-<text x="0.635" y="-6.35" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0.635" y="8.89" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<pin name="1" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<text x="0.635" y="-8.382" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
-<text x="0.635" y="-10.414" size="1.778" layer="97" font="vector" align="center">&gt;PACKAGE</text>
+<text x="0.635" y="-6.35" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0.635" y="8.89" size="1.778" layer="95" align="center">&gt;NAME</text>
+<pin name="4" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0.635" y="-8.382" size="1.778" layer="97" align="center">&gt;SKU</text>
+<text x="0.635" y="-10.414" size="1.778" layer="97" align="center">&gt;PACKAGE</text>
 </symbol>
 <symbol name="1X10">
 <description>&lt;h3&gt;10 Pin Connection&lt;/h3&gt;</description>
@@ -831,20 +831,20 @@
 <wire x1="3.81" y1="-12.7" x2="3.81" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="15.24" x2="3.81" y2="15.24" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
-<text x="0.635" y="-13.97" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0.635" y="16.51" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<pin name="1" x="7.62" y="-10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<text x="0.635" y="-16.002" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
-<text x="0.635" y="-18.034" size="1.778" layer="97" font="vector" align="center">&gt;PACKAGE</text>
-<pin name="5" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="6" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="7" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="8" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="9" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="10" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0.635" y="-13.97" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0.635" y="16.51" size="1.778" layer="95" align="center">&gt;NAME</text>
+<pin name="10" x="7.62" y="-10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="9" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="8" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0.635" y="-16.002" size="1.778" layer="97" align="center">&gt;SKU</text>
+<text x="0.635" y="-18.034" size="1.778" layer="97" align="center">&gt;PACKAGE</text>
+<pin name="6" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
@@ -858,16 +858,16 @@
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="5.08" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<text x="-1.27" y="-8.89" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="-1.27" y="11.43" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<pin name="VSENSE" x="7.62" y="-5.08" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="SWCLK" x="7.62" y="-2.54" length="short" direction="out" swaplevel="1" rot="R180"/>
-<pin name="DGND" x="7.62" y="0" length="short" direction="pwr" swaplevel="1" rot="R180"/>
-<pin name="SWDIO" x="7.62" y="2.54" length="short" swaplevel="1" rot="R180"/>
-<text x="-1.27" y="-10.922" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
-<text x="-1.27" y="-12.954" size="1.778" layer="97" font="vector" align="center">&gt;PACKAGE</text>
-<pin name="!RST" x="7.62" y="5.08" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="SWO" x="7.62" y="7.62" length="short" direction="in" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="-8.89" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="-1.27" y="11.43" size="1.778" layer="95" align="center">&gt;NAME</text>
+<pin name="VSENSE" x="7.62" y="7.62" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SWCLK" x="7.62" y="5.08" length="short" direction="out" swaplevel="1" rot="R180"/>
+<pin name="DGND" x="7.62" y="2.54" length="short" direction="pwr" swaplevel="1" rot="R180"/>
+<pin name="SWDIO" x="7.62" y="0" length="short" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="-10.922" size="1.778" layer="97" align="center">&gt;SKU</text>
+<text x="-1.27" y="-12.954" size="1.778" layer="97" align="center">&gt;PACKAGE</text>
+<pin name="!RST" x="7.62" y="-2.54" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SWO" x="7.62" y="-5.08" length="short" direction="in" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="µSD-SW">
 <description>&lt;h3&gt;µSD with Detection Switch&lt;/h3&gt;</description>
@@ -905,9 +905,9 @@
 <text x="-1.778" y="-5.08" size="1.524" layer="97" align="center-right">NC</text>
 <text x="-12.192" y="14.732" size="1.778" layer="97" align="top-left">SPI
 Mode</text>
-<text x="-1.27" y="16.51" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="-1.27" y="-13.97" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="-1.27" y="-16.002" size="1.778" layer="96" font="vector" align="center">&gt;SKU</text>
+<text x="-1.27" y="16.51" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="-1.27" y="-13.97" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="-1.27" y="-16.002" size="1.778" layer="96" align="center">&gt;SKU</text>
 </symbol>
 <symbol name="COAX">
 <description>&lt;h3&gt;Coax Connector&lt;/h3&gt;</description>
@@ -915,10 +915,10 @@ Mode</text>
 <pin name="SHIELD" x="-5.08" y="-2.54" visible="off" length="middle"/>
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="0.254" width="1.27" layer="94"/>
-<text x="0" y="3.556" size="1.27" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-3.556" size="1.27" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-5.08" size="1.27" layer="96" font="vector" align="center">&gt;SKU</text>
-<text x="0" y="-6.604" size="1.27" layer="96" font="vector" align="center">&gt;PACKAGE</text>
+<text x="0" y="3.556" size="1.27" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-5.08" size="1.27" layer="96" align="center">&gt;SKU</text>
+<text x="0" y="-6.604" size="1.27" layer="96" align="center">&gt;PACKAGE</text>
 </symbol>
 <symbol name="TEST-POINT">
 <description>&lt;h3&gt;Test Point&lt;/h3&gt;
@@ -926,8 +926,7 @@ Mode</text>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="-3.302" y1="-0.762" x2="-3.302" y2="0.762" width="0.1524" layer="94" curve="180"/>
 <pin name="1" x="0" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<text x="-1.524" y="1.524" size="1.27" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="-1.524" y="-1.524" size="1.27" layer="95" font="vector" align="center">&gt;VALUE</text>
+<text x="-1.524" y="1.524" size="1.27" layer="95" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="CIS_BUS-DATA">
 <description>&lt;h3&gt;CougSat Electrical Bus - Data&lt;/h3&gt;</description>
@@ -935,9 +934,9 @@ Mode</text>
 <wire x1="-12.7" y1="-17.78" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="27.94" x2="10.16" y2="27.94" width="0.254" layer="94"/>
 <wire x1="10.16" y1="27.94" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<text x="0" y="29.21" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-19.05" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-21.082" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="29.21" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-19.05" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-21.082" size="1.778" layer="97" align="center">&gt;SKU</text>
 <pin name="BUS_I2C0_SDA" x="12.7" y="25.4" visible="pin" length="short" rot="R180"/>
 <pin name="BUS_I2C0_SCL" x="12.7" y="22.86" visible="pin" length="short" rot="R180"/>
 <pin name="BUS_I2C0_IRQ" x="12.7" y="20.32" visible="pin" length="short" rot="R180"/>
@@ -960,9 +959,9 @@ Mode</text>
 <wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="15.24" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<text x="0" y="16.51" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-13.97" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-16.002" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="16.51" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-13.97" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-16.002" size="1.778" layer="97" align="center">&gt;SKU</text>
 <pin name="GPIO-0" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
 <pin name="GPIO-1" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
 <pin name="GPIO-2" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
@@ -980,9 +979,9 @@ Mode</text>
 <wire x1="-12.7" y1="-10.16" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<text x="0" y="13.97" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-11.43" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-13.462" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="13.97" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-13.462" size="1.778" layer="97" align="center">&gt;SKU</text>
 <pin name="BUS_JTAG_TCK" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
 <pin name="BUS_JTAG_TDI" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
 <pin name="BUS_JTAG_TDO" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
@@ -1020,9 +1019,9 @@ Mode</text>
 <wire x1="-12.7" y1="-30.48" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="27.94" x2="10.16" y2="27.94" width="0.254" layer="94"/>
 <wire x1="10.16" y1="27.94" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
-<text x="0" y="29.21" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-31.75" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="-33.782" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
+<text x="0" y="29.21" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-31.75" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-33.782" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 <symbol name="1X07">
 <description>&lt;h3&gt;7 Pin Connection&lt;/h3&gt;</description>
@@ -1034,17 +1033,17 @@ Mode</text>
 <wire x1="3.81" y1="-10.16" x2="3.81" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="10.16" x2="3.81" y2="10.16" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
-<text x="0.635" y="-11.43" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
-<text x="0.635" y="11.43" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
-<pin name="1" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0.635" y="-11.43" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0.635" y="11.43" size="1.778" layer="95" align="center">&gt;NAME</text>
+<pin name="7" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<text x="0.635" y="-13.462" size="1.778" layer="97" font="vector" align="center">&gt;SKU</text>
-<text x="0.635" y="-15.494" size="1.778" layer="97" font="vector" align="center">&gt;PACKAGE</text>
-<pin name="5" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="6" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="7" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0.635" y="-13.462" size="1.778" layer="97" align="center">&gt;SKU</text>
+<text x="0.635" y="-15.494" size="1.778" layer="97" align="center">&gt;PACKAGE</text>
+<pin name="3" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="7.62" x2="2.54" y2="7.62" width="0.6096" layer="94"/>
@@ -1173,7 +1172,7 @@ Mode</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEST_POINT" prefix="TP" uservalue="yes">
+<deviceset name="TEST_POINT" prefix="TP">
 <description>&lt;h3&gt;Test Point&lt;/h3&gt;
 &lt;p&gt;Used to probe points in a circuit for debugging or general measurement&lt;/p&gt;</description>
 <gates>
