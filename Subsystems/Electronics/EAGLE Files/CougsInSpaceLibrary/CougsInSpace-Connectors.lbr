@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -184,20 +184,20 @@
 <wire x1="1.75" y1="0" x2="1.25" y2="0" width="0.15" layer="21"/>
 <wire x1="0.25" y1="0" x2="-0.25" y2="0" width="0.15" layer="21"/>
 <wire x1="-1.25" y1="0" x2="-1.75" y2="0" width="0.15" layer="21"/>
-<wire x1="-4.9" y1="6.3" x2="-4.9" y2="7.85" width="0.15" layer="49"/>
-<wire x1="-4.9" y1="7.85" x2="-3.4" y2="7.85" width="0.15" layer="49"/>
-<wire x1="-3.4" y1="7.85" x2="3.4" y2="7.85" width="0.15" layer="49"/>
-<wire x1="3.4" y1="7.85" x2="4.9" y2="7.85" width="0.15" layer="49"/>
-<wire x1="4.9" y1="7.85" x2="4.9" y2="6.3" width="0.15" layer="49"/>
+<wire x1="-4.9" y1="6.3" x2="-4.9" y2="7.85" width="0.15" layer="51"/>
+<wire x1="-4.9" y1="7.85" x2="-3.4" y2="7.85" width="0.15" layer="51"/>
+<wire x1="-3.4" y1="7.85" x2="3.4" y2="7.85" width="0.15" layer="51"/>
+<wire x1="3.4" y1="7.85" x2="4.9" y2="7.85" width="0.15" layer="51"/>
+<wire x1="4.9" y1="7.85" x2="4.9" y2="6.3" width="0.15" layer="51"/>
 <wire x1="-5.8" y1="6.425" x2="-5.8" y2="-0.825" width="0.15" layer="21"/>
 <wire x1="-5.8" y1="-0.825" x2="5.8" y2="-0.825" width="0.15" layer="21"/>
 <wire x1="5.8" y1="-0.825" x2="5.8" y2="6.425" width="0.15" layer="21"/>
 <wire x1="5.8" y1="6.425" x2="-5.8" y2="6.425" width="0.15" layer="21"/>
-<text x="0" y="7.1" size="1.016" layer="49" align="center">Plug</text>
-<wire x1="-3.4" y1="7.85" x2="-3.4" y2="9.6" width="0.15" layer="49"/>
-<wire x1="-3.4" y1="9.6" x2="3.4" y2="9.6" width="0.15" layer="49"/>
-<wire x1="3.4" y1="9.6" x2="3.4" y2="7.85" width="0.15" layer="49"/>
-<text x="0" y="8.7" size="1.016" layer="49" align="center">Wires</text>
+<text x="0" y="7.1" size="1.016" layer="51" align="center">Plug</text>
+<wire x1="-3.4" y1="7.85" x2="-3.4" y2="9.6" width="0.15" layer="51"/>
+<wire x1="-3.4" y1="9.6" x2="3.4" y2="9.6" width="0.15" layer="51"/>
+<wire x1="3.4" y1="9.6" x2="3.4" y2="7.85" width="0.15" layer="51"/>
+<text x="0" y="8.7" size="1.016" layer="51" align="center">Wires</text>
 <polygon width="0.15" layer="21">
 <vertex x="5.8" y="-0.825"/>
 <vertex x="4.4" y="-0.825"/>
@@ -927,7 +927,6 @@ Mode</text>
 <wire x1="-3.302" y1="-0.762" x2="-3.302" y2="0.762" width="0.1524" layer="94" curve="180"/>
 <pin name="1" x="0" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <text x="-1.524" y="1.524" size="1.27" layer="95" align="center">&gt;NAME</text>
-<text x="-1.524" y="-1.524" size="1.27" layer="95" align="center">&gt;VALUE</text>
 </symbol>
 <symbol name="CIS_BUS-DATA">
 <description>&lt;h3&gt;CougSat Electrical Bus - Data&lt;/h3&gt;</description>
@@ -1173,7 +1172,7 @@ Mode</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEST_POINT" prefix="TP" uservalue="yes">
+<deviceset name="TEST_POINT" prefix="TP">
 <description>&lt;h3&gt;Test Point&lt;/h3&gt;
 &lt;p&gt;Used to probe points in a circuit for debugging or general measurement&lt;/p&gt;</description>
 <gates>

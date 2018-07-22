@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -360,7 +360,7 @@
 <text x="1.778" y="4.318" size="1.27" layer="95" align="center-left">&gt;NAME</text>
 <text x="1.778" y="2.794" size="1.27" layer="96" align="center-left">&gt;VALUE</text>
 <text x="1.778" y="-0.254" size="1.27" layer="97" align="center-left">&gt;PACKAGE</text>
-<text x="1.778" y="-1.778" size="1.27" layer="97" align="center-left">&gt;B25/85</text>
+<text x="1.778" y="-1.778" size="1.27" layer="97" align="center-left">&gt;B2585</text>
 <text x="1.778" y="1.27" size="1.27" layer="97" align="center-left">&gt;SKU</text>
 <wire x1="-1.016" y1="3.81" x2="1.016" y2="3.81" width="0.254" layer="94"/>
 <wire x1="1.016" y1="3.81" x2="1.016" y2="-1.27" width="0.254" layer="94"/>
@@ -439,6 +439,13 @@
 <attribute name="TEMP" value="±25ppm/°C" constant="no"/>
 <attribute name="VALUE" value="158kΩ 0.1%" constant="no"/>
 </technology>
+<technology name="-180K">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="POWER" value="1/10W" constant="no"/>
+<attribute name="SKU" value="21-1803" constant="no"/>
+<attribute name="TEMP" value="±100ppm/°C" constant="no"/>
+<attribute name="VALUE" value="180kΩ 1%" constant="no"/>
+</technology>
 <technology name="-1K">
 <attribute name="PACKAGE" value="1608" constant="no"/>
 <attribute name="POWER" value="1/8W" constant="no"/>
@@ -473,6 +480,13 @@
 <attribute name="SKU" value="21-2003" constant="no"/>
 <attribute name="TEMP" value="±25ppm/°C" constant="no"/>
 <attribute name="VALUE" value="200kΩ 0.1%" constant="no"/>
+</technology>
+<technology name="-20K">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="POWER" value="1/5W" constant="no"/>
+<attribute name="SKU" value="21-2002" constant="no"/>
+<attribute name="TEMP" value="±50ppm/°C" constant="no"/>
+<attribute name="VALUE" value="20kΩ 0.5%" constant="no"/>
 </technology>
 <technology name="-220K">
 <attribute name="PACKAGE" value="1608" constant="no"/>
@@ -681,6 +695,13 @@
 <attribute name="TEMP" value="±25ppm/°C" constant="no"/>
 <attribute name="VALUE" value="158kΩ 0.1%" constant="no"/>
 </technology>
+<technology name="-180K">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="POWER" value="1/10W" constant="no"/>
+<attribute name="SKU" value="21-1803" constant="no"/>
+<attribute name="TEMP" value="±100ppm/°C" constant="no"/>
+<attribute name="VALUE" value="180kΩ 1%" constant="no"/>
+</technology>
 <technology name="-1K">
 <attribute name="PACKAGE" value="1608" constant="no"/>
 <attribute name="POWER" value="1/8W" constant="no"/>
@@ -715,6 +736,13 @@
 <attribute name="SKU" value="21-2003" constant="no"/>
 <attribute name="TEMP" value="±25ppm/°C" constant="no"/>
 <attribute name="VALUE" value="200kΩ 0.1%" constant="no"/>
+</technology>
+<technology name="-20K">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="POWER" value="1/5W" constant="no"/>
+<attribute name="SKU" value="21-2002" constant="no"/>
+<attribute name="TEMP" value="±50ppm/°C" constant="no"/>
+<attribute name="VALUE" value="20kΩ 0.5%" constant="no"/>
 </technology>
 <technology name="-220K">
 <attribute name="PACKAGE" value="1608" constant="no"/>
