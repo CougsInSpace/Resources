@@ -14,7 +14,7 @@ Don't know what Github is? [Learn here](https://guides.github.com/activities/hel
 
 ## Step Four: Check out our SOPs ##
 These are the standard operating procedures within Cougs in Space:
-* [Acronyms](https://github.com/CougsInSpace/Resources/blob/master/StandardOperatingProcedures/Acronyms.1.2.0.pdf)
+* [Acronyms](https://github.com/CougsInSpace/Resources/blob/master/StandardOperatingProcedures/Acronyms.pdf)
 * [Coding conventions](https://github.com/CougsInSpace/Resources/blob/master/StandardOperatingProcedures/Code.1.0.1.pdf)
 * [Github](https://github.com/CougsInSpace/Resources/blob/master/StandardOperatingProcedures/GitHub.1.0.1.pdf)
 * [Project Management](https://github.com/CougsInSpace/Resources/blob/master/StandardOperatingProcedures/ProjectManagement.1.0.2.pdf)
