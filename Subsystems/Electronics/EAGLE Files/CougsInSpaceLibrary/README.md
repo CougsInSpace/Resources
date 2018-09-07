@@ -38,9 +38,9 @@ These are the footprints used in Cougs in Space. These libraries are based off o
 These are the guidelines that every part added to the libary must follow (or try to)
 
 ### Symbols
-- All symbols need `>Name` (on the **Names** layer). **Size: 0.07, Ratio: 8%, Font: Vector, Align: Center** located above the symbol.
-- All symbols need `>Value` (on the **Values** layer). **Size: 0.07, Ratio: 8%, Font: Vector, Align: Center** locate below the symbol.
-- Most symbols need `>SKU` (on the **Info** layer). **Size: 0.07, Ratio: 8%, Font: Vector, Align: Center** locate below the symbol.
+- All symbols need `>Name` (on the **Names** layer). **Size: 0.07, Ratio: 8%, Font: Proportional, Align: Center** located above the symbol.
+- All symbols need `>Value` (on the **Values** layer). **Size: 0.07, Ratio: 8%, Font: Proportional, Align: Center** locate below the symbol.
+- Most symbols need `>SKU` (on the **Info** layer). **Size: 0.07, Ratio: 8%, Font: Proportional, Align: Center** locate below the symbol.
 - Add attributes as logical (on the **Info** layer), i.e. capacity, voltage, temperature coefficient locate below the symbol.
 - Small symbols (i.e. passives) can use size 0.05 text
 - Symbol Names
@@ -76,7 +76,7 @@ _Here are several symbols in use. Notice that the specifics of each part change 
 <h3>Short Part Description (required)</h3>
 <p>Few-sentence description of part(s)</p>
 
-Example: SparkFun-IC-µController: STM32BASE-64
+Example: CougsInSpace-µController: STM32BASE-64
 <h3>STM 32b µController - 64 Pin Base</h3>
 <p><a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/ST/STM32L476.pdf">STM32L476Rx</a><br>
 <a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/ST/STM32L496.pdf">STM32L496Rx</a></p>
@@ -85,8 +85,8 @@ Example: SparkFun-IC-µController: STM32BASE-64
 ### Packages
 - Name/Value
 	- All footprints need `>Name` (on the **tNames** layer). Size should be **Size: 0.8mm, Ratio: 15%, Font: Vector, Align: Center**.
-	- No footprint should have `>Value`.
 	- Place it above the package, the location will change during the `smash` process (final PCB layout).
+	- No footprint should have `>Value`.
 
 - Part Outline
 	- All footprints need **tDocu** outline showing mechanical size or special features, i.e. SD card insertion levels or tantalum capacitor anode nub. Often omit the leads in packages like SOIC. This layer is not silkscreened.
