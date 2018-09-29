@@ -2234,6 +2234,53 @@
 <vertex x="-22.1" y="-3.9" curve="-53.130102"/>
 </polygon>
 </package>
+<package name="SPEED_LIMIT">
+<description>&lt;h3&gt;Speed Limit Sign&lt;/h3&gt;</description>
+<wire x1="8" y1="-13" x2="-8" y2="-13" width="0.3" layer="21"/>
+<wire x1="-8" y1="-13" x2="-10" y2="-11" width="0.3" layer="21" curve="-90"/>
+<wire x1="-10" y1="-11" x2="-10" y2="10" width="0.3" layer="21"/>
+<wire x1="-10" y1="10" x2="-8" y2="12" width="0.3" layer="21" curve="-90"/>
+<wire x1="-8" y1="12" x2="8" y2="12" width="0.3" layer="21"/>
+<wire x1="8" y1="12" x2="10" y2="10" width="0.3" layer="21" curve="-90"/>
+<wire x1="10" y1="10" x2="10" y2="-11" width="0.3" layer="21"/>
+<wire x1="10" y1="-11" x2="8" y2="-13" width="0.3" layer="21" curve="-90"/>
+<text x="0" y="6" size="4" layer="21" font="vector" ratio="15" align="center">SPEED
+LIMIT</text>
+<text x="0" y="-4" size="5" layer="21" font="vector" ratio="15" align="center">28000</text>
+<text x="0" y="-10" size="3" layer="21" font="vector" ratio="15" align="center">km/hr</text>
+</package>
+<package name="SPEED_LIMIT-INV">
+<description>&lt;h3&gt;Speed Limit Sign - Inversed Colors&lt;/h3&gt;
+White sign with gold letters</description>
+<text x="0" y="6" size="4" layer="29" font="vector" ratio="15" align="center">SPEED
+LIMIT</text>
+<text x="0" y="-4" size="5" layer="29" font="vector" ratio="15" align="center">28000</text>
+<text x="0" y="-10" size="3" layer="29" font="vector" ratio="15" align="center">km/hr</text>
+<polygon width="0.3" layer="1">
+<vertex x="-10" y="10"/>
+<vertex x="-10" y="-11" curve="90"/>
+<vertex x="-8" y="-13"/>
+<vertex x="8" y="-13" curve="90"/>
+<vertex x="10" y="-11"/>
+<vertex x="10" y="10" curve="90"/>
+<vertex x="8" y="12"/>
+<vertex x="-8" y="12" curve="90"/>
+</polygon>
+<polygon width="0.3" layer="21">
+<vertex x="-10" y="10"/>
+<vertex x="-10" y="-11" curve="90"/>
+<vertex x="-8" y="-13"/>
+<vertex x="8" y="-13" curve="90"/>
+<vertex x="10" y="-11"/>
+<vertex x="10" y="10" curve="90"/>
+<vertex x="8" y="12"/>
+<vertex x="-8" y="12" curve="90"/>
+</polygon>
+<text x="0" y="6" size="4" layer="51" font="vector" ratio="15" align="center">SPEED
+LIMIT</text>
+<text x="0" y="-4" size="5" layer="51" font="vector" ratio="15" align="center">28000</text>
+<text x="0" y="-10" size="3" layer="51" font="vector" ratio="15" align="center">km/hr</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FRAME-B">
@@ -3522,6 +3569,16 @@ Space EE</text>
 <description>&lt;h3&gt;Block Diagram Connecting Dot&lt;/h3&gt;</description>
 <circle x="0" y="0" radius="0.254" width="0.508" layer="97"/>
 </symbol>
+<symbol name="ARTWORK">
+<description>&lt;h3&gt;Artwork&lt;/h3&gt;
+None functional footprints to increase the aesthetic</description>
+<text x="0" y="0" size="1.778" layer="94" align="center">&gt;VALUE</text>
+<text x="0" y="3.81" size="1.778" layer="95" align="center">&gt;NAME</text>
+<wire x1="-10.16" y1="2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-B" prefix="FRAME">
@@ -3754,6 +3811,29 @@ Space EE</text>
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARTWORK" prefix="LOGO">
+<description>&lt;h3&gt;Artwork&lt;/h3&gt;
+None functional footprints to increase the aesthetic</description>
+<gates>
+<gate name="G$1" symbol="ARTWORK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SPEED_LIMIT" package="SPEED_LIMIT">
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="Speed Limit" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-SPEED-LIMIT-INV" package="SPEED_LIMIT-INV">
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="Speed Limit" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
