@@ -9,3 +9,6 @@ OldVersions/
 
 # Lock Files
 *.lck
+
+# Microsoft Lock Files
+*~$*

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -616,10 +616,10 @@
 <wire x1="-4.6" y1="-48" x2="-4.6" y2="47.5" width="0.15" layer="49"/>
 <wire x1="-4.6" y1="47.5" x2="-4.1" y2="48" width="0.15" layer="49" curve="-90"/>
 <wire x1="-4.1" y1="48" x2="91.5" y2="48" width="0.15" layer="49"/>
-<smd name="CHASSIS@2" x="51.95" y="46.1" dx="77.8" dy="2.4" layer="1"/>
-<smd name="CHASSIS@1" x="51.95" y="46.1" dx="77.8" dy="2.4" layer="16"/>
-<smd name="CHASSIS@3" x="51.95" y="-46.1" dx="77.8" dy="2.4" layer="16"/>
-<smd name="CHASSIS@4" x="51.95" y="-46.1" dx="77.8" dy="2.4" layer="1"/>
+<smd name="CHASSIS@2" x="51.95" y="46.1" dx="77.8" dy="2.4" layer="1" stop="no"/>
+<smd name="CHASSIS@1" x="51.95" y="46.1" dx="77.8" dy="2.4" layer="16" stop="no"/>
+<smd name="CHASSIS@3" x="51.95" y="-46.1" dx="77.8" dy="2.4" layer="16" stop="no"/>
+<smd name="CHASSIS@4" x="51.95" y="-46.1" dx="77.8" dy="2.4" layer="1" stop="no"/>
 </package>
 <package name="CARD-FULL-OPEN+X">
 <description>&lt;h3&gt;CougSat Card - Full Length - Open +X&lt;/h3&gt;
@@ -1076,10 +1076,10 @@
 <wire x1="-4.6" y1="-48" x2="-4.6" y2="47.5" width="0.15" layer="49"/>
 <wire x1="-4.6" y1="47.5" x2="-4.1" y2="48" width="0.15" layer="49" curve="-90"/>
 <wire x1="-4.1" y1="48" x2="91.5" y2="48" width="0.15" layer="49"/>
-<smd name="CHASSIS@2" x="51.95" y="46.1" dx="77.8" dy="2.4" layer="1"/>
-<smd name="CHASSIS@1" x="51.95" y="46.1" dx="77.8" dy="2.4" layer="16"/>
-<smd name="CHASSIS@3" x="51.95" y="-46.1" dx="77.8" dy="2.4" layer="16"/>
-<smd name="CHASSIS@4" x="51.95" y="-46.1" dx="77.8" dy="2.4" layer="1"/>
+<smd name="CHASSIS@2" x="51.95" y="46.1" dx="77.8" dy="2.4" layer="1" stop="no"/>
+<smd name="CHASSIS@1" x="51.95" y="46.1" dx="77.8" dy="2.4" layer="16" stop="no"/>
+<smd name="CHASSIS@3" x="51.95" y="-46.1" dx="77.8" dy="2.4" layer="16" stop="no"/>
+<smd name="CHASSIS@4" x="51.95" y="-46.1" dx="77.8" dy="2.4" layer="1" stop="no"/>
 </package>
 </packages>
 <symbols>
@@ -1154,10 +1154,10 @@
 <pin name="BUS_SPI_MOSI" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
 <pin name="CTRL_!RESET" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="CTRL_SYNC" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="COM_USART_TX" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="COM_USART_RX" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="COM_USART_CLK" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="COM_USART_IRQ" x="12.7" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="COM_SPI_SCK" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="COM_SPI_MISO" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="COM_SPI_MOSI" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="COM_SPI_CS" x="12.7" y="-15.24" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="CIS_BUS-GPIO">
 <description>&lt;h3&gt;CougSat Electrical Bus - GPIO&lt;/h3&gt;</description>
@@ -1261,10 +1261,10 @@
 <connect gate="DATA" pin="BUS_SPI_MISO" pad="153 155"/>
 <connect gate="DATA" pin="BUS_SPI_MOSI" pad="157 159"/>
 <connect gate="DATA" pin="BUS_SPI_SCK" pad="149 151"/>
-<connect gate="DATA" pin="COM_USART_CLK" pad="141 143"/>
-<connect gate="DATA" pin="COM_USART_IRQ" pad="145 147"/>
-<connect gate="DATA" pin="COM_USART_RX" pad="137 139"/>
-<connect gate="DATA" pin="COM_USART_TX" pad="133 135"/>
+<connect gate="DATA" pin="COM_SPI_CS" pad="145 147"/>
+<connect gate="DATA" pin="COM_SPI_MISO" pad="137 139"/>
+<connect gate="DATA" pin="COM_SPI_MOSI" pad="141 143"/>
+<connect gate="DATA" pin="COM_SPI_SCK" pad="133 135"/>
 <connect gate="DATA" pin="CTRL_!RESET" pad="165 167"/>
 <connect gate="DATA" pin="CTRL_SYNC" pad="169 171"/>
 <connect gate="GPIO" pin="GPIO-0" pad="81 83"/>
@@ -1341,10 +1341,10 @@
 <connect gate="DATA" pin="BUS_SPI_MISO" pad="153 155"/>
 <connect gate="DATA" pin="BUS_SPI_MOSI" pad="157 159"/>
 <connect gate="DATA" pin="BUS_SPI_SCK" pad="149 151"/>
-<connect gate="DATA" pin="COM_USART_CLK" pad="141 143"/>
-<connect gate="DATA" pin="COM_USART_IRQ" pad="145 147"/>
-<connect gate="DATA" pin="COM_USART_RX" pad="137 139"/>
-<connect gate="DATA" pin="COM_USART_TX" pad="133 135"/>
+<connect gate="DATA" pin="COM_SPI_CS" pad="145 147"/>
+<connect gate="DATA" pin="COM_SPI_MISO" pad="137 139"/>
+<connect gate="DATA" pin="COM_SPI_MOSI" pad="141 143"/>
+<connect gate="DATA" pin="COM_SPI_SCK" pad="133 135"/>
 <connect gate="DATA" pin="CTRL_!RESET" pad="165 167"/>
 <connect gate="DATA" pin="CTRL_SYNC" pad="169 171"/>
 <connect gate="GPIO" pin="GPIO-0" pad="81 83"/>
