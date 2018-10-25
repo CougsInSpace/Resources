@@ -2024,6 +2024,7 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="REV" value="1.0.0"/>
 </attributes>
 <variantdefs>
+<variantdef name="EPS Test"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -2374,7 +2375,7 @@ Page 2: Filters, Connectors</text>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="LOW_INT" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
@@ -2385,7 +2386,7 @@ Page 2: Filters, Connectors</text>
 <junction x="111.76" y="144.78"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="LOW_OUT" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="144.78" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
@@ -2397,7 +2398,7 @@ Page 2: Filters, Connectors</text>
 <junction x="139.7" y="144.78"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="BAND_INT0" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
@@ -2408,7 +2409,7 @@ Page 2: Filters, Connectors</text>
 <junction x="111.76" y="106.68"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="HIGH_OUT" class="0">
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="68.58" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
@@ -2420,7 +2421,7 @@ Page 2: Filters, Connectors</text>
 <junction x="139.7" y="68.58"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="HIGH_INT" class="0">
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="68.58" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
@@ -2485,7 +2486,7 @@ Page 2: Filters, Connectors</text>
 <pinref part="SUPPLY10" gate="G$1" pin="PGND"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="BAND_OUT" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="106.68" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
@@ -2497,7 +2498,7 @@ Page 2: Filters, Connectors</text>
 <junction x="195.58" y="106.68"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="BAND_INT2" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
@@ -2508,7 +2509,7 @@ Page 2: Filters, Connectors</text>
 <junction x="167.64" y="106.68"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="BAND_INT1" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
@@ -2519,28 +2520,28 @@ Page 2: Filters, Connectors</text>
 <junction x="139.7" y="106.68"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="HIGH_IN" class="0">
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="SW3" gate="G$1" pin="1-B"/>
 <wire x1="96.52" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="BAND_IN" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="SW2" gate="G$1" pin="1-B"/>
 <wire x1="96.52" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="LOW_IN" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="SW1" gate="G$1" pin="1-B"/>
 <wire x1="96.52" y1="144.78" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="INPUT" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="CENTER"/>
 <wire x1="55.88" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
@@ -2557,7 +2558,7 @@ Page 2: Filters, Connectors</text>
 <wire x1="68.58" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="OUTPUT" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="CENTER"/>
 <pinref part="SW2" gate="G$1" pin="COM-B"/>
