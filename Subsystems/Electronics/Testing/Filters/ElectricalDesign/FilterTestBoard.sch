@@ -2043,13 +2043,21 @@ Last character is an incremented letter for each variant of the same value and p
 <part name="SW1" library="CougsInSpace-Switches" deviceset="SWITCH-DPDT" device="-100DP1T1B1M2QE"/>
 <part name="SW2" library="CougsInSpace-Switches" deviceset="SWITCH-DPDT" device="-100DP1T1B1M2QE"/>
 <part name="SW3" library="CougsInSpace-Switches" deviceset="SWITCH-DPDT" device="-100DP1T1B1M2QE"/>
-<part name="R1" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
-<part name="R2" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
+<part name="R1" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+</part>
+<part name="R2" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+</part>
 <part name="C1" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%"/>
 <part name="C2" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%"/>
 <part name="J2" library="CougsInSpace-Connectors" deviceset="COAX" device="-BNC-T-R"/>
-<part name="R3" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
-<part name="R4" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
+<part name="R3" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+</part>
+<part name="R4" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+</part>
 <part name="C3" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%"/>
 <part name="C4" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%"/>
 <part name="C5" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%"/>
@@ -2206,11 +2214,11 @@ Page 2: Filters, Connectors</text>
 <attribute name="SHEET" x="257.81" y="1.27" size="3.81" layer="94" ratio="15" align="bottom-right"/>
 <attribute name="TITLE" x="227.33" y="20.32" size="3.81" layer="94" ratio="15" align="bottom-right"/>
 </instance>
-<instance part="J1" gate="G$1" x="50.8" y="121.92" smashed="yes" rot="MR0">
-<attribute name="NAME" x="50.8" y="125.476" size="1.27" layer="95" rot="MR0" align="center"/>
-<attribute name="VALUE" x="50.8" y="118.364" size="1.27" layer="96" rot="MR0" align="center"/>
-<attribute name="SKU" x="50.8" y="116.84" size="1.27" layer="96" rot="MR0" align="center"/>
-<attribute name="PACKAGE" x="50.8" y="115.316" size="1.27" layer="96" rot="MR0" align="center"/>
+<instance part="J1" gate="G$1" x="48.26" y="114.3" smashed="yes" rot="MR0">
+<attribute name="NAME" x="48.26" y="117.856" size="1.27" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="48.26" y="110.744" size="1.27" layer="96" rot="MR0" align="center"/>
+<attribute name="SKU" x="48.26" y="109.22" size="1.27" layer="96" rot="MR0" align="center"/>
+<attribute name="PACKAGE" x="48.26" y="107.696" size="1.27" layer="96" rot="MR0" align="center"/>
 </instance>
 <instance part="SW1" gate="G$1" x="81.28" y="144.78" smashed="yes">
 <attribute name="VALUE" x="81.28" y="140.462" size="1.27" layer="96" align="center"/>
@@ -2259,11 +2267,11 @@ Page 2: Filters, Connectors</text>
 <attribute name="VOLTAGE" x="142.494" y="133.604" size="1.27" layer="97" align="center-left"/>
 <attribute name="TEMP" x="142.494" y="132.08" size="1.27" layer="97" align="center-left"/>
 </instance>
-<instance part="J2" gate="G$1" x="50.8" y="104.14" smashed="yes" rot="MR0">
-<attribute name="NAME" x="50.8" y="107.696" size="1.27" layer="95" rot="MR0" align="center"/>
-<attribute name="VALUE" x="50.8" y="100.584" size="1.27" layer="96" rot="MR0" align="center"/>
-<attribute name="SKU" x="50.8" y="99.06" size="1.27" layer="96" rot="MR0" align="center"/>
-<attribute name="PACKAGE" x="50.8" y="97.536" size="1.27" layer="96" rot="MR0" align="center"/>
+<instance part="J2" gate="G$1" x="48.26" y="99.06" smashed="yes" rot="MR0">
+<attribute name="NAME" x="48.26" y="102.616" size="1.27" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="48.26" y="95.504" size="1.27" layer="96" rot="MR0" align="center"/>
+<attribute name="SKU" x="48.26" y="93.98" size="1.27" layer="96" rot="MR0" align="center"/>
+<attribute name="PACKAGE" x="48.26" y="92.456" size="1.27" layer="96" rot="MR0" align="center"/>
 </instance>
 <instance part="R3" gate="G$1" x="101.6" y="106.68" smashed="yes">
 <attribute name="NAME" x="100.33" y="108.712" size="1.27" layer="95" align="center"/>
@@ -2329,8 +2337,8 @@ Page 2: Filters, Connectors</text>
 <attribute name="TEMP" x="140.97" y="55.88" size="1.27" layer="97" align="center-left"/>
 <attribute name="SKU" x="140.97" y="60.452" size="1.27" layer="97" align="center-left"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="63.5" y="114.3" smashed="yes"/>
-<instance part="SUPPLY2" gate="G$1" x="63.5" y="96.52" smashed="yes"/>
+<instance part="SUPPLY1" gate="G$1" x="60.96" y="106.68" smashed="yes"/>
+<instance part="SUPPLY2" gate="G$1" x="60.96" y="91.44" smashed="yes"/>
 <instance part="SUPPLY3" gate="G$1" x="139.7" y="127" smashed="yes"/>
 <instance part="SUPPLY4" gate="G$1" x="111.76" y="127" smashed="yes"/>
 <instance part="SUPPLY5" gate="G$1" x="111.76" y="88.9" smashed="yes"/>
@@ -2435,15 +2443,15 @@ Page 2: Filters, Connectors</text>
 <net name="PGND" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="SHIELD"/>
-<wire x1="55.88" y1="119.38" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="111.76" x2="60.96" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="PGND"/>
-<wire x1="63.5" y1="119.38" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="111.76" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="SHIELD"/>
-<wire x1="63.5" y1="101.6" x2="55.88" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="PGND"/>
-<wire x1="63.5" y1="99.06" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="93.98" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -2544,33 +2552,37 @@ Page 2: Filters, Connectors</text>
 <net name="INPUT" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="CENTER"/>
-<wire x1="55.88" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="121.92" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="COM-A"/>
-<wire x1="68.58" y1="147.32" x2="76.2" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="121.92" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
-<junction x="68.58" y="121.92"/>
-<pinref part="SW2" gate="G$1" pin="COM-A"/>
-<wire x1="68.58" y1="109.22" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="109.22" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
-<junction x="68.58" y="109.22"/>
-<pinref part="SW3" gate="G$1" pin="COM-A"/>
-<wire x1="68.58" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="114.3" x2="68.58" y2="142.24" width="0.1524" layer="91"/>
+<junction x="68.58" y="114.3"/>
+<wire x1="68.58" y1="114.3" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="SW3" gate="G$1" pin="COM-B"/>
+<wire x1="68.58" y1="104.14" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="COM-B"/>
+<wire x1="76.2" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
+<junction x="68.58" y="104.14"/>
+<pinref part="SW1" gate="G$1" pin="COM-B"/>
+<wire x1="76.2" y1="142.24" x2="68.58" y2="142.24" width="0.1524" layer="91"/>
+<label x="55.88" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUTPUT" class="0">
 <segment>
+<wire x1="71.12" y1="109.22" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
+<junction x="71.12" y="109.22"/>
+<wire x1="71.12" y1="99.06" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="109.22" x2="71.12" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="SW3" gate="G$1" pin="COM-A"/>
+<wire x1="76.2" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="COM-A"/>
+<wire x1="76.2" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="COM-A"/>
+<wire x1="71.12" y1="147.32" x2="76.2" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="CENTER"/>
-<pinref part="SW2" gate="G$1" pin="COM-B"/>
-<wire x1="55.88" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="SW3" gate="G$1" pin="COM-B"/>
-<wire x1="71.12" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="104.14" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
-<junction x="71.12" y="104.14"/>
-<wire x1="71.12" y1="104.14" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="COM-B"/>
-<wire x1="71.12" y1="142.24" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
+<junction x="71.12" y="99.06"/>
+<label x="55.88" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
