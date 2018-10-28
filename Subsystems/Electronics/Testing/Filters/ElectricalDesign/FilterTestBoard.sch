@@ -640,7 +640,7 @@ Space EE</text>
 <pad name="SHIELD" x="-2.54" y="0" drill="0.9"/>
 <pad name="MOUNTINGPOST@2" x="5.08" y="5.08" drill="2"/>
 <pad name="MOUNTINGPOST@1" x="-5.08" y="5.08" drill="2"/>
-<text x="-0.1" y="-1.8" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.8" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <wire x1="-7.35" y1="-1" x2="7.35" y2="-1" width="0.15" layer="51"/>
 <wire x1="-4.8" y1="33.9" x2="4.8" y2="33.9" width="0.15" layer="51"/>
 <wire x1="-4.8" y1="33.9" x2="-4.8" y2="21.9" width="0.15" layer="51"/>
@@ -662,7 +662,6 @@ Space EE</text>
 <wire x1="7.6" y1="-1.25" x2="7.6" y2="11.65" width="0.15" layer="21"/>
 <wire x1="7.6" y1="11.65" x2="-7.6" y2="11.65" width="0.15" layer="21"/>
 <wire x1="-7.6" y1="11.65" x2="-7.6" y2="-1.25" width="0.15" layer="21"/>
-<wire x1="-7.6" y1="11.65" x2="7.6" y2="11.65" width="0.15" layer="39"/>
 <wire x1="7.6" y1="11.65" x2="7.6" y2="-1.25" width="0.15" layer="39"/>
 <wire x1="7.6" y1="-1.25" x2="-7.6" y2="-1.25" width="0.15" layer="39"/>
 <wire x1="-7.6" y1="-1.25" x2="-7.6" y2="11.65" width="0.15" layer="39"/>
@@ -674,6 +673,15 @@ Space EE</text>
 <wire x1="-6.9" y1="-1" x2="6.9" y2="-1" width="0.15" layer="40"/>
 <wire x1="6.9" y1="-1" x2="6.9" y2="6.9" width="0.15" layer="40"/>
 <wire x1="6.9" y1="6.9" x2="-6.9" y2="6.9" width="0.15" layer="40"/>
+<wire x1="-7.6" y1="11.65" x2="-5.5" y2="11.65" width="0.15" layer="39"/>
+<wire x1="-5.5" y1="11.65" x2="-5.5" y2="21.9" width="0.15" layer="39"/>
+<wire x1="-5.5" y1="21.9" x2="-4.8" y2="21.9" width="0.15" layer="39"/>
+<wire x1="-4.8" y1="21.9" x2="-4.8" y2="33.9" width="0.15" layer="39"/>
+<wire x1="-4.8" y1="33.9" x2="4.8" y2="33.9" width="0.15" layer="39"/>
+<wire x1="4.8" y1="33.9" x2="4.8" y2="21.9" width="0.15" layer="39"/>
+<wire x1="4.8" y1="21.9" x2="5.5" y2="21.9" width="0.15" layer="39"/>
+<wire x1="5.5" y1="21.9" x2="5.5" y2="11.65" width="0.15" layer="39"/>
+<wire x1="5.5" y1="11.65" x2="7.6" y2="11.65" width="0.15" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -755,7 +763,7 @@ Space EE</text>
 <wire x1="5.71" y1="6.35" x2="5.71" y2="-6.35" width="0.15" layer="21"/>
 <wire x1="5.71" y1="-6.35" x2="-5.71" y2="-6.35" width="0.15" layer="21"/>
 <wire x1="-5.71" y1="-6.35" x2="-5.71" y2="6.35" width="0.15" layer="21"/>
-<text x="-2.9" y="6.6" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="0" y="7.4" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <wire x1="-5.96" y1="6.6" x2="5.96" y2="6.6" width="0.15" layer="21"/>
 <wire x1="5.96" y1="6.6" x2="5.96" y2="-6.6" width="0.15" layer="21"/>
 <wire x1="5.96" y1="-6.6" x2="-5.96" y2="-6.6" width="0.15" layer="21"/>
@@ -1064,6 +1072,13 @@ Space EE</text>
 <attribute name="TEMP" value="25ppm/°C" constant="no"/>
 <attribute name="VALUE" value="158kΩ 0.1%" constant="no"/>
 </technology>
+<technology name="-158R">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="POWER" value="1/10W" constant="no"/>
+<attribute name="SKU" value="21-1580" constant="no"/>
+<attribute name="TEMP" value="100ppm/°C" constant="no"/>
+<attribute name="VALUE" value="158Ω 1%" constant="no"/>
+</technology>
 <technology name="-180K">
 <attribute name="PACKAGE" value="1608" constant="no"/>
 <attribute name="POWER" value="1/10W" constant="no"/>
@@ -1348,6 +1363,13 @@ Space EE</text>
 <attribute name="SKU" value="21-1583" constant="no"/>
 <attribute name="TEMP" value="25ppm/°C" constant="no"/>
 <attribute name="VALUE" value="158kΩ 0.1%" constant="no"/>
+</technology>
+<technology name="-158R">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="POWER" value="1/10W" constant="no"/>
+<attribute name="SKU" value="21-1580" constant="no"/>
+<attribute name="TEMP" value="100ppm/°C" constant="no"/>
+<attribute name="VALUE" value="158Ω 1%" constant="no"/>
 </technology>
 <technology name="-180K">
 <attribute name="PACKAGE" value="1608" constant="no"/>
@@ -1714,6 +1736,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="10pF 5%"/>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
+<technology name="-10UF">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-106A"/>
+<attribute name="TEMP" value="X5R"/>
+<attribute name="VALUE" value="10µF 10%"/>
+<attribute name="VOLTAGE" value="6.3V"/>
+</technology>
 <technology name="-15PF">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="11-150A"/>
@@ -1864,6 +1893,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="TEMP" value="C0G"/>
 <attribute name="VALUE" value="10pF 5%"/>
 <attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="-10UF">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-106A"/>
+<attribute name="TEMP" value="X5R"/>
+<attribute name="VALUE" value="10µF 10%"/>
+<attribute name="VOLTAGE" value="6.3V"/>
 </technology>
 <technology name="-15PF">
 <attribute name="PACKAGE" value="1608"/>
@@ -2049,21 +2085,31 @@ Last character is an incremented letter for each variant of the same value and p
 <part name="R2" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
 <variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
 </part>
-<part name="C1" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%"/>
-<part name="C2" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%"/>
+<part name="C1" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%">
+<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+</part>
+<part name="C2" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%">
+<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+</part>
 <part name="J2" library="CougsInSpace-Connectors" deviceset="COAX" device="-BNC-T-R"/>
-<part name="R3" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+<part name="C3" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%">
+<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
 </part>
-<part name="R4" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+<part name="C4" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%">
+<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
 </part>
-<part name="C3" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%"/>
-<part name="C4" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%"/>
-<part name="C5" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%"/>
-<part name="C6" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%"/>
-<part name="R5" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
-<part name="R6" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
+<part name="C5" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%">
+<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+</part>
+<part name="C6" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%">
+<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+</part>
+<part name="R5" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158R" value="158Ω 1%"/>
+</part>
+<part name="R6" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158R" value="158Ω 1%"/>
+</part>
 <part name="SUPPLY1" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="SUPPLY2" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="SUPPLY3" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
@@ -2072,12 +2118,26 @@ Last character is an incremented letter for each variant of the same value and p
 <part name="SUPPLY6" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="SUPPLY7" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="SUPPLY8" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
-<part name="C7" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%"/>
-<part name="C8" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%"/>
-<part name="R7" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
-<part name="R8" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
+<part name="C7" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%">
+<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+</part>
+<part name="C8" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%">
+<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+</part>
 <part name="SUPPLY9" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="SUPPLY10" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
+<part name="R3" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158R" value="158Ω 1%"/>
+</part>
+<part name="R4" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158R" value="158Ω 1%"/>
+</part>
+<part name="R7" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+</part>
+<part name="R8" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
+<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -2273,22 +2333,6 @@ Page 2: Filters, Connectors</text>
 <attribute name="SKU" x="48.26" y="93.98" size="1.27" layer="96" rot="MR0" align="center"/>
 <attribute name="PACKAGE" x="48.26" y="92.456" size="1.27" layer="96" rot="MR0" align="center"/>
 </instance>
-<instance part="R3" gate="G$1" x="101.6" y="106.68" smashed="yes">
-<attribute name="NAME" x="100.33" y="108.712" size="1.27" layer="95" align="center"/>
-<attribute name="VALUE" x="100.076" y="104.648" size="1.27" layer="96" align="center-right"/>
-<attribute name="PACKAGE" x="100.076" y="103.124" size="1.27" layer="97" align="center-right"/>
-<attribute name="POWER" x="100.584" y="104.648" size="1.27" layer="97" align="center-left"/>
-<attribute name="TEMP" x="100.584" y="103.124" size="1.27" layer="97" align="center-left"/>
-<attribute name="SKU" x="100.33" y="101.6" size="1.27" layer="97" align="center"/>
-</instance>
-<instance part="R4" gate="G$1" x="129.54" y="106.68" smashed="yes">
-<attribute name="NAME" x="128.27" y="108.712" size="1.27" layer="95" align="center"/>
-<attribute name="VALUE" x="128.016" y="104.648" size="1.27" layer="96" align="center-right"/>
-<attribute name="PACKAGE" x="128.016" y="103.124" size="1.27" layer="97" align="center-right"/>
-<attribute name="POWER" x="128.524" y="104.648" size="1.27" layer="97" align="center-left"/>
-<attribute name="TEMP" x="128.524" y="103.124" size="1.27" layer="97" align="center-left"/>
-<attribute name="SKU" x="128.27" y="101.6" size="1.27" layer="97" align="center"/>
-</instance>
 <instance part="C3" gate="G$1" x="111.76" y="96.52" smashed="yes">
 <attribute name="NAME" x="114.554" y="101.6" size="1.27" layer="95" align="center-left"/>
 <attribute name="VALUE" x="114.554" y="100.076" size="1.27" layer="96" align="center-left"/>
@@ -2361,6 +2405,24 @@ Page 2: Filters, Connectors</text>
 <attribute name="VOLTAGE" x="183.896" y="101.854" size="1.27" layer="97" align="center-right"/>
 <attribute name="TEMP" x="184.404" y="101.854" size="1.27" layer="97" align="center-left"/>
 </instance>
+<instance part="SUPPLY9" gate="G$1" x="167.64" y="88.9" smashed="yes"/>
+<instance part="SUPPLY10" gate="G$1" x="195.58" y="88.9" smashed="yes"/>
+<instance part="R3" gate="G$1" x="101.6" y="106.68" smashed="yes">
+<attribute name="NAME" x="100.33" y="108.712" size="1.27" layer="95" align="center"/>
+<attribute name="VALUE" x="100.076" y="104.648" size="1.27" layer="96" align="center-right"/>
+<attribute name="PACKAGE" x="100.076" y="103.124" size="1.27" layer="97" align="center-right"/>
+<attribute name="POWER" x="100.584" y="104.648" size="1.27" layer="97" align="center-left"/>
+<attribute name="TEMP" x="100.584" y="103.124" size="1.27" layer="97" align="center-left"/>
+<attribute name="SKU" x="100.33" y="101.6" size="1.27" layer="97" align="center"/>
+</instance>
+<instance part="R4" gate="G$1" x="129.54" y="106.68" smashed="yes">
+<attribute name="NAME" x="128.27" y="108.712" size="1.27" layer="95" align="center"/>
+<attribute name="VALUE" x="128.016" y="104.648" size="1.27" layer="96" align="center-right"/>
+<attribute name="PACKAGE" x="128.016" y="103.124" size="1.27" layer="97" align="center-right"/>
+<attribute name="POWER" x="128.524" y="104.648" size="1.27" layer="97" align="center-left"/>
+<attribute name="TEMP" x="128.524" y="103.124" size="1.27" layer="97" align="center-left"/>
+<attribute name="SKU" x="128.27" y="101.6" size="1.27" layer="97" align="center"/>
+</instance>
 <instance part="R7" gate="G$1" x="167.64" y="96.52" smashed="yes">
 <attribute name="NAME" x="168.91" y="101.6" size="1.27" layer="95" align="center-left"/>
 <attribute name="VALUE" x="168.91" y="100.076" size="1.27" layer="96" align="center-left"/>
@@ -2377,8 +2439,6 @@ Page 2: Filters, Connectors</text>
 <attribute name="TEMP" x="196.85" y="93.98" size="1.27" layer="97" align="center-left"/>
 <attribute name="SKU" x="196.85" y="98.552" size="1.27" layer="97" align="center-left"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="167.64" y="88.9" smashed="yes"/>
-<instance part="SUPPLY10" gate="G$1" x="195.58" y="88.9" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -2408,13 +2468,13 @@ Page 2: Filters, Connectors</text>
 </net>
 <net name="BAND_INT0" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="106.68" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="106.68" x2="124.46" y2="106.68" width="0.1524" layer="91"/>
 <junction x="111.76" y="106.68"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="HIGH_OUT" class="0">
@@ -2484,48 +2544,48 @@ Page 2: Filters, Connectors</text>
 <pinref part="SUPPLY8" gate="G$1" pin="PGND"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="91.44" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="PGND"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="93.98" x2="195.58" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="G$1" pin="PGND"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="BAND_OUT" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="106.68" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="106.68" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="SW2" gate="G$1" pin="1-A"/>
 <wire x1="86.36" y1="111.76" x2="195.58" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="111.76" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
 <junction x="195.58" y="106.68"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="BAND_INT2" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="106.68" x2="167.64" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
 <junction x="167.64" y="106.68"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="BAND_INT1" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="106.68" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
 <junction x="139.7" y="106.68"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="HIGH_IN" class="0">
@@ -2537,9 +2597,9 @@ Page 2: Filters, Connectors</text>
 </net>
 <net name="BAND_IN" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="SW2" gate="G$1" pin="1-B"/>
 <wire x1="96.52" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="LOW_IN" class="0">
