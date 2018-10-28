@@ -355,7 +355,7 @@ Last character is an incremented letter for each variant of the same value and p
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="EPS Test"/>
+<variantdef name="0.1Hz/100Hz" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -545,61 +545,61 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="CougsInSpace-Capacitors" package="1608" value="1nF 10%" x="38" y="38" smashed="yes" rot="R270">
+<element name="C1" library="CougsInSpace-Capacitors" package="1608" value="10µF 10%" x="38" y="38" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.412" y="37.989" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="PACKAGE" value="1608" x="-0.1" y="-15.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SKU" value="11-102A" x="-0.1" y="-15.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TEMP" value="X7R" x="-0.1" y="-15.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-0.1" y="-15.34" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SKU" value="11-106A" x="-0.1" y="-15.34" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMP" value="X5R" x="-0.1" y="-15.34" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="-0.1" y="-15.34" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C2" library="CougsInSpace-Capacitors" package="1608" value="1nF 10%" x="34" y="38" smashed="yes" rot="R270">
+<element name="C2" library="CougsInSpace-Capacitors" package="1608" value="10µF 10%" x="34" y="38" smashed="yes" rot="R270">
 <attribute name="NAME" x="35.412" y="37.989" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="PACKAGE" value="1608" x="-20.61" y="22.76" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SKU" value="11-102A" x="-20.61" y="22.76" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TEMP" value="X7R" x="-20.61" y="22.76" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-20.61" y="22.76" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SKU" value="11-106A" x="-20.61" y="22.76" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMP" value="X5R" x="-20.61" y="22.76" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="-20.61" y="22.76" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C3" library="CougsInSpace-Capacitors" package="1608" value="1nF 10%" x="46" y="22" smashed="yes" rot="R270">
+<element name="C3" library="CougsInSpace-Capacitors" package="1608" value="10µF 10%" x="46" y="22" smashed="yes" rot="R270">
 <attribute name="NAME" x="47.412" y="21.989" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="PACKAGE" value="1608" x="-8.61" y="2.95" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SKU" value="11-102A" x="-8.61" y="2.95" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TEMP" value="X7R" x="-8.61" y="2.95" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-8.61" y="2.95" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SKU" value="11-106A" x="-8.61" y="2.95" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMP" value="X5R" x="-8.61" y="2.95" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="-8.61" y="2.95" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C4" library="CougsInSpace-Capacitors" package="1608" value="1nF 10%" x="42" y="22" smashed="yes" rot="R270">
+<element name="C4" library="CougsInSpace-Capacitors" package="1608" value="10µF 10%" x="42" y="22" smashed="yes" rot="R270">
 <attribute name="NAME" x="43.412" y="21.989" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="PACKAGE" value="1608" x="-12.61" y="-0.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SKU" value="11-102A" x="-12.61" y="-0.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TEMP" value="X7R" x="-12.61" y="-0.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-12.61" y="-0.86" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SKU" value="11-106A" x="-12.61" y="-0.86" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMP" value="X5R" x="-12.61" y="-0.86" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="-12.61" y="-0.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C5" library="CougsInSpace-Capacitors" package="1608" value="1nF 10%" x="39" y="9" smashed="yes" rot="R180">
+<element name="C5" library="CougsInSpace-Capacitors" package="1608" value="10µF 10%" x="39" y="9" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.989" y="10.588" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="1608" x="12.33" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-102A" x="12.33" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="12.33" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="12.33" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-106A" x="12.33" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X5R" x="12.33" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="12.33" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C6" library="CougsInSpace-Capacitors" package="1608" value="1nF 10%" x="35" y="9" smashed="yes" rot="R180">
+<element name="C6" library="CougsInSpace-Capacitors" package="1608" value="10µF 10%" x="35" y="9" smashed="yes" rot="R180">
 <attribute name="NAME" x="34.989" y="10.588" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="1608" x="4.52" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-102A" x="4.52" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="4.52" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="4.52" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-106A" x="4.52" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X5R" x="4.52" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="4.52" y="63.61" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C7" library="CougsInSpace-Capacitors" package="1608" value="1nF 10%" x="39" y="25" smashed="yes" rot="R180">
+<element name="C7" library="CougsInSpace-Capacitors" package="1608" value="10µF 10%" x="39" y="25" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.989" y="26.588" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="1608" x="4.71" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-102A" x="4.71" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="4.71" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="4.71" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-106A" x="4.71" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X5R" x="4.71" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="4.71" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C8" library="CougsInSpace-Capacitors" package="1608" value="1nF 10%" x="35" y="25" smashed="yes" rot="R180">
+<element name="C8" library="CougsInSpace-Capacitors" package="1608" value="10µF 10%" x="35" y="25" smashed="yes" rot="R180">
 <attribute name="NAME" x="34.989" y="26.588" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="1608" x="-3.1" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-102A" x="-3.1" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-3.1" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-3.1" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-106A" x="-3.1" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X5R" x="-3.1" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="-3.1" y="79.61" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="J1" library="CougsInSpace-Connectors" package="BNC-T-R" value="" x="12" y="23" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.8" y="22.9" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
@@ -611,33 +611,33 @@ design rules under a new name.</description>
 <attribute name="PACKAGE" value="BNC Female Right Angle" x="51.46" y="-15.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SKU" value="05-0003" x="51.46" y="-15.1" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R1" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="39" y="41" smashed="yes" rot="R180">
+<element name="R1" library="CougsInSpace-Resistors" package="1608" value="158kΩ 0.1%" x="39" y="41" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.989" y="42.588" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="1608" x="-2.91" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="1/10W" x="-2.91" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="21-0000" x="-2.91" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="-2.91" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/8W" x="-2.91" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="21-1583" x="-2.91" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="-2.91" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R2" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="35" y="41" smashed="yes" rot="R180">
+<element name="R2" library="CougsInSpace-Resistors" package="1608" value="158kΩ 0.1%" x="35" y="41" smashed="yes" rot="R180">
 <attribute name="NAME" x="34.989" y="42.588" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="1608" x="-10.72" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="1/10W" x="-10.72" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="21-0000" x="-10.72" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="-10.72" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/8W" x="-10.72" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="21-1583" x="-10.72" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="-10.72" y="95.61" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R5" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="38" y="6" smashed="yes" rot="R90">
+<element name="R5" library="CougsInSpace-Resistors" package="1608" value="158Ω 1%" x="38" y="6" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.588" y="6.011" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="PACKAGE" value="1608" x="96.42" y="21.24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POWER" value="1/10W" x="96.42" y="21.24" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SKU" value="21-0000" x="96.42" y="21.24" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="96.42" y="21.24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SKU" value="21-1580" x="96.42" y="21.24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="96.42" y="21.24" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R6" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="34" y="6" smashed="yes" rot="R90">
+<element name="R6" library="CougsInSpace-Resistors" package="1608" value="158Ω 1%" x="34" y="6" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.588" y="6.011" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="PACKAGE" value="1608" x="92.42" y="25.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POWER" value="1/10W" x="92.42" y="25.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SKU" value="21-0000" x="92.42" y="25.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="92.42" y="25.05" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SKU" value="21-1580" x="92.42" y="25.05" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="92.42" y="25.05" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="SW1" library="CougsInSpace-Switches" package="100DP1T1B1M2QE" value="" x="25" y="39" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.9" y="32.9" size="1.27" layer="25" font="vector" ratio="15" rot="R180"/>
@@ -651,33 +651,33 @@ design rules under a new name.</description>
 <attribute name="NAME" x="26.9" y="14.4" size="1.27" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="SKU" value="49-0003" x="69.45" y="51.45" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R3" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="47" y="25" smashed="yes" rot="R180">
+<element name="R3" library="CougsInSpace-Resistors" package="1608" value="158Ω 1%" x="47" y="25" smashed="yes" rot="R180">
 <attribute name="NAME" x="46.989" y="26.588" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="1608" x="47" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
 <attribute name="POWER" value="1/10W" x="47" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
-<attribute name="SKU" value="21-0000" x="47" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="47" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
+<attribute name="SKU" value="21-1580" x="47" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="47" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
 </element>
-<element name="R4" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="43" y="25" smashed="yes" rot="R180">
+<element name="R4" library="CougsInSpace-Resistors" package="1608" value="158Ω 1%" x="43" y="25" smashed="yes" rot="R180">
 <attribute name="NAME" x="42.989" y="26.588" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="1608" x="43" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
 <attribute name="POWER" value="1/10W" x="43" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
-<attribute name="SKU" value="21-0000" x="43" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="43" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
+<attribute name="SKU" value="21-1580" x="43" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="43" y="25" size="1.27" layer="27" ratio="14" rot="R180" display="off"/>
 </element>
-<element name="R7" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="38" y="22" smashed="yes" rot="R90">
+<element name="R7" library="CougsInSpace-Resistors" package="1608" value="158kΩ 0.1%" x="38" y="22" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.588" y="22.011" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="PACKAGE" value="1608" x="38" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
-<attribute name="POWER" value="1/10W" x="38" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
-<attribute name="SKU" value="21-0000" x="38" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="38" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
+<attribute name="POWER" value="1/8W" x="38" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
+<attribute name="SKU" value="21-1583" x="38" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="38" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
 </element>
-<element name="R8" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="34" y="22" smashed="yes" rot="R90">
+<element name="R8" library="CougsInSpace-Resistors" package="1608" value="158kΩ 0.1%" x="34" y="22" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.588" y="22.011" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="PACKAGE" value="1608" x="34" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
-<attribute name="POWER" value="1/10W" x="34" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
-<attribute name="SKU" value="21-0000" x="34" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="34" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
+<attribute name="POWER" value="1/8W" x="34" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
+<attribute name="SKU" value="21-1583" x="34" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="34" y="22" size="1.27" layer="27" ratio="14" rot="R90" display="off"/>
 </element>
 </elements>
 <signals>

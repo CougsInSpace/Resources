@@ -2060,7 +2060,7 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="REV" value="1.0.0"/>
 </attributes>
 <variantdefs>
-<variantdef name="EPS Test"/>
+<variantdef name="0.1Hz/100Hz" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -2080,35 +2080,35 @@ Last character is an incremented letter for each variant of the same value and p
 <part name="SW2" library="CougsInSpace-Switches" deviceset="SWITCH-DPDT" device="-100DP1T1B1M2QE"/>
 <part name="SW3" library="CougsInSpace-Switches" deviceset="SWITCH-DPDT" device="-100DP1T1B1M2QE"/>
 <part name="R1" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+<variant name="0.1Hz/100Hz" technology="-158K" value="158kΩ 0.1%"/>
 </part>
 <part name="R2" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+<variant name="0.1Hz/100Hz" technology="-158K" value="158kΩ 0.1%"/>
 </part>
 <part name="C1" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%">
-<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+<variant name="0.1Hz/100Hz" technology="-10UF" value="10µF 10%"/>
 </part>
 <part name="C2" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%">
-<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+<variant name="0.1Hz/100Hz" technology="-10UF" value="10µF 10%"/>
 </part>
 <part name="J2" library="CougsInSpace-Connectors" deviceset="COAX" device="-BNC-T-R"/>
 <part name="C3" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%">
-<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+<variant name="0.1Hz/100Hz" technology="-10UF" value="10µF 10%"/>
 </part>
 <part name="C4" library="CougsInSpace-Capacitors" deviceset="CAP-V" device="-1608" technology="-1NF" value="1nF 10%">
-<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+<variant name="0.1Hz/100Hz" technology="-10UF" value="10µF 10%"/>
 </part>
 <part name="C5" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%">
-<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+<variant name="0.1Hz/100Hz" technology="-10UF" value="10µF 10%"/>
 </part>
 <part name="C6" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%">
-<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+<variant name="0.1Hz/100Hz" technology="-10UF" value="10µF 10%"/>
 </part>
 <part name="R5" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158R" value="158Ω 1%"/>
+<variant name="0.1Hz/100Hz" technology="-158R" value="158Ω 1%"/>
 </part>
 <part name="R6" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158R" value="158Ω 1%"/>
+<variant name="0.1Hz/100Hz" technology="-158R" value="158Ω 1%"/>
 </part>
 <part name="SUPPLY1" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="SUPPLY2" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
@@ -2119,24 +2119,24 @@ Last character is an incremented letter for each variant of the same value and p
 <part name="SUPPLY7" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="SUPPLY8" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="C7" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%">
-<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+<variant name="0.1Hz/100Hz" technology="-10UF" value="10µF 10%"/>
 </part>
 <part name="C8" library="CougsInSpace-Capacitors" deviceset="CAP-H" device="-1608" technology="-1NF" value="1nF 10%">
-<variant name="EPS Test" technology="-10UF" value="10µF 10%"/>
+<variant name="0.1Hz/100Hz" technology="-10UF" value="10µF 10%"/>
 </part>
 <part name="SUPPLY9" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="SUPPLY10" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="R3" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158R" value="158Ω 1%"/>
+<variant name="0.1Hz/100Hz" technology="-158R" value="158Ω 1%"/>
 </part>
 <part name="R4" library="CougsInSpace-Resistors" deviceset="RES-H" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158R" value="158Ω 1%"/>
+<variant name="0.1Hz/100Hz" technology="-158R" value="158Ω 1%"/>
 </part>
 <part name="R7" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+<variant name="0.1Hz/100Hz" technology="-158K" value="158kΩ 0.1%"/>
 </part>
 <part name="R8" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ">
-<variant name="EPS Test" technology="-158K" value="158kΩ 0.1%"/>
+<variant name="0.1Hz/100Hz" technology="-158K" value="158kΩ 0.1%"/>
 </part>
 </parts>
 <sheets>
@@ -2227,6 +2227,8 @@ Output 1MΩ</text>
 <wire x1="137.16" y1="25.4" x2="0" y2="25.4" width="0.254" layer="94"/>
 <text x="1.27" y="24.13" size="1.778" layer="97" align="top-left">Page 1: Block Diagram
 Page 2: Filters, Connectors</text>
+<text x="228.6" y="27.94" size="1.778" layer="97" align="top-left">&gt;ASSEMBLY_VARIANT</text>
+<text x="218.44" y="27.94" size="1.778" layer="97" align="top-left">Variant: </text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -2263,6 +2265,8 @@ Page 2: Filters, Connectors</text>
 <wire x1="88.9" y1="45.72" x2="88.9" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
 <text x="139.7" y="114.3" size="1.778" layer="97">Band Pass Filter</text>
 <text x="111.76" y="76.2" size="1.778" layer="97">High Pass Filter</text>
+<text x="228.6" y="27.94" size="1.778" layer="97" align="top-left">&gt;ASSEMBLY_VARIANT</text>
+<text x="218.44" y="27.94" size="1.778" layer="97" align="top-left">Variant: </text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
