@@ -341,6 +341,23 @@
 <wire x1="-19.15" y1="17.575" x2="-19.15" y2="-17.575" width="0.15" layer="21"/>
 <text x="0" y="18.1" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="MOUNTING_HOLE-M2_NUT">
+<description>&lt;h3&gt;Mounting Nut - M2&lt;/h3&gt;</description>
+<pad name="1" x="0" y="0" drill="3" diameter="5.3" thermals="no"/>
+<text x="0" y="3.5" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="3" width="0.15" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.15" layer="22"/>
+<circle x="0" y="0" radius="3" width="0.15" layer="39"/>
+<circle x="0" y="0" radius="3" width="0.15" layer="40"/>
+<pad name="V1" x="2.1" y="0" drill="0.45"/>
+<pad name="V2" x="1.484925" y="1.484925" drill="0.45"/>
+<pad name="V3" x="0" y="2.1" drill="0.45"/>
+<pad name="V4" x="-1.484925" y="1.484925" drill="0.45"/>
+<pad name="V5" x="-2.1" y="0" drill="0.45"/>
+<pad name="V6" x="-1.484925" y="-1.484925" drill="0.45"/>
+<pad name="V7" x="0" y="-2.1" drill="0.45"/>
+<pad name="V8" x="1.484925" y="-1.484925" drill="0.45"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNTING_HOLE">
@@ -468,6 +485,17 @@
 <technology name="">
 <attribute name="SKU" value="48-003x"/>
 <attribute name="VALUE" value="M2"/>
+</technology>
+</technologies>
+</device>
+<device name="-M2_NUT" package="MOUNTING_HOLE-M2_NUT">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="1 V1 V2 V3 V4 V5 V6 V7 V8"/>
+</connects>
+<technologies>
+<technology name="-1MM">
+<attribute name="SKU" value="48-0074" constant="no"/>
+<attribute name="VALUE" value="M2 Nut - 1mm" constant="no"/>
 </technology>
 </technologies>
 </device>
