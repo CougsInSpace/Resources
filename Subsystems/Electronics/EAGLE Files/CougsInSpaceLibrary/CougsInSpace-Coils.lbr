@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -487,6 +487,13 @@ Last character is an incremented letter for each variant of the same value and p
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-1UH">
+<attribute name="CURRENT" value="22A" constant="no"/>
+<attribute name="DCR" value="5.00mΩ" constant="no"/>
+<attribute name="PACKAGE" value="7575" constant="no"/>
+<attribute name="SKU" value="34-102A" constant="no"/>
+<attribute name="VALUE" value="1.0µH 20%" constant="no"/>
+</technology>
 <technology name="-3.3UH">
 <attribute name="CURRENT" value="10A" constant="no"/>
 <attribute name="DCR" value="21.45mΩ" constant="no"/>
@@ -496,7 +503,7 @@ Last character is an incremented letter for each variant of the same value and p
 </technology>
 <technology name="-4.7UH">
 <attribute name="CURRENT" value="9A" constant="no"/>
-<attribute name="DCR" value="30mΩ" constant="no"/>
+<attribute name="DCR" value="30.00mΩ" constant="no"/>
 <attribute name="PACKAGE" value="7575" constant="no"/>
 <attribute name="SKU" value="34-472A" constant="no"/>
 <attribute name="VALUE" value="4.7µH 20%" constant="no"/>
@@ -547,6 +554,13 @@ Last character is an incremented letter for each variant of the same value and p
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-1UH">
+<attribute name="CURRENT" value="22A" constant="no"/>
+<attribute name="DCR" value="5.00mΩ" constant="no"/>
+<attribute name="PACKAGE" value="7575" constant="no"/>
+<attribute name="SKU" value="34-102A" constant="no"/>
+<attribute name="VALUE" value="1.0µH 20%" constant="no"/>
+</technology>
 <technology name="-3.3UH">
 <attribute name="CURRENT" value="10A" constant="no"/>
 <attribute name="DCR" value="21.45mΩ" constant="no"/>
@@ -556,7 +570,7 @@ Last character is an incremented letter for each variant of the same value and p
 </technology>
 <technology name="-4.7UH">
 <attribute name="CURRENT" value="9A" constant="no"/>
-<attribute name="DCR" value="30mΩ" constant="no"/>
+<attribute name="DCR" value="30.00mΩ" constant="no"/>
 <attribute name="PACKAGE" value="7575" constant="no"/>
 <attribute name="SKU" value="34-472A" constant="no"/>
 <attribute name="VALUE" value="4.7µH 20%" constant="no"/>
