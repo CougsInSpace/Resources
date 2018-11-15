@@ -565,6 +565,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="560pF 1%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="-56PF">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="SKU" value="11-560A" constant="no"/>
+<attribute name="TEMP" value="C0G" constant="no"/>
+<attribute name="VALUE" value="56pF 2%" constant="no"/>
+<attribute name="VOLTAGE" value="50V" constant="no"/>
+</technology>
 <technology name="-6.8NF">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="11-682A"/>
@@ -729,6 +736,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="TEMP" value="C0G"/>
 <attribute name="VALUE" value="560pF 1%"/>
 <attribute name="VOLTAGE" value="50V"/>
+</technology>
+<technology name="-56PF">
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="SKU" value="11-560A" constant="no"/>
+<attribute name="TEMP" value="C0G" constant="no"/>
+<attribute name="VALUE" value="56pF 2%" constant="no"/>
+<attribute name="VOLTAGE" value="50V" constant="no"/>
 </technology>
 <technology name="-6.8NF">
 <attribute name="PACKAGE" value="1608"/>

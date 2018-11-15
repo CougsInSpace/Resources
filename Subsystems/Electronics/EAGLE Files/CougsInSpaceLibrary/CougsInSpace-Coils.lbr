@@ -531,6 +531,13 @@ Last character is an incremented letter for each variant of the same value and p
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-22NH">
+<attribute name="CURRENT" value="700mA" constant="no"/>
+<attribute name="DCR" value="190mΩ" constant="no"/>
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="SKU" value="31-220A" constant="no"/>
+<attribute name="VALUE" value="22nH 2%" constant="no"/>
+</technology>
 <technology name="-4.7UH">
 <attribute name="CURRENT" value="620mA" constant="no"/>
 <attribute name="DCR" value="440mΩ" constant="no"/>
@@ -598,6 +605,13 @@ Last character is an incremented letter for each variant of the same value and p
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-22NH">
+<attribute name="CURRENT" value="700mA" constant="no"/>
+<attribute name="DCR" value="190mΩ" constant="no"/>
+<attribute name="PACKAGE" value="1608" constant="no"/>
+<attribute name="SKU" value="31-220A" constant="no"/>
+<attribute name="VALUE" value="22nH 2%" constant="no"/>
+</technology>
 <technology name="-4.7UH">
 <attribute name="CURRENT" value="620mA" constant="no"/>
 <attribute name="DCR" value="440mΩ" constant="no"/>
