@@ -263,32 +263,32 @@
 </connects>
 <technologies>
 <technology name="-BLU">
-<attribute name="CURRENT" value="20mA" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="63-0004" constant="no"/>
-<attribute name="VALUE" value="Blue" constant="no"/>
-<attribute name="VF" value="3.3V" constant="no"/>
+<attribute name="CURRENT" value="20mA"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="63-0004"/>
+<attribute name="VALUE" value="Blue"/>
+<attribute name="VF" value="3.3V"/>
 </technology>
 <technology name="-GRN">
-<attribute name="CURRENT" value="20mA" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="63-0001" constant="no"/>
-<attribute name="VALUE" value="Green" constant="no"/>
-<attribute name="VF" value="2.2V" constant="no"/>
+<attribute name="CURRENT" value="20mA"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="63-0001"/>
+<attribute name="VALUE" value="Green"/>
+<attribute name="VF" value="2.2V"/>
 </technology>
 <technology name="-RED">
-<attribute name="CURRENT" value="20mA" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="63-0002" constant="no"/>
-<attribute name="VALUE" value="Red" constant="no"/>
-<attribute name="VF" value="2V" constant="no"/>
+<attribute name="CURRENT" value="20mA"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="63-0002"/>
+<attribute name="VALUE" value="Red"/>
+<attribute name="VF" value="2V"/>
 </technology>
 <technology name="-YLW">
-<attribute name="CURRENT" value="20mA" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="63-0003" constant="no"/>
-<attribute name="VALUE" value="Yellow" constant="no"/>
-<attribute name="VF" value="2.1V" constant="no"/>
+<attribute name="CURRENT" value="20mA"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="63-0003"/>
+<attribute name="VALUE" value="Yellow"/>
+<attribute name="VF" value="2.1V"/>
 </technology>
 </technologies>
 </device>
@@ -307,32 +307,32 @@
 </connects>
 <technologies>
 <technology name="-BLU">
-<attribute name="CURRENT" value="20mA" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="63-0004" constant="no"/>
-<attribute name="VALUE" value="Blue" constant="no"/>
-<attribute name="VF" value="3.3V" constant="no"/>
+<attribute name="CURRENT" value="20mA"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="63-0004"/>
+<attribute name="VALUE" value="Blue"/>
+<attribute name="VF" value="3.3V"/>
 </technology>
 <technology name="-GRN">
-<attribute name="CURRENT" value="20mA" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="63-0001" constant="no"/>
-<attribute name="VALUE" value="Green" constant="no"/>
-<attribute name="VF" value="2.2V" constant="no"/>
+<attribute name="CURRENT" value="20mA"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="63-0001"/>
+<attribute name="VALUE" value="Green"/>
+<attribute name="VF" value="2.2V"/>
 </technology>
 <technology name="-RED">
-<attribute name="CURRENT" value="20mA" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="63-0002" constant="no"/>
-<attribute name="VALUE" value="Red" constant="no"/>
-<attribute name="VF" value="2V" constant="no"/>
+<attribute name="CURRENT" value="20mA"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="63-0002"/>
+<attribute name="VALUE" value="Red"/>
+<attribute name="VF" value="2V"/>
 </technology>
 <technology name="-YLW">
-<attribute name="CURRENT" value="20mA" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="63-0003" constant="no"/>
-<attribute name="VALUE" value="Yellow" constant="no"/>
-<attribute name="VF" value="2.1V" constant="no"/>
+<attribute name="CURRENT" value="20mA"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="63-0003"/>
+<attribute name="VALUE" value="Yellow"/>
+<attribute name="VF" value="2.1V"/>
 </technology>
 </technologies>
 </device>

@@ -647,8 +647,8 @@ under the package</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="65-0001" constant="no"/>
-<attribute name="VALUE" value="Venus838FLPx-L" constant="no"/>
+<attribute name="SKU" value="65-0001"/>
+<attribute name="VALUE" value="Venus838FLPx-L"/>
 </technology>
 </technologies>
 </device>
@@ -667,9 +667,9 @@ under the package</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PACKAGE" value="Patch" constant="no"/>
-<attribute name="SKU" value="65-0002" constant="no"/>
-<attribute name="VALUE" value="GPS Antenna" constant="no"/>
+<attribute name="PACKAGE" value="Patch"/>
+<attribute name="SKU" value="65-0002"/>
+<attribute name="VALUE" value="GPS Antenna"/>
 </technology>
 </technologies>
 </device>
@@ -700,12 +700,12 @@ under the package</text>
 </connects>
 <technologies>
 <technology name="5">
-<attribute name="SKU" value="65-0002" constant="no"/>
-<attribute name="VALUE" value="AD8345" constant="no"/>
+<attribute name="SKU" value="65-0002"/>
+<attribute name="VALUE" value="AD8345"/>
 </technology>
 <technology name="6">
-<attribute name="SKU" value="65-0003" constant="no"/>
-<attribute name="VALUE" value="AD8346" constant="no"/>
+<attribute name="SKU" value="65-0003"/>
+<attribute name="VALUE" value="AD8346"/>
 </technology>
 </technologies>
 </device>
@@ -749,8 +749,8 @@ under the package</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="65-0004" constant="no"/>
-<attribute name="VALUE" value="AS8348" constant="no"/>
+<attribute name="SKU" value="65-0004"/>
+<attribute name="VALUE" value="AS8348"/>
 </technology>
 </technologies>
 </device>
@@ -790,8 +790,8 @@ under the package</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="65-0005" constant="no"/>
-<attribute name="VALUE" value="ADF4360" constant="no"/>
+<attribute name="SKU" value="65-0005"/>
+<attribute name="VALUE" value="ADF4360"/>
 </technology>
 </technologies>
 </device>

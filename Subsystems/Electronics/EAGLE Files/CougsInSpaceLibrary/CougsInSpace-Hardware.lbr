@@ -494,8 +494,8 @@
 </connects>
 <technologies>
 <technology name="-1MM">
-<attribute name="SKU" value="48-0074" constant="no"/>
-<attribute name="VALUE" value="M2 Nut - 1mm" constant="no"/>
+<attribute name="SKU" value="48-0074"/>
+<attribute name="VALUE" value="M2 Nut - 1mm"/>
 </technology>
 </technologies>
 </device>
@@ -513,8 +513,8 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PACKAGE" value="30mm x 44mm" constant="no"/>
-<attribute name="SKU" value="48-0070" constant="no"/>
+<attribute name="PACKAGE" value="30mm x 44mm"/>
+<attribute name="SKU" value="48-0070"/>
 </technology>
 </technologies>
 </device>

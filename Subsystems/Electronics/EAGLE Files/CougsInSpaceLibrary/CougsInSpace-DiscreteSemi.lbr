@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -415,6 +415,35 @@
 <wire x1="1.975" y1="-1.4" x2="-1.975" y2="-1.4" width="0.15" layer="39"/>
 <wire x1="-1.975" y1="-1.4" x2="-1.975" y2="1.4" width="0.15" layer="39"/>
 </package>
+<package name="SOT323">
+<description>&lt;h3&gt;SOT323 (SC70-3)&lt;/h3&gt;</description>
+<smd name="2" x="-0.95" y="-0.65" dx="0.4" dy="0.5" layer="1" rot="R270"/>
+<smd name="1" x="-0.95" y="0.65" dx="0.4" dy="0.5" layer="1" rot="R270"/>
+<smd name="3" x="0.95" y="0" dx="0.4" dy="0.5" layer="1" rot="R270"/>
+<wire x1="0.6" y1="1" x2="0.6" y2="-1" width="0.15" layer="51"/>
+<wire x1="0.6" y1="-1" x2="-0.6" y2="-1" width="0.15" layer="51"/>
+<wire x1="-0.6" y1="-1" x2="-0.6" y2="1" width="0.15" layer="51"/>
+<wire x1="-0.6" y1="1" x2="0.6" y2="1" width="0.15" layer="51"/>
+<wire x1="0.6" y1="1" x2="-0.525" y2="1" width="0.15" layer="21"/>
+<wire x1="0.6" y1="-1" x2="-0.525" y2="-1" width="0.15" layer="21"/>
+<wire x1="1.525" y1="1.325" x2="1.525" y2="-1.325" width="0.15" layer="21"/>
+<wire x1="1.525" y1="-1.325" x2="-1.525" y2="-1.325" width="0.15" layer="21"/>
+<wire x1="-1.525" y1="-1.325" x2="-1.525" y2="1.325" width="0.15" layer="21"/>
+<wire x1="-1.525" y1="1.325" x2="1.525" y2="1.325" width="0.15" layer="21"/>
+<polygon width="0.15" layer="21">
+<vertex x="-1.525" y="1.325"/>
+<vertex x="-1.525" y="0.85"/>
+<vertex x="-1.05" y="1.325"/>
+</polygon>
+<text x="0" y="1.9" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-1.525" y1="1.325" x2="-1.525" y2="-1.325" width="0.15" layer="39"/>
+<wire x1="-1.525" y1="-1.325" x2="1.525" y2="-1.325" width="0.15" layer="39"/>
+<wire x1="1.525" y1="-1.325" x2="1.525" y2="1.325" width="0.15" layer="39"/>
+<wire x1="1.525" y1="1.325" x2="-1.525" y2="1.325" width="0.15" layer="39"/>
+<wire x1="-0.6" y1="-0.25" x2="-0.6" y2="0.25" width="0.15" layer="21"/>
+<wire x1="0.6" y1="1" x2="0.6" y2="0.4" width="0.15" layer="21"/>
+<wire x1="0.6" y1="-0.4" x2="0.6" y2="-1" width="0.15" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4411">
@@ -714,6 +743,53 @@
 <pin name="D" x="0" y="0" visible="off" length="point" direction="pas"/>
 <circle x="0" y="0" radius="0.254" width="0.381" layer="94"/>
 </symbol>
+<symbol name="BJT-NPN">
+<description>&lt;h3&gt;Bipolar Junction Transistor - NPN&lt;/h3&gt;</description>
+<pin name="B" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="C" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="E" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<rectangle x1="-2.54" y1="-2.54" x2="-1.778" y2="2.54" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.778" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-1.524" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="-2.54"/>
+<vertex x="-0.381" y="-1.778"/>
+<vertex x="-0.889" y="-2.54"/>
+</polygon>
+<text x="0.762" y="5.334" size="1.27" layer="95" align="center-left">&gt;NAME</text>
+<text x="0.762" y="3.81" size="1.27" layer="96" align="center-left">&gt;VALUE</text>
+<text x="0.762" y="2.286" size="1.27" layer="97" align="center-left">&gt;SKU</text>
+<text x="0.762" y="0.762" size="1.27" layer="97" align="center-left">&gt;IMAX</text>
+<text x="0.762" y="-0.762" size="1.27" layer="97" align="center-left">&gt;VMAX</text>
+<text x="0.762" y="-2.286" size="1.27" layer="97" align="center-left">&gt;GAIN</text>
+<text x="0.762" y="-3.81" size="1.27" layer="97" align="center-left">&gt;POWER</text>
+<text x="0.762" y="-5.334" size="1.27" layer="97" align="center-left">&gt;FREQ</text>
+</symbol>
+<symbol name="BJT-PNP">
+<description>&lt;h3&gt;Bipolar Junction Transistor - PNP&lt;/h3&gt;</description>
+<pin name="B" x="-5.08" y="0" visible="pad" length="point" direction="pas"/>
+<pin name="E" x="0" y="5.08" visible="pad" length="point" direction="pas" rot="R270"/>
+<pin name="C" x="0" y="-5.08" visible="pad" length="point" direction="pas" rot="R90"/>
+<rectangle x1="-2.54" y1="-2.54" x2="-1.778" y2="2.54" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.778" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-1.524" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.778" y="1.524"/>
+<vertex x="-0.889" y="1.524"/>
+<vertex x="-1.27" y="2.286"/>
+</polygon>
+<text x="0.762" y="5.334" size="1.27" layer="95" align="center-left">&gt;NAME</text>
+<text x="0.762" y="3.81" size="1.27" layer="96" align="center-left">&gt;VALUE</text>
+<text x="0.762" y="2.286" size="1.27" layer="97" align="center-left">&gt;SKU</text>
+<text x="0.762" y="0.762" size="1.27" layer="97" align="center-left">&gt;IMAX</text>
+<text x="0.762" y="-0.762" size="1.27" layer="97" align="center-left">&gt;VMAX</text>
+<text x="0.762" y="-2.286" size="1.27" layer="97" align="center-left">&gt;GAIN</text>
+<text x="0.762" y="-3.81" size="1.27" layer="97" align="center-left">&gt;POWER</text>
+<text x="0.762" y="-5.334" size="1.27" layer="97" align="center-left">&gt;FREQ</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC4411" prefix="D">
@@ -945,18 +1021,18 @@
 </connects>
 <technologies>
 <technology name="-DMP2065">
-<attribute name="CURRENT" value="-4.5A" constant="no"/>
-<attribute name="RDS" value="50mΩ" constant="no"/>
-<attribute name="SKU" value="56-0006" constant="no"/>
-<attribute name="VALUE" value="DMP2065UFDB" constant="no"/>
-<attribute name="VDS" value="-20V" constant="no"/>
+<attribute name="CURRENT" value="-4.5A"/>
+<attribute name="RDS" value="50mΩ"/>
+<attribute name="SKU" value="56-0006"/>
+<attribute name="VALUE" value="DMP2065UFDB"/>
+<attribute name="VDS" value="-20V"/>
 </technology>
 <technology name="-NTLUD3A50PZ">
-<attribute name="CURRENT" value="-2.8A" constant="no"/>
-<attribute name="RDS" value="50mΩ" constant="no"/>
-<attribute name="SKU" value="56-0004" constant="no"/>
-<attribute name="VALUE" value="NTLUD3A50PZ" constant="no"/>
-<attribute name="VDS" value="-20V" constant="no"/>
+<attribute name="CURRENT" value="-2.8A"/>
+<attribute name="RDS" value="50mΩ"/>
+<attribute name="SKU" value="56-0004"/>
+<attribute name="VALUE" value="NTLUD3A50PZ"/>
+<attribute name="VDS" value="-20V"/>
 </technology>
 </technologies>
 </device>
@@ -978,11 +1054,37 @@
 </connects>
 <technologies>
 <technology name="-DMN2008LFU">
-<attribute name="CURRENT" value="11.5A" constant="no"/>
-<attribute name="RDS" value="6.4mΩ" constant="no"/>
-<attribute name="SKU" value="56-0005" constant="no"/>
-<attribute name="VALUE" value="DMN2008LFU" constant="no"/>
-<attribute name="VDS" value="20V" constant="no"/>
+<attribute name="CURRENT" value="11.5A"/>
+<attribute name="RDS" value="6.4mΩ"/>
+<attribute name="SKU" value="56-0005"/>
+<attribute name="VALUE" value="DMN2008LFU"/>
+<attribute name="VDS" value="20V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BJT-NPN" prefix="Q">
+<description>&lt;h3&gt;Bipolar Junction Transistor - NPN&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="BJT-NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SOT323" package="SOT323">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name="-MMBTA06W">
+<attribute name="FREQ" value="100MHz"/>
+<attribute name="GAIN" value="100x"/>
+<attribute name="IMAX" value="500mA"/>
+<attribute name="POWER" value="400mW"/>
+<attribute name="SKU" value="55-0001"/>
+<attribute name="VALUE" value="MMBTA06W"/>
+<attribute name="VMAX" value="80V"/>
 </technology>
 </technologies>
 </device>

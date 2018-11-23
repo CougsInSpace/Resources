@@ -423,8 +423,8 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="66-0002" constant="no"/>
-<attribute name="VALUE" value="BNO055" constant="no"/>
+<attribute name="SKU" value="66-0002"/>
+<attribute name="VALUE" value="BNO055"/>
 </technology>
 </technologies>
 </device>
@@ -443,11 +443,11 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="HALF_ANGLE" value="±60°" constant="no"/>
-<attribute name="SENSITIVITY" value="6.3nA/lx" constant="no"/>
-<attribute name="SKU" value="66-0003" constant="no"/>
-<attribute name="VALUE" value="SFH 2430" constant="no"/>
-<attribute name="VR" value="5V" constant="no"/>
+<attribute name="HALF_ANGLE" value="±60°"/>
+<attribute name="SENSITIVITY" value="6.3nA/lx"/>
+<attribute name="SKU" value="66-0003"/>
+<attribute name="VALUE" value="SFH 2430"/>
+<attribute name="VR" value="5V"/>
 </technology>
 </technologies>
 </device>

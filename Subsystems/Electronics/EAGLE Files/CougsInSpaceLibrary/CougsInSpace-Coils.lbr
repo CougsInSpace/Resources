@@ -488,25 +488,25 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-1UH">
-<attribute name="CURRENT" value="22A" constant="no"/>
-<attribute name="DCR" value="5.00mΩ" constant="no"/>
-<attribute name="PACKAGE" value="7575" constant="no"/>
-<attribute name="SKU" value="34-102A" constant="no"/>
-<attribute name="VALUE" value="1.0µH 20%" constant="no"/>
+<attribute name="CURRENT" value="22A"/>
+<attribute name="DCR" value="5.00mΩ"/>
+<attribute name="PACKAGE" value="7575"/>
+<attribute name="SKU" value="34-102A"/>
+<attribute name="VALUE" value="1.0µH 20%"/>
 </technology>
 <technology name="-3.3UH">
-<attribute name="CURRENT" value="10A" constant="no"/>
-<attribute name="DCR" value="21.45mΩ" constant="no"/>
-<attribute name="PACKAGE" value="7575" constant="no"/>
-<attribute name="SKU" value="34-332A" constant="no"/>
-<attribute name="VALUE" value="3.3µH 20%" constant="no"/>
+<attribute name="CURRENT" value="10A"/>
+<attribute name="DCR" value="21.45mΩ"/>
+<attribute name="PACKAGE" value="7575"/>
+<attribute name="SKU" value="34-332A"/>
+<attribute name="VALUE" value="3.3µH 20%"/>
 </technology>
 <technology name="-4.7UH">
-<attribute name="CURRENT" value="9A" constant="no"/>
-<attribute name="DCR" value="30.00mΩ" constant="no"/>
-<attribute name="PACKAGE" value="7575" constant="no"/>
-<attribute name="SKU" value="34-472A" constant="no"/>
-<attribute name="VALUE" value="4.7µH 20%" constant="no"/>
+<attribute name="CURRENT" value="9A"/>
+<attribute name="DCR" value="30.00mΩ"/>
+<attribute name="PACKAGE" value="7575"/>
+<attribute name="SKU" value="34-472A"/>
+<attribute name="VALUE" value="4.7µH 20%"/>
 </technology>
 </technologies>
 </device>
@@ -517,11 +517,11 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-10UH">
-<attribute name="CURRENT" value="1.8A" constant="no"/>
-<attribute name="DCR" value="100mΩ" constant="no"/>
-<attribute name="PACKAGE" value="6060" constant="no"/>
-<attribute name="SKU" value="34-103A" constant="no"/>
-<attribute name="VALUE" value="10µH 20%" constant="no"/>
+<attribute name="CURRENT" value="1.8A"/>
+<attribute name="DCR" value="100mΩ"/>
+<attribute name="PACKAGE" value="6060"/>
+<attribute name="SKU" value="34-103A"/>
+<attribute name="VALUE" value="10µH 20%"/>
 </technology>
 </technologies>
 </device>
@@ -532,18 +532,18 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-22NH">
-<attribute name="CURRENT" value="700mA" constant="no"/>
-<attribute name="DCR" value="190mΩ" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="31-220A" constant="no"/>
-<attribute name="VALUE" value="22nH 2%" constant="no"/>
+<attribute name="CURRENT" value="700mA"/>
+<attribute name="DCR" value="190mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-220A"/>
+<attribute name="VALUE" value="22nH 2%"/>
 </technology>
 <technology name="-4.7UH">
-<attribute name="CURRENT" value="620mA" constant="no"/>
-<attribute name="DCR" value="440mΩ" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="31-472A" constant="no"/>
-<attribute name="VALUE" value="4.7µH 20%" constant="no"/>
+<attribute name="CURRENT" value="620mA"/>
+<attribute name="DCR" value="440mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-472A"/>
+<attribute name="VALUE" value="4.7µH 20%"/>
 </technology>
 </technologies>
 </device>
@@ -562,25 +562,25 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-1UH">
-<attribute name="CURRENT" value="22A" constant="no"/>
-<attribute name="DCR" value="5.00mΩ" constant="no"/>
-<attribute name="PACKAGE" value="7575" constant="no"/>
-<attribute name="SKU" value="34-102A" constant="no"/>
-<attribute name="VALUE" value="1.0µH 20%" constant="no"/>
+<attribute name="CURRENT" value="22A"/>
+<attribute name="DCR" value="5.00mΩ"/>
+<attribute name="PACKAGE" value="7575"/>
+<attribute name="SKU" value="34-102A"/>
+<attribute name="VALUE" value="1.0µH 20%"/>
 </technology>
 <technology name="-3.3UH">
-<attribute name="CURRENT" value="10A" constant="no"/>
-<attribute name="DCR" value="21.45mΩ" constant="no"/>
-<attribute name="PACKAGE" value="7575" constant="no"/>
-<attribute name="SKU" value="34-332A" constant="no"/>
-<attribute name="VALUE" value="3.3µH 20%" constant="no"/>
+<attribute name="CURRENT" value="10A"/>
+<attribute name="DCR" value="21.45mΩ"/>
+<attribute name="PACKAGE" value="7575"/>
+<attribute name="SKU" value="34-332A"/>
+<attribute name="VALUE" value="3.3µH 20%"/>
 </technology>
 <technology name="-4.7UH">
-<attribute name="CURRENT" value="9A" constant="no"/>
-<attribute name="DCR" value="30.00mΩ" constant="no"/>
-<attribute name="PACKAGE" value="7575" constant="no"/>
-<attribute name="SKU" value="34-472A" constant="no"/>
-<attribute name="VALUE" value="4.7µH 20%" constant="no"/>
+<attribute name="CURRENT" value="9A"/>
+<attribute name="DCR" value="30.00mΩ"/>
+<attribute name="PACKAGE" value="7575"/>
+<attribute name="SKU" value="34-472A"/>
+<attribute name="VALUE" value="4.7µH 20%"/>
 </technology>
 </technologies>
 </device>
@@ -591,11 +591,11 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-10UH">
-<attribute name="CURRENT" value="1.8A" constant="no"/>
-<attribute name="DCR" value="100mΩ" constant="no"/>
-<attribute name="PACKAGE" value="6060" constant="no"/>
-<attribute name="SKU" value="34-103A" constant="no"/>
-<attribute name="VALUE" value="10µH 20%" constant="no"/>
+<attribute name="CURRENT" value="1.8A"/>
+<attribute name="DCR" value="100mΩ"/>
+<attribute name="PACKAGE" value="6060"/>
+<attribute name="SKU" value="34-103A"/>
+<attribute name="VALUE" value="10µH 20%"/>
 </technology>
 </technologies>
 </device>
@@ -606,18 +606,18 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-22NH">
-<attribute name="CURRENT" value="700mA" constant="no"/>
-<attribute name="DCR" value="190mΩ" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="31-220A" constant="no"/>
-<attribute name="VALUE" value="22nH 2%" constant="no"/>
+<attribute name="CURRENT" value="700mA"/>
+<attribute name="DCR" value="190mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-220A"/>
+<attribute name="VALUE" value="22nH 2%"/>
 </technology>
 <technology name="-4.7UH">
-<attribute name="CURRENT" value="620mA" constant="no"/>
-<attribute name="DCR" value="440mΩ" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="31-472A" constant="no"/>
-<attribute name="VALUE" value="4.7µH 20%" constant="no"/>
+<attribute name="CURRENT" value="620mA"/>
+<attribute name="DCR" value="440mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-472A"/>
+<attribute name="VALUE" value="4.7µH 20%"/>
 </technology>
 </technologies>
 </device>
@@ -636,11 +636,11 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-1.5K">
-<attribute name="CURRENT" value="500mA" constant="no"/>
-<attribute name="DCR" value="500mΩ" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="36-152A" constant="no"/>
-<attribute name="VALUE" value="1.5kΩ @ 100MHz" constant="no"/>
+<attribute name="CURRENT" value="500mA"/>
+<attribute name="DCR" value="500mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="36-152A"/>
+<attribute name="VALUE" value="1.5kΩ @ 100MHz"/>
 </technology>
 </technologies>
 </device>
@@ -659,11 +659,11 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-1.5K">
-<attribute name="CURRENT" value="500mA" constant="no"/>
-<attribute name="DCR" value="500mΩ" constant="no"/>
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="36-152A" constant="no"/>
-<attribute name="VALUE" value="1.5kΩ @ 100MHz" constant="no"/>
+<attribute name="CURRENT" value="500mA"/>
+<attribute name="DCR" value="500mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="36-152A"/>
+<attribute name="VALUE" value="1.5kΩ @ 100MHz"/>
 </technology>
 </technologies>
 </device>
@@ -683,10 +683,10 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-1UPV">
-<attribute name="AREA" value="xxx mm²" constant="no"/>
-<attribute name="DCR" value="xxΩ x%" constant="no"/>
-<attribute name="SKU" value="67-0001" constant="no"/>
-<attribute name="VALUE" value="xxx Turns" constant="no"/>
+<attribute name="AREA" value="xxx mm²"/>
+<attribute name="DCR" value="xxΩ x%"/>
+<attribute name="SKU" value="67-0001"/>
+<attribute name="VALUE" value="xxx Turns"/>
 </technology>
 </technologies>
 </device>

@@ -381,8 +381,8 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 </connects>
 <technologies>
 <technology name="-20M">
-<attribute name="SKU" value="40-206A" constant="no"/>
-<attribute name="VALUE" value="20MHz ±2.5ppm" constant="no"/>
+<attribute name="SKU" value="40-206A"/>
+<attribute name="VALUE" value="20MHz ±2.5ppm"/>
 </technology>
 </technologies>
 </device>

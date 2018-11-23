@@ -481,6 +481,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="100nF 10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="-100PF">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-101A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="100pF 1%"/>
+<attribute name="VOLTAGE" value="100V"/>
+</technology>
 <technology name="-10NF">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="11-103A"/>
@@ -507,6 +514,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="11-150A"/>
 <attribute name="TEMP" value="C0G"/>
 <attribute name="VALUE" value="15pF 1%"/>
+<attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="-180PF">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-181A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="180pF 5%"/>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
 <technology name="-1NF">
@@ -537,6 +551,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="270pF 1%"/>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
+<technology name="-3.9NF">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-392A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="3.9nF 5%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
 <technology name="-4.7PF">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="11-4.7A"/>
@@ -552,11 +573,11 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
 <technology name="-47PF">
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="11-470A" constant="no"/>
-<attribute name="TEMP" value="C0G" constant="no"/>
-<attribute name="VALUE" value="47pF 5%" constant="no"/>
-<attribute name="VOLTAGE" value="100V" constant="no"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-470A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="47pF 5%"/>
+<attribute name="VOLTAGE" value="100V"/>
 </technology>
 <technology name="-560PF">
 <attribute name="PACKAGE" value="1608"/>
@@ -566,11 +587,11 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
 <technology name="-56PF">
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="11-560A" constant="no"/>
-<attribute name="TEMP" value="C0G" constant="no"/>
-<attribute name="VALUE" value="56pF 2%" constant="no"/>
-<attribute name="VOLTAGE" value="50V" constant="no"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-560A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="56pF 2%"/>
+<attribute name="VOLTAGE" value="50V"/>
 </technology>
 <technology name="-6.8NF">
 <attribute name="PACKAGE" value="1608"/>
@@ -602,11 +623,11 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
 <technology name="-10UF">
-<attribute name="PACKAGE" value="3216" constant="no"/>
-<attribute name="SKU" value="13-106A" constant="no"/>
-<attribute name="TEMP" value="X7R" constant="no"/>
-<attribute name="VALUE" value="10µF 10%" constant="no"/>
-<attribute name="VOLTAGE" value="10V" constant="no"/>
+<attribute name="PACKAGE" value="3216"/>
+<attribute name="SKU" value="13-106A"/>
+<attribute name="TEMP" value="X7R"/>
+<attribute name="VALUE" value="10µF 10%"/>
+<attribute name="VOLTAGE" value="10V"/>
 </technology>
 <technology name="-4.7UF">
 <attribute name="PACKAGE" value="3216"/>
@@ -653,6 +674,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="100nF 10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="-100PF">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-101A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="100pF 1%"/>
+<attribute name="VOLTAGE" value="100V"/>
+</technology>
 <technology name="-10NF">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="11-103A"/>
@@ -679,6 +707,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="11-150A"/>
 <attribute name="TEMP" value="C0G"/>
 <attribute name="VALUE" value="15pF 1%"/>
+<attribute name="VOLTAGE" value="100V"/>
+</technology>
+<technology name="-180PF">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-181A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="180pF 5%"/>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
 <technology name="-1NF">
@@ -709,6 +744,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="270pF 1%"/>
 <attribute name="VOLTAGE" value="100V"/>
 </technology>
+<technology name="-3.9NF">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-392A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="3.9nF 5%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
 <technology name="-4.7PF">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="11-4.7A"/>
@@ -724,11 +766,11 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
 <technology name="-47PF">
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="11-470A" constant="no"/>
-<attribute name="TEMP" value="C0G" constant="no"/>
-<attribute name="VALUE" value="47pF 5%" constant="no"/>
-<attribute name="VOLTAGE" value="100V" constant="no"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-470A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="47pF 5%"/>
+<attribute name="VOLTAGE" value="100V"/>
 </technology>
 <technology name="-560PF">
 <attribute name="PACKAGE" value="1608"/>
@@ -738,11 +780,11 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
 <technology name="-56PF">
-<attribute name="PACKAGE" value="1608" constant="no"/>
-<attribute name="SKU" value="11-560A" constant="no"/>
-<attribute name="TEMP" value="C0G" constant="no"/>
-<attribute name="VALUE" value="56pF 2%" constant="no"/>
-<attribute name="VOLTAGE" value="50V" constant="no"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-560A"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="56pF 2%"/>
+<attribute name="VOLTAGE" value="50V"/>
 </technology>
 <technology name="-6.8NF">
 <attribute name="PACKAGE" value="1608"/>
@@ -774,11 +816,11 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
 <technology name="-10UF">
-<attribute name="PACKAGE" value="3216" constant="no"/>
-<attribute name="SKU" value="13-106A" constant="no"/>
-<attribute name="TEMP" value="X7R" constant="no"/>
-<attribute name="VALUE" value="10µF 10%" constant="no"/>
-<attribute name="VOLTAGE" value="10V" constant="no"/>
+<attribute name="PACKAGE" value="3216"/>
+<attribute name="SKU" value="13-106A"/>
+<attribute name="TEMP" value="X7R"/>
+<attribute name="VALUE" value="10µF 10%"/>
+<attribute name="VOLTAGE" value="10V"/>
 </technology>
 <technology name="-4.7UF">
 <attribute name="PACKAGE" value="3216"/>
@@ -819,25 +861,25 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-10UF">
-<attribute name="ESR" value="Max 850Ω" constant="no"/>
-<attribute name="PACKAGE" value="Tant-B" constant="no"/>
-<attribute name="SKU" value="16-106A" constant="no"/>
-<attribute name="VALUE" value="10µF" constant="no"/>
-<attribute name="VOLTAGE" value="20V" constant="no"/>
+<attribute name="ESR" value="Max 850Ω"/>
+<attribute name="PACKAGE" value="Tant-B"/>
+<attribute name="SKU" value="16-106A"/>
+<attribute name="VALUE" value="10µF"/>
+<attribute name="VOLTAGE" value="20V"/>
 </technology>
 <technology name="-4.7UF">
-<attribute name="ESR" value="Max 900mΩ" constant="no"/>
-<attribute name="PACKAGE" value="Tant-B" constant="no"/>
-<attribute name="SKU" value="16-475A" constant="no"/>
-<attribute name="VALUE" value="4.7µF 10%" constant="no"/>
-<attribute name="VOLTAGE" value="20V" constant="no"/>
+<attribute name="ESR" value="Max 900mΩ"/>
+<attribute name="PACKAGE" value="Tant-B"/>
+<attribute name="SKU" value="16-475A"/>
+<attribute name="VALUE" value="4.7µF 10%"/>
+<attribute name="VOLTAGE" value="20V"/>
 </technology>
 <technology name="-47UF">
-<attribute name="ESR" value="Max 400mΩ" constant="no"/>
-<attribute name="PACKAGE" value="Tant-B" constant="no"/>
-<attribute name="SKU" value="16-476A" constant="no"/>
-<attribute name="VALUE" value="47µF" constant="no"/>
-<attribute name="VOLTAGE" value="10V" constant="no"/>
+<attribute name="ESR" value="Max 400mΩ"/>
+<attribute name="PACKAGE" value="Tant-B"/>
+<attribute name="SKU" value="16-476A"/>
+<attribute name="VALUE" value="47µF"/>
+<attribute name="VOLTAGE" value="10V"/>
 </technology>
 </technologies>
 </device>
@@ -848,11 +890,11 @@ Last character is an incremented letter for each variant of the same value and p
 </connects>
 <technologies>
 <technology name="-220UF">
-<attribute name="ESR" value="Max 80mΩ" constant="no"/>
-<attribute name="PACKAGE" value="Tant-C" constant="no"/>
-<attribute name="SKU" value="16-227A" constant="no"/>
-<attribute name="VALUE" value="220µF 10%" constant="no"/>
-<attribute name="VOLTAGE" value="6.3V" constant="no"/>
+<attribute name="ESR" value="Max 80mΩ"/>
+<attribute name="PACKAGE" value="Tant-C"/>
+<attribute name="SKU" value="16-227A"/>
+<attribute name="VALUE" value="220µF 10%"/>
+<attribute name="VOLTAGE" value="6.3V"/>
 </technology>
 </technologies>
 </device>

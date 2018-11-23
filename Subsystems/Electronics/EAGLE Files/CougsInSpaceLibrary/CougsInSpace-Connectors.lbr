@@ -1385,8 +1385,8 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PACKAGE" value="U.FL" constant="no"/>
-<attribute name="SKU" value="04-0008" constant="no"/>
+<attribute name="PACKAGE" value="U.FL"/>
+<attribute name="SKU" value="04-0008"/>
 </technology>
 </technologies>
 </device>
@@ -1397,8 +1397,8 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PACKAGE" value="BNC Female Right Angle" constant="no"/>
-<attribute name="SKU" value="05-0003" constant="no"/>
+<attribute name="PACKAGE" value="BNC Female Right Angle"/>
+<attribute name="SKU" value="05-0003"/>
 </technology>
 </technologies>
 </device>
@@ -1558,8 +1558,8 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PACKAGE" value="THT Ø0.7mm" constant="no"/>
-<attribute name="SKU" value="00-0000" constant="no"/>
+<attribute name="PACKAGE" value="THT Ø0.7mm"/>
+<attribute name="SKU" value="00-0000"/>
 </technology>
 </technologies>
 </device>
@@ -1569,8 +1569,8 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PACKAGE" value="THT Ø1.0mm" constant="no"/>
-<attribute name="SKU" value="00-0000" constant="no"/>
+<attribute name="PACKAGE" value="THT Ø1.0mm"/>
+<attribute name="SKU" value="00-0000"/>
 </technology>
 </technologies>
 </device>
@@ -1580,8 +1580,8 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PACKAGE" value="THT Ø1.5mm" constant="no"/>
-<attribute name="SKU" value="00-0000" constant="no"/>
+<attribute name="PACKAGE" value="THT Ø1.5mm"/>
+<attribute name="SKU" value="00-0000"/>
 </technology>
 </technologies>
 </device>
@@ -1591,8 +1591,8 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PACKAGE" value="SMD Ø1.25mm" constant="no"/>
-<attribute name="SKU" value="00-0000" constant="no"/>
+<attribute name="PACKAGE" value="SMD Ø1.25mm"/>
+<attribute name="SKU" value="00-0000"/>
 </technology>
 </technologies>
 </device>
@@ -1602,8 +1602,8 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PACKAGE" value="Socket Ø0.38~0.56mm" constant="no"/>
-<attribute name="SKU" value="05-0002" constant="no"/>
+<attribute name="PACKAGE" value="Socket Ø0.38~0.56mm"/>
+<attribute name="SKU" value="05-0002"/>
 </technology>
 </technologies>
 </device>
@@ -1613,8 +1613,8 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="-5MM">
-<attribute name="PACKAGE" value="5mm Spring Contact" constant="no"/>
-<attribute name="SKU" value="04-0009" constant="no"/>
+<attribute name="PACKAGE" value="5mm Spring Contact"/>
+<attribute name="SKU" value="04-0009"/>
 </technology>
 </technologies>
 </device>
@@ -1636,7 +1636,7 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="05-0004" constant="no"/>
+<attribute name="SKU" value="05-0004"/>
 </technology>
 </technologies>
 </device>
@@ -1657,7 +1657,7 @@ Normal closed switch</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="05-0005" constant="no"/>
+<attribute name="SKU" value="05-0005"/>
 </technology>
 </technologies>
 </device>

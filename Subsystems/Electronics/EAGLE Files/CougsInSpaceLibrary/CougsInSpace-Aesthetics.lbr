@@ -3619,28 +3619,28 @@ None functional footprints to increase the aesthetic</description>
 <device name="-PATCH-1" package="CIS-PATCH-1">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="CougSat-1 Patch" constant="no"/>
+<attribute name="VALUE" value="CougSat-1 Patch"/>
 </technology>
 </technologies>
 </device>
 <device name="-SATELLITE-16MM" package="CIS-SATELLITE-16">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="Satellite 16mm" constant="no"/>
+<attribute name="VALUE" value="Satellite 16mm"/>
 </technology>
 </technologies>
 </device>
 <device name="-SATELLITE-60MM" package="CIS-SATELLITE-60">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="Satellite 60mm" constant="no"/>
+<attribute name="VALUE" value="Satellite 60mm"/>
 </technology>
 </technologies>
 </device>
 <device name="-TEXT" package="CIS-TEXT">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="Text" constant="no"/>
+<attribute name="VALUE" value="Text"/>
 </technology>
 </technologies>
 </device>
@@ -3656,14 +3656,14 @@ None functional footprints to increase the aesthetic</description>
 <device name="-1MM" package="FIDUCIAL-1">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="1mm" constant="no"/>
+<attribute name="VALUE" value="1mm"/>
 </technology>
 </technologies>
 </device>
 <device name="-500µM" package="FIDUCIAL-0.5">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="500µm" constant="no"/>
+<attribute name="VALUE" value="500µm"/>
 </technology>
 </technologies>
 </device>
@@ -3679,7 +3679,7 @@ None functional footprints to increase the aesthetic</description>
 <device name="" package="NO_PB_LOGO">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="No Pb" constant="no"/>
+<attribute name="VALUE" value="No Pb"/>
 </technology>
 </technologies>
 </device>
@@ -3825,14 +3825,14 @@ None functional footprints to increase the aesthetic</description>
 <device name="-SPEED_LIMIT" package="SPEED_LIMIT">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="Speed Limit" constant="no"/>
+<attribute name="VALUE" value="Speed Limit"/>
 </technology>
 </technologies>
 </device>
 <device name="-SPEED-LIMIT-INV" package="SPEED_LIMIT-INV">
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="Speed Limit" constant="no"/>
+<attribute name="VALUE" value="Speed Limit"/>
 </technology>
 </technologies>
 </device>

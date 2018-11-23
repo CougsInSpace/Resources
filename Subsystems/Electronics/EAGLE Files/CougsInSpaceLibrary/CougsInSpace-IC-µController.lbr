@@ -841,10 +841,10 @@
 </connects>
 <technologies>
 <technology name="GT">
-<attribute name="EXTRAPIN" value="PD2" constant="no"/>
-<attribute name="FLASH" value="1MB" constant="no"/>
-<attribute name="SKU" value="61-0004" constant="no"/>
-<attribute name="VALUE" value="STM32L496RGT" constant="no"/>
+<attribute name="EXTRAPIN" value="PD2"/>
+<attribute name="FLASH" value="1MB"/>
+<attribute name="SKU" value="61-0004"/>
+<attribute name="VALUE" value="STM32L496RGT"/>
 </technology>
 </technologies>
 </device>

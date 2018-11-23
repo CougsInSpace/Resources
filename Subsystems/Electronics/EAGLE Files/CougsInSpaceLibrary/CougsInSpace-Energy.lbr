@@ -419,14 +419,14 @@ varies due to cylinder</text>
 </connects>
 <technologies>
 <technology name="HG2">
-<attribute name="CAPACITY" value="11Wh" constant="no"/>
-<attribute name="SKU" value="01-0001" constant="no"/>
-<attribute name="VALUE" value="Li-Ion" constant="no"/>
+<attribute name="CAPACITY" value="11Wh"/>
+<attribute name="SKU" value="01-0001"/>
+<attribute name="VALUE" value="Li-Ion"/>
 </technology>
 <technology name="NCR">
-<attribute name="CAPACITY" value="12Wh" constant="no"/>
-<attribute name="SKU" value="01-0002" constant="no"/>
-<attribute name="VALUE" value="Li-Ion" constant="no"/>
+<attribute name="CAPACITY" value="12Wh"/>
+<attribute name="SKU" value="01-0002"/>
+<attribute name="VALUE" value="Li-Ion"/>
 </technology>
 </technologies>
 </device>
@@ -446,9 +446,9 @@ varies due to cylinder</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="POWER" value="1W" constant="no"/>
-<attribute name="SKU" value="02-0001" constant="no"/>
-<attribute name="VALUE" value="UTJ" constant="no"/>
+<attribute name="POWER" value="1W"/>
+<attribute name="SKU" value="02-0001"/>
+<attribute name="VALUE" value="UTJ"/>
 </technology>
 </technologies>
 </device>
