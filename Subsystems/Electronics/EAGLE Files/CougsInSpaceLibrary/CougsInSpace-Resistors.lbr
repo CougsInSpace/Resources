@@ -674,6 +674,13 @@
 <attribute name="TEMP" value="100ppm/°C"/>
 <attribute name="VALUE" value="220kΩ 1%"/>
 </technology>
+<technology name="-240R">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="POWER" value="1/5W"/>
+<attribute name="SKU" value="21-2400"/>
+<attribute name="TEMP" value="50ppm/°C"/>
+<attribute name="VALUE" value="240Ω 0.1%"/>
+</technology>
 <technology name="-27R">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="POWER" value="1/10W"/>
@@ -1028,6 +1035,13 @@
 <attribute name="SKU" value="21-2203"/>
 <attribute name="TEMP" value="100ppm/°C"/>
 <attribute name="VALUE" value="220kΩ 1%"/>
+</technology>
+<technology name="-240R">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="POWER" value="1/5W"/>
+<attribute name="SKU" value="21-2400"/>
+<attribute name="TEMP" value="50ppm/°C"/>
+<attribute name="VALUE" value="240Ω 0.1%"/>
 </technology>
 <technology name="-27R">
 <attribute name="PACKAGE" value="1608"/>
