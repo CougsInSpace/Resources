@@ -710,6 +710,21 @@ under the package</text>
 <text x="0" y="-8.89" size="1.778" layer="96" align="center">&gt;VALUE</text>
 <text x="0" y="-10.922" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
+<symbol name="AMP-BIAS">
+<description>&lt;h3&gt;RF Amplifer - with Bias Control&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/MACOM/MAAM-011229_LNA_0.05~4GHz.pdf"&gt;MAAM-011229&lt;/a&gt;&lt;/p&gt;</description>
+<pin name="RFIN" x="-12.7" y="0" length="short" direction="in"/>
+<pin name="RFOUT" x="12.7" y="0" length="short" direction="out" rot="R180"/>
+<pin name="VBIAS" x="-12.7" y="5.08" length="short" direction="in"/>
+<pin name="RFGND" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-8.89" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-10.922" size="1.778" layer="97" align="center">&gt;SKU</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VENUS838FLPX" prefix="U">
@@ -957,6 +972,29 @@ under the package</text>
 <technology name="">
 <attribute name="SKU" value="65-0007"/>
 <attribute name="VALUE" value="MAAP-011232"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AMP-BIAS" prefix="U">
+<description>&lt;h3&gt;RF Amplifer - with Bias Control&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/MACOM/MAAM-011229_LNA_0.05~4GHz.pdf"&gt;MAAM-011229&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="AMP-BIAS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-MAAM-011229" package="DFN-8-2020">
+<connects>
+<connect gate="G$1" pin="RFGND" pad="1 3 4 6 8 PAD"/>
+<connect gate="G$1" pin="RFIN" pad="2"/>
+<connect gate="G$1" pin="RFOUT" pad="7"/>
+<connect gate="G$1" pin="VBIAS" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SKU" value="65-0008"/>
+<attribute name="VALUE" value="MAAM-011229"/>
 </technology>
 </technologies>
 </device>

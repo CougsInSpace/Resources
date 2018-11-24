@@ -537,12 +537,26 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="1nF 10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="-1NF-B">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-102B"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="1nF 1%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
 <technology name="-1UF">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="11-105A"/>
 <attribute name="TEMP" value="X5R"/>
 <attribute name="VALUE" value="1µF 10%"/>
 <attribute name="VOLTAGE" value="6.3V"/>
+</technology>
+<technology name="-1UF-B">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-105B"/>
+<attribute name="TEMP" value="X7R"/>
+<attribute name="VALUE" value="1µF 10%"/>
+<attribute name="VOLTAGE" value="16V"/>
 </technology>
 <technology name="-22PF">
 <attribute name="PACKAGE" value="1608"/>
@@ -686,7 +700,7 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="11-0.6A"/>
 <attribute name="TEMP" value="C0G"/>
 <attribute name="VALUE" value="0.6pF ±0.1pF"/>
-<attribute name="VOLTAGE" value="250V" constant="no"/>
+<attribute name="VOLTAGE" value="250V"/>
 </technology>
 <technology name="-100NF">
 <attribute name="PACKAGE" value="1608"/>
@@ -744,12 +758,26 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="VALUE" value="1nF 10%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </technology>
+<technology name="-1NF-B">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-102B"/>
+<attribute name="TEMP" value="C0G"/>
+<attribute name="VALUE" value="1nF 1%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</technology>
 <technology name="-1UF">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="11-105A"/>
 <attribute name="TEMP" value="X5R"/>
 <attribute name="VALUE" value="1µF 10%"/>
 <attribute name="VOLTAGE" value="6.3V"/>
+</technology>
+<technology name="-1UF-B">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="11-105B"/>
+<attribute name="TEMP" value="X7R"/>
+<attribute name="VALUE" value="1µF 10%"/>
+<attribute name="VOLTAGE" value="16V"/>
 </technology>
 <technology name="-22PF">
 <attribute name="PACKAGE" value="1608"/>
