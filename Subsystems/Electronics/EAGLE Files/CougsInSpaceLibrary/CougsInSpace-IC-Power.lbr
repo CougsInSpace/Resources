@@ -810,6 +810,25 @@
 <text x="0" y="-8.89" size="1.778" layer="96" align="center">&gt;VALUE</text>
 <text x="0" y="-10.922" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
+<symbol name="LDO-FB">
+<description>&lt;h3&gt;Low Dropout Linear Regulator - with Feedback&lt;/h3&gt;</description>
+<pin name="IN" x="-10.16" y="2.54" length="short" direction="in"/>
+<pin name="OUT" x="10.16" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="EN" x="-10.16" y="-2.54" length="short" direction="in"/>
+<pin name="PGND" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="6.35" size="1.778" layer="97" align="center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.778" layer="97" align="center">&gt;VALUE</text>
+<text x="0" y="-8.382" size="1.778" layer="97" align="center">&gt;SKU</text>
+<text x="-0.508" y="-12.446" size="1.778" layer="97" align="center-right">&gt;VDO</text>
+<text x="0.508" y="-12.446" size="1.778" layer="97" align="center-left">&gt;IMAX</text>
+<text x="0" y="-12.446" size="1.778" layer="97" align="center">/</text>
+<text x="0" y="-10.414" size="1.778" layer="97" align="center">&gt;VOUT</text>
+<pin name="FB" x="10.16" y="0" length="short" direction="in" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SPV1040" prefix="U">
@@ -1137,6 +1156,32 @@
 <technology name="">
 <attribute name="SKU" value="60-0011"/>
 <attribute name="VALUE" value="LM2776"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LDO-FB" prefix="U">
+<description>&lt;h3&gt;Low Dropout Linear Regulator - with Feedback&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="LDO-FB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SOT23-5" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="4"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="PGND" pad="2"/>
+</connects>
+<technologies>
+<technology name="-5.0">
+<attribute name="IMAX" value="250mA"/>
+<attribute name="SKU" value="60-0012"/>
+<attribute name="VALUE" value="TPS73250"/>
+<attribute name="VDO" value="150mV"/>
+<attribute name="VOUT" value="5.0V"/>
 </technology>
 </technologies>
 </device>
