@@ -358,6 +358,114 @@
 <pad name="V7" x="0" y="-2.1" drill="0.45"/>
 <pad name="V8" x="1.484925" y="-1.484925" drill="0.45"/>
 </package>
+<package name="SHIELD-1717">
+<description>&lt;h3&gt;Board Level Shielding - 17 x 17 mm&lt;/h3&gt;</description>
+<smd name="2" x="-8.15" y="0" dx="1" dy="3.8" layer="1"/>
+<smd name="8" x="8.15" y="0" dx="1" dy="3.8" layer="1"/>
+<smd name="11" x="0" y="8.15" dx="1" dy="3.8" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-8.15" dx="1" dy="3.8" layer="1" rot="R90"/>
+<smd name="3" x="-8.15" y="-6.375" dx="1" dy="4.55" layer="1"/>
+<smd name="7" x="8.15" y="-6.375" dx="1" dy="4.55" layer="1"/>
+<smd name="9" x="8.15" y="6.375" dx="1" dy="4.55" layer="1"/>
+<smd name="1" x="-8.15" y="6.375" dx="1" dy="4.55" layer="1"/>
+<smd name="10" x="5.875" y="8.15" dx="1" dy="3.55" layer="1" rot="R270"/>
+<smd name="12" x="-5.875" y="8.15" dx="1" dy="3.55" layer="1" rot="R270"/>
+<smd name="6" x="5.875" y="-8.15" dx="1" dy="3.55" layer="1" rot="R270"/>
+<smd name="4" x="-5.875" y="-8.15" dx="1" dy="3.55" layer="1" rot="R270"/>
+<wire x1="-8.975" y1="8.975" x2="8.975" y2="8.975" width="0.15" layer="21"/>
+<wire x1="8.975" y1="8.975" x2="8.975" y2="-8.975" width="0.15" layer="21"/>
+<wire x1="8.975" y1="-8.975" x2="-8.975" y2="-8.975" width="0.15" layer="21"/>
+<wire x1="-8.975" y1="-8.975" x2="-8.975" y2="8.975" width="0.15" layer="21"/>
+<wire x1="-6.7" y1="6.7" x2="6.7" y2="6.7" width="0.15" layer="21"/>
+<wire x1="6.7" y1="6.7" x2="6.7" y2="-6.7" width="0.15" layer="21"/>
+<wire x1="6.7" y1="-6.7" x2="-6.7" y2="-6.7" width="0.15" layer="21"/>
+<wire x1="-6.7" y1="-6.7" x2="-6.7" y2="6.7" width="0.15" layer="21"/>
+<wire x1="-8.975" y1="8.975" x2="8.975" y2="8.975" width="0.15" layer="39"/>
+<wire x1="8.975" y1="8.975" x2="8.975" y2="-8.975" width="0.15" layer="39"/>
+<wire x1="8.975" y1="-8.975" x2="-8.975" y2="-8.975" width="0.15" layer="39"/>
+<wire x1="-8.975" y1="-8.975" x2="-8.975" y2="8.975" width="0.15" layer="39"/>
+<wire x1="-7.325" y1="7.325" x2="7.325" y2="7.325" width="0.15" layer="39"/>
+<wire x1="7.325" y1="7.325" x2="7.325" y2="-7.325" width="0.15" layer="39"/>
+<wire x1="7.325" y1="-7.325" x2="-7.325" y2="-7.325" width="0.15" layer="39"/>
+<wire x1="-7.325" y1="-7.325" x2="-7.325" y2="7.325" width="0.15" layer="39"/>
+<text x="0" y="0" size="0.8" layer="51" font="vector" ratio="15" align="center">3.4mm Height Restriction</text>
+<text x="0" y="-7" size="0.8" layer="51" font="vector" ratio="15" align="center">Under Lip</text>
+<wire x1="-8.25" y1="-8.25" x2="8.25" y2="-8.25" width="0.15" layer="51"/>
+<wire x1="8.25" y1="-8.25" x2="8.25" y2="8.25" width="0.15" layer="51"/>
+<wire x1="8.25" y1="8.25" x2="-8.25" y2="8.25" width="0.15" layer="51"/>
+<wire x1="-8.25" y1="8.25" x2="-8.25" y2="-8.25" width="0.15" layer="51"/>
+<wire x1="-3.925" y1="-8.25" x2="-2.075" y2="-8.25" width="0.15" layer="21"/>
+<wire x1="2.075" y1="-8.25" x2="3.925" y2="-8.25" width="0.15" layer="21"/>
+<wire x1="8.25" y1="-3.925" x2="8.25" y2="-2.075" width="0.15" layer="21"/>
+<wire x1="8.25" y1="2.075" x2="8.25" y2="3.925" width="0.15" layer="21"/>
+<wire x1="3.925" y1="8.25" x2="2.075" y2="8.25" width="0.15" layer="21"/>
+<wire x1="-2.075" y1="8.25" x2="-3.925" y2="8.25" width="0.15" layer="21"/>
+<wire x1="-8.25" y1="3.925" x2="-8.25" y2="2.075" width="0.15" layer="21"/>
+<wire x1="-8.25" y1="-2.075" x2="-8.25" y2="-3.925" width="0.15" layer="21"/>
+<text x="0" y="9.5" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="SHIELD-2626">
+<description>&lt;h3&gt;Board Level Shielding - 26 x 26 mm&lt;/h3&gt;</description>
+<smd name="7" x="-6" y="-13" dx="3.8" dy="1" layer="1"/>
+<smd name="8" x="0" y="-13" dx="3.8" dy="1" layer="1"/>
+<smd name="9" x="6" y="-13" dx="3.8" dy="1" layer="1"/>
+<smd name="12" x="13" y="-6" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="13" x="13" y="0" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="14" x="13" y="6" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="17" x="6" y="13" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="18" x="0" y="13" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="19" x="-6" y="13" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="2" x="-13" y="6" dx="3.8" dy="1" layer="1" rot="R270"/>
+<smd name="3" x="-13" y="0" dx="3.8" dy="1" layer="1" rot="R270"/>
+<smd name="4" x="-13" y="-6" dx="3.8" dy="1" layer="1" rot="R270"/>
+<smd name="10" x="11.8" y="-13" dx="3.4" dy="1" layer="1"/>
+<smd name="16" x="11.8" y="13" dx="3.4" dy="1" layer="1"/>
+<smd name="20" x="-11.8" y="13" dx="3.4" dy="1" layer="1"/>
+<smd name="6" x="-11.8" y="-13" dx="3.4" dy="1" layer="1"/>
+<smd name="1" x="-13" y="11.3" dx="2.4" dy="1" layer="1" rot="R90"/>
+<smd name="5" x="-13" y="-11.3" dx="2.4" dy="1" layer="1" rot="R90"/>
+<smd name="11" x="13" y="-11.3" dx="2.4" dy="1" layer="1" rot="R90"/>
+<smd name="15" x="13" y="11.3" dx="2.4" dy="1" layer="1" rot="R90"/>
+<wire x1="-13.1" y1="13.1" x2="13.1" y2="13.1" width="0.15" layer="51"/>
+<wire x1="13.1" y1="13.1" x2="13.1" y2="-13.1" width="0.15" layer="51"/>
+<wire x1="13.1" y1="-13.1" x2="-13.1" y2="-13.1" width="0.15" layer="51"/>
+<wire x1="-13.1" y1="-13.1" x2="-13.1" y2="13.1" width="0.15" layer="51"/>
+<wire x1="-11.6" y1="11.6" x2="11.6" y2="11.6" width="0.15" layer="51"/>
+<wire x1="11.6" y1="11.6" x2="11.6" y2="-11.6" width="0.15" layer="51"/>
+<wire x1="11.6" y1="-11.6" x2="-11.6" y2="-11.6" width="0.15" layer="51"/>
+<wire x1="-11.6" y1="-11.6" x2="-11.6" y2="11.6" width="0.15" layer="51"/>
+<text x="0" y="-12" size="0.8" layer="51" font="vector" ratio="15" align="center">Under Lip</text>
+<text x="0" y="0" size="0.8" layer="51" font="vector" ratio="15" align="center">4.8mm Height Restriction</text>
+<text x="0" y="14.4" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-12.175" y1="12.175" x2="-12.175" y2="-12.175" width="0.15" layer="39"/>
+<wire x1="-12.175" y1="-12.175" x2="12.175" y2="-12.175" width="0.15" layer="39"/>
+<wire x1="12.175" y1="-12.175" x2="12.175" y2="12.175" width="0.15" layer="39"/>
+<wire x1="12.175" y1="12.175" x2="-12.175" y2="12.175" width="0.15" layer="39"/>
+<wire x1="-13.825" y1="13.825" x2="13.825" y2="13.825" width="0.15" layer="39"/>
+<wire x1="13.825" y1="13.825" x2="13.825" y2="-13.825" width="0.15" layer="39"/>
+<wire x1="13.825" y1="-13.825" x2="-13.825" y2="-13.825" width="0.15" layer="39"/>
+<wire x1="-13.825" y1="-13.825" x2="-13.825" y2="13.825" width="0.15" layer="39"/>
+<wire x1="-13.825" y1="13.825" x2="13.825" y2="13.825" width="0.15" layer="21"/>
+<wire x1="13.825" y1="13.825" x2="13.825" y2="-13.825" width="0.15" layer="21"/>
+<wire x1="13.825" y1="-13.825" x2="-13.825" y2="-13.825" width="0.15" layer="21"/>
+<wire x1="-13.825" y1="-13.825" x2="-13.825" y2="13.825" width="0.15" layer="21"/>
+<wire x1="-9.9" y1="13.1" x2="-8.1" y2="13.1" width="0.15" layer="21"/>
+<wire x1="-3.9" y1="13.1" x2="-2.1" y2="13.1" width="0.15" layer="21"/>
+<wire x1="2.1" y1="13.1" x2="3.9" y2="13.1" width="0.15" layer="21"/>
+<wire x1="8.1" y1="13.1" x2="9.9" y2="13.1" width="0.15" layer="21"/>
+<wire x1="13.1" y1="8.1" x2="13.1" y2="9.9" width="0.15" layer="21"/>
+<wire x1="13.1" y1="2.1" x2="13.1" y2="3.9" width="0.15" layer="21"/>
+<wire x1="13.1" y1="-3.9" x2="13.1" y2="-2.1" width="0.15" layer="21"/>
+<wire x1="13.1" y1="-9.9" x2="13.1" y2="-8.1" width="0.15" layer="21"/>
+<wire x1="9.9" y1="-13.1" x2="8.1" y2="-13.1" width="0.15" layer="21"/>
+<wire x1="3.9" y1="-13.1" x2="2.1" y2="-13.1" width="0.15" layer="21"/>
+<wire x1="-2.1" y1="-13.1" x2="-3.9" y2="-13.1" width="0.15" layer="21"/>
+<wire x1="-8.1" y1="-13.1" x2="-9.9" y2="-13.1" width="0.15" layer="21"/>
+<wire x1="-13.1" y1="-8.1" x2="-13.1" y2="-9.9" width="0.15" layer="21"/>
+<wire x1="-13.1" y1="-2.1" x2="-13.1" y2="-3.9" width="0.15" layer="21"/>
+<wire x1="-13.1" y1="3.9" x2="-13.1" y2="2.1" width="0.15" layer="21"/>
+<wire x1="-13.1" y1="9.9" x2="-13.1" y2="8.1" width="0.15" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNTING_HOLE">
@@ -526,6 +634,28 @@
 <technology name="">
 <attribute name="PACKAGE" value="34mm x 37mm"/>
 <attribute name="SKU" value="48-0072"/>
+</technology>
+</technologies>
+</device>
+<device name="-1717" package="SHIELD-1717">
+<connects>
+<connect gate="G$1" pin="SHIELD" pad="1 2 3 4 5 6 7 8 9 10 11 12"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PACKAGE" value="17mm x 17mm"/>
+<attribute name="SKU" value="48-0076"/>
+</technology>
+</technologies>
+</device>
+<device name="-2626" package="SHIELD-2626">
+<connects>
+<connect gate="G$1" pin="SHIELD" pad="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PACKAGE" value="26mm x 26mm"/>
+<attribute name="SKU" value="48-0077"/>
 </technology>
 </technologies>
 </device>
