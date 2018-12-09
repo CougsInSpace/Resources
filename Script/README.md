@@ -18,11 +18,13 @@
 get an api token from https://api.slack.com/web. If you have problems with this please ask Cody Sigvartson.
 
 Command line instruction:
+
 Open up the command line interface by searching for 'cmd' on your Windows machine
 Navigate to the directory you have downloaded the fslack.py script. To navigate to a different directory
 type "cd <path_to_directory>"
 
 Use the following commands to:
+
 Download all files:
 fslack.py --download --all --out <filename> <token>
 
