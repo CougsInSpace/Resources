@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -72,7 +72,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -223,6 +223,24 @@
 <text x="0" y="-6.35" size="1.778" layer="96" align="center">&gt;VALUE</text>
 <text x="0" y="-8.382" size="1.778" layer="96" align="center">&gt;SKU</text>
 </symbol>
+<symbol name="FLASH-(Q)SPI">
+<description>&lt;h3&gt;Flash - SPI/QSPI&lt;/h3&gt;</description>
+<pin name="SI(IO0)" x="-12.7" y="5.08" length="short"/>
+<pin name="SO(IO1)" x="-12.7" y="2.54" length="short"/>
+<pin name="!WP!(IO2)" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="!HOLD!(IO3)" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="CLK" x="-12.7" y="0" length="short" direction="in"/>
+<pin name="!CE" x="-12.7" y="-2.54" length="short" direction="in"/>
+<pin name="DGND" x="12.7" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VCC" x="12.7" y="5.08" length="short" direction="pwr" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-8.382" size="1.778" layer="97" align="center">&gt;SKU</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="EEPROM-I2C-4" prefix="U">
@@ -245,7 +263,34 @@
 <technologies>
 <technology name="-128KB">
 <attribute name="SKU" value="29-0001"/>
-<attribute name="VALUE" value="128KB"/>
+<attribute name="VALUE" value="M24M01"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLASH-(Q)SPI" prefix="U">
+<description>&lt;h3&gt;Flash - SPI/QSPI&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/ISSI/IS25LP016D_Flash-SPI.pdf"&gt;IS25LP016D&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FLASH-(Q)SPI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SO8" package="SO8">
+<connects>
+<connect gate="G$1" pin="!CE" pad="1"/>
+<connect gate="G$1" pin="!HOLD!(IO3)" pad="7"/>
+<connect gate="G$1" pin="!WP!(IO2)" pad="3"/>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="DGND" pad="4"/>
+<connect gate="G$1" pin="SI(IO0)" pad="5"/>
+<connect gate="G$1" pin="SO(IO1)" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="-2MB">
+<attribute name="SKU" value="29-0002"/>
+<attribute name="VALUE" value="IS25LP016D"/>
 </technology>
 </technologies>
 </device>
