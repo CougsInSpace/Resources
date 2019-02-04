@@ -1536,7 +1536,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RES-H-PAIRED" prefix="R">
+<deviceset name="RES-H-PAIRED" prefix="RN">
 <description>&lt;h3&gt;Resistor Horizontal - Two Paired Elements&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR-H-PAIRED" x="0" y="0"/>
@@ -1575,7 +1575,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RES-V-PAIRED" prefix="R">
+<deviceset name="RES-V-PAIRED" prefix="RN">
 <description>&lt;h3&gt;Resistor Vertical - Two Paired Elements&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR-V-PAIRED" x="0" y="0"/>
