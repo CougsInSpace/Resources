@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -170,6 +170,22 @@
 <pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
+<symbol name="3.3V-0">
+<description>&lt;h3&gt;3.3V Supply - Channel 0&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">0</text>
+<pin name="3.3V_0" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-1">
+<description>&lt;h3&gt;3.3V Supply - Channel 1&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">1</text>
+<pin name="3.3V_1" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
 <symbol name="3.3V-2">
 <description>&lt;h3&gt;3.3V Supply - Channel 2&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -178,11 +194,138 @@
 <pin name="3.3V_2" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
+<symbol name="3.3V-3">
+<description>&lt;h3&gt;3.3V Supply - Channel 3&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">3</text>
+<pin name="3.3V_3" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-4">
+<description>&lt;h3&gt;3.3V Supply - Channel 4&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">4</text>
+<pin name="3.3V_4" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-5">
+<description>&lt;h3&gt;3.3V Supply - Channel 5&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">5</text>
+<pin name="3.3V_5" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-6">
+<description>&lt;h3&gt;3.3V Supply - Channel 6&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">6</text>
+<pin name="3.3V_6" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-7">
+<description>&lt;h3&gt;3.3V Supply - Channel 7&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">7</text>
+<pin name="3.3V_7" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-8">
+<description>&lt;h3&gt;3.3V Supply - Channel 8&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">8</text>
+<pin name="3.3V_8" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-9">
+<description>&lt;h3&gt;3.3V Supply - Channel 9&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">9</text>
+<pin name="3.3V_9" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-10">
+<description>&lt;h3&gt;3.3V Supply - Channel 10&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">10</text>
+<pin name="3.3V_10" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-11">
+<description>&lt;h3&gt;3.3V Supply - Channel 11&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">11</text>
+<pin name="3.3V_11" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V-12">
+<description>&lt;h3&gt;3.3V Supply - Channel 12&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">12</text>
+<pin name="3.3V_12" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
 <symbol name="5V">
 <description>&lt;h3&gt;5.0V Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="5.0V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="5.0V-0">
+<description>&lt;h3&gt;5.0V Supply - Channel 0&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">0</text>
+<pin name="5.0V_0" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="5.0V-1">
+<description>&lt;h3&gt;5.0V Supply - Channel 1&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">1</text>
+<pin name="5.0V_1" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="5.0V-2">
+<description>&lt;h3&gt;5.0V Supply - Channel 2&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">2</text>
+<pin name="5.0V_2" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="9V">
+<description>&lt;h3&gt;9.0V Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="9.0V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="9.0V-0">
+<description>&lt;h3&gt;9.0V Supply - Channel 0&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">0</text>
+<pin name="9.0V_0" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="9.0V-1">
+<description>&lt;h3&gt;9.0V Supply - Channel 1&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">1</text>
+<pin name="9.0V_1" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
 <symbol name="AGND">
@@ -223,13 +366,87 @@
 <pin name="VBATT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
+<symbol name="VBATT-0">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 0&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">0</text>
+<pin name="VBATT_0" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="VBATT-1">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 1&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">1</text>
+<pin name="VBATT_1" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="VBATT-2">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 2&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">2</text>
+<pin name="VBATT_2" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="VBATT-3">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 3&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">3</text>
+<pin name="VBATT_3" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="VBATT-4">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 4&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">4</text>
+<pin name="VBATT_4" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="VBATT-5">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 5&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">5</text>
+<pin name="VBATT_5" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="VBATT-6">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 6&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">6</text>
+<pin name="VBATT_6" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
 <symbol name="RFGND">
 <description>&lt;h3&gt;Radio Frequency (RF) Ground&lt;/h3&gt;</description>
 <wire x1="-1.778" y1="0" x2="1.778" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-0.762" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="-0.762" y1="-1.524" x2="0.762" y2="-1.524" width="0.254" layer="94"/>
 <text x="-1.27" y="0.254" size="1.27" layer="97" rot="R180" align="top-center">RF</text>
-<pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<pin name="RFGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="RFGND-0">
+<description>&lt;h3&gt;Radio Frequency (RF) Ground - Channel 0&lt;/h3&gt;</description>
+<wire x1="-1.778" y1="0" x2="1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-0.762" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-1.524" x2="0.762" y2="-1.524" width="0.254" layer="94"/>
+<text x="-1.27" y="0.254" size="1.27" layer="97" rot="R180" align="top-center">RF</text>
+<pin name="RFGND-0" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="0.762" y="0.762" size="0.8128" layer="94" align="center">0</text>
+</symbol>
+<symbol name="RFGND-1">
+<description>&lt;h3&gt;Radio Frequency (RF) Ground - Channel 1&lt;/h3&gt;</description>
+<wire x1="-1.778" y1="0" x2="1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-0.762" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-1.524" x2="0.762" y2="-1.524" width="0.254" layer="94"/>
+<text x="-1.27" y="0.254" size="1.27" layer="97" rot="R180" align="top-center">RF</text>
+<pin name="RFGND-1" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="0.762" y="0.762" size="0.8128" layer="94" align="center">1</text>
 </symbol>
 <symbol name="CHASSIS">
 <description>&lt;h3&gt;Chassis Ground&lt;/h3&gt;</description>
@@ -250,12 +467,45 @@
 <pin name="AVDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
+<symbol name="AVDD-NEG">
+<description>&lt;h3&gt;Analog Voltage Source - Negative&lt;/h3&gt;</description>
+<wire x1="-0.762" y1="-1.27" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.762" y2="-1.27" width="0.254" layer="94"/>
+<pin name="AVDD_NEG" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="0" y="-3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3.3V" prefix="SUPPLY">
 <description>&lt;h3&gt;3.3V Supply&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-0" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 0&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-1" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 1&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -278,10 +528,218 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="3.3V-3" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 3&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-4" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 4&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-5" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 5&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-6" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 6&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-7" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 7&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-8" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 8&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-9" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 9&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-9" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-10" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 10&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-10" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-11" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 11&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-11" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V-12" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply - Channel 12&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V-12" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="5.0V" prefix="SUPPLY">
 <description>&lt;h3&gt;5V Supply&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5.0V-0" prefix="SUPPLY">
+<description>&lt;h3&gt;5.0V Supply - Channel 0&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="5.0V-0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5.0V-1" prefix="SUPPLY">
+<description>&lt;h3&gt;5.0V Supply - Channel 1&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="5.0V-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5.0V-2" prefix="SUPPLY">
+<description>&lt;h3&gt;5.0V Supply - Channel 2&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="5.0V-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="9.0V" prefix="SUPPLY">
+<description>&lt;h3&gt;9V Supply&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="9V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="9.0V-0" prefix="SUPPLY">
+<description>&lt;h3&gt;9.0V Supply - Channel 0&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="9.0V-0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="9.0V-1" prefix="SUPPLY">
+<description>&lt;h3&gt;9.0V Supply - Channel 1&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="9.0V-1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -356,10 +814,127 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="VBATT-0" prefix="SUPPLY">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 0&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBATT-0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBATT-1" prefix="SUPPLY">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 1&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBATT-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBATT-2" prefix="SUPPLY">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 2&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBATT-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBATT-3" prefix="SUPPLY">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 3&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBATT-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBATT-4" prefix="SUPPLY">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 4&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBATT-4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBATT-5" prefix="SUPPLY">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 5&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBATT-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBATT-6" prefix="SUPPLY">
+<description>&lt;h3&gt;Battery Voltage Supply - Channel 6&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBATT-6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="RFGND" prefix="SUPPLY">
 <description>&lt;h3&gt;Radio Frequency (RF) Ground&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="RFGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFGND-0" prefix="SUPPLY">
+<description>&lt;h3&gt;Radio Frequency (RF) Ground - Channel 0&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="RFGND-0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFGND-1" prefix="SUPPLY">
+<description>&lt;h3&gt;Radio Frequency (RF) Ground - Channel 1&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="RFGND-1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -386,6 +961,19 @@
 <description>&lt;h3&gt;Analog Voltage Source&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="AVDD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVDD-NEG" prefix="SUPPLY">
+<description>&lt;h3&gt;Analog Voltage Source - Negative&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVDD-NEG" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -481,6 +481,7 @@
 <text x="0" y="-16.51" size="1.778" layer="96" align="center">&gt;VALUE</text>
 <text x="0" y="-18.542" size="1.778" layer="97" align="center">&gt;SKU</text>
 <text x="15.494" y="7.62" size="1.524" layer="95" align="center-right">&gt;EXTRAPIN</text>
+<text x="0" y="-20.574" size="1.778" layer="97" align="center">&gt;FLASH</text>
 </symbol>
 <symbol name="STM32BASE-100">
 <description>&lt;h3&gt;STM 32b µController - 100 Pin Base&lt;/h3&gt;
@@ -768,6 +769,82 @@
 <attribute name="FLASH" value="1MB"/>
 <attribute name="SKU" value="61-0002"/>
 <attribute name="VALUE" value="STM32L476RGT"/>
+</technology>
+</technologies>
+</device>
+<device name="L496R" package="QFP-64-1010">
+<connects>
+<connect gate="A" pin="PA0" pad="14"/>
+<connect gate="A" pin="PA1" pad="15"/>
+<connect gate="A" pin="PA10" pad="43"/>
+<connect gate="A" pin="PA11" pad="44"/>
+<connect gate="A" pin="PA12" pad="45"/>
+<connect gate="A" pin="PA13" pad="46"/>
+<connect gate="A" pin="PA14" pad="49"/>
+<connect gate="A" pin="PA15" pad="50"/>
+<connect gate="A" pin="PA2" pad="16"/>
+<connect gate="A" pin="PA3" pad="17"/>
+<connect gate="A" pin="PA4" pad="20"/>
+<connect gate="A" pin="PA5" pad="21"/>
+<connect gate="A" pin="PA6" pad="22"/>
+<connect gate="A" pin="PA7" pad="23"/>
+<connect gate="A" pin="PA8" pad="41"/>
+<connect gate="A" pin="PA9" pad="42"/>
+<connect gate="B" pin="PB0" pad="26"/>
+<connect gate="B" pin="PB1" pad="27"/>
+<connect gate="B" pin="PB10" pad="29"/>
+<connect gate="B" pin="PB11" pad="30"/>
+<connect gate="B" pin="PB12" pad="33"/>
+<connect gate="B" pin="PB13" pad="34"/>
+<connect gate="B" pin="PB14" pad="35"/>
+<connect gate="B" pin="PB15" pad="36"/>
+<connect gate="B" pin="PB2" pad="28"/>
+<connect gate="B" pin="PB3" pad="55"/>
+<connect gate="B" pin="PB4" pad="56"/>
+<connect gate="B" pin="PB5" pad="57"/>
+<connect gate="B" pin="PB6" pad="58"/>
+<connect gate="B" pin="PB7" pad="59"/>
+<connect gate="B" pin="PB8" pad="61"/>
+<connect gate="B" pin="PB9" pad="62"/>
+<connect gate="BASE" pin="!NRST" pad="7"/>
+<connect gate="BASE" pin="BOOT0" pad="60"/>
+<connect gate="BASE" pin="EXTRA_PIN" pad="54"/>
+<connect gate="BASE" pin="PH0-OSC_IN" pad="5"/>
+<connect gate="BASE" pin="PH1-OSC_OUT" pad="6"/>
+<connect gate="BASE" pin="VBAT" pad="1"/>
+<connect gate="BASE" pin="VDD@1" pad="19"/>
+<connect gate="BASE" pin="VDD@2" pad="32"/>
+<connect gate="BASE" pin="VDD@3" pad="64"/>
+<connect gate="BASE" pin="VDDA/VREF+" pad="13"/>
+<connect gate="BASE" pin="VDDUSB" pad="48"/>
+<connect gate="BASE" pin="VSS@1" pad="18"/>
+<connect gate="BASE" pin="VSS@2" pad="31"/>
+<connect gate="BASE" pin="VSS@3" pad="47"/>
+<connect gate="BASE" pin="VSS@4" pad="63"/>
+<connect gate="BASE" pin="VSSA/VREF-" pad="12"/>
+<connect gate="C" pin="PC0" pad="8"/>
+<connect gate="C" pin="PC1" pad="9"/>
+<connect gate="C" pin="PC10" pad="51"/>
+<connect gate="C" pin="PC11" pad="52"/>
+<connect gate="C" pin="PC12" pad="53"/>
+<connect gate="C" pin="PC13" pad="2"/>
+<connect gate="C" pin="PC14" pad="3"/>
+<connect gate="C" pin="PC15" pad="4"/>
+<connect gate="C" pin="PC2" pad="10"/>
+<connect gate="C" pin="PC3" pad="11"/>
+<connect gate="C" pin="PC4" pad="24"/>
+<connect gate="C" pin="PC5" pad="25"/>
+<connect gate="C" pin="PC6" pad="37"/>
+<connect gate="C" pin="PC7" pad="38"/>
+<connect gate="C" pin="PC8" pad="39"/>
+<connect gate="C" pin="PC9" pad="40"/>
+</connects>
+<technologies>
+<technology name="GT">
+<attribute name="EXTRAPIN" value="PD2"/>
+<attribute name="FLASH" value="1MB"/>
+<attribute name="SKU" value="61-0004"/>
+<attribute name="VALUE" value="STM32L496RGT"/>
 </technology>
 </technologies>
 </device>

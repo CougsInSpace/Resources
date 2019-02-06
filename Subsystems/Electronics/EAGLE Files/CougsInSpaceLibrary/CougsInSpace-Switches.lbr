@@ -374,8 +374,8 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="49-0002" constant="no"/>
-<attribute name="VALUE" value="B2U-1000P" constant="no"/>
+<attribute name="SKU" value="49-0002"/>
+<attribute name="VALUE" value="B2U-1000P"/>
 </technology>
 </technologies>
 </device>
@@ -399,7 +399,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="49-0003" constant="no"/>
+<attribute name="SKU" value="49-0003"/>
 </technology>
 </technologies>
 </device>
