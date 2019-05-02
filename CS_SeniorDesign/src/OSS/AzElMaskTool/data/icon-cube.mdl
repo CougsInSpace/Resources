@@ -1,0 +1,60 @@
+################################################################################
+#            COPYRIGHT 1995 Analytical Graphics, Inc.                          #
+#            This data is intended for use with Satellite Tool Kit (TM)        #
+#            products only.  Any other use is expressly forbidden.             #
+################################################################################
+#Model Builder:n/a
+#DOM 21 Mar '98_sc
+#Manufacturer/Contractor:n/a 
+#Name:Icon Cube
+#Width:n/a m 
+#Length:n/a m 
+#Height:n/a m 
+#Articulations:(No)
+
+Component CubeSide
+    Polygon
+		TxDef do-not.tga AA
+		TxRotate 0 0 0
+		TxGen
+        NumVerts 4
+        Data
+			0 0 0
+			0 1 0
+			0 1 1
+			0 0 1
+    EndPolygon
+EndComponent
+Component Cube
+	Root
+	FaceColor red
+	Refer
+	Component CubeSide
+	EndRefer
+	Refer
+	Translate 1 0 0
+	Rotate 90 0 0
+	Translate 0 1 0
+	Component CubeSide
+	EndRefer
+	Refer
+	Rotate 0 90 0
+	Translate 0 0 1
+	Component CubeSide
+	EndRefer
+	Refer
+	Rotate 0 0 90
+	Translate 1 0 0
+	Component CubeSide
+	EndRefer
+	Refer
+	Rotate 0 0 -90
+	Translate 0 1 0
+	Component CubeSide
+	EndRefer
+EndComponent
+################################################################################
+#            COPYRIGHT 1995 Analytical Graphics, Inc.                          #
+#            This data is intended for use with Satellite Tool Kit (TM)        #
+#            products only.  Any other use is expressly forbidden.             #
+################################################################################
