@@ -1,0 +1,46 @@
+stk.v.11.0
+BEGIN Exclusion
+    LocalZ		 0 0 1
+    LocalX		 1 0 0
+    NumAzElPairs		 8
+    BEGIN AzElPairs
+        0.142527 43.9999
+        45 34.327
+        45.0714 34.3602
+        90 44
+        90 44.0713
+        0 90
+        0 89.8524
+        0 44
+    END
+END
+BEGIN Exclusion
+    LocalZ		 1 0 0
+    LocalX		 0 0 -1
+    NumAzElPairs		 8
+    BEGIN AzElPairs
+        90 89.8524
+        90 44
+        90.1425 43.9999
+        135 34.327
+        135.071 34.3602
+        180 44
+        180 44.0713
+        0 90
+    END
+END
+BEGIN Exclusion
+    LocalZ		 0 1 0
+    LocalX		 -1 0 0
+    NumAzElPairs		 8
+    BEGIN AzElPairs
+        90 89.8524
+        90 44
+        90.1425 43.9999
+        135 34.327
+        135.071 34.3602
+        180 44
+        180 44.0713
+        0 90
+    END
+END

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="NoGraphics" default="compile">
+	<property environment="env"/>
+	<property name="SWING_STK" value="${env.STK_INSTALL_DIR}/CodeSamples/CustomApplications/Java/Swing_STK" />
+	<import file="${SWING_STK}/common.xml" />
+
+	<path id="build.sourcepath">
+		<pathelement location="src" />
+	</path>
+
+	<path id="build.dependentprojects">
+		<pathelement location="${SWING_STK}/build.xml" />
+	</path>
+
+	<path id="build.classpath">
+		<path refid="customapp.swing.stk.classpath" />
+		<pathelement location="${SWING_STK}/classes" />
+	</path>
+	
+	<path id="build.resourcepath">
+		<fileset dir="src">
+			<exclude name="**/*.java" />
+		</fileset>
+	</path>
+
+	<property name="main.classname" value="Main" />
+</project>
