@@ -1491,7 +1491,7 @@
 <attribute name="B2585" value="3960K 1%"/>
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="26-0008"/>
-<attribute name="VALUE" value="68kΩ 5%"/>
+<attribute name="VALUE" value="10kΩ 5%"/>
 </technology>
 <technology name="-68K">
 <attribute name="B2585" value="3935K 1%"/>
