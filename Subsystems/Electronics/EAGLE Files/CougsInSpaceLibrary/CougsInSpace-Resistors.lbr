@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1445,6 +1445,12 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-10K">
+<attribute name="B2585" value="3960K 1%"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="26-0008"/>
+<attribute name="VALUE" value="10kΩ 5%"/>
+</technology>
 <technology name="-68K">
 <attribute name="B2585" value="3935K 1%"/>
 <attribute name="PACKAGE" value="1608"/>
@@ -1481,6 +1487,12 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-10K">
+<attribute name="B2585" value="3960K 1%"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="26-0008"/>
+<attribute name="VALUE" value="68kΩ 5%"/>
+</technology>
 <technology name="-68K">
 <attribute name="B2585" value="3935K 1%"/>
 <attribute name="PACKAGE" value="1608"/>
