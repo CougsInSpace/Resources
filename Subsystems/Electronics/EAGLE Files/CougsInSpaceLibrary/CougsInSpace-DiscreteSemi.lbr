@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -819,6 +819,32 @@
 <text x="0.762" y="-3.81" size="1.27" layer="97" align="center-left">&gt;POWER</text>
 <text x="0.762" y="-5.334" size="1.27" layer="97" align="center-left">&gt;FREQ</text>
 </symbol>
+<symbol name="MAX40200">
+<description>&lt;h3&gt;MAX40200&lt;/h3&gt;
+&lt;p&gt;Ideal diode (transistor acting as a diode)&lt;/p&gt;</description>
+<pin name="IN" x="-10.16" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="OUT" x="10.16" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="EN" x="-10.16" y="-2.54" visible="pin" length="short" direction="in"/>
+<pin name="GND" x="10.16" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="1.524" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.54" x2="1.524" y2="4.064" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.54" x2="1.524" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.54" x2="-1.27" y2="4.064" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="4.064" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.016" x2="1.524" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<text x="0" y="6.35" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.778" layer="95" align="center">&gt;VALUE</text>
+<text x="0" y="-8.382" size="1.778" layer="95" align="center">&gt;SKU</text>
+<text x="0" y="-10.414" size="1.778" layer="95" align="center">&gt;CURRENT</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC4411" prefix="D">
@@ -1142,6 +1168,30 @@
 <attribute name="SKU" value="56-0007"/>
 <attribute name="VALUE" value="DMN53D0LDW"/>
 <attribute name="VDS" value="50V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX40200" prefix="D">
+<description>&lt;h3&gt;MAX40200&lt;/h3&gt;
+&lt;p&gt;Ideal diode (transistor acting as a diode)&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX40200" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="1A"/>
+<attribute name="SKU" value="60-0015"/>
+<attribute name="VALUE" value="MAX40200"/>
 </technology>
 </technologies>
 </device>

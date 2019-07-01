@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -473,6 +473,22 @@
 <wire x1="0" y1="-2.54" x2="0.762" y2="-1.27" width="0.254" layer="94"/>
 <pin name="AVDD_NEG" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
 <text x="0" y="-3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="AVREF-0">
+<description>&lt;h3&gt;Analog Voltage Reference - Channel 0&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="AVREF-0" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">0</text>
+</symbol>
+<symbol name="AVREF-1">
+<description>&lt;h3&gt;Analog Voltage Reference - Channel 1&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="AVREF-1" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">1</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -974,6 +990,32 @@
 <description>&lt;h3&gt;Analog Voltage Source - Negative&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="AVDD-NEG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVREF-0" prefix="SUPPLY">
+<description>&lt;h3&gt;Analog Voltage Reference - Channel 0&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVREF-0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVREF-1" prefix="SUPPLY">
+<description>&lt;h3&gt;Analog Voltage Reference - Channel 1&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVREF-1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

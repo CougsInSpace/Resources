@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -438,6 +438,11 @@
 <attribute name="GAIN" value="50 V/V"/>
 <attribute name="SKU" value="08-0003"/>
 <attribute name="VALUE" value="INA199C1"/>
+</technology>
+<technology name="C2">
+<attribute name="GAIN" value="100 V/V"/>
+<attribute name="SKU" value="08-0004"/>
+<attribute name="VALUE" value="INA199C2"/>
 </technology>
 </technologies>
 </device>
