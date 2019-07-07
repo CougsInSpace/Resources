@@ -1583,10 +1583,6 @@ Space EE</text>
 </classes>
 <parts>
 <part name="FRAME1" library="CougsInSpace-Aesthetics" deviceset="FRAME-A" device="">
-<attribute name="DESIGNER" value=""/>
-<attribute name="PART_NUMBER" value=""/>
-<attribute name="PROJECT" value=""/>
-<attribute name="REV" value=""/>
 <attribute name="TITLE" value="Spectolab UTJ"/>
 </part>
 <part name="Q1" library="CougsInSpace-DiscreteSemi" deviceset="BJT-NPN" device="-TO-39" technology="-2N2219A" value="2N2219A"/>
@@ -1645,12 +1641,12 @@ Place 19.05mm apart, GND on the right</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="227.33" y="1.27" size="3.81" layer="94" ratio="15" align="bottom-right"/>
-<attribute name="SHEET" x="257.81" y="1.27" size="3.81" layer="94" ratio="15" align="bottom-right"/>
 <attribute name="PART_NUMBER" x="257.81" y="13.97" size="3.81" layer="94" ratio="15" align="bottom-right"/>
-<attribute name="REV" x="257.81" y="7.62" size="3.81" layer="94" ratio="15" align="bottom-right"/>
 <attribute name="PROJECT" x="227.33" y="13.97" size="3.81" layer="94" ratio="15" align="bottom-right"/>
 <attribute name="DESIGNER" x="227.33" y="7.62" size="3.81" layer="94" ratio="15" align="bottom-right"/>
+<attribute name="LAST_DATE_TIME" x="227.33" y="1.27" size="3.81" layer="94" ratio="15" align="bottom-right"/>
+<attribute name="REV" x="257.81" y="7.62" size="3.81" layer="94" ratio="15" align="bottom-right"/>
+<attribute name="SHEET" x="257.81" y="1.27" size="3.81" layer="94" ratio="15" align="bottom-right"/>
 <attribute name="TITLE" x="227.33" y="20.32" size="3.81" layer="94" ratio="15" align="bottom-right"/>
 </instance>
 <instance part="Q1" gate="G$1" x="187.96" y="81.28" smashed="yes">
