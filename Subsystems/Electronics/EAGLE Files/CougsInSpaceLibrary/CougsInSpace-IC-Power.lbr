@@ -867,11 +867,11 @@
 </symbol>
 <symbol name="TPS2115A">
 <description>&lt;h3&gt;Auto Switching Power Mux with Current Limit&lt;/h3&gt;</description>
-<pin name="IN1" x="-12.7" y="7.62" length="short" direction="in"/>
-<pin name="IN2" x="-12.7" y="2.54" length="short" direction="in"/>
-<pin name="D0" x="-12.7" y="-5.08" length="short" direction="in"/>
-<pin name="D1" x="-12.7" y="-7.62" length="short" direction="in"/>
-<pin name="OUT" x="12.7" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="IN1" x="-12.7" y="7.62" length="short" direction="pwr"/>
+<pin name="IN2" x="-12.7" y="2.54" length="short" direction="pwr"/>
+<pin name="D0" x="-12.7" y="-7.62" length="short" direction="pas"/>
+<pin name="D1" x="-12.7" y="-5.08" length="short" direction="pas"/>
+<pin name="OUT" x="12.7" y="5.08" length="short" direction="pwr" rot="R180"/>
 <pin name="STAT" x="12.7" y="-2.54" length="short" direction="oc" rot="R180"/>
 <pin name="ILIM" x="12.7" y="0" length="short" direction="out" rot="R180"/>
 <pin name="PGND" x="12.7" y="-7.62" length="short" direction="pwr" rot="R180"/>
@@ -903,8 +903,8 @@
 </symbol>
 <symbol name="TPS2115A-TRUTH">
 <description>&lt;h3&gt;Auto Switching Power Mux with Current Limit - Truth Table&lt;/h3&gt;</description>
-<text x="-10.16" y="6.35" size="1.27" layer="97" align="center">D0</text>
-<text x="-5.08" y="6.35" size="1.27" layer="97" align="center">D1</text>
+<text x="-10.16" y="6.604" size="1.27" layer="97" align="center">D0</text>
+<text x="-5.08" y="6.604" size="1.27" layer="97" align="center">D1</text>
 <text x="5.08" y="6.35" size="1.27" layer="97" align="center">STAT</text>
 <text x="10.16" y="6.35" size="1.27" layer="97" align="center">OUT</text>
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
@@ -965,6 +965,8 @@
 <text x="0" y="8.89" size="1.778" layer="95" align="center">&gt;NAME</text>
 <text x="0" y="-8.89" size="1.778" layer="96" align="center">&gt;VALUE</text>
 <text x="0" y="-10.922" size="1.778" layer="97" align="center">&gt;SKU</text>
+<text x="-10.16" y="5.588" size="0.6096" layer="97" align="center">1µA PU</text>
+<text x="-5.08" y="5.588" size="0.6096" layer="97" align="center">1µA PU</text>
 </symbol>
 </symbols>
 <devicesets>

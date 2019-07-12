@@ -1003,6 +1003,13 @@
 <attribute name="TEMP" value="100ppm/°C"/>
 <attribute name="VALUE" value="620kΩ 1%"/>
 </technology>
+<technology name="-750R">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="POWER" value="1/10W"/>
+<attribute name="SKU" value="21-7500"/>
+<attribute name="TEMP" value="25ppm/°C"/>
+<attribute name="VALUE" value="750Ω 0.5%"/>
+</technology>
 <technology name="-8.45K">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="POWER" value="1/8W"/>
@@ -1379,6 +1386,13 @@
 <attribute name="TEMP" value="100ppm/°C"/>
 <attribute name="VALUE" value="620kΩ 1%"/>
 </technology>
+<technology name="-750R">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="POWER" value="1/10W"/>
+<attribute name="SKU" value="21-7500"/>
+<attribute name="TEMP" value="25ppm/°C"/>
+<attribute name="VALUE" value="750Ω 0.5%"/>
+</technology>
 <technology name="-8.45K">
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="POWER" value="1/8W"/>
@@ -1739,7 +1753,7 @@
 <attribute name="POWER" value="1W"/>
 <attribute name="SKU" value="23-5m00"/>
 <attribute name="TEMP" value="100ppm/°C"/>
-<attribute name="VALUE" value="5mΩ"/>
+<attribute name="VALUE" value="5mΩ 1%"/>
 </technology>
 </technologies>
 </device>
@@ -1756,7 +1770,7 @@
 <attribute name="POWER" value="1/2W"/>
 <attribute name="SKU" value="23-12m0"/>
 <attribute name="TEMP" value="35ppm/°C"/>
-<attribute name="VALUE" value="12mΩ"/>
+<attribute name="VALUE" value="12mΩ 1%"/>
 </technology>
 </technologies>
 </device>
@@ -1781,7 +1795,7 @@
 <attribute name="POWER" value="1W"/>
 <attribute name="SKU" value="23-5m00"/>
 <attribute name="TEMP" value="100ppm/°C"/>
-<attribute name="VALUE" value="5mΩ"/>
+<attribute name="VALUE" value="5mΩ 1%"/>
 </technology>
 </technologies>
 </device>
@@ -1798,7 +1812,7 @@
 <attribute name="POWER" value="1/2W"/>
 <attribute name="SKU" value="23-12m0"/>
 <attribute name="TEMP" value="35ppm/°C"/>
-<attribute name="VALUE" value="12mΩ"/>
+<attribute name="VALUE" value="12mΩ 1%"/>
 </technology>
 </technologies>
 </device>
