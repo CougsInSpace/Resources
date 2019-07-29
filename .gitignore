@@ -13,3 +13,9 @@ OldVersions/
 
 # Microsoft Lock Files
 *~$*
+
+#  LTSpice Simulation Results
+*.log*
+*.raw*
+*.plt*
+*.net

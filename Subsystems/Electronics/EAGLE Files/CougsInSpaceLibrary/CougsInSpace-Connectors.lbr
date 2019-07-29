@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -532,7 +532,7 @@
 </package>
 <package name="THT-1.0">
 <description>&lt;h3&gt;Through Hole 1.0 mm Drill</description>
-<pad name="1" x="0" y="0" drill="1"/>
+<pad name="1" x="0" y="0" drill="1" diameter="1.8"/>
 <text x="0" y="1.6" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <circle x="0" y="0" radius="1.075" width="0.15" layer="21"/>
 <circle x="0" y="0" radius="1.075" width="0.15" layer="39"/>
@@ -884,12 +884,12 @@
 </package>
 <package name="USB-B-FEMALE">
 <description>&lt;h3&gt;USB 2.0 - B - Female&lt;/h3&gt;</description>
-<pad name="SHIELD@1" x="-6.02" y="0" drill="2.3"/>
-<pad name="SHIELD@2" x="6.02" y="0" drill="2.3"/>
-<pad name="3" x="-1.25" y="2.71" drill="0.9"/>
-<pad name="4" x="1.25" y="2.71" drill="0.9"/>
-<pad name="2" x="-1.25" y="4.71" drill="0.9"/>
-<pad name="1" x="1.25" y="4.71" drill="0.9"/>
+<pad name="SHIELD@1" x="-6.02" y="0" drill="2.3" diameter="3.4"/>
+<pad name="SHIELD@2" x="6.02" y="0" drill="2.3" diameter="3.4"/>
+<pad name="3" x="-1.25" y="2.71" drill="0.9" diameter="1.6"/>
+<pad name="4" x="1.25" y="2.71" drill="0.9" diameter="1.6"/>
+<pad name="2" x="-1.25" y="4.71" drill="0.9" diameter="1.6"/>
+<pad name="1" x="1.25" y="4.71" drill="0.9" diameter="1.6"/>
 <wire x1="-6" y1="-10.3" x2="6" y2="-10.3" width="0.15" layer="51"/>
 <wire x1="6" y1="-10.3" x2="6" y2="6.7" width="0.15" layer="51"/>
 <wire x1="6" y1="6.7" x2="-6" y2="6.7" width="0.15" layer="51"/>
@@ -920,9 +920,9 @@
 </package>
 <package name="BARREL-2.1X5.5-R">
 <description>&lt;h3&gt;Barrel Connector - 2.1 x 5.5 mm - Right Angle&lt;/h3&gt;</description>
-<pad name="3" x="-4.7" y="0" drill="1.2"/>
-<pad name="1" x="0" y="-3" drill="1.2"/>
-<pad name="2" x="0" y="3" drill="1.2"/>
+<pad name="3" x="-4.7" y="0" drill="1.2" diameter="2"/>
+<pad name="1" x="0" y="-3" drill="1.2" diameter="2"/>
+<pad name="2" x="0" y="3" drill="1.2" diameter="2"/>
 <wire x1="-4.5" y1="10.7" x2="4.5" y2="10.7" width="0.15" layer="51"/>
 <wire x1="4.5" y1="10.7" x2="4.5" y2="-3.7" width="0.15" layer="51"/>
 <wire x1="4.5" y1="-3.7" x2="-4.6" y2="-3.7" width="0.15" layer="51"/>
@@ -942,6 +942,134 @@
 <wire x1="4.9" y1="11.1" x2="-5.9" y2="11.1" width="0.15" layer="39"/>
 <wire x1="-5.9" y1="11.1" x2="-5.9" y2="-4.1" width="0.15" layer="39"/>
 <text x="0" y="-4.6" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="PCIE-8">
+<description>&lt;h3&gt;PCIe x8&lt;/h3&gt;</description>
+<hole x="0" y="0" drill="2.35"/>
+<hole x="40.15" y="0" drill="2.35"/>
+<pad name="A11" x="-1.65" y="1.25" drill="0.7"/>
+<pad name="A10" x="-2.65" y="3.25" drill="0.7"/>
+<pad name="B10" x="-2.65" y="-3.25" drill="0.7"/>
+<pad name="B11" x="-1.65" y="-1.25" drill="0.7"/>
+<pad name="A9" x="-3.65" y="1.25" drill="0.7"/>
+<pad name="A8" x="-4.65" y="3.25" drill="0.7"/>
+<pad name="B8" x="-4.65" y="-3.25" drill="0.7"/>
+<pad name="B9" x="-3.65" y="-1.25" drill="0.7"/>
+<pad name="A7" x="-5.65" y="1.25" drill="0.7"/>
+<pad name="A6" x="-6.65" y="3.25" drill="0.7"/>
+<pad name="B6" x="-6.65" y="-3.25" drill="0.7"/>
+<pad name="B7" x="-5.65" y="-1.25" drill="0.7"/>
+<pad name="A5" x="-7.65" y="1.25" drill="0.7"/>
+<pad name="A4" x="-8.65" y="3.25" drill="0.7"/>
+<pad name="B4" x="-8.65" y="-3.25" drill="0.7"/>
+<pad name="B5" x="-7.65" y="-1.25" drill="0.7"/>
+<pad name="A3" x="-9.65" y="1.25" drill="0.7"/>
+<pad name="A2" x="-10.65" y="3.25" drill="0.7"/>
+<pad name="B2" x="-10.65" y="-3.25" drill="0.7"/>
+<pad name="B3" x="-9.65" y="-1.25" drill="0.7"/>
+<pad name="A1" x="-11.65" y="1.25" drill="0.7"/>
+<pad name="B1" x="-11.65" y="-1.25" drill="0.7"/>
+<pad name="A12" x="1.35" y="3.25" drill="0.7"/>
+<pad name="B12" x="1.35" y="-3.25" drill="0.7"/>
+<pad name="B13" x="2.35" y="-1.25" drill="0.7"/>
+<pad name="A13" x="2.35" y="1.25" drill="0.7"/>
+<pad name="A14" x="3.35" y="3.25" drill="0.7"/>
+<pad name="B14" x="3.35" y="-3.25" drill="0.7"/>
+<pad name="B15" x="4.35" y="-1.25" drill="0.7"/>
+<pad name="A15" x="4.35" y="1.25" drill="0.7"/>
+<pad name="A16" x="5.35" y="3.25" drill="0.7"/>
+<pad name="B16" x="5.35" y="-3.25" drill="0.7"/>
+<pad name="B17" x="6.35" y="-1.25" drill="0.7"/>
+<pad name="A17" x="6.35" y="1.25" drill="0.7"/>
+<pad name="A18" x="7.35" y="3.25" drill="0.7"/>
+<pad name="B18" x="7.35" y="-3.25" drill="0.7"/>
+<pad name="B19" x="8.35" y="-1.25" drill="0.7"/>
+<pad name="A19" x="8.35" y="1.25" drill="0.7"/>
+<pad name="A20" x="9.35" y="3.25" drill="0.7"/>
+<pad name="B20" x="9.35" y="-3.25" drill="0.7"/>
+<pad name="B21" x="10.35" y="-1.25" drill="0.7"/>
+<pad name="A21" x="10.35" y="1.25" drill="0.7"/>
+<pad name="A22" x="11.35" y="3.25" drill="0.7"/>
+<pad name="B22" x="11.35" y="-3.25" drill="0.7"/>
+<pad name="B23" x="12.35" y="-1.25" drill="0.7"/>
+<pad name="A23" x="12.35" y="1.25" drill="0.7"/>
+<pad name="A24" x="13.35" y="3.25" drill="0.7"/>
+<pad name="B24" x="13.35" y="-3.25" drill="0.7"/>
+<pad name="B25" x="14.35" y="-1.25" drill="0.7"/>
+<pad name="A25" x="14.35" y="1.25" drill="0.7"/>
+<pad name="A26" x="15.35" y="3.25" drill="0.7"/>
+<pad name="B26" x="15.35" y="-3.25" drill="0.7"/>
+<pad name="B27" x="16.35" y="-1.25" drill="0.7"/>
+<pad name="A27" x="16.35" y="1.25" drill="0.7"/>
+<pad name="A28" x="17.35" y="3.25" drill="0.7"/>
+<pad name="B28" x="17.35" y="-3.25" drill="0.7"/>
+<pad name="B29" x="18.35" y="-1.25" drill="0.7"/>
+<pad name="A29" x="18.35" y="1.25" drill="0.7"/>
+<pad name="A30" x="19.35" y="3.25" drill="0.7"/>
+<pad name="B30" x="19.35" y="-3.25" drill="0.7"/>
+<pad name="B31" x="20.35" y="-1.25" drill="0.7"/>
+<pad name="A31" x="20.35" y="1.25" drill="0.7"/>
+<pad name="A32" x="21.35" y="3.25" drill="0.7"/>
+<pad name="B32" x="21.35" y="-3.25" drill="0.7"/>
+<pad name="B33" x="22.35" y="-1.25" drill="0.7"/>
+<pad name="A33" x="22.35" y="1.25" drill="0.7"/>
+<pad name="A34" x="23.35" y="3.25" drill="0.7"/>
+<pad name="B34" x="23.35" y="-3.25" drill="0.7"/>
+<pad name="B35" x="24.35" y="-1.25" drill="0.7"/>
+<pad name="A35" x="24.35" y="1.25" drill="0.7"/>
+<pad name="A36" x="25.35" y="3.25" drill="0.7"/>
+<pad name="B36" x="25.35" y="-3.25" drill="0.7"/>
+<pad name="B37" x="26.35" y="-1.25" drill="0.7"/>
+<pad name="A37" x="26.35" y="1.25" drill="0.7"/>
+<pad name="A38" x="27.35" y="3.25" drill="0.7"/>
+<pad name="B38" x="27.35" y="-3.25" drill="0.7"/>
+<pad name="B39" x="28.35" y="-1.25" drill="0.7"/>
+<pad name="A39" x="28.35" y="1.25" drill="0.7"/>
+<pad name="A40" x="29.35" y="3.25" drill="0.7"/>
+<pad name="B40" x="29.35" y="-3.25" drill="0.7"/>
+<pad name="B41" x="30.35" y="-1.25" drill="0.7"/>
+<pad name="A41" x="30.35" y="1.25" drill="0.7"/>
+<pad name="A42" x="31.35" y="3.25" drill="0.7"/>
+<pad name="B42" x="31.35" y="-3.25" drill="0.7"/>
+<pad name="B43" x="32.35" y="-1.25" drill="0.7"/>
+<pad name="A43" x="32.35" y="1.25" drill="0.7"/>
+<pad name="A44" x="33.35" y="3.25" drill="0.7"/>
+<pad name="B44" x="33.35" y="-3.25" drill="0.7"/>
+<pad name="B45" x="34.35" y="-1.25" drill="0.7"/>
+<pad name="A45" x="34.35" y="1.25" drill="0.7"/>
+<pad name="A46" x="35.35" y="3.25" drill="0.7"/>
+<pad name="B46" x="35.35" y="-3.25" drill="0.7"/>
+<pad name="B47" x="36.35" y="-1.25" drill="0.7"/>
+<pad name="A47" x="36.35" y="1.25" drill="0.7"/>
+<pad name="A48" x="37.35" y="3.25" drill="0.7"/>
+<pad name="B48" x="37.35" y="-3.25" drill="0.7"/>
+<pad name="B49" x="38.35" y="-1.25" drill="0.7"/>
+<pad name="A49" x="38.35" y="1.25" drill="0.7"/>
+<wire x1="-14.65" y1="3.7" x2="41.35" y2="3.7" width="0.15" layer="21"/>
+<wire x1="41.35" y1="3.7" x2="41.35" y2="-3.7" width="0.15" layer="21"/>
+<wire x1="41.35" y1="-3.7" x2="-14.65" y2="-3.7" width="0.15" layer="21"/>
+<wire x1="-14.65" y1="-3.7" x2="-14.65" y2="3.7" width="0.15" layer="21"/>
+<wire x1="-14.65" y1="-3.7" x2="-14.65" y2="-5.1" width="0.15" layer="51"/>
+<wire x1="-14.65" y1="-5.1" x2="41.35" y2="-5.1" width="0.15" layer="51"/>
+<wire x1="-15.1" y1="4.2" x2="41.8" y2="4.2" width="0.15" layer="21"/>
+<wire x1="41.8" y1="4.2" x2="41.8" y2="-4.2" width="0.15" layer="21"/>
+<wire x1="41.8" y1="-4.2" x2="-15.1" y2="-4.2" width="0.15" layer="21"/>
+<wire x1="-15.1" y1="-4.2" x2="-15.1" y2="4.2" width="0.15" layer="21"/>
+<wire x1="41.35" y1="-5.1" x2="41.35" y2="-3.7" width="0.15" layer="51"/>
+<wire x1="41.35" y1="-3.7" x2="41.35" y2="3.7" width="0.15" layer="51"/>
+<wire x1="41.35" y1="3.7" x2="-14.65" y2="3.7" width="0.15" layer="51"/>
+<wire x1="-14.65" y1="3.7" x2="-14.65" y2="-3.7" width="0.15" layer="51"/>
+<wire x1="-14.65" y1="-3.7" x2="41.35" y2="-3.7" width="0.15" layer="51"/>
+<text x="7.6" y="-4.4" size="0.8" layer="51" font="vector" ratio="15" align="center">Under lip</text>
+<text x="0" y="-4.4" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-15.1" y1="4.2" x2="41.8" y2="4.2" width="0.15" layer="39"/>
+<wire x1="41.8" y1="4.2" x2="41.8" y2="-4.2" width="0.15" layer="39"/>
+<wire x1="41.8" y1="-4.2" x2="-15.1" y2="-4.2" width="0.15" layer="39"/>
+<wire x1="-15.1" y1="-4.2" x2="-15.1" y2="4.2" width="0.15" layer="39"/>
+<wire x1="-12.7" y1="4.2" x2="39.5" y2="4.2" width="0.15" layer="40"/>
+<wire x1="39.5" y1="4.2" x2="39.5" y2="-4.2" width="0.15" layer="40"/>
+<wire x1="39.5" y1="-4.2" x2="-12.7" y2="-4.2" width="0.15" layer="40"/>
+<wire x1="-12.7" y1="-4.2" x2="-12.7" y2="4.2" width="0.15" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -1058,10 +1186,10 @@ Mode</text>
 <pin name="SHIELD" x="-5.08" y="-2.54" visible="off" length="middle"/>
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="0.254" width="1.27" layer="94"/>
-<text x="0" y="3.556" size="1.27" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="-3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
-<text x="0" y="-5.08" size="1.27" layer="96" align="center">&gt;SKU</text>
-<text x="0" y="-6.604" size="1.27" layer="96" align="center">&gt;PACKAGE</text>
+<text x="0" y="3.81" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-4.064" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-6.096" size="1.778" layer="96" align="center">&gt;SKU</text>
+<text x="0" y="-8.128" size="1.778" layer="96" align="center">&gt;PACKAGE</text>
 </symbol>
 <symbol name="TEST-POINT">
 <description>&lt;h3&gt;Test Point&lt;/h3&gt;
@@ -1098,23 +1226,19 @@ Mode</text>
 </symbol>
 <symbol name="CIS_BUS-GPIO">
 <description>&lt;h3&gt;CougSat Electrical Bus - GPIO&lt;/h3&gt;</description>
-<wire x1="10.16" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="15.24" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<text x="0" y="16.51" size="1.778" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="-13.97" size="1.778" layer="96" align="center">&gt;VALUE</text>
-<text x="0" y="-16.002" size="1.778" layer="97" align="center">&gt;SKU</text>
-<pin name="GPIO-0" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO-1" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO-2" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO-3" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO-4" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO-5" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO-6" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO-7" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO-8" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO-9" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<wire x1="10.16" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<text x="0" y="11.43" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-8.89" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-10.922" size="1.778" layer="97" align="center">&gt;SKU</text>
+<pin name="GPIO-0" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-1" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-2" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-3" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-4" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-5" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="CIS_BUS-JTAG">
 <description>&lt;h3&gt;CougSat Electrical Bus - JTAG&lt;/h3&gt;</description>
@@ -1454,67 +1578,63 @@ Normal closed switch</description>
 <gate name="POWER" symbol="CIS_BUS-POWER" x="91.44" y="0"/>
 </gates>
 <devices>
-<device name="-SODIMM-DDR1" package="SODIMM-DDR1">
+<device name="-PCIE" package="PCIE-8">
 <connects>
-<connect gate="DATA" pin="BUS_I2C0_IRQ" pad="181 183"/>
-<connect gate="DATA" pin="BUS_I2C0_SCL" pad="177 179"/>
-<connect gate="DATA" pin="BUS_I2C0_SDA" pad="173 175"/>
-<connect gate="DATA" pin="BUS_I2C1_IRQ" pad="129 131"/>
-<connect gate="DATA" pin="BUS_I2C1_SCL" pad="125 127"/>
-<connect gate="DATA" pin="BUS_I2C1_SDA" pad="121 123"/>
-<connect gate="DATA" pin="BUS_SPI_MISO" pad="153 155"/>
-<connect gate="DATA" pin="BUS_SPI_MOSI" pad="157 159"/>
-<connect gate="DATA" pin="BUS_SPI_SCK" pad="149 151"/>
-<connect gate="DATA" pin="COM_SPI_CS" pad="145 147"/>
-<connect gate="DATA" pin="COM_SPI_MISO" pad="137 139"/>
-<connect gate="DATA" pin="COM_SPI_MOSI" pad="141 143"/>
-<connect gate="DATA" pin="COM_SPI_SCK" pad="133 135"/>
-<connect gate="DATA" pin="CTRL_!RESET" pad="165 167"/>
-<connect gate="DATA" pin="CTRL_SYNC" pad="169 171"/>
-<connect gate="GPIO" pin="GPIO-0" pad="81 83"/>
-<connect gate="GPIO" pin="GPIO-1" pad="85 87"/>
-<connect gate="GPIO" pin="GPIO-2" pad="89 91"/>
-<connect gate="GPIO" pin="GPIO-3" pad="93 95"/>
-<connect gate="GPIO" pin="GPIO-4" pad="97 99"/>
-<connect gate="GPIO" pin="GPIO-5" pad="101 103"/>
-<connect gate="GPIO" pin="GPIO-6" pad="105 107"/>
-<connect gate="GPIO" pin="GPIO-7" pad="109 111"/>
-<connect gate="GPIO" pin="GPIO-8" pad="113 115"/>
-<connect gate="GPIO" pin="GPIO-9" pad="117 119"/>
-<connect gate="JTAG" pin="BUS_JTAG_EN-0" pad="186 188"/>
-<connect gate="JTAG" pin="BUS_JTAG_EN-1" pad="190 192"/>
-<connect gate="JTAG" pin="BUS_JTAG_EN-2" pad="194 196"/>
-<connect gate="JTAG" pin="BUS_JTAG_EN-3" pad="198 200"/>
-<connect gate="JTAG" pin="BUS_JTAG_TCK" pad="185 187"/>
-<connect gate="JTAG" pin="BUS_JTAG_TDI" pad="189 191"/>
-<connect gate="JTAG" pin="BUS_JTAG_TDO" pad="193 195"/>
-<connect gate="JTAG" pin="BUS_JTAG_TMS" pad="197 199"/>
-<connect gate="POWER" pin="PGND" pad="82 84 86 88 90 92 94 96 98 100 102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164 166 168 170 172 174 176 178 180 182 184"/>
-<connect gate="POWER" pin="PR_3.3V-0" pad="1 2 3 4"/>
-<connect gate="POWER" pin="PR_3.3V-1" pad="5 6 7 8"/>
-<connect gate="POWER" pin="PR_3.3V-10" pad="41 42 43 44"/>
-<connect gate="POWER" pin="PR_3.3V-11" pad="45 46 47 48"/>
-<connect gate="POWER" pin="PR_3.3V-12" pad="49 50 51 52"/>
-<connect gate="POWER" pin="PR_3.3V-2" pad="9 10 11 12"/>
-<connect gate="POWER" pin="PR_3.3V-3" pad="13 14 15 16"/>
-<connect gate="POWER" pin="PR_3.3V-4" pad="17 18 19 20"/>
-<connect gate="POWER" pin="PR_3.3V-5" pad="21 22 23 24"/>
-<connect gate="POWER" pin="PR_3.3V-6" pad="25 26 27 28"/>
-<connect gate="POWER" pin="PR_3.3V-7" pad="29 30 31 32"/>
-<connect gate="POWER" pin="PR_3.3V-8" pad="33 34 35 36"/>
-<connect gate="POWER" pin="PR_3.3V-9" pad="37 38 39 40"/>
-<connect gate="POWER" pin="PR_BATT-0" pad="53 54 55 56"/>
-<connect gate="POWER" pin="PR_BATT-1" pad="57 58 59 60"/>
-<connect gate="POWER" pin="PR_BATT-2" pad="61 62 63 64"/>
-<connect gate="POWER" pin="PR_BATT-3" pad="65 66 67 68"/>
-<connect gate="POWER" pin="PR_BATT-4" pad="69 70 71 72"/>
-<connect gate="POWER" pin="PR_BATT-5" pad="73 74 75 76"/>
-<connect gate="POWER" pin="PR_BATT-6" pad="77 78 79 80"/>
-<connect gate="POWER" pin="PWR_CTRL_SW" pad="161 163"/>
+<connect gate="DATA" pin="BUS_I2C0_IRQ" pad="A45 B45"/>
+<connect gate="DATA" pin="BUS_I2C0_SCL" pad="A44 B44"/>
+<connect gate="DATA" pin="BUS_I2C0_SDA" pad="A43 B43"/>
+<connect gate="DATA" pin="BUS_I2C1_IRQ" pad="A32 B32"/>
+<connect gate="DATA" pin="BUS_I2C1_SCL" pad="A31 B31"/>
+<connect gate="DATA" pin="BUS_I2C1_SDA" pad="A30 B30"/>
+<connect gate="DATA" pin="BUS_SPI_MISO" pad="A38 B38"/>
+<connect gate="DATA" pin="BUS_SPI_MOSI" pad="A39 B39"/>
+<connect gate="DATA" pin="BUS_SPI_SCK" pad="A37 B37"/>
+<connect gate="DATA" pin="COM_SPI_CS" pad="A36 B36"/>
+<connect gate="DATA" pin="COM_SPI_MISO" pad="A34 B34"/>
+<connect gate="DATA" pin="COM_SPI_MOSI" pad="A35 B35"/>
+<connect gate="DATA" pin="COM_SPI_SCK" pad="A33 B33"/>
+<connect gate="DATA" pin="CTRL_!RESET" pad="A41 B41"/>
+<connect gate="DATA" pin="CTRL_SYNC" pad="A42 B42"/>
+<connect gate="GPIO" pin="GPIO-0" pad="A24"/>
+<connect gate="GPIO" pin="GPIO-1" pad="A25"/>
+<connect gate="GPIO" pin="GPIO-2" pad="A26"/>
+<connect gate="GPIO" pin="GPIO-3" pad="A27"/>
+<connect gate="GPIO" pin="GPIO-4" pad="A28"/>
+<connect gate="GPIO" pin="GPIO-5" pad="A29"/>
+<connect gate="JTAG" pin="BUS_JTAG_EN-0" pad="B46"/>
+<connect gate="JTAG" pin="BUS_JTAG_EN-1" pad="B47"/>
+<connect gate="JTAG" pin="BUS_JTAG_EN-2" pad="B48"/>
+<connect gate="JTAG" pin="BUS_JTAG_EN-3" pad="B49"/>
+<connect gate="JTAG" pin="BUS_JTAG_TCK" pad="A46"/>
+<connect gate="JTAG" pin="BUS_JTAG_TDI" pad="A47"/>
+<connect gate="JTAG" pin="BUS_JTAG_TDO" pad="A48"/>
+<connect gate="JTAG" pin="BUS_JTAG_TMS" pad="A49"/>
+<connect gate="POWER" pin="PGND" pad="A21 A22 A23 B21 B22 B23 B24 B25 B26 B27 B28 B29"/>
+<connect gate="POWER" pin="PR_3.3V-0" pad="A1 B1"/>
+<connect gate="POWER" pin="PR_3.3V-1" pad="A2 B2"/>
+<connect gate="POWER" pin="PR_3.3V-10" pad="A11 B11"/>
+<connect gate="POWER" pin="PR_3.3V-11" pad="A12 B12"/>
+<connect gate="POWER" pin="PR_3.3V-12" pad="A13 B13"/>
+<connect gate="POWER" pin="PR_3.3V-2" pad="A3 B3"/>
+<connect gate="POWER" pin="PR_3.3V-3" pad="A4 B4"/>
+<connect gate="POWER" pin="PR_3.3V-4" pad="A5 B5"/>
+<connect gate="POWER" pin="PR_3.3V-5" pad="A6 B6"/>
+<connect gate="POWER" pin="PR_3.3V-6" pad="A7 B7"/>
+<connect gate="POWER" pin="PR_3.3V-7" pad="A8 B8"/>
+<connect gate="POWER" pin="PR_3.3V-8" pad="A9 B9"/>
+<connect gate="POWER" pin="PR_3.3V-9" pad="A10 B10"/>
+<connect gate="POWER" pin="PR_BATT-0" pad="A14 B14"/>
+<connect gate="POWER" pin="PR_BATT-1" pad="A15 B15"/>
+<connect gate="POWER" pin="PR_BATT-2" pad="A16 B16"/>
+<connect gate="POWER" pin="PR_BATT-3" pad="A17 B17"/>
+<connect gate="POWER" pin="PR_BATT-4" pad="A18 B18"/>
+<connect gate="POWER" pin="PR_BATT-5" pad="A19 B19"/>
+<connect gate="POWER" pin="PR_BATT-6" pad="A20 B20"/>
+<connect gate="POWER" pin="PWR_CTRL_SW" pad="A40 B40"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="SKU" value="04-0006"/>
+<attribute name="SKU" value="05-0006"/>
 <attribute name="VALUE" value="CougSat Socket"/>
 </technology>
 </technologies>
@@ -1540,7 +1660,7 @@ Normal closed switch</description>
 <technologies>
 <technology name="">
 <attribute name="PACKAGE" value="PicoLock"/>
-<attribute name="SKU" value="04-0003"/>
+<attribute name="SKU" value="04-0007"/>
 </technology>
 </technologies>
 </device>
