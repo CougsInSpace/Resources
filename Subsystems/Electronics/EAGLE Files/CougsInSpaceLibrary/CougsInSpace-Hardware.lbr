@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -173,21 +173,21 @@
 <package name="MOUNTING_HOLE-3.3">
 <description>&lt;h3&gt;Mounting Hole - 3.3mm&lt;/h3&gt;</description>
 <pad name="1" x="0" y="0" drill="3.3" diameter="6" thermals="no"/>
-<pad name="V1" x="2.3" y="0" drill="0.45" stop="no" thermals="no"/>
+<pad name="V1" x="2.3" y="0" drill="0.45" diameter="0.6" stop="no" thermals="no"/>
 <text x="0" y="4" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <circle x="0" y="0" radius="3.5" width="0.15" layer="21"/>
 <circle x="0" y="0" radius="3.5" width="0.15" layer="22"/>
 <circle x="0" y="0" radius="3.5" width="0.15" layer="39"/>
 <circle x="0" y="0" radius="3.5" width="0.15" layer="40"/>
-<pad name="V2" x="1.860740625" y="1.35190625" drill="0.45"/>
-<pad name="V3" x="0.710740625" y="2.18743125" drill="0.45"/>
-<pad name="V4" x="-0.710740625" y="2.18743125" drill="0.45"/>
-<pad name="V5" x="-1.860740625" y="1.35190625" drill="0.45"/>
-<pad name="V6" x="-2.3" y="0" drill="0.45"/>
-<pad name="V7" x="-1.860740625" y="-1.35190625" drill="0.45"/>
-<pad name="V8" x="-0.710740625" y="-2.18743125" drill="0.45"/>
-<pad name="V9" x="0.710740625" y="-2.18743125" drill="0.45"/>
-<pad name="V10" x="1.860740625" y="-1.35190625" drill="0.45"/>
+<pad name="V2" x="1.860740625" y="1.35190625" drill="0.45" diameter="0.6"/>
+<pad name="V3" x="0.710740625" y="2.18743125" drill="0.45" diameter="0.6"/>
+<pad name="V4" x="-0.710740625" y="2.18743125" drill="0.45" diameter="0.6"/>
+<pad name="V5" x="-1.860740625" y="1.35190625" drill="0.45" diameter="0.6"/>
+<pad name="V6" x="-2.3" y="0" drill="0.45" diameter="0.6"/>
+<pad name="V7" x="-1.860740625" y="-1.35190625" drill="0.45" diameter="0.6"/>
+<pad name="V8" x="-0.710740625" y="-2.18743125" drill="0.45" diameter="0.6"/>
+<pad name="V9" x="0.710740625" y="-2.18743125" drill="0.45" diameter="0.6"/>
+<pad name="V10" x="1.860740625" y="-1.35190625" drill="0.45" diameter="0.6"/>
 <wire x1="1.2" y1="-1.9" x2="2.2" y2="-0.9" width="0.15" layer="21"/>
 </package>
 <package name="MOUNTING_HOLE-2.2">
@@ -198,14 +198,14 @@
 <circle x="0" y="0" radius="2.325" width="0.15" layer="22"/>
 <circle x="0" y="0" radius="2.325" width="0.15" layer="39"/>
 <circle x="0" y="0" radius="2.325" width="0.15" layer="40"/>
-<pad name="V1" x="1.6" y="0" drill="0.35" diameter="0.75"/>
-<pad name="V2" x="1.131371875" y="1.131371875" drill="0.35" diameter="0.75"/>
-<pad name="V3" x="0" y="1.6" drill="0.35" diameter="0.75"/>
-<pad name="V4" x="-1.131371875" y="1.131371875" drill="0.35" diameter="0.75"/>
-<pad name="V5" x="-1.6" y="0" drill="0.35" diameter="0.75"/>
-<pad name="V6" x="-1.131371875" y="-1.131371875" drill="0.35" diameter="0.75"/>
-<pad name="V7" x="0" y="-1.6" drill="0.35" diameter="0.75"/>
-<pad name="V8" x="1.131371875" y="-1.131371875" drill="0.35" diameter="0.75"/>
+<pad name="V1" x="1.6" y="0" drill="0.35" diameter="0.6"/>
+<pad name="V2" x="1.131371875" y="1.131371875" drill="0.35" diameter="0.6"/>
+<pad name="V3" x="0" y="1.6" drill="0.35" diameter="0.6"/>
+<pad name="V4" x="-1.131371875" y="1.131371875" drill="0.35" diameter="0.6"/>
+<pad name="V5" x="-1.6" y="0" drill="0.35" diameter="0.6"/>
+<pad name="V6" x="-1.131371875" y="-1.131371875" drill="0.35" diameter="0.6"/>
+<pad name="V7" x="0" y="-1.6" drill="0.35" diameter="0.6"/>
+<pad name="V8" x="1.131371875" y="-1.131371875" drill="0.35" diameter="0.6"/>
 </package>
 <package name="MOUNTING_HOLE-1.7">
 <description>&lt;h3&gt;Mounting Hole - 1.7mm&lt;/h3&gt;</description>
@@ -302,14 +302,14 @@
 <circle x="0" y="0" radius="3" width="0.15" layer="22"/>
 <circle x="0" y="0" radius="3" width="0.15" layer="39"/>
 <circle x="0" y="0" radius="3" width="0.15" layer="40"/>
-<pad name="V1" x="2.1" y="0" drill="0.45"/>
-<pad name="V2" x="1.484925" y="1.484925" drill="0.45"/>
-<pad name="V3" x="0" y="2.1" drill="0.45"/>
-<pad name="V4" x="-1.484925" y="1.484925" drill="0.45"/>
-<pad name="V5" x="-2.1" y="0" drill="0.45"/>
-<pad name="V6" x="-1.484925" y="-1.484925" drill="0.45"/>
-<pad name="V7" x="0" y="-2.1" drill="0.45"/>
-<pad name="V8" x="1.484925" y="-1.484925" drill="0.45"/>
+<pad name="V1" x="2.1" y="0" drill="0.45" diameter="0.6"/>
+<pad name="V2" x="1.484925" y="1.484925" drill="0.45" diameter="0.6"/>
+<pad name="V3" x="0" y="2.1" drill="0.45" diameter="0.6"/>
+<pad name="V4" x="-1.484925" y="1.484925" drill="0.45" diameter="0.6"/>
+<pad name="V5" x="-2.1" y="0" drill="0.45" diameter="0.6"/>
+<pad name="V6" x="-1.484925" y="-1.484925" drill="0.45" diameter="0.6"/>
+<pad name="V7" x="0" y="-2.1" drill="0.45" diameter="0.6"/>
+<pad name="V8" x="1.484925" y="-1.484925" drill="0.45" diameter="0.6"/>
 </package>
 <package name="SHIELD-2626">
 <description>&lt;h3&gt;Board Level Shielding - 26 x 26 mm&lt;/h3&gt;</description>
@@ -381,22 +381,22 @@
 <circle x="0" y="0" radius="5.825" width="0.15" layer="22"/>
 <circle x="0" y="0" radius="5.825" width="0.15" layer="39"/>
 <circle x="0" y="0" radius="5.825" width="0.15" layer="40"/>
-<pad name="V1" x="4.4" y="0" drill="0.45"/>
-<pad name="V2" x="4.06506875" y="1.68380625" drill="0.45"/>
-<pad name="V3" x="3.11126875" y="3.11126875" drill="0.45"/>
-<pad name="V4" x="1.68380625" y="4.06506875" drill="0.45"/>
-<pad name="V5" x="0" y="4.4" drill="0.45"/>
-<pad name="V6" x="-1.68380625" y="4.06506875" drill="0.45"/>
-<pad name="V7" x="-3.11126875" y="3.11126875" drill="0.45"/>
-<pad name="V8" x="-4.06506875" y="1.68380625" drill="0.45"/>
-<pad name="V9" x="-4.4" y="0" drill="0.45"/>
-<pad name="V10" x="-4.06506875" y="-1.68380625" drill="0.45"/>
-<pad name="V11" x="-3.11126875" y="-3.11126875" drill="0.45"/>
-<pad name="V12" x="-1.68380625" y="-4.06506875" drill="0.45"/>
-<pad name="V13" x="0" y="-4.4" drill="0.45"/>
-<pad name="V14" x="1.68380625" y="-4.06506875" drill="0.45"/>
-<pad name="V15" x="3.11126875" y="-3.11126875" drill="0.45"/>
-<pad name="V16" x="4.06506875" y="-1.68380625" drill="0.45"/>
+<pad name="V1" x="4.4" y="0" drill="0.45" diameter="0.6"/>
+<pad name="V2" x="4.06506875" y="1.68380625" drill="0.45" diameter="0.6"/>
+<pad name="V3" x="3.11126875" y="3.11126875" drill="0.45" diameter="0.6"/>
+<pad name="V4" x="1.68380625" y="4.06506875" drill="0.45" diameter="0.6"/>
+<pad name="V5" x="0" y="4.4" drill="0.45" diameter="0.6"/>
+<pad name="V6" x="-1.68380625" y="4.06506875" drill="0.45" diameter="0.6"/>
+<pad name="V7" x="-3.11126875" y="3.11126875" drill="0.45" diameter="0.6"/>
+<pad name="V8" x="-4.06506875" y="1.68380625" drill="0.45" diameter="0.6"/>
+<pad name="V9" x="-4.4" y="0" drill="0.45" diameter="0.6"/>
+<pad name="V10" x="-4.06506875" y="-1.68380625" drill="0.45" diameter="0.6"/>
+<pad name="V11" x="-3.11126875" y="-3.11126875" drill="0.45" diameter="0.6"/>
+<pad name="V12" x="-1.68380625" y="-4.06506875" drill="0.45" diameter="0.6"/>
+<pad name="V13" x="0" y="-4.4" drill="0.45" diameter="0.6"/>
+<pad name="V14" x="1.68380625" y="-4.06506875" drill="0.45" diameter="0.6"/>
+<pad name="V15" x="3.11126875" y="-3.11126875" drill="0.45" diameter="0.6"/>
+<pad name="V16" x="4.06506875" y="-1.68380625" drill="0.45" diameter="0.6"/>
 </package>
 </packages>
 <symbols>
