@@ -536,6 +536,7 @@
 <text x="0" y="1.6" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <circle x="0" y="0" radius="1.075" width="0.15" layer="21"/>
 <circle x="0" y="0" radius="1.075" width="0.15" layer="39"/>
+<circle x="0" y="0" radius="1.075" width="0.15" layer="40"/>
 </package>
 <package name="THT-1.5">
 <description>&lt;h3&gt;Through Hole 1.5 mm Drill</description>
