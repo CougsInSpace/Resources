@@ -523,7 +523,7 @@
 </package>
 <package name="THT-0.7">
 <description>&lt;h3&gt;Through Hole 0.7 mm Drill</description>
-<pad name="1" x="0" y="0" drill="0.7"/>
+<pad name="1" x="0" y="0" drill="0.7" diameter="1.5"/>
 <text x="0" y="1.5" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <circle x="0" y="0" radius="0.95" width="0.15" layer="21"/>
 <circle x="0" y="0" radius="0.95" width="0.15" layer="39"/>
