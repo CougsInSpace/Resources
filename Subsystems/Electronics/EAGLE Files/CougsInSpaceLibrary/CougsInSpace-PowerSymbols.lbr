@@ -490,6 +490,14 @@
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
 <text x="0.762" y="0.508" size="0.8128" layer="94" align="center">1</text>
 </symbol>
+<symbol name="AVREF-2">
+<description>&lt;h3&gt;Analog Voltage Reference - Channel 2&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="AVREF-2" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+<text x="0.762" y="0.508" size="0.8128" layer="94" align="center">2</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3.3V" prefix="SUPPLY">
@@ -1016,6 +1024,19 @@
 <description>&lt;h3&gt;Analog Voltage Reference - Channel 1&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="AVREF-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVREF-2" prefix="SUPPLY">
+<description>&lt;h3&gt;Analog Voltage Reference - Channel 2&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVREF-2" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
