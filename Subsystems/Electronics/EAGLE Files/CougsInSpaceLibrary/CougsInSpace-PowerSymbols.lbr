@@ -467,6 +467,20 @@
 <pin name="AVDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
+<symbol name="AVDD-0">
+<description>&lt;h3&gt;Analog Voltage Source - Channel 0&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="AVDD-0" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="AVDD-1">
+<description>&lt;h3&gt;Analog Voltage Source - Channel 1&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="AVDD-1" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
 <symbol name="AVDD-NEG">
 <description>&lt;h3&gt;Analog Voltage Source - Negative&lt;/h3&gt;</description>
 <wire x1="-0.762" y1="-1.27" x2="0" y2="-2.54" width="0.254" layer="94"/>
@@ -985,6 +999,32 @@
 <description>&lt;h3&gt;Analog Voltage Source&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="AVDD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVDD-0" prefix="SUPPLY">
+<description>&lt;h3&gt;Analog Voltage Source - Channel 0&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVDD-0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVDD-1" prefix="SUPPLY">
+<description>&lt;h3&gt;Analog Voltage Source - Channel 1&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVDD-1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
