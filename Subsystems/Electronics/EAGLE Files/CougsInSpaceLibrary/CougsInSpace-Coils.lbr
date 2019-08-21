@@ -216,6 +216,7 @@ Last character is an incremented letter for each variant of the same value and p
 <wire x1="4.15" y1="4.15" x2="4.15" y2="-4.15" width="0.15" layer="21"/>
 <wire x1="4.15" y1="-4.15" x2="-4.15" y2="-4.15" width="0.15" layer="21"/>
 <wire x1="-4.15" y1="-4.15" x2="-4.15" y2="4.15" width="0.15" layer="21"/>
+<rectangle x1="-1.4" y1="-3.7" x2="1.4" y2="3.7" layer="41"/>
 </package>
 <package name="6060">
 <description>&lt;h3&gt;SMD 6.0 x 6.0 mm&lt;/h3&gt;
