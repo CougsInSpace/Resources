@@ -419,12 +419,8 @@
 <smd name="3" x="-1.31" y="-0.95" dx="0.62" dy="1.22" layer="1" rot="R90"/>
 <smd name="1" x="-1.31" y="0.95" dx="0.62" dy="1.22" layer="1" rot="R90"/>
 <text x="-0.0255" y="2.478" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<polygon width="0.15" layer="21">
-<vertex x="-2.25" y="1.9"/>
-<vertex x="-2.25" y="1.25"/>
-<vertex x="-1.6" y="1.9"/>
-</polygon>
 <smd name="5" x="1.31" y="0" dx="0.62" dy="1.22" layer="1" rot="R90"/>
+<rectangle x1="-2.26" y1="1.4" x2="0" y2="1.91" layer="21"/>
 </package>
 <package name="SOT363">
 <description>&lt;h3&gt;SOT363 (SC70-6)&lt;/h3&gt;</description>
