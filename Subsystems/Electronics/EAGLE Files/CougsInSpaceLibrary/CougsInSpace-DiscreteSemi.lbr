@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -495,6 +495,30 @@
 <wire x1="-0.3" y1="-0.7" x2="0.9" y2="-0.7" width="0.15" layer="21"/>
 <wire x1="0.9" y1="-0.7" x2="0.9" y2="-0.4" width="0.15" layer="21"/>
 <text x="0" y="1.7" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="TO-247-3">
+<description>&lt;h3&gt;Transistor Outline (TO) - 247 - 3 Pins&lt;/h3&gt;</description>
+<pad name="1" x="-5.46" y="0" drill="1.5" diameter="2.5" shape="octagon"/>
+<pad name="3" x="5.46" y="0" drill="1.5" diameter="2.5"/>
+<wire x1="-7.8" y1="2.7" x2="7.8" y2="2.7" width="0.15" layer="21"/>
+<wire x1="7.8" y1="2.7" x2="7.8" y2="-2.3" width="0.15" layer="21"/>
+<wire x1="7.8" y1="-2.3" x2="-7.8" y2="-2.3" width="0.15" layer="21"/>
+<wire x1="-7.8" y1="-2.3" x2="-7.8" y2="2.7" width="0.15" layer="21"/>
+<text x="0" y="3.6" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-8.2" y1="3.1" x2="8.2" y2="3.1" width="0.15" layer="21"/>
+<wire x1="8.2" y1="3.1" x2="8.2" y2="-2.7" width="0.15" layer="21"/>
+<wire x1="8.2" y1="-2.7" x2="-8.2" y2="-2.7" width="0.15" layer="21"/>
+<wire x1="-8.2" y1="-2.7" x2="-8.2" y2="3.1" width="0.15" layer="21"/>
+<wire x1="-8.2" y1="3.1" x2="-8.2" y2="-2.7" width="0.15" layer="39"/>
+<wire x1="-8.2" y1="-2.7" x2="8.2" y2="-2.7" width="0.15" layer="39"/>
+<wire x1="8.2" y1="-2.7" x2="8.2" y2="3.1" width="0.15" layer="39"/>
+<wire x1="8.2" y1="3.1" x2="-8.2" y2="3.1" width="0.15" layer="39"/>
+<wire x1="-7.05" y1="1.55" x2="7.05" y2="1.55" width="0.15" layer="40"/>
+<wire x1="7.05" y1="1.55" x2="7.05" y2="-1.55" width="0.15" layer="40"/>
+<wire x1="7.05" y1="-1.55" x2="-7.05" y2="-1.55" width="0.15" layer="40"/>
+<wire x1="-7.05" y1="-1.55" x2="-7.05" y2="1.55" width="0.15" layer="40"/>
+<pad name="2" x="0" y="0" drill="1.5" diameter="2.5"/>
+<rectangle x1="-7.8" y1="1.5" x2="7.8" y2="2.7" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1029,6 +1053,22 @@
 <attribute name="SKU" value="56-0003"/>
 <attribute name="VALUE" value="DMN53D0L"/>
 <attribute name="VDS" value="50V"/>
+</technology>
+</technologies>
+</device>
+<device name="-TO247-3" package="TO-247-3">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="-IRFP4368PBF">
+<attribute name="CURRENT" value="195A"/>
+<attribute name="RDS" value="1.5mΩ"/>
+<attribute name="SKU" value="56-0008"/>
+<attribute name="VALUE" value="IRFP4368PBF"/>
+<attribute name="VDS" value="75V"/>
 </technology>
 </technologies>
 </device>
