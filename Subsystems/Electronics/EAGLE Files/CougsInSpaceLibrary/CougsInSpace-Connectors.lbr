@@ -1022,6 +1022,46 @@
 <wire x1="39.5" y1="-4.2" x2="-12.7" y2="-4.2" width="0.15" layer="40"/>
 <wire x1="-12.7" y1="-4.2" x2="-12.7" y2="4.2" width="0.15" layer="40"/>
 </package>
+<package name="TERMINAL_SPRING-02">
+<description>&lt;h3&gt;Terminal Block - Spring Clamp - 2 Pins&lt;/h3&gt;</description>
+<pad name="1" x="0" y="0" drill="2" diameter="3.5" shape="octagon"/>
+<pad name="2" x="7.5" y="12.5" drill="2" diameter="3.5"/>
+<wire x1="-4.25" y1="20.7" x2="4.25" y2="20.7" width="0.15" layer="21"/>
+<wire x1="4.25" y1="20.7" x2="11.75" y2="20.7" width="0.15" layer="21"/>
+<wire x1="11.75" y1="20.7" x2="11.75" y2="-4.3" width="0.15" layer="21"/>
+<wire x1="11.75" y1="-4.3" x2="4.25" y2="-4.3" width="0.15" layer="21"/>
+<wire x1="4.25" y1="-4.3" x2="-4.25" y2="-4.3" width="0.15" layer="21"/>
+<wire x1="-4.25" y1="-4.3" x2="-4.25" y2="20.7" width="0.15" layer="21"/>
+<wire x1="4.25" y1="-4.3" x2="4.25" y2="20.7" width="0.15" layer="21"/>
+<wire x1="-4.7" y1="21.1" x2="12.2" y2="21.1" width="0.15" layer="21"/>
+<wire x1="12.2" y1="21.1" x2="12.2" y2="-4.7" width="0.15" layer="21"/>
+<wire x1="12.2" y1="-4.7" x2="-4.7" y2="-4.7" width="0.15" layer="21"/>
+<wire x1="-4.7" y1="-4.7" x2="-4.7" y2="21.1" width="0.15" layer="21"/>
+<rectangle x1="-4.7" y1="-4.7" x2="12.2" y2="21.1" layer="39"/>
+<text x="4.25" y="21.7" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="TERMINAL_SPRING-03">
+<description>&lt;h3&gt;Terminal Block - Spring Clamp - 3 Pins&lt;/h3&gt;</description>
+<pad name="1" x="0" y="0" drill="2" diameter="3.5" shape="octagon"/>
+<pad name="2" x="7.5" y="12.5" drill="2" diameter="3.5"/>
+<wire x1="-4.25" y1="20.7" x2="3.75" y2="20.7" width="0.15" layer="21"/>
+<wire x1="3.75" y1="20.7" x2="11.25" y2="20.7" width="0.15" layer="21"/>
+<wire x1="11.25" y1="20.7" x2="11.25" y2="-4.3" width="0.15" layer="21"/>
+<wire x1="11.25" y1="-4.3" x2="3.75" y2="-4.3" width="0.15" layer="21"/>
+<wire x1="3.75" y1="-4.3" x2="-4.25" y2="-4.3" width="0.15" layer="21"/>
+<wire x1="-4.25" y1="-4.3" x2="-4.25" y2="20.7" width="0.15" layer="21"/>
+<wire x1="3.75" y1="-4.3" x2="3.75" y2="20.7" width="0.15" layer="21"/>
+<wire x1="-4.7" y1="21.1" x2="19.7" y2="21.1" width="0.15" layer="21"/>
+<wire x1="19.7" y1="21.1" x2="19.7" y2="-4.7" width="0.15" layer="21"/>
+<wire x1="19.7" y1="-4.7" x2="-4.7" y2="-4.7" width="0.15" layer="21"/>
+<wire x1="-4.7" y1="-4.7" x2="-4.7" y2="21.1" width="0.15" layer="21"/>
+<text x="4.25" y="21.7" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<pad name="3" x="15" y="0" drill="2" diameter="3.5"/>
+<wire x1="11.25" y1="20.7" x2="19.25" y2="20.7" width="0.15" layer="21"/>
+<wire x1="19.25" y1="20.7" x2="19.25" y2="-4.3" width="0.15" layer="21"/>
+<wire x1="19.25" y1="-4.3" x2="11.25" y2="-4.3" width="0.15" layer="21"/>
+<rectangle x1="-4.7" y1="-4.7" x2="19.7" y2="21.1" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X04">
@@ -1331,6 +1371,38 @@ Normal closed switch</description>
 <text x="0" y="8.89" size="1.778" layer="95" align="center">&gt;NAME</text>
 <text x="0" y="-8.89" size="1.778" layer="96" align="center">&gt;VALUE</text>
 <text x="0" y="-10.922" size="1.778" layer="97" align="center">&gt;SKU</text>
+</symbol>
+<symbol name="1X02">
+<description>&lt;h3&gt;2 Pin Connection&lt;/h3&gt;</description>
+<wire x1="3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<text x="0.635" y="-3.81" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0.635" y="6.35" size="1.778" layer="95" align="center">&gt;NAME</text>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0.635" y="-5.842" size="1.778" layer="97" align="center">&gt;SKU</text>
+<text x="0.635" y="-7.874" size="1.778" layer="97" align="center">&gt;PACKAGE</text>
+</symbol>
+<symbol name="1X03">
+<description>&lt;h3&gt;3 Pin Connection&lt;/h3&gt;</description>
+<wire x1="3.81" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<text x="0.635" y="-6.35" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0.635" y="6.35" size="1.778" layer="95" align="center">&gt;NAME</text>
+<pin name="3" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0.635" y="-8.382" size="1.778" layer="97" align="center">&gt;SKU</text>
+<text x="0.635" y="-10.414" size="1.778" layer="97" align="center">&gt;PACKAGE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1731,6 +1803,49 @@ Normal closed switch</description>
 <technologies>
 <technology name="">
 <attribute name="SKU" value="05-0005"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X02" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;Generic Connector - 2 Conductor&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="1X02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TERMINAL-SPRING-02" package="TERMINAL_SPRING-02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PACKAGE" value="Spring Terminal"/>
+<attribute name="SKU" value="05-0008"/>
+<attribute name="VALUE" value="[Override]" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X03" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;Generic Connector - 3 Conductor&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="1X03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TERMINAL-SPRING-3" package="TERMINAL_SPRING-03">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PACKAGE" value="Spring Terminal"/>
+<attribute name="SKU" value="05-0009"/>
+<attribute name="VALUE" value="[Override]" constant="no"/>
 </technology>
 </technologies>
 </device>
