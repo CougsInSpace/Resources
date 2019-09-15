@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1414,43 +1414,43 @@ Space EE</text>
 <sheets>
 <sheet>
 <plain>
-<wire x1="30.48" y1="124.46" x2="78.74" y2="124.46" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="124.46" x2="78.74" y2="124.46" width="0.1524" layer="94"/>
 <wire x1="78.74" y1="124.46" x2="78.74" y2="109.22" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="124.46" x2="30.48" y2="109.22" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="94"/>
-<text x="54.61" y="116.84" size="3.81" layer="94" align="center">Buttons and Knobs</text>
+<wire x1="27.94" y1="124.46" x2="27.94" y2="109.22" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="94"/>
+<text x="53.34" y="116.84" size="3.81" layer="94" align="center">Buttons and Knobs</text>
 <text x="77.47" y="110.49" size="1.778" layer="97" align="bottom-right">Page x</text>
-<wire x1="30.48" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="94"/>
 <wire x1="78.74" y1="96.52" x2="78.74" y2="81.28" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="96.52" x2="30.48" y2="81.28" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="94"/>
-<text x="54.61" y="88.9" size="3.81" layer="94" align="center">Microcontroller</text>
+<wire x1="27.94" y1="96.52" x2="27.94" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="94"/>
+<text x="53.34" y="88.9" size="3.81" layer="94" align="center">Microcontroller</text>
 <text x="77.47" y="82.55" size="1.778" layer="97" align="bottom-right">Page x</text>
-<wire x1="154.94" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="94"/>
-<wire x1="203.2" y1="96.52" x2="203.2" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="154.94" y1="96.52" x2="200.66" y2="96.52" width="0.1524" layer="94"/>
+<wire x1="200.66" y1="96.52" x2="200.66" y2="81.28" width="0.1524" layer="94"/>
 <wire x1="154.94" y1="96.52" x2="154.94" y2="81.28" width="0.1524" layer="94"/>
-<wire x1="154.94" y1="81.28" x2="203.2" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="154.94" y1="81.28" x2="200.66" y2="81.28" width="0.1524" layer="94"/>
 <text x="177.8" y="88.9" size="3.81" layer="94" align="center">Power Transistor</text>
-<text x="201.93" y="82.55" size="1.778" layer="97" align="bottom-right">Page x</text>
-<wire x1="154.94" y1="121.92" x2="203.2" y2="121.92" width="0.1524" layer="94"/>
-<wire x1="203.2" y1="121.92" x2="203.2" y2="106.68" width="0.1524" layer="94"/>
+<text x="199.39" y="82.55" size="1.778" layer="97" align="bottom-right">Page x</text>
+<wire x1="154.94" y1="121.92" x2="200.66" y2="121.92" width="0.1524" layer="94"/>
+<wire x1="200.66" y1="121.92" x2="200.66" y2="106.68" width="0.1524" layer="94"/>
 <wire x1="154.94" y1="121.92" x2="154.94" y2="106.68" width="0.1524" layer="94"/>
-<wire x1="154.94" y1="106.68" x2="203.2" y2="106.68" width="0.1524" layer="94"/>
+<wire x1="154.94" y1="106.68" x2="200.66" y2="106.68" width="0.1524" layer="94"/>
 <text x="177.8" y="114.3" size="3.81" layer="94" align="center">Load Current
 Connector</text>
-<text x="201.93" y="107.95" size="1.778" layer="97" align="bottom-right">Page x</text>
+<text x="199.39" y="107.95" size="1.778" layer="97" align="bottom-right">Page x</text>
 <wire x1="177.8" y1="106.68" x2="175.26" y2="104.14" width="0.254" layer="97"/>
 <wire x1="177.8" y1="106.68" x2="180.34" y2="104.14" width="0.254" layer="97"/>
 <wire x1="177.8" y1="96.52" x2="175.26" y2="99.06" width="0.254" layer="97"/>
 <wire x1="177.8" y1="96.52" x2="180.34" y2="99.06" width="0.254" layer="97"/>
-<wire x1="91.44" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="94"/>
-<wire x1="139.7" y1="96.52" x2="139.7" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="91.44" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="94"/>
+<wire x1="137.16" y1="96.52" x2="137.16" y2="81.28" width="0.1524" layer="94"/>
 <wire x1="91.44" y1="96.52" x2="91.44" y2="81.28" width="0.1524" layer="94"/>
-<wire x1="91.44" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="91.44" y1="81.28" x2="137.16" y2="81.28" width="0.1524" layer="94"/>
 <text x="114.3" y="88.9" size="3.81" layer="94" align="center">Driver</text>
-<text x="138.43" y="82.55" size="1.778" layer="97" align="bottom-right">Page x</text>
+<text x="135.89" y="82.55" size="1.778" layer="97" align="bottom-right">Page x</text>
 <wire x1="78.74" y1="88.9" x2="91.44" y2="88.9" width="0.254" layer="97"/>
-<wire x1="139.7" y1="88.9" x2="154.94" y2="88.9" width="0.254" layer="97"/>
+<wire x1="137.16" y1="88.9" x2="154.94" y2="88.9" width="0.254" layer="97"/>
 <wire x1="154.94" y1="88.9" x2="152.4" y2="91.44" width="0.254" layer="97"/>
 <wire x1="154.94" y1="88.9" x2="152.4" y2="86.36" width="0.254" layer="97"/>
 <wire x1="91.44" y1="88.9" x2="88.9" y2="91.44" width="0.254" layer="97"/>
@@ -1458,18 +1458,18 @@ Connector</text>
 <wire x1="53.34" y1="109.22" x2="53.34" y2="96.52" width="0.254" layer="97"/>
 <wire x1="53.34" y1="96.52" x2="50.8" y2="99.06" width="0.254" layer="97"/>
 <wire x1="53.34" y1="96.52" x2="55.88" y2="99.06" width="0.254" layer="97"/>
-<wire x1="91.44" y1="68.58" x2="139.7" y2="68.58" width="0.1524" layer="94"/>
-<wire x1="139.7" y1="68.58" x2="139.7" y2="53.34" width="0.1524" layer="94"/>
+<wire x1="91.44" y1="68.58" x2="137.16" y2="68.58" width="0.1524" layer="94"/>
+<wire x1="137.16" y1="68.58" x2="137.16" y2="53.34" width="0.1524" layer="94"/>
 <wire x1="91.44" y1="68.58" x2="91.44" y2="53.34" width="0.1524" layer="94"/>
-<wire x1="91.44" y1="53.34" x2="139.7" y2="53.34" width="0.1524" layer="94"/>
-<text x="114.3" y="60.96" size="3.81" layer="94" align="center">UR Connector</text>
-<text x="138.43" y="54.61" size="1.778" layer="97" align="bottom-right">Page x</text>
-<wire x1="91.44" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="94"/>
-<wire x1="139.7" y1="50.8" x2="139.7" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="91.44" y1="53.34" x2="137.16" y2="53.34" width="0.1524" layer="94"/>
+<text x="114.3" y="60.96" size="3.81" layer="94" align="center">USB Connector</text>
+<text x="135.89" y="54.61" size="1.778" layer="97" align="bottom-right">Page x</text>
+<wire x1="91.44" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="94"/>
+<wire x1="137.16" y1="50.8" x2="137.16" y2="35.56" width="0.1524" layer="94"/>
 <wire x1="91.44" y1="50.8" x2="91.44" y2="35.56" width="0.1524" layer="94"/>
-<wire x1="91.44" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="91.44" y1="35.56" x2="137.16" y2="35.56" width="0.1524" layer="94"/>
 <text x="114.3" y="43.18" size="3.81" layer="94" align="center">LCD</text>
-<text x="138.43" y="36.83" size="1.778" layer="97" align="bottom-right">Page x</text>
+<text x="135.89" y="36.83" size="1.778" layer="97" align="bottom-right">Page x</text>
 <wire x1="53.34" y1="81.28" x2="53.34" y2="60.96" width="0.254" layer="97"/>
 <wire x1="53.34" y1="60.96" x2="53.34" y2="43.18" width="0.254" layer="97"/>
 <wire x1="53.34" y1="43.18" x2="91.44" y2="43.18" width="0.254" layer="97"/>
@@ -1478,66 +1478,63 @@ Connector</text>
 <wire x1="91.44" y1="60.96" x2="88.9" y2="58.42" width="0.254" layer="97"/>
 <wire x1="91.44" y1="43.18" x2="88.9" y2="45.72" width="0.254" layer="97"/>
 <wire x1="91.44" y1="43.18" x2="88.9" y2="40.64" width="0.254" layer="97"/>
-<text x="69.85" y="62.23" size="1.778" layer="97">UART</text>
-<wire x1="154.94" y1="147.32" x2="203.2" y2="147.32" width="0.1524" layer="94"/>
-<wire x1="203.2" y1="147.32" x2="203.2" y2="132.08" width="0.1524" layer="94"/>
+<text x="71.12" y="61.468" size="1.778" layer="97" align="bottom-center">UART</text>
+<wire x1="154.94" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="94"/>
+<wire x1="200.66" y1="147.32" x2="200.66" y2="132.08" width="0.1524" layer="94"/>
 <wire x1="154.94" y1="147.32" x2="154.94" y2="132.08" width="0.1524" layer="94"/>
-<wire x1="154.94" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="94"/>
+<wire x1="154.94" y1="132.08" x2="200.66" y2="132.08" width="0.1524" layer="94"/>
 <text x="177.8" y="139.7" size="3.81" layer="94" align="center">Input Current
 Connector</text>
-<text x="201.93" y="133.35" size="1.778" layer="97" align="bottom-right">Page x</text>
-<wire x1="203.2" y1="144.78" x2="213.36" y2="144.78" width="0.254" layer="97"/>
-<wire x1="203.2" y1="137.16" x2="205.74" y2="139.7" width="0.254" layer="97"/>
-<wire x1="203.2" y1="137.16" x2="205.74" y2="134.62" width="0.254" layer="97"/>
-<wire x1="154.94" y1="172.72" x2="203.2" y2="172.72" width="0.1524" layer="94"/>
-<wire x1="203.2" y1="172.72" x2="203.2" y2="157.48" width="0.1524" layer="94"/>
+<text x="199.39" y="133.35" size="1.778" layer="97" align="bottom-right">Page x</text>
+<wire x1="200.66" y1="144.78" x2="210.82" y2="144.78" width="0.254" layer="97"/>
+<wire x1="200.66" y1="137.16" x2="203.2" y2="139.7" width="0.254" layer="97"/>
+<wire x1="200.66" y1="137.16" x2="203.2" y2="134.62" width="0.254" layer="97"/>
+<wire x1="154.94" y1="172.72" x2="200.66" y2="172.72" width="0.1524" layer="94"/>
+<wire x1="200.66" y1="172.72" x2="200.66" y2="157.48" width="0.1524" layer="94"/>
 <wire x1="154.94" y1="172.72" x2="154.94" y2="157.48" width="0.1524" layer="94"/>
-<wire x1="154.94" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="94"/>
+<wire x1="154.94" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="94"/>
 <text x="177.8" y="165.1" size="3.81" layer="94" align="center">Voltage Sense
 Connector</text>
-<text x="201.93" y="158.75" size="1.778" layer="97" align="bottom-right">Page x</text>
-<wire x1="218.44" y1="160.02" x2="213.36" y2="160.02" width="0.254" layer="97"/>
-<wire x1="213.36" y1="160.02" x2="203.2" y2="160.02" width="0.254" layer="97"/>
-<wire x1="203.2" y1="160.02" x2="205.74" y2="162.56" width="0.254" layer="97"/>
-<wire x1="203.2" y1="160.02" x2="205.74" y2="157.48" width="0.254" layer="97"/>
-<wire x1="203.2" y1="170.18" x2="218.44" y2="170.18" width="0.254" layer="97"/>
-<wire x1="213.36" y1="144.78" x2="213.36" y2="142.24" width="0.254" layer="97"/>
-<wire x1="213.36" y1="139.7" x2="213.36" y2="137.16" width="0.254" layer="97"/>
-<wire x1="213.36" y1="137.16" x2="203.2" y2="137.16" width="0.254" layer="97"/>
-<wire x1="218.44" y1="160.02" x2="218.44" y2="162.56" width="0.254" layer="97"/>
-<wire x1="218.44" y1="170.18" x2="218.44" y2="165.1" width="0.254" layer="97"/>
-<wire x1="203.2" y1="167.64" x2="213.36" y2="167.64" width="0.254" layer="97"/>
-<wire x1="213.36" y1="167.64" x2="213.36" y2="165.1" width="0.254" layer="97"/>
-<wire x1="213.36" y1="162.56" x2="213.36" y2="160.02" width="0.254" layer="97"/>
-<wire x1="154.94" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="94"/>
-<wire x1="203.2" y1="68.58" x2="203.2" y2="53.34" width="0.1524" layer="94"/>
+<text x="199.39" y="158.75" size="1.778" layer="97" align="bottom-right">Page x</text>
+<wire x1="215.9" y1="160.02" x2="210.82" y2="160.02" width="0.254" layer="97"/>
+<wire x1="210.82" y1="160.02" x2="200.66" y2="160.02" width="0.254" layer="97"/>
+<wire x1="200.66" y1="170.18" x2="215.9" y2="170.18" width="0.254" layer="97"/>
+<wire x1="210.82" y1="144.78" x2="210.82" y2="142.24" width="0.254" layer="97"/>
+<wire x1="210.82" y1="139.7" x2="210.82" y2="137.16" width="0.254" layer="97"/>
+<wire x1="210.82" y1="137.16" x2="200.66" y2="137.16" width="0.254" layer="97"/>
+<wire x1="215.9" y1="160.02" x2="215.9" y2="162.56" width="0.254" layer="97"/>
+<wire x1="215.9" y1="170.18" x2="215.9" y2="165.1" width="0.254" layer="97"/>
+<wire x1="200.66" y1="167.64" x2="210.82" y2="167.64" width="0.254" layer="97"/>
+<wire x1="210.82" y1="167.64" x2="210.82" y2="165.1" width="0.254" layer="97"/>
+<wire x1="210.82" y1="162.56" x2="210.82" y2="160.02" width="0.254" layer="97"/>
+<wire x1="154.94" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="94"/>
+<wire x1="200.66" y1="68.58" x2="200.66" y2="53.34" width="0.1524" layer="94"/>
 <wire x1="154.94" y1="68.58" x2="154.94" y2="53.34" width="0.1524" layer="94"/>
-<wire x1="154.94" y1="53.34" x2="203.2" y2="53.34" width="0.1524" layer="94"/>
-<text x="179.07" y="60.96" size="3.81" layer="94" align="center">Fan</text>
-<text x="201.93" y="54.61" size="1.778" layer="97" align="bottom-right">Page x</text>
+<wire x1="154.94" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="94"/>
+<text x="177.8" y="60.96" size="3.81" layer="94" align="center">Heatsink &amp; Fan</text>
+<text x="199.39" y="54.61" size="1.778" layer="97" align="bottom-right">Page x</text>
 <wire x1="177.8" y1="81.28" x2="177.8" y2="68.58" width="0.254" layer="97"/>
-<text x="177.8" y="73.66" size="1.778" layer="97">Thermal</text>
+<text x="178.054" y="74.93" size="1.778" layer="97" align="center-left">Thermal</text>
 <wire x1="60.96" y1="81.28" x2="60.96" y2="76.2" width="0.254" layer="97"/>
 <wire x1="60.96" y1="76.2" x2="170.18" y2="76.2" width="0.254" layer="97"/>
 <wire x1="170.18" y1="76.2" x2="170.18" y2="68.58" width="0.254" layer="97"/>
 <wire x1="170.18" y1="68.58" x2="167.64" y2="71.12" width="0.254" layer="97"/>
 <wire x1="170.18" y1="68.58" x2="172.72" y2="71.12" width="0.254" layer="97"/>
-<text x="113.03" y="77.47" size="1.778" layer="97">PWM</text>
-<wire x1="165.1" y1="96.52" x2="165.1" y2="101.6" width="0.254" layer="97"/>
-<wire x1="165.1" y1="101.6" x2="114.3" y2="101.6" width="0.254" layer="97"/>
+<text x="113.03" y="76.708" size="1.778" layer="97" align="bottom-center">PWM</text>
+<wire x1="176.53" y1="101.6" x2="114.3" y2="101.6" width="0.254" layer="97"/>
 <wire x1="114.3" y1="101.6" x2="114.3" y2="96.52" width="0.254" layer="97"/>
 <wire x1="114.3" y1="96.52" x2="111.76" y2="99.06" width="0.254" layer="97"/>
 <wire x1="114.3" y1="96.52" x2="116.84" y2="99.06" width="0.254" layer="97"/>
-<text x="133.35" y="102.87" size="1.778" layer="97">Feedback</text>
+<text x="137.16" y="102.108" size="1.778" layer="97" align="bottom-center">Feedback</text>
 <wire x1="177.8" y1="106.68" x2="177.8" y2="102.87" width="0.254" layer="97"/>
 <wire x1="177.8" y1="96.52" x2="177.8" y2="100.33" width="0.254" layer="97"/>
 </plain>
 <instances>
 <instance part="DIA1" gate="G$1" x="53.34" y="60.96" smashed="yes"/>
-<instance part="DIA2" gate="G$1" x="213.36" y="140.97" smashed="yes"/>
-<instance part="DIA3" gate="G$1" x="213.36" y="163.83" smashed="yes"/>
-<instance part="DIA4" gate="G$1" x="218.44" y="163.83" smashed="yes"/>
-<instance part="DIA5" gate="G$1" x="213.36" y="160.02" smashed="yes"/>
+<instance part="DIA2" gate="G$1" x="210.82" y="140.97" smashed="yes"/>
+<instance part="DIA3" gate="G$1" x="210.82" y="163.83" smashed="yes"/>
+<instance part="DIA4" gate="G$1" x="215.9" y="163.83" smashed="yes"/>
+<instance part="DIA5" gate="G$1" x="210.82" y="160.02" smashed="yes"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="PART_NUMBER" x="257.81" y="13.97" size="3.81" layer="94" ratio="15" align="bottom-right"/>
 <attribute name="PROJECT" x="227.33" y="13.97" size="3.81" layer="94" ratio="15" align="bottom-right"/>

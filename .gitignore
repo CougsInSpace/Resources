@@ -19,3 +19,12 @@ OldVersions/
 *.raw*
 *.plt*
 *.net
+
+# Visual Studio Code
+*.code-workspace
+extensions.json
+settings.json
+*.DB
+
+# Microsoft Office Lock Files
+*~$*

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -266,6 +266,44 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <wire x1="-1.6" y1="0.15" x2="-1.6" y2="-0.15" width="0.15" layer="21"/>
 <wire x1="1.6" y1="0.15" x2="1.6" y2="-0.15" width="0.15" layer="21"/>
 </package>
+<package name="SMD-5032">
+<description>&lt;h3&gt;SMD Crystal 5.0 x 3.2 mm&lt;/h3&gt;</description>
+<smd name="4" x="-1.85" y="1.1" dx="1.6" dy="1.25" layer="1"/>
+<smd name="3" x="1.85" y="1.1" dx="1.6" dy="1.25" layer="1"/>
+<smd name="2" x="1.85" y="-1.1" dx="1.6" dy="1.25" layer="1"/>
+<smd name="1" x="-1.85" y="-1.1" dx="1.6" dy="1.25" layer="1"/>
+<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.15" layer="51"/>
+<wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0.15" layer="51"/>
+<wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0.15" layer="51"/>
+<wire x1="-2.5" y1="-1.6" x2="-2.5" y2="1.6" width="0.15" layer="51"/>
+<wire x1="-2.975" y1="2.05" x2="2.975" y2="2.05" width="0.15" layer="21"/>
+<wire x1="2.975" y1="2.05" x2="2.975" y2="-2.05" width="0.15" layer="21"/>
+<wire x1="2.975" y1="-2.05" x2="-2.975" y2="-2.05" width="0.15" layer="21"/>
+<wire x1="-2.975" y1="-2.05" x2="-2.975" y2="2.05" width="0.15" layer="21"/>
+<wire x1="-2.975" y1="2.05" x2="2.975" y2="2.05" width="0.15" layer="39"/>
+<wire x1="2.975" y1="2.05" x2="2.975" y2="-2.05" width="0.15" layer="39"/>
+<wire x1="2.975" y1="-2.05" x2="-2.975" y2="-2.05" width="0.15" layer="39"/>
+<wire x1="-2.975" y1="-2.05" x2="-2.975" y2="2.05" width="0.15" layer="39"/>
+<wire x1="-1.5" y1="-0.8" x2="-0.5" y2="-0.8" width="0.15" layer="51"/>
+<wire x1="-0.5" y1="-0.8" x2="-0.5" y2="0" width="0.15" layer="51"/>
+<wire x1="-0.5" y1="0" x2="-0.3" y2="0" width="0.15" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.3" y2="0.2" width="0.15" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.3" y2="-0.2" width="0.15" layer="51"/>
+<wire x1="-0.1" y1="0.2" x2="-0.1" y2="-0.2" width="0.15" layer="51"/>
+<wire x1="-0.1" y1="-0.2" x2="0.1" y2="-0.2" width="0.15" layer="51"/>
+<wire x1="0.1" y1="-0.2" x2="0.1" y2="0.2" width="0.15" layer="51"/>
+<wire x1="0.1" y1="0.2" x2="-0.1" y2="0.2" width="0.15" layer="51"/>
+<wire x1="0.3" y1="0.2" x2="0.3" y2="0" width="0.15" layer="51"/>
+<wire x1="0.3" y1="0" x2="0.3" y2="-0.2" width="0.15" layer="51"/>
+<wire x1="0.3" y1="0" x2="0.5" y2="0" width="0.15" layer="51"/>
+<wire x1="0.5" y1="0" x2="0.5" y2="0.8" width="0.15" layer="51"/>
+<wire x1="0.5" y1="0.8" x2="1.5" y2="0.8" width="0.15" layer="51"/>
+<text x="0" y="2.6" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-0.87" y1="1.6" x2="0.87" y2="1.6" width="0.15" layer="21"/>
+<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.15" layer="21"/>
+<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.15" layer="21"/>
+<wire x1="-0.87" y1="-1.6" x2="0.87" y2="-1.6" width="0.15" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -324,8 +362,8 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CRYSTAL-32.768KHZ" prefix="Y">
-<description>&lt;h3&gt;Crystal 32.768kHz&lt;/h3&gt;</description>
+<deviceset name="CRYSTAL" prefix="Y">
+<description>&lt;h3&gt;Crystal&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
@@ -336,7 +374,7 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="-32.768K">
 <attribute name="LOADCAP" value="12.5pF"/>
 <attribute name="SKU" value="40-323A"/>
 <attribute name="VALUE" value="32.768kHz ±10ppm"/>
@@ -345,8 +383,8 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL-16MHZ" prefix="Y">
-<description>&lt;h3&gt;Crystal 16Mhz&lt;/h3&gt;</description>
+<deviceset name="CRYSTAL-GROUNDED" prefix="Y">
+<description>&lt;h3&gt;Crystal Grounded&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="CRYSTAL-GROUNDED" x="0" y="0"/>
 </gates>
@@ -358,10 +396,24 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <connect gate="G$1" pin="GND" pad="2 4" route="any"/>
 </connects>
 <technologies>
-<technology name="">
+<technology name="-16M">
 <attribute name="LOADCAP" value="9pF"/>
 <attribute name="SKU" value="40-166A"/>
 <attribute name="VALUE" value="16MHz ±10ppm"/>
+</technology>
+</technologies>
+</device>
+<device name="-SMD-5032" package="SMD-5032">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4" route="any"/>
+</connects>
+<technologies>
+<technology name="-8M">
+<attribute name="LOADCAP" value="10pF"/>
+<attribute name="SKU" value="40-805A"/>
+<attribute name="VALUE" value="8MHz ±10ppm"/>
 </technology>
 </technologies>
 </device>
