@@ -171,14 +171,38 @@ typedef enum {
   // Not connected
   NC = (int)0xFFFFFFFF,
 
-  STDIO_UART_TX = NC,
-  STDIO_UART_RX = NC,
+  STDIO_UART_TX = PA_9,
+  STDIO_UART_RX = PA_10,
   USBTX         = STDIO_UART_TX,
   USBRX         = STDIO_UART_RX,
 
   /*** Comms HW V1.0 ***/
   LED1 = PD_2,
 
+  /*** Electronic Load ***/
+  INPUT_CURRENT = PC_0, //ADC
+  INPUT_VOLTAGE = PC_1, //ADC
+
+  OUTPUT_CURRENT = PC_2, //ADC
+  OUTPUT_VOLTAGE = PC_3, //ADC
+  OUTPUT_CURRENT_SET = PA_4, //DAC
+
+  SENSE_RANGE_LOW = NC, //GPIO = determine later
+  SENSE_RANGE_MED = NC, //GPIO 
+
+  FAN_PWM = PA_8, //TIM_OUT 
+
+  ENCODER_A = NC, //GPIO - encoder - knob twist
+  ENCODER_B = NC, //GPIO - encoder - knob twist
+  ENCODER_SW = NC, // GPIO - encoder - knob push
+
+  UI_BUTTON1 = NC, //Switch modes (my choice, Bradley demands it)
+
+  LCD_MOSI = PA_7, //LCD master to slave input
+  LCD_SCK = PA_5, // LCD serial clock
+  LCD_A0 = NC, // GPIO
+  LCD_RST_N = NC, //GPIO Active low - pull to a low signal to reset
+  LCD_CS1_N = NC, //GPIO Active low - pull to a low signal to reset
 } PinName;
 
 #ifdef __cplusplus
