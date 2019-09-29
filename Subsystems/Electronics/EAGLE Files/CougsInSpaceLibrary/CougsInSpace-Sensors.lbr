@@ -711,6 +711,11 @@ Buffer</text>
 <attribute name="SKU" value="66-0005"/>
 <attribute name="VALUE" value="ArduCam OV5642"/>
 </technology>
+<technology name="-5MP-12MM-F2.8">
+<attribute name="LENS" value="12mm f2.8"/>
+<attribute name="SKU" value="66-0005"/>
+<attribute name="VALUE" value="ArduCam OV5642"/>
+</technology>
 </technologies>
 </device>
 </devices>
