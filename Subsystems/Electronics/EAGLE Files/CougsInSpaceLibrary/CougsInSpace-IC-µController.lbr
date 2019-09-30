@@ -241,13 +241,10 @@
 <wire x1="-6.675" y1="-6.675" x2="6.675" y2="-6.675" width="0.15" layer="21"/>
 <wire x1="6.675" y1="-6.675" x2="6.675" y2="6.675" width="0.15" layer="21"/>
 <wire x1="6.675" y1="6.675" x2="-6.675" y2="6.675" width="0.15" layer="21"/>
-<polygon width="0.15" layer="21">
-<vertex x="-6.675" y="6.675"/>
-<vertex x="-6.675" y="3.9"/>
-<vertex x="-3.9" y="6.675"/>
-</polygon>
 <text x="0" y="7.2" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <rectangle x1="-6.7" y1="-6.7" x2="6.7" y2="6.7" layer="39"/>
+<rectangle x1="-6.7" y1="4" x2="-5" y2="6.7" layer="21"/>
+<rectangle x1="-5" y1="5" x2="-4" y2="6.7" layer="21"/>
 </package>
 <package name="QFP-100-1414">
 <description>&lt;h3&gt;Quad Flat Package (QFP) - 100 pins - 14 x 14 mm&lt;/h3&gt;</description>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.1">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -327,8 +327,8 @@
 </package>
 <package name="THT-15MM">
 <description>&lt;h3&gt;Through Hole - 15mm Spacing&lt;/h3&gt;</description>
-<pad name="1" x="-7.5" y="0" drill="1"/>
-<pad name="2" x="7.5" y="0" drill="1"/>
+<pad name="1" x="-7.5" y="0" drill="1" diameter="1.6"/>
+<pad name="2" x="7.5" y="0" drill="1" diameter="1.6"/>
 <wire x1="-5.5" y1="2.3" x2="5.5" y2="2.3" width="0.15" layer="51"/>
 <wire x1="5.5" y1="2.3" x2="5.5" y2="-2.3" width="0.15" layer="51"/>
 <wire x1="5.5" y1="-2.3" x2="-5.5" y2="-2.3" width="0.15" layer="51"/>
@@ -722,6 +722,13 @@
 <attribute name="SKU" value="21-0.05"/>
 <attribute name="TEMP" value="75ppm/°C"/>
 <attribute name="VALUE" value="50mΩ 1%"/>
+</technology>
+<technology name="-0.51R">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="POWER" value="1/10W"/>
+<attribute name="SKU" value="21-0.51"/>
+<attribute name="TEMP" value="100ppm/°C"/>
+<attribute name="VALUE" value="510mΩ 1%"/>
 </technology>
 <technology name="-1.2K">
 <attribute name="PACKAGE" value="1608"/>
@@ -1119,6 +1126,13 @@
 <attribute name="SKU" value="21-0.05"/>
 <attribute name="TEMP" value="75ppm/°C"/>
 <attribute name="VALUE" value="50mΩ 1%"/>
+</technology>
+<technology name="-0.51R">
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="POWER" value="1/10W"/>
+<attribute name="SKU" value="21-0.51"/>
+<attribute name="TEMP" value="100ppm/°C"/>
+<attribute name="VALUE" value="510mΩ 1%"/>
 </technology>
 <technology name="-1.2K">
 <attribute name="PACKAGE" value="1608"/>
