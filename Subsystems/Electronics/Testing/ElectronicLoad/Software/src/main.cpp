@@ -64,6 +64,7 @@ void setCurrent(double current) {
 double getOutputCurrent() {
   return currentOut.read() * GAIN_OUTPUT_CURRENT;
 }
+
 /**
  * @brief Get the output voltage
  *
@@ -72,6 +73,7 @@ double getOutputCurrent() {
 double getOutputVoltage() {
   return voltageOut.read() * GAIN_OUTPUT_VOLTAGE;
 }
+
 /**
  * @brief Get the input current
  *
@@ -80,6 +82,7 @@ double getOutputVoltage() {
 double getInputCurrent() {
   return currentIn.read() * GAIN_INPUT_CURRENT;
 }
+
 /**
  * @brief Get the input voltage
  *
@@ -89,12 +92,6 @@ double getInputVoltage() {
   return voltageIn.read() * GAIN_INPUT_VOLTAGE;
 }
 
-/**
- * @brief call all functions when software complete
- *
- *
- * @return int ensure that the program runs successfully
- */
 int main(void) {
   return MBED_SUCCESS;
 }
