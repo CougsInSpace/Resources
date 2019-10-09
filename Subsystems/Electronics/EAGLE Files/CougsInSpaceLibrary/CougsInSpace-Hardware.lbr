@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -161,14 +161,10 @@
 <description>&lt;h3&gt;Hardware&lt;/h3&gt;
 &lt;p&gt;Stand offs, heatsinks, etc.&lt;/p&gt;
 &lt;p&gt;SKUs&lt;br&gt;
-48-001x: Bolts [0, 1) mm&lt;br&gt;
-48-002x: Bolts [1, 2) mm&lt;br&gt;
-48-003x: Bolts [2, 3) mm&lt;br&gt;
-48-004x: Bolts [3, 4) mm&lt;br&gt;
-48-005x: Bolts [4, 5) mm&lt;br&gt;
-48-006x: Bolts 5mm and larger&lt;br&gt;
-48-0070 and beyond: All other hardware&lt;/p&gt;
-&lt;p&gt;For bolts, the last character is an incremented letter for each variant of the same value. Namely different threads, heads, etc.&lt;/p&gt;</description>
+48-0000 to 48-0099: Hardware&lt;br&gt;
+48-0100 to 48-0999: Bolts&lt;br&gt;
+48-1000 and beyond: More hardware&lt;/p&gt;
+&lt;p&gt;For bolts, there is a leading zero, first numer is diameter, second is length, third is increment for each similar one. 48-023x is an M2 x 3mm&lt;/p&gt;</description>
 <packages>
 <package name="MOUNTING_HOLE-3.3">
 <description>&lt;h3&gt;Mounting Hole - 3.3mm&lt;/h3&gt;</description>
