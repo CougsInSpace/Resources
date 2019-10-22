@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -200,25 +200,16 @@
 <wire x1="2" y1="-2" x2="2" y2="-1.575" width="0.15" layer="21"/>
 <wire x1="2" y1="1.575" x2="2" y2="2" width="0.15" layer="21"/>
 <wire x1="2" y1="2" x2="1.575" y2="2" width="0.15" layer="21"/>
-<polygon width="0.15" layer="21">
-<vertex x="-2" y="2"/>
-<vertex x="-2" y="1.575"/>
-<vertex x="-1.575" y="2"/>
-</polygon>
 <wire x1="-2.525" y1="2.525" x2="-2.525" y2="-2.525" width="0.15" layer="21"/>
 <wire x1="-2.525" y1="-2.525" x2="2.525" y2="-2.525" width="0.15" layer="21"/>
 <wire x1="2.525" y1="-2.525" x2="2.525" y2="2.525" width="0.15" layer="21"/>
 <wire x1="2.525" y1="2.525" x2="-2.525" y2="2.525" width="0.15" layer="21"/>
-<polygon width="0.15" layer="21">
-<vertex x="-2.525" y="2.525"/>
-<vertex x="-2.525" y="1.375"/>
-<vertex x="-1.375" y="2.525"/>
-</polygon>
 <text x="0" y="3.1" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <wire x1="-2.525" y1="2.525" x2="2.525" y2="2.525" width="0.15" layer="39"/>
 <wire x1="2.525" y1="2.525" x2="2.525" y2="-2.525" width="0.15" layer="39"/>
 <wire x1="2.525" y1="-2.525" x2="-2.525" y2="-2.525" width="0.15" layer="39"/>
 <wire x1="-2.525" y1="-2.525" x2="-2.525" y2="2.525" width="0.15" layer="39"/>
+<rectangle x1="-2.5" y1="1.5" x2="-1.5" y2="2.5" layer="21"/>
 </package>
 <package name="QFN-38-5070">
 <description>&lt;h3&gt;Quad Flat No-Leads (QFN) - 38 pins - 5.0 x 7.0 mm&lt;/h3&gt;</description>
