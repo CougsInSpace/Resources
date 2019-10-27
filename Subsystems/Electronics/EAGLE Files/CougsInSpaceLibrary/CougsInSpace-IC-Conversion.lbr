@@ -325,6 +325,60 @@
 <text x="0" y="3.1" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <rectangle x1="-2.6" y1="1.3" x2="-1.3" y2="2.6" layer="21"/>
 </package>
+<package name="QFN-40-6060">
+<description>&lt;h3&gt;Quad Flat No-Leads (QFN) - 40 pins - 6.0 x 6.0 mm&lt;/h3&gt;</description>
+<smd name="PAD" x="0" y="0" dx="4.1" dy="4.1" layer="1"/>
+<smd name="1" x="-2.9" y="2.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="2" x="-2.9" y="1.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="3" x="-2.9" y="1.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="4" x="-2.9" y="0.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="5" x="-2.9" y="0.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="6" x="-2.9" y="-0.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="7" x="-2.9" y="-0.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="8" x="-2.9" y="-1.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="9" x="-2.9" y="-1.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="10" x="-2.9" y="-2.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="26" x="2.9" y="0.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="27" x="2.9" y="0.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="28" x="2.9" y="1.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="29" x="2.9" y="1.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="30" x="2.9" y="2.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="21" x="2.9" y="-2.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="22" x="2.9" y="-1.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="23" x="2.9" y="-1.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="24" x="2.9" y="-0.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="25" x="2.9" y="-0.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="31" x="2.25" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="32" x="1.75" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="33" x="1.25" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="34" x="0.75" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="35" x="0.25" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="36" x="-0.25" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="37" x="-0.75" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="38" x="-1.25" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="39" x="-1.75" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="40" x="-2.25" y="2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="19" x="1.75" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="20" x="2.25" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="17" x="0.75" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="18" x="1.25" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="15" x="-0.25" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="16" x="0.25" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="13" x="-1.25" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="14" x="-0.75" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="11" x="-2.25" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<smd name="12" x="-1.75" y="-2.9" dx="0.25" dy="0.6" layer="1"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.15" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.15" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.15" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.15" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.15" layer="39"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.15" layer="39"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.15" layer="39"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.15" layer="39"/>
+<rectangle x1="-3.5" y1="2.5" x2="-2.5" y2="3.5" layer="21"/>
+<text x="0" y="4" size="0.8" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="IOEXPANDER_16BIT">
@@ -465,6 +519,51 @@
 <text x="0" y="16.51" size="1.778" layer="95" align="center">&gt;NAME</text>
 <text x="0" y="-16.51" size="1.778" layer="96" align="center">&gt;VALUE</text>
 <text x="0" y="-18.542" size="1.778" layer="97" align="center">&gt;SKU</text>
+</symbol>
+<symbol name="AD9714">
+<description>&lt;h3&gt;AD9714 - Dual 8b DAC&lt;/h3&gt;</description>
+<pin name="IOUTP" x="20.32" y="7.62" length="short" direction="out" rot="R180"/>
+<pin name="IOUTN" x="20.32" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="QOUTP" x="20.32" y="-5.08" length="short" direction="out" rot="R180"/>
+<pin name="QOUTN" x="20.32" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="RLIN" x="20.32" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="RLIP" x="20.32" y="10.16" length="short" direction="pas" rot="R180"/>
+<pin name="RLQP" x="20.32" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="RLQN" x="20.32" y="-10.16" length="short" direction="pas" rot="R180"/>
+<pin name="CMLI" x="20.32" y="12.7" length="short" direction="in" rot="R180"/>
+<pin name="CMLQ" x="20.32" y="-12.7" length="short" direction="in" rot="R180"/>
+<pin name="DB7(MSB)" x="-20.32" y="15.24" length="short" direction="in"/>
+<pin name="DB6" x="-20.32" y="12.7" length="short" direction="in"/>
+<pin name="DB5" x="-20.32" y="10.16" length="short" direction="in"/>
+<pin name="DB4" x="-20.32" y="7.62" length="short" direction="in"/>
+<pin name="DB3" x="-20.32" y="5.08" length="short" direction="in"/>
+<pin name="DB2" x="-20.32" y="2.54" length="short" direction="in"/>
+<pin name="DB1" x="-20.32" y="0" length="short" direction="in"/>
+<pin name="DB0(LSB)" x="-20.32" y="-2.54" length="short" direction="in"/>
+<pin name="AVSS@1" x="20.32" y="-25.4" length="short" direction="pwr" rot="R180"/>
+<pin name="AVDD" x="20.32" y="27.94" length="short" direction="pwr" rot="R180"/>
+<pin name="DVDDIO" x="-20.32" y="27.94" length="short" direction="pwr"/>
+<pin name="DVDD" x="-20.32" y="25.4" length="short" direction="pwr"/>
+<pin name="DVSS" x="-20.32" y="-25.4" length="short" direction="pwr"/>
+<pin name="!CS!/PWRDN" x="-20.32" y="-7.62" length="short" direction="in"/>
+<pin name="SDIO/FORMAT" x="-20.32" y="-10.16" length="short" direction="in"/>
+<pin name="SCLK/CLKMD" x="-20.32" y="-12.7" length="short" direction="in"/>
+<pin name="RESET/PINMD" x="-20.32" y="-15.24" length="short" direction="in"/>
+<pin name="FSADJQ/AUXQ" x="20.32" y="17.78" length="short" direction="pas" rot="R180"/>
+<pin name="CVDD" x="-20.32" y="22.86" length="short" direction="pwr"/>
+<pin name="CLKIN" x="-20.32" y="-20.32" length="short" direction="in"/>
+<pin name="CVSS" x="-20.32" y="-27.94" length="short" direction="pwr"/>
+<pin name="DCLKIO" x="-20.32" y="17.78" length="short" direction="in"/>
+<pin name="REFIO" x="20.32" y="22.86" length="short" direction="pas" rot="R180"/>
+<pin name="FSADJI/AUXI" x="20.32" y="20.32" length="short" direction="pas" rot="R180"/>
+<wire x1="-17.78" y1="30.48" x2="17.78" y2="30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="30.48" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-30.48" x2="-17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-30.48" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
+<text x="0" y="31.75" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-31.75" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-33.782" size="1.778" layer="97" align="center">&gt;SKU</text>
+<pin name="AVSS@2" x="20.32" y="-27.94" length="short" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -635,6 +734,59 @@
 <technology name="">
 <attribute name="SKU" value="27-0004"/>
 <attribute name="VALUE" value="AD7689"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD9714" prefix="U">
+<description>&lt;h3&gt;AD9714 - Dual 8b DAC&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="AD9714" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-40-6060">
+<connects>
+<connect gate="G$1" pin="!CS!/PWRDN" pad="38"/>
+<connect gate="G$1" pin="AVDD" pad="26"/>
+<connect gate="G$1" pin="AVSS@1" pad="25"/>
+<connect gate="G$1" pin="AVSS@2" pad="PAD"/>
+<connect gate="G$1" pin="CLKIN" pad="18"/>
+<connect gate="G$1" pin="CMLI" pad="31"/>
+<connect gate="G$1" pin="CMLQ" pad="20"/>
+<connect gate="G$1" pin="CVDD" pad="17"/>
+<connect gate="G$1" pin="CVSS" pad="19"/>
+<connect gate="G$1" pin="DB0(LSB)" pad="9"/>
+<connect gate="G$1" pin="DB1" pad="8"/>
+<connect gate="G$1" pin="DB2" pad="4"/>
+<connect gate="G$1" pin="DB3" pad="3"/>
+<connect gate="G$1" pin="DB4" pad="2"/>
+<connect gate="G$1" pin="DB5" pad="1"/>
+<connect gate="G$1" pin="DB6" pad="40"/>
+<connect gate="G$1" pin="DB7(MSB)" pad="39"/>
+<connect gate="G$1" pin="DCLKIO" pad="16"/>
+<connect gate="G$1" pin="DVDD" pad="7"/>
+<connect gate="G$1" pin="DVDDIO" pad="5"/>
+<connect gate="G$1" pin="DVSS" pad="6"/>
+<connect gate="G$1" pin="FSADJI/AUXI" pad="33"/>
+<connect gate="G$1" pin="FSADJQ/AUXQ" pad="32"/>
+<connect gate="G$1" pin="IOUTN" pad="29"/>
+<connect gate="G$1" pin="IOUTP" pad="28"/>
+<connect gate="G$1" pin="QOUTN" pad="22"/>
+<connect gate="G$1" pin="QOUTP" pad="23"/>
+<connect gate="G$1" pin="REFIO" pad="34"/>
+<connect gate="G$1" pin="RESET/PINMD" pad="35"/>
+<connect gate="G$1" pin="RLIN" pad="30"/>
+<connect gate="G$1" pin="RLIP" pad="27"/>
+<connect gate="G$1" pin="RLQN" pad="21"/>
+<connect gate="G$1" pin="RLQP" pad="24"/>
+<connect gate="G$1" pin="SCLK/CLKMD" pad="36"/>
+<connect gate="G$1" pin="SDIO/FORMAT" pad="37"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SKU" value="27-0005"/>
+<attribute name="VALUE" value="AD9714"/>
 </technology>
 </technologies>
 </device>
