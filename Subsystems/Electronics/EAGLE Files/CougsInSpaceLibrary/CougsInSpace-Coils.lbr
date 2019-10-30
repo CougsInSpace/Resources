@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -691,6 +691,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="31-111A"/>
 <attribute name="VALUE" value="110nH 2%"/>
 </technology>
+<technology name="-12NH">
+<attribute name="CURRENT" value="1.5A"/>
+<attribute name="DCR" value="64mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-120A"/>
+<attribute name="VALUE" value="12nH 2%"/>
+</technology>
 <technology name="-15NH">
 <attribute name="CURRENT" value="2.2A"/>
 <attribute name="DCR" value="25mΩ"/>
@@ -704,6 +711,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-220A"/>
 <attribute name="VALUE" value="22nH 2%"/>
+</technology>
+<technology name="-3.9NH">
+<attribute name="CURRENT" value="2.2A"/>
+<attribute name="DCR" value="28mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-3.9A"/>
+<attribute name="VALUE" value="3.9nH ±0.1nH"/>
 </technology>
 <technology name="-33NH">
 <attribute name="CURRENT" value="600mA"/>
@@ -726,12 +740,26 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="31-472A"/>
 <attribute name="VALUE" value="4.7µH 20%"/>
 </technology>
+<technology name="-5.6NH">
+<attribute name="CURRENT" value="700mA"/>
+<attribute name="DCR" value="75mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-5.6A"/>
+<attribute name="VALUE" value="5.6nH 2%"/>
+</technology>
 <technology name="-560NH">
 <attribute name="CURRENT" value="530mA"/>
 <attribute name="DCR" value="490mΩ"/>
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-561A"/>
 <attribute name="VALUE" value="560nH 5%"/>
+</technology>
+<technology name="-56NH">
+<attribute name="CURRENT" value="600mA"/>
+<attribute name="DCR" value="310mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-560A"/>
+<attribute name="VALUE" value="56nH 2%"/>
 </technology>
 <technology name="-7.5NH">
 <attribute name="CURRENT" value="750mA"/>
@@ -821,6 +849,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="31-111A"/>
 <attribute name="VALUE" value="110nH 2%"/>
 </technology>
+<technology name="-12NH">
+<attribute name="CURRENT" value="1.5A"/>
+<attribute name="DCR" value="64mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-120A"/>
+<attribute name="VALUE" value="12nH 2%"/>
+</technology>
 <technology name="-15NH">
 <attribute name="CURRENT" value="2.2A"/>
 <attribute name="DCR" value="25mΩ"/>
@@ -834,6 +869,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-220A"/>
 <attribute name="VALUE" value="22nH 2%"/>
+</technology>
+<technology name="-3.9NH">
+<attribute name="CURRENT" value="2.2A"/>
+<attribute name="DCR" value="28mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-3.9A"/>
+<attribute name="VALUE" value="3.9nH ±0.1nH"/>
 </technology>
 <technology name="-33NH">
 <attribute name="CURRENT" value="600mA"/>
@@ -856,12 +898,26 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="31-472A"/>
 <attribute name="VALUE" value="4.7µH 20%"/>
 </technology>
+<technology name="-5.6NH">
+<attribute name="CURRENT" value="700mA"/>
+<attribute name="DCR" value="75mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-5.6A"/>
+<attribute name="VALUE" value="5.6nH 2%"/>
+</technology>
 <technology name="-560NH">
 <attribute name="CURRENT" value="530mA"/>
 <attribute name="DCR" value="490mΩ"/>
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-561A"/>
 <attribute name="VALUE" value="560nH 5%"/>
+</technology>
+<technology name="-56NH">
+<attribute name="CURRENT" value="600mA"/>
+<attribute name="DCR" value="310mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-560A"/>
+<attribute name="VALUE" value="56nH 2%"/>
 </technology>
 <technology name="-7.5NH">
 <attribute name="CURRENT" value="750mA"/>
