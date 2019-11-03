@@ -705,6 +705,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="31-150A"/>
 <attribute name="VALUE" value="15nH 5%"/>
 </technology>
+<technology name="-18NH">
+<attribute name="CURRENT" value="1.4A"/>
+<attribute name="DCR" value="75mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-180A"/>
+<attribute name="VALUE" value="18nH 2%"/>
+</technology>
 <technology name="-22NH">
 <attribute name="CURRENT" value="700mA"/>
 <attribute name="DCR" value="190mΩ"/>
@@ -862,6 +869,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-150A"/>
 <attribute name="VALUE" value="15nH 5%"/>
+</technology>
+<technology name="-18NH">
+<attribute name="CURRENT" value="1.4A"/>
+<attribute name="DCR" value="75mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-180A"/>
+<attribute name="VALUE" value="18nH 2%"/>
 </technology>
 <technology name="-22NH">
 <attribute name="CURRENT" value="700mA"/>
