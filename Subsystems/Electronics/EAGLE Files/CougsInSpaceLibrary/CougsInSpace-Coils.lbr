@@ -410,6 +410,52 @@ Last character is an incremented letter for each variant of the same value and p
 <vertex x="-2.3" y="2.075"/>
 </polygon>
 </package>
+<package name="SRU1038">
+<description>&lt;h3&gt;Bourns SRU1038&lt;/h3&gt;</description>
+<smd name="2" x="4.5" y="0" dx="1.8" dy="4" layer="1"/>
+<smd name="1" x="-4.5" y="0" dx="1.8" dy="4" layer="1"/>
+<wire x1="-5" y1="2.1" x2="-2.1" y2="5" width="0.15" layer="51"/>
+<wire x1="-2.1" y1="5" x2="2.1" y2="5" width="0.15" layer="51"/>
+<wire x1="2.1" y1="5" x2="5" y2="2.1" width="0.15" layer="51"/>
+<wire x1="5" y1="2.1" x2="5" y2="-2.1" width="0.15" layer="51"/>
+<wire x1="5" y1="-2.1" x2="2.1" y2="-5" width="0.15" layer="51"/>
+<wire x1="2.1" y1="-5" x2="-2.1" y2="-5" width="0.15" layer="51"/>
+<wire x1="-2.1" y1="-5" x2="-5" y2="-2.1" width="0.15" layer="51"/>
+<wire x1="-5" y1="-2.1" x2="-5" y2="2.1" width="0.15" layer="51"/>
+<wire x1="-4.9" y1="2.2" x2="-2.1" y2="5" width="0.15" layer="21"/>
+<wire x1="-2.1" y1="5" x2="2.1" y2="5" width="0.15" layer="21"/>
+<wire x1="2.1" y1="5" x2="4.9" y2="2.2" width="0.15" layer="21"/>
+<wire x1="4.9" y1="-2.2" x2="2.1" y2="-5" width="0.15" layer="21"/>
+<wire x1="2.1" y1="-5" x2="-2.1" y2="-5" width="0.15" layer="21"/>
+<wire x1="-2.1" y1="-5" x2="-4.9" y2="-2.2" width="0.15" layer="21"/>
+<polygon width="0.15" layer="39">
+<vertex x="-3.4" y="-2.2"/>
+<vertex x="-4.1" y="-2.9"/>
+<vertex x="-4.1" y="-3"/>
+<vertex x="-2.1" y="-5"/>
+<vertex x="2.1" y="-5"/>
+<vertex x="4.1" y="-3"/>
+<vertex x="4.1" y="-2.9"/>
+<vertex x="3.4" y="-2.2"/>
+<vertex x="3.4" y="2.2"/>
+<vertex x="4.1" y="2.9"/>
+<vertex x="4.1" y="3"/>
+<vertex x="2.1" y="5"/>
+<vertex x="-2.1" y="5"/>
+<vertex x="-4.1" y="3"/>
+<vertex x="-4.1" y="2.9"/>
+<vertex x="-3.4" y="2.2"/>
+</polygon>
+<wire x1="-5.7" y1="2" x2="-2.3" y2="5.4" width="0.15" layer="22"/>
+<wire x1="-2.3" y1="5.4" x2="2.3" y2="5.4" width="0.15" layer="22"/>
+<wire x1="2.3" y1="5.4" x2="5.7" y2="2" width="0.15" layer="22"/>
+<wire x1="5.7" y1="2" x2="5.7" y2="-2" width="0.15" layer="22"/>
+<wire x1="5.7" y1="-2" x2="2.3" y2="-5.4" width="0.15" layer="22"/>
+<wire x1="2.3" y1="-5.4" x2="-2.3" y2="-5.4" width="0.15" layer="22"/>
+<wire x1="-2.3" y1="-5.4" x2="-5.7" y2="-2" width="0.15" layer="22"/>
+<wire x1="-5.7" y1="-2" x2="-5.7" y2="2" width="0.15" layer="22"/>
+<text x="0" y="5.9" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR-V">
@@ -784,6 +830,21 @@ Last character is an incremented letter for each variant of the same value and p
 </technology>
 </technologies>
 </device>
+<device name="-SRU1038" package="SRU1038">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="-10UH">
+<attribute name="CURRENT" value="3.6A"/>
+<attribute name="DCR" value="25mΩ"/>
+<attribute name="PACKAGE" value="SRU1038"/>
+<attribute name="SKU" value="34-103B"/>
+<attribute name="VALUE" value="10µH 30%"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="INDUCTOR-V" prefix="L">
@@ -946,6 +1007,21 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-9.1A"/>
 <attribute name="VALUE" value="9.1nH 2%"/>
+</technology>
+</technologies>
+</device>
+<device name="-SRU1038" package="SRU1038">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="-10UH">
+<attribute name="CURRENT" value="3.6A"/>
+<attribute name="DCR" value="25mΩ"/>
+<attribute name="PACKAGE" value="SRU1038"/>
+<attribute name="SKU" value="34-103B"/>
+<attribute name="VALUE" value="10µH 30%"/>
 </technology>
 </technologies>
 </device>
