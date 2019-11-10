@@ -179,6 +179,33 @@ typedef enum {
   /*** Comms HW V1.0 ***/
   LED1 = PD_2,
 
+<<<<<<< Updated upstream
+=======
+  /*** Electronic Load ***/
+  ADC_INPUT_CURRENT = PC_0,
+  ADC_INPUT_VOLTAGE = PC_1,
+
+  ADC_OUTPUT_CURRENT     = PC_2,
+  ADC_OUTPUT_VOLTAGE     = PC_3,
+  DAC_OUTPUT_CURRENT_SET = PA_4,
+
+  SENSE_RANGE_HIGH = PC_5, // GPIO = determine later
+  SENSE_RANGE_MED  = PC_6, // GPIO
+
+  FAN_PWM = PA_8,
+
+  channelA  = PC_7, // GPIO - encoder_A - knob twist clockwise
+  channelB  = PC_8, // GPIO - encoder_B - knob twist counter-clockwise
+  ENCODER_SW = PC_9, // GPIO - encoder - knob push
+
+  UI_BUTTON1 = PC_11, // Switch modes (my choice, Bradley demands it)
+
+  LCD_MOSI  = PA_7, // LCD master to slave input
+  LCD_SCK   = PA_5, // LCD serial clock
+  LCD_A0    = NC,   // GPIO
+  LCD_RST_N = NC,   // GPIO Active low - pull to a low signal to reset
+  LCD_CS1_N = NC,   // GPIO Active low - pull to a low signal to reset
+>>>>>>> Stashed changes
 } PinName;
 
 #ifdef __cplusplus
