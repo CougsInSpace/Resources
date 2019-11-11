@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -461,7 +461,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWITCH-SPST-NO" prefix="SW">
+<deviceset name="SWITCH-SPST-NO" prefix="SW" uservalue="yes">
 <description>&lt;h3&gt;Single Pole Single Throw (SPST)&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://github.com/CougsInSpace/Resources/blob/master/SupplierDocuments/OMRON/TactileSwitch_SMD.pdf"&gt;B3U-1000P&lt;/a&gt;&lt;/p&gt;</description>
 <gates>

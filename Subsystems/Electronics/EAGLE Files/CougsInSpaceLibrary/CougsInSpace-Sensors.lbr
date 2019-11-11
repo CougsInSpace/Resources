@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -715,7 +715,7 @@ Buffer</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ENCODER-SW" prefix="SW">
+<deviceset name="ENCODER-SW" prefix="SW" uservalue="yes">
 <description>&lt;h3&gt;Quadrature Encoder - Integrated Switch&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="ENCODER-SW" x="0" y="0"/>
