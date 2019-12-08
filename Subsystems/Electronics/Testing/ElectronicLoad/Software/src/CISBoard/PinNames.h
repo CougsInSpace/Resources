@@ -179,8 +179,6 @@ typedef enum {
   /*** Comms HW V1.0 ***/
   LED1 = PD_2,
 
-<<<<<<< Updated upstream
-=======
   /*** Electronic Load ***/
   ADC_INPUT_CURRENT = PC_0,
   ADC_INPUT_VOLTAGE = PC_1,
@@ -202,10 +200,9 @@ typedef enum {
 
   LCD_MOSI  = PA_7, // LCD master to slave input
   LCD_SCK   = PA_5, // LCD serial clock
-  LCD_A0    = NC,   // GPIO
-  LCD_RST_N = NC,   // GPIO Active low - pull to a low signal to reset
-  LCD_CS1_N = NC,   // GPIO Active low - pull to a low signal to reset
->>>>>>> Stashed changes
+  LCD_A0    = PA_0,   // GPIO
+  LCD_RST_N = PA_1,   // GPIO Active low - pull to a low signal to reset
+  LCD_CS1_N = PA_2,   // GPIO Active low - pull to a low signal to reset
 } PinName;
 
 #ifdef __cplusplus

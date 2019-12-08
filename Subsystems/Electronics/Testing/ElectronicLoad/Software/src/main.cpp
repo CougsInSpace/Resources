@@ -1,7 +1,5 @@
 #include <mbed.h>
 
-<<<<<<< Updated upstream
-=======
 #define RES_HIGH_SHORT (0.0008)
 #define RES_HIGH_ON (0.5)
 #define RES_MED_SHORT (0.0008)
@@ -25,7 +23,7 @@ DigitalOut bypassShunt100mA(SENSE_RANGE_HIGH); // 0 to 100 mA
 DigitalOut bypassShunt1A(SENSE_RANGE_MED);     // 0.1 to 1 A
 // 10A range cannot be bypassed: 1 to 10 A
 
-DigitalIn knobPushIn(Encoder_SW);
+DigitalIn knobPushIn(ENCODER_SW);
 
 /**
  * @brief Set the current
@@ -58,10 +56,6 @@ void setCurrent(double current) {
   double shuntVoltage = current * shunt;
   shuntVoltage        = shuntVoltage * GAIN_SHUNT;
   currentSet.write((float)shuntVoltage);
-}
-
-double knobPushIn(){
-  return Encoder_SW.read()
 }
 
 /**
@@ -99,9 +93,9 @@ double getInputCurrent() {
 double getInputVoltage() {
   return voltageIn.read() * GAIN_INPUT_VOLTAGE;
 }
->>>>>>> Stashed changes
 
 int main(void) {
 
   return MBED_SUCCESS;
 }
+
