@@ -171,8 +171,8 @@ typedef enum {
   // Not connected
   NC = (int)0xFFFFFFFF,
 
-  STDIO_UART_TX = NC,
-  STDIO_UART_RX = NC,
+  STDIO_UART_TX = PA_9,
+  STDIO_UART_RX = PA_10,
   USBTX         = STDIO_UART_TX,
   USBRX         = STDIO_UART_RX,
 
