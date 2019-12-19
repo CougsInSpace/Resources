@@ -187,22 +187,22 @@ typedef enum {
   ADC_OUTPUT_VOLTAGE     = PC_3,
   DAC_OUTPUT_CURRENT_SET = PA_4,
 
-  SENSE_RANGE_HIGH = NC, // GPIO = determine later
-  SENSE_RANGE_MED  = NC, // GPIO
+  SENSE_RANGE_HIGH = PC_5, // GPIO = determine later
+  SENSE_RANGE_MED  = PC_6, // GPIO
 
   FAN_PWM = PA_8,
 
-  ENCODER_A  = NC, // GPIO - encoder - knob twist
-  ENCODER_B  = NC, // GPIO - encoder - knob twist
-  ENCODER_SW = NC, // GPIO - encoder - knob push
+  channelA  = PC_7, // GPIO - encoder_A - knob twist clockwise
+  channelB  = PC_8, // GPIO - encoder_B - knob twist counter-clockwise
+  ENCODER_SW = PC_9, // GPIO - encoder - knob push
 
-  UI_BUTTON1 = NC, // Switch modes (my choice, Bradley demands it)
+  UI_BUTTON1 = PC_11, // Switch modes (my choice, Bradley demands it)
 
   LCD_MOSI  = PA_7, // LCD master to slave input
   LCD_SCK   = PA_5, // LCD serial clock
-  LCD_A0    = NC,   // GPIO
-  LCD_RST_N = NC,   // GPIO Active low - pull to a low signal to reset
-  LCD_CS1_N = NC,   // GPIO Active low - pull to a low signal to reset
+  LCD_A0    = PA_0,   // GPIO
+  LCD_RST_N = PA_1,   // GPIO Active low - pull to a low signal to reset
+  LCD_CS1_N = PA_2,   // GPIO Active low - pull to a low signal to reset
 } PinName;
 
 #ifdef __cplusplus
