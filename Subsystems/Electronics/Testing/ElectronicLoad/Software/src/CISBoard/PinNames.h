@@ -171,16 +171,14 @@ typedef enum {
   // Not connected
   NC = (int)0xFFFFFFFF,
 
-  STDIO_UART_TX = NC,
-  STDIO_UART_RX = NC,
+  STDIO_UART_TX = PA_9,
+  STDIO_UART_RX = PA_10,
   USBTX         = STDIO_UART_TX,
   USBRX         = STDIO_UART_RX,
 
   /*** Comms HW V1.0 ***/
   LED1 = PD_2,
 
-<<<<<<< Updated upstream
-=======
   /*** Electronic Load ***/
   ADC_INPUT_CURRENT = PC_0,
   ADC_INPUT_VOLTAGE = PC_1,
@@ -205,7 +203,6 @@ typedef enum {
   LCD_A0    = NC,   // GPIO
   LCD_RST_N = NC,   // GPIO Active low - pull to a low signal to reset
   LCD_CS1_N = NC,   // GPIO Active low - pull to a low signal to reset
->>>>>>> Stashed changes
 } PinName;
 
 #ifdef __cplusplus

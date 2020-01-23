@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -410,6 +410,52 @@ Last character is an incremented letter for each variant of the same value and p
 <vertex x="-2.3" y="2.075"/>
 </polygon>
 </package>
+<package name="SRU1038">
+<description>&lt;h3&gt;Bourns SRU1038&lt;/h3&gt;</description>
+<smd name="2" x="4.5" y="0" dx="1.8" dy="4" layer="1"/>
+<smd name="1" x="-4.5" y="0" dx="1.8" dy="4" layer="1"/>
+<wire x1="-5" y1="2.1" x2="-2.1" y2="5" width="0.15" layer="51"/>
+<wire x1="-2.1" y1="5" x2="2.1" y2="5" width="0.15" layer="51"/>
+<wire x1="2.1" y1="5" x2="5" y2="2.1" width="0.15" layer="51"/>
+<wire x1="5" y1="2.1" x2="5" y2="-2.1" width="0.15" layer="51"/>
+<wire x1="5" y1="-2.1" x2="2.1" y2="-5" width="0.15" layer="51"/>
+<wire x1="2.1" y1="-5" x2="-2.1" y2="-5" width="0.15" layer="51"/>
+<wire x1="-2.1" y1="-5" x2="-5" y2="-2.1" width="0.15" layer="51"/>
+<wire x1="-5" y1="-2.1" x2="-5" y2="2.1" width="0.15" layer="51"/>
+<wire x1="-4.9" y1="2.2" x2="-2.1" y2="5" width="0.15" layer="21"/>
+<wire x1="-2.1" y1="5" x2="2.1" y2="5" width="0.15" layer="21"/>
+<wire x1="2.1" y1="5" x2="4.9" y2="2.2" width="0.15" layer="21"/>
+<wire x1="4.9" y1="-2.2" x2="2.1" y2="-5" width="0.15" layer="21"/>
+<wire x1="2.1" y1="-5" x2="-2.1" y2="-5" width="0.15" layer="21"/>
+<wire x1="-2.1" y1="-5" x2="-4.9" y2="-2.2" width="0.15" layer="21"/>
+<polygon width="0.15" layer="39">
+<vertex x="-3.4" y="-2.2"/>
+<vertex x="-4.1" y="-2.9"/>
+<vertex x="-4.1" y="-3"/>
+<vertex x="-2.1" y="-5"/>
+<vertex x="2.1" y="-5"/>
+<vertex x="4.1" y="-3"/>
+<vertex x="4.1" y="-2.9"/>
+<vertex x="3.4" y="-2.2"/>
+<vertex x="3.4" y="2.2"/>
+<vertex x="4.1" y="2.9"/>
+<vertex x="4.1" y="3"/>
+<vertex x="2.1" y="5"/>
+<vertex x="-2.1" y="5"/>
+<vertex x="-4.1" y="3"/>
+<vertex x="-4.1" y="2.9"/>
+<vertex x="-3.4" y="2.2"/>
+</polygon>
+<wire x1="-5.7" y1="2" x2="-2.3" y2="5.4" width="0.15" layer="22"/>
+<wire x1="-2.3" y1="5.4" x2="2.3" y2="5.4" width="0.15" layer="22"/>
+<wire x1="2.3" y1="5.4" x2="5.7" y2="2" width="0.15" layer="22"/>
+<wire x1="5.7" y1="2" x2="5.7" y2="-2" width="0.15" layer="22"/>
+<wire x1="5.7" y1="-2" x2="2.3" y2="-5.4" width="0.15" layer="22"/>
+<wire x1="2.3" y1="-5.4" x2="-2.3" y2="-5.4" width="0.15" layer="22"/>
+<wire x1="-2.3" y1="-5.4" x2="-5.7" y2="-2" width="0.15" layer="22"/>
+<wire x1="-5.7" y1="-2" x2="-5.7" y2="2" width="0.15" layer="22"/>
+<text x="0" y="5.9" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR-V">
@@ -677,12 +723,26 @@ Last character is an incremented letter for each variant of the same value and p
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-1.6NH">
+<attribute name="CURRENT" value="700mA"/>
+<attribute name="DCR" value="30mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-1.6A"/>
+<attribute name="VALUE" value="1.6nH 5%"/>
+</technology>
 <technology name="-110NH">
 <attribute name="CURRENT" value="440mA"/>
 <attribute name="DCR" value="580mΩ"/>
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-111A"/>
 <attribute name="VALUE" value="110nH 2%"/>
+</technology>
+<technology name="-12NH">
+<attribute name="CURRENT" value="1.5A"/>
+<attribute name="DCR" value="64mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-120A"/>
+<attribute name="VALUE" value="12nH 2%"/>
 </technology>
 <technology name="-15NH">
 <attribute name="CURRENT" value="2.2A"/>
@@ -691,12 +751,26 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="31-150A"/>
 <attribute name="VALUE" value="15nH 5%"/>
 </technology>
+<technology name="-18NH">
+<attribute name="CURRENT" value="1.4A"/>
+<attribute name="DCR" value="75mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-180A"/>
+<attribute name="VALUE" value="18nH 2%"/>
+</technology>
 <technology name="-22NH">
 <attribute name="CURRENT" value="700mA"/>
 <attribute name="DCR" value="190mΩ"/>
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-220A"/>
 <attribute name="VALUE" value="22nH 2%"/>
+</technology>
+<technology name="-3.9NH">
+<attribute name="CURRENT" value="2.2A"/>
+<attribute name="DCR" value="28mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-3.9A"/>
+<attribute name="VALUE" value="3.9nH ±0.1nH"/>
 </technology>
 <technology name="-33NH">
 <attribute name="CURRENT" value="600mA"/>
@@ -719,12 +793,26 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="31-472A"/>
 <attribute name="VALUE" value="4.7µH 20%"/>
 </technology>
+<technology name="-5.6NH">
+<attribute name="CURRENT" value="700mA"/>
+<attribute name="DCR" value="75mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-5.6A"/>
+<attribute name="VALUE" value="5.6nH 2%"/>
+</technology>
 <technology name="-560NH">
 <attribute name="CURRENT" value="530mA"/>
 <attribute name="DCR" value="490mΩ"/>
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-561A"/>
 <attribute name="VALUE" value="560nH 5%"/>
+</technology>
+<technology name="-56NH">
+<attribute name="CURRENT" value="600mA"/>
+<attribute name="DCR" value="310mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-560A"/>
+<attribute name="VALUE" value="56nH 2%"/>
 </technology>
 <technology name="-7.5NH">
 <attribute name="CURRENT" value="750mA"/>
@@ -739,6 +827,21 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-9.1A"/>
 <attribute name="VALUE" value="9.1nH 2%"/>
+</technology>
+</technologies>
+</device>
+<device name="-SRU1038" package="SRU1038">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="-10UH">
+<attribute name="CURRENT" value="3.6A"/>
+<attribute name="DCR" value="25mΩ"/>
+<attribute name="PACKAGE" value="SRU1038"/>
+<attribute name="SKU" value="34-103B"/>
+<attribute name="VALUE" value="10µH 30%"/>
 </technology>
 </technologies>
 </device>
@@ -800,12 +903,26 @@ Last character is an incremented letter for each variant of the same value and p
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-1.6NH">
+<attribute name="CURRENT" value="700mA"/>
+<attribute name="DCR" value="30mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-1.6A"/>
+<attribute name="VALUE" value="1.6nH 5%"/>
+</technology>
 <technology name="-110NH">
 <attribute name="CURRENT" value="440mA"/>
 <attribute name="DCR" value="580mΩ"/>
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-111A"/>
 <attribute name="VALUE" value="110nH 2%"/>
+</technology>
+<technology name="-12NH">
+<attribute name="CURRENT" value="1.5A"/>
+<attribute name="DCR" value="64mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-120A"/>
+<attribute name="VALUE" value="12nH 2%"/>
 </technology>
 <technology name="-15NH">
 <attribute name="CURRENT" value="2.2A"/>
@@ -814,12 +931,26 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="31-150A"/>
 <attribute name="VALUE" value="15nH 5%"/>
 </technology>
+<technology name="-18NH">
+<attribute name="CURRENT" value="1.4A"/>
+<attribute name="DCR" value="75mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-180A"/>
+<attribute name="VALUE" value="18nH 2%"/>
+</technology>
 <technology name="-22NH">
 <attribute name="CURRENT" value="700mA"/>
 <attribute name="DCR" value="190mΩ"/>
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-220A"/>
 <attribute name="VALUE" value="22nH 2%"/>
+</technology>
+<technology name="-3.9NH">
+<attribute name="CURRENT" value="2.2A"/>
+<attribute name="DCR" value="28mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-3.9A"/>
+<attribute name="VALUE" value="3.9nH ±0.1nH"/>
 </technology>
 <technology name="-33NH">
 <attribute name="CURRENT" value="600mA"/>
@@ -842,12 +973,26 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="31-472A"/>
 <attribute name="VALUE" value="4.7µH 20%"/>
 </technology>
+<technology name="-5.6NH">
+<attribute name="CURRENT" value="700mA"/>
+<attribute name="DCR" value="75mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-5.6A"/>
+<attribute name="VALUE" value="5.6nH 2%"/>
+</technology>
 <technology name="-560NH">
 <attribute name="CURRENT" value="530mA"/>
 <attribute name="DCR" value="490mΩ"/>
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-561A"/>
 <attribute name="VALUE" value="560nH 5%"/>
+</technology>
+<technology name="-56NH">
+<attribute name="CURRENT" value="600mA"/>
+<attribute name="DCR" value="310mΩ"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="31-560A"/>
+<attribute name="VALUE" value="56nH 2%"/>
 </technology>
 <technology name="-7.5NH">
 <attribute name="CURRENT" value="750mA"/>
@@ -862,6 +1007,21 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="PACKAGE" value="1608"/>
 <attribute name="SKU" value="31-9.1A"/>
 <attribute name="VALUE" value="9.1nH 2%"/>
+</technology>
+</technologies>
+</device>
+<device name="-SRU1038" package="SRU1038">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="-10UH">
+<attribute name="CURRENT" value="3.6A"/>
+<attribute name="DCR" value="25mΩ"/>
+<attribute name="PACKAGE" value="SRU1038"/>
+<attribute name="SKU" value="34-103B"/>
+<attribute name="VALUE" value="10µH 30%"/>
 </technology>
 </technologies>
 </device>

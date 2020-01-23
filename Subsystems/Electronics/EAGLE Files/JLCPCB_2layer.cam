@@ -6,32 +6,8 @@
     "description": {
         "EN": "CAM job description goes here."
     },
-    "output_type": "directory",
+    "output_type": "zip",
     "outputs": [
-        {
-            "filename_prefix": "CAMOutputs/DrillFiles",
-            "format_specifier": {
-                "decimal": 3,
-                "integer": 3
-            },
-            "output_type": "drill",
-            "outputs": [
-                {
-                    "drills": {
-                        "NPTH": true,
-                        "PTH": true,
-                        "VIA": true
-                    },
-                    "filename_format": "%N.TXT",
-                    "layers": {
-                        "from": 1,
-                        "to": 16
-                    },
-                    "name": "Drills&Holes",
-                    "type": "excellon"
-                }
-            ]
-        },
         {
             "filename_prefix": "CAMOutputs/GerberFiles",
             "format_specifier": {
@@ -256,6 +232,36 @@
                 }
             ],
             "version": "RS274X"
+        },
+        {
+            "filename_prefix": "CAMOutputs/DrillFiles",
+            "format_specifier": {
+                "decimal": 3,
+                "integer": 3
+            },
+            "output_type": "drill",
+            "outputs": [
+                {
+                    "drills": {
+                        "NPTH": true,
+                        "PTH": true,
+                        "VIA": true
+                    },
+                    "filename_format": "%N.TXT",
+                    "layers": {
+                        "from": 1,
+                        "to": 16
+                    },
+                    "name": "Drills&Holes",
+                    "type": "excellon"
+                }
+            ]
+        },
+        {
+            "filename_prefix": "CAMOutputs/Assembly",
+            "output_type": "assembly",
+            "outputs": [
+            ]
         },
         {
             "filename_prefix": "CAMOutputs/DrawingFiles",
