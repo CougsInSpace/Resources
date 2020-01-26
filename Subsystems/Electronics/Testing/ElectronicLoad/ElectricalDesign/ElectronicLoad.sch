@@ -5137,6 +5137,10 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <part name="OFFSHEET11" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-OUT" device=""/>
 <part name="J6" library="CougsInSpace-Connectors" deviceset="1X04" device="THT2.54-1X04-LOCK"/>
 <part name="SUPPLY66" library="CougsInSpace-PowerSymbols" deviceset="DGND" device=""/>
+<part name="OFFSHEET47" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-OUT" device=""/>
+<part name="OFFSHEET49" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
+<part name="OFFSHEET50" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
+<part name="OFFSHEET51" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5323,6 +5327,7 @@ Page 4: USB Tranceiver</text>
 <wire x1="116.84" y1="162.56" x2="53.34" y2="162.56" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="53.34" y1="162.56" x2="53.34" y2="185.42" width="0.1524" layer="97" style="shortdash"/>
 <text x="83.82" y="163.83" size="1.778" layer="97" align="center">CAD Note: Decoupling</text>
+<text x="55.88" y="66.04" size="1.778" layer="95" align="center-left"> 3A2&gt;</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -5578,6 +5583,7 @@ Page 4: USB Tranceiver</text>
 <instance part="SUPPLY60" gate="1" x="38.1" y="124.46" smashed="yes"/>
 <instance part="OFFSHEET25" gate="G$1" x="53.34" y="83.82" smashed="yes" rot="MR0"/>
 <instance part="OFFSHEET11" gate="G$1" x="53.34" y="55.88" smashed="yes" rot="MR0"/>
+<instance part="OFFSHEET47" gate="G$1" x="53.34" y="66.04" smashed="yes" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -6024,6 +6030,19 @@ Page 4: USB Tranceiver</text>
 <junction x="43.18" y="147.32"/>
 </segment>
 </net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PA11"/>
+<wire x1="33.02" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FAN_SENSE" class="0">
+<segment>
+<wire x1="33.02" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
+<label x="35.56" y="66.04" size="1.778" layer="95"/>
+<label x="35.56" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -6064,6 +6083,9 @@ Page 4: USB Tranceiver</text>
 <wire x1="149.86" y1="33.02" x2="149.86" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="149.86" y1="53.34" x2="175.26" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
 <text x="162.56" y="34.29" size="1.778" layer="97" align="center">CAD Note: Decoupling</text>
+<text x="106.68" y="157.48" size="1.778" layer="95" align="center-left"> &lt;2C2</text>
+<text x="106.68" y="154.94" size="1.778" layer="95" align="center-left"> &lt;2C2</text>
+<text x="106.68" y="160.02" size="1.778" layer="95" align="center-left"> &lt;2C2</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes">
@@ -6353,7 +6375,10 @@ Page 4: USB Tranceiver</text>
 <attribute name="SKU" x="74.295" y="149.098" size="1.778" layer="97" align="center"/>
 <attribute name="PACKAGE" x="74.295" y="147.066" size="1.778" layer="97" align="center"/>
 </instance>
-<instance part="SUPPLY66" gate="1" x="83.82" y="162.56" smashed="yes" rot="R90"/>
+<instance part="SUPPLY66" gate="1" x="104.14" y="162.56" smashed="yes" rot="R90"/>
+<instance part="OFFSHEET49" gate="G$1" x="104.14" y="157.48" smashed="yes" rot="MR0"/>
+<instance part="OFFSHEET50" gate="G$1" x="104.14" y="154.94" smashed="yes" rot="MR0"/>
+<instance part="OFFSHEET51" gate="G$1" x="104.14" y="160.02" smashed="yes" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -6450,10 +6475,6 @@ Page 4: USB Tranceiver</text>
 <segment>
 <pinref part="C27" gate="G$1" pin="2"/>
 <pinref part="SUPPLY65" gate="1" pin="DGND"/>
-</segment>
-<segment>
-<pinref part="J6" gate="G$1" pin="1"/>
-<pinref part="SUPPLY66" gate="1" pin="DGND"/>
 </segment>
 </net>
 <net name="AVDD" class="0">
@@ -6827,6 +6848,40 @@ Page 4: USB Tranceiver</text>
 <wire x1="27.94" y1="124.46" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="124.46" x2="27.94" y2="124.46" width="0.1524" layer="91"/>
 <junction x="27.94" y="124.46"/>
+</segment>
+</net>
+<net name="FAN_SENSE" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="3"/>
+<wire x1="81.28" y1="157.48" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
+<label x="83.82" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FAN_CONTROL" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="4"/>
+<wire x1="81.28" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
+<label x="83.82" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FAN_SENSE1" class="0">
+<segment>
+<wire x1="81.28" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FAN_DC" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="160.02" x2="101.6" y2="160.02" width="0.1524" layer="91"/>
+<label x="83.82" y="160.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FAN_GND" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="1"/>
+<pinref part="SUPPLY66" gate="1" pin="DGND"/>
+<wire x1="101.6" y1="162.56" x2="81.28" y2="162.56" width="0.1524" layer="91"/>
+<label x="83.82" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
