@@ -1271,6 +1271,13 @@ Space EE</text>
 <pin name="AVDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
+<symbol name="12V">
+<description>&lt;h3&gt;12.0V Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="12.0V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="5.0V" prefix="SUPPLY">
@@ -1342,6 +1349,19 @@ Space EE</text>
 <description>&lt;h3&gt;Analog Voltage Source&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="AVDD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="12.0V" prefix="SUPPLY">
+<description>&lt;h3&gt;12V Supply&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="12V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5140,7 +5160,7 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <part name="OFFSHEET47" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-OUT" device=""/>
 <part name="OFFSHEET49" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
 <part name="OFFSHEET50" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
-<part name="OFFSHEET51" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
+<part name="SUPPLY67" library="CougsInSpace-PowerSymbols" deviceset="12.0V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6092,7 +6112,6 @@ Page 4: USB Tranceiver</text>
 <text x="162.56" y="34.29" size="1.778" layer="97" align="center">CAD Note: Decoupling</text>
 <text x="106.68" y="157.48" size="1.778" layer="95" align="center-left"> &lt;2C2</text>
 <text x="106.68" y="154.94" size="1.778" layer="95" align="center-left"> &lt;2C2</text>
-<text x="106.68" y="160.02" size="1.778" layer="95" align="center-left"> &lt;2C2</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes">
@@ -6385,7 +6404,9 @@ Page 4: USB Tranceiver</text>
 <instance part="SUPPLY66" gate="1" x="104.14" y="162.56" smashed="yes" rot="R90"/>
 <instance part="OFFSHEET49" gate="G$1" x="104.14" y="157.48" smashed="yes" rot="MR0"/>
 <instance part="OFFSHEET50" gate="G$1" x="104.14" y="154.94" smashed="yes" rot="MR0"/>
-<instance part="OFFSHEET51" gate="G$1" x="104.14" y="160.02" smashed="yes" rot="MR0"/>
+<instance part="SUPPLY67" gate="G$1" x="109.22" y="162.56" smashed="yes">
+<attribute name="VALUE" x="109.22" y="166.116" size="1.27" layer="96" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6876,19 +6897,21 @@ Page 4: USB Tranceiver</text>
 <wire x1="81.28" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FAN_DC" class="0">
-<segment>
-<pinref part="J6" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="160.02" x2="101.6" y2="160.02" width="0.1524" layer="91"/>
-<label x="83.82" y="160.02" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FAN_GND" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
 <pinref part="SUPPLY66" gate="1" pin="DGND"/>
 <wire x1="101.6" y1="162.56" x2="81.28" y2="162.56" width="0.1524" layer="91"/>
 <label x="83.82" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="12.0V" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
+<label x="83.82" y="160.02" size="1.778" layer="95"/>
+<pinref part="SUPPLY67" gate="G$1" pin="12.0V"/>
+<wire x1="109.22" y1="160.02" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
