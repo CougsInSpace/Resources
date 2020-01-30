@@ -5926,7 +5926,7 @@ Page 4: USB Tranceiver</text>
 <net name="JTAG_TCK" class="0">
 <segment>
 <pinref part="J5" gate="G$1" pin="SWCLK"/>
-<wire x1="203.2" y1="160.02" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="160.02" x2="223.52" y2="160.02" width="0.1524" layer="91"/>
 <label x="208.28" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
