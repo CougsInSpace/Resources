@@ -952,6 +952,31 @@ Space EE</text>
 <wire x1="-4.2" y1="-3" x2="-4.2" y2="3.7" width="0.15" layer="21"/>
 <text x="0" y="4.3" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="BARREL-2.1X5.5-R">
+<description>&lt;h3&gt;Barrel Connector - 2.1 x 5.5 mm - Right Angle&lt;/h3&gt;</description>
+<pad name="3" x="-4.7" y="0" drill="1.2" diameter="2"/>
+<pad name="1" x="0" y="-3" drill="1.2" diameter="2"/>
+<pad name="2" x="0" y="3" drill="1.2" diameter="2"/>
+<wire x1="-4.5" y1="10.7" x2="4.5" y2="10.7" width="0.15" layer="51"/>
+<wire x1="4.5" y1="10.7" x2="4.5" y2="-3.7" width="0.15" layer="51"/>
+<wire x1="4.5" y1="-3.7" x2="-4.6" y2="-3.7" width="0.15" layer="51"/>
+<wire x1="-4.6" y1="-3.7" x2="-4.6" y2="10.7" width="0.15" layer="51"/>
+<wire x1="-4.6" y1="1.1" x2="-4.6" y2="10.7" width="0.15" layer="21"/>
+<wire x1="-4.6" y1="10.7" x2="4.5" y2="10.7" width="0.15" layer="21"/>
+<wire x1="4.5" y1="10.7" x2="4.5" y2="-3.7" width="0.15" layer="21"/>
+<wire x1="4.5" y1="-3.7" x2="0.9" y2="-3.7" width="0.15" layer="21"/>
+<wire x1="-0.9" y1="-3.7" x2="-4.6" y2="-3.7" width="0.15" layer="21"/>
+<wire x1="-4.6" y1="-3.7" x2="-4.6" y2="-1.1" width="0.15" layer="21"/>
+<wire x1="-5.9" y1="-4.1" x2="4.9" y2="-4.1" width="0.15" layer="21"/>
+<wire x1="4.9" y1="-4.1" x2="4.9" y2="11.1" width="0.15" layer="21"/>
+<wire x1="4.9" y1="11.1" x2="-5.9" y2="11.1" width="0.15" layer="21"/>
+<wire x1="-5.9" y1="11.1" x2="-5.9" y2="-4.1" width="0.15" layer="21"/>
+<wire x1="-5.9" y1="-4.1" x2="4.9" y2="-4.1" width="0.15" layer="39"/>
+<wire x1="4.9" y1="-4.1" x2="4.9" y2="11.1" width="0.15" layer="39"/>
+<wire x1="4.9" y1="11.1" x2="-5.9" y2="11.1" width="0.15" layer="39"/>
+<wire x1="-5.9" y1="11.1" x2="-5.9" y2="-4.1" width="0.15" layer="39"/>
+<text x="0" y="-4.6" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -1044,6 +1069,43 @@ Space EE</text>
 <pin name="1" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <text x="0.635" y="-8.382" size="1.778" layer="97" align="center">&gt;SKU</text>
 <text x="0.635" y="-10.414" size="1.778" layer="97" align="center">&gt;PACKAGE</text>
+</symbol>
+<symbol name="BARREL">
+<description>&lt;h3&gt;Barrel Connector&lt;/h3&gt;
+Normal closed switch</description>
+<pin name="SW" x="10.16" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="CENTER" x="10.16" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="SLEEVE" x="10.16" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="3.302" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="3.302" y1="-3.556" x2="2.54" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.556" x2="1.778" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="1.778" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="6.096" y2="5.08" width="0.254" layer="94"/>
+<wire x1="6.096" y1="5.08" x2="6.096" y2="3.81" width="0.254" layer="94"/>
+<wire x1="6.096" y1="3.81" x2="6.096" y2="1.27" width="0.254" layer="94"/>
+<wire x1="6.096" y1="1.27" x2="6.096" y2="0" width="0.254" layer="94"/>
+<wire x1="6.096" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="6.096" y1="1.27" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.27" x2="-5.08" y2="2.54" width="0.254" layer="94" curve="-90"/>
+<wire x1="-5.08" y1="2.54" x2="-3.81" y2="3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="-3.81" y1="3.81" x2="6.096" y2="3.81" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-8.89" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-10.922" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1214,6 +1276,27 @@ Space EE</text>
 </device>
 </devices>
 </deviceset>
+<deviceset name="BARREL" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;Barrel Connector&lt;/h3&gt;
+Normal closed switch</description>
+<gates>
+<gate name="G$1" symbol="BARREL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-2.1X5.5-R" package="BARREL-2.1X5.5-R">
+<connects>
+<connect gate="G$1" pin="CENTER" pad="1"/>
+<connect gate="G$1" pin="SLEEVE" pad="2"/>
+<connect gate="G$1" pin="SW" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SKU" value="05-0005"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="CougsInSpace-PowerSymbols">
@@ -1277,6 +1360,14 @@ Space EE</text>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="12.0V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="PGND">
+<description>&lt;h3&gt;Power Ground&lt;/h3&gt;</description>
+<text x="-1.016" y="0.254" size="1.27" layer="97" align="bottom-center">P</text>
+<pin name="PGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<wire x1="-1.778" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0" x2="-1.778" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1362,6 +1453,19 @@ Space EE</text>
 <description>&lt;h3&gt;12V Supply&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PGND" prefix="SUPPLY">
+<description>&lt;h3&gt;Power Ground&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="PGND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5156,11 +5260,17 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <part name="SUPPLY56" library="CougsInSpace-PowerSymbols" deviceset="5.0V" device=""/>
 <part name="OFFSHEET11" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-OUT" device=""/>
 <part name="J6" library="CougsInSpace-Connectors" deviceset="1X04" device="THT2.54-1X04-LOCK"/>
-<part name="SUPPLY66" library="CougsInSpace-PowerSymbols" deviceset="DGND" device=""/>
 <part name="OFFSHEET47" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-OUT" device=""/>
 <part name="OFFSHEET49" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
 <part name="OFFSHEET50" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
-<part name="SUPPLY67" library="CougsInSpace-PowerSymbols" deviceset="12.0V" device=""/>
+<part name="SUPPLY66" library="CougsInSpace-PowerSymbols" deviceset="12.0V" device=""/>
+<part name="SUPPLY67" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
+<part name="OFFSHEET51" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-OUT" device=""/>
+<part name="J7" library="CougsInSpace-Connectors" deviceset="BARREL" device="-2.1X5.5-R"/>
+<part name="SUPPLY68" library="CougsInSpace-PowerSymbols" deviceset="12.0V" device=""/>
+<part name="SUPPLY69" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
+<part name="R18" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
+<part name="SUPPLY70" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5261,7 +5371,7 @@ Connector</text>
 <wire x1="154.94" y1="68.58" x2="154.94" y2="53.34" width="0.1524" layer="94"/>
 <wire x1="154.94" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="94"/>
 <text x="177.8" y="60.96" size="3.81" layer="94" align="center">Heatsink &amp; Fan</text>
-<text x="199.39" y="54.61" size="1.778" layer="97" align="bottom-right">Page 2</text>
+<text x="199.39" y="54.61" size="1.778" layer="97" align="bottom-right">Page 3</text>
 <wire x1="177.8" y1="81.28" x2="177.8" y2="68.58" width="0.254" layer="97"/>
 <text x="178.054" y="74.93" size="1.778" layer="97" align="center-left">Thermal</text>
 <wire x1="60.96" y1="81.28" x2="60.96" y2="76.2" width="0.254" layer="97"/>
@@ -5326,7 +5436,7 @@ Page 4: USB Tranceiver</text>
 <text x="60.96" y="68.58" size="1.778" layer="95" align="center-left"> &lt;4B5</text>
 <text x="60.96" y="93.98" size="1.778" layer="95" align="center-left"> 3C5&gt;</text>
 <text x="60.96" y="91.44" size="1.778" layer="95" align="center-left"> 3C5&gt;</text>
-<text x="60.96" y="88.9" size="1.778" layer="95" align="center-left"> 3C5&gt;</text>
+<text x="60.96" y="88.9" size="1.778" layer="95" align="center-left"> 3A3&gt;</text>
 <text x="60.96" y="81.28" size="1.778" layer="95" align="center-left"> 3C5&gt;</text>
 <text x="60.96" y="76.2" size="1.778" layer="95" align="center-left"> 3C5&gt;</text>
 <text x="60.96" y="83.82" size="1.778" layer="95" align="center-left"> 3B2&gt;</text>
@@ -5348,6 +5458,7 @@ Page 4: USB Tranceiver</text>
 <wire x1="53.34" y1="162.56" x2="53.34" y2="185.42" width="0.1524" layer="97" style="shortdash"/>
 <text x="83.82" y="163.83" size="1.778" layer="97" align="center">CAD Note: Decoupling</text>
 <text x="60.96" y="66.04" size="1.778" layer="95" align="center-left"> 3A2&gt;</text>
+<text x="60.96" y="78.74" size="1.778" layer="95" align="center-left"> 3C5&gt;</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -5604,6 +5715,16 @@ Page 4: USB Tranceiver</text>
 <instance part="OFFSHEET25" gate="G$1" x="58.42" y="83.82" smashed="yes" rot="MR0"/>
 <instance part="OFFSHEET11" gate="G$1" x="58.42" y="55.88" smashed="yes" rot="MR0"/>
 <instance part="OFFSHEET47" gate="G$1" x="58.42" y="66.04" smashed="yes" rot="MR0"/>
+<instance part="OFFSHEET51" gate="G$1" x="58.42" y="78.74" smashed="yes" rot="MR0"/>
+<instance part="J7" gate="G$1" x="157.48" y="162.56" smashed="yes">
+<attribute name="NAME" x="157.48" y="171.45" size="1.778" layer="95" align="center"/>
+<attribute name="VALUE" x="157.48" y="153.67" size="1.778" layer="96" align="center"/>
+<attribute name="SKU" x="157.48" y="151.638" size="1.778" layer="97" align="center"/>
+</instance>
+<instance part="SUPPLY68" gate="G$1" x="172.72" y="167.64" smashed="yes">
+<attribute name="VALUE" x="172.72" y="171.196" size="1.27" layer="96" align="center"/>
+</instance>
+<instance part="SUPPLY69" gate="G$1" x="172.72" y="152.4" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -5805,7 +5926,7 @@ Page 4: USB Tranceiver</text>
 <net name="JTAG_TCK" class="0">
 <segment>
 <pinref part="J5" gate="G$1" pin="SWCLK"/>
-<wire x1="203.2" y1="160.02" x2="223.52" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="160.02" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
 <label x="208.28" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -6070,6 +6191,26 @@ Page 4: USB Tranceiver</text>
 <label x="35.56" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="PGND" class="0">
+<segment>
+<pinref part="J7" gate="G$1" pin="SLEEVE"/>
+<wire x1="167.64" y1="157.48" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="SUPPLY69" gate="G$1" pin="PGND"/>
+<wire x1="172.72" y1="157.48" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="J7" gate="G$1" pin="SW"/>
+<wire x1="167.64" y1="160.02" x2="172.72" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="160.02" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
+<junction x="172.72" y="157.48"/>
+</segment>
+</net>
+<net name="12.0V" class="0">
+<segment>
+<pinref part="SUPPLY68" gate="G$1" pin="12.0V"/>
+<wire x1="172.72" y1="167.64" x2="172.72" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="J7" gate="G$1" pin="CENTER"/>
+<wire x1="172.72" y1="165.1" x2="167.64" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -6253,7 +6394,7 @@ Page 4: USB Tranceiver</text>
 <attribute name="SKU" x="29.21" y="118.872" size="1.27" layer="97" align="center-left"/>
 </instance>
 <instance part="OFFSHEET16" gate="G$1" x="83.82" y="55.88" smashed="yes" rot="MR0"/>
-<instance part="OFFSHEET24" gate="G$1" x="106.68" y="132.08" smashed="yes" rot="MR0"/>
+<instance part="OFFSHEET24" gate="G$1" x="210.82" y="48.26" smashed="yes" rot="MR0"/>
 <instance part="J2" gate="G$1" x="144.78" y="142.24" smashed="yes">
 <attribute name="VALUE" x="145.415" y="138.43" size="1.778" layer="96" align="center"/>
 <attribute name="NAME" x="145.415" y="148.59" size="1.778" layer="95" align="center"/>
@@ -6401,12 +6542,12 @@ Page 4: USB Tranceiver</text>
 <attribute name="SKU" x="74.295" y="149.098" size="1.778" layer="97" align="center"/>
 <attribute name="PACKAGE" x="74.295" y="147.066" size="1.778" layer="97" align="center"/>
 </instance>
-<instance part="SUPPLY66" gate="1" x="104.14" y="162.56" smashed="yes" rot="R90"/>
 <instance part="OFFSHEET49" gate="G$1" x="104.14" y="157.48" smashed="yes" rot="MR0"/>
 <instance part="OFFSHEET50" gate="G$1" x="104.14" y="154.94" smashed="yes" rot="MR0"/>
-<instance part="SUPPLY67" gate="G$1" x="109.22" y="162.56" smashed="yes">
-<attribute name="VALUE" x="109.22" y="166.116" size="1.27" layer="96" align="center"/>
+<instance part="SUPPLY66" gate="G$1" x="96.52" y="162.56" smashed="yes">
+<attribute name="VALUE" x="96.52" y="166.116" size="1.27" layer="96" align="center"/>
 </instance>
+<instance part="SUPPLY67" gate="G$1" x="91.44" y="162.56" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6897,21 +7038,19 @@ Page 4: USB Tranceiver</text>
 <wire x1="81.28" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FAN_GND" class="0">
+<net name="PGND" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
-<pinref part="SUPPLY66" gate="1" pin="DGND"/>
-<wire x1="101.6" y1="162.56" x2="81.28" y2="162.56" width="0.1524" layer="91"/>
-<label x="83.82" y="162.56" size="1.778" layer="95"/>
+<pinref part="SUPPLY67" gate="G$1" pin="PGND"/>
+<wire x1="88.9" y1="162.56" x2="81.28" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12.0V" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
-<label x="83.82" y="160.02" size="1.778" layer="95"/>
-<pinref part="SUPPLY67" gate="G$1" pin="12.0V"/>
-<wire x1="109.22" y1="160.02" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="160.02" x2="96.52" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="SUPPLY66" gate="G$1" pin="12.0V"/>
+<wire x1="96.52" y1="160.02" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -7141,6 +7280,15 @@ Page 4: USB Tranceiver</text>
 <attribute name="TEMP" x="21.59" y="22.86" size="1.27" layer="97" rot="MR0" align="center-left"/>
 <attribute name="SKU" x="21.59" y="27.432" size="1.27" layer="97" rot="MR0" align="center-left"/>
 </instance>
+<instance part="R18" gate="G$1" x="40.64" y="25.4" smashed="yes" rot="MR0">
+<attribute name="NAME" x="39.37" y="30.48" size="1.27" layer="95" rot="MR0" align="center-left"/>
+<attribute name="VALUE" x="39.37" y="28.956" size="1.27" layer="96" rot="MR0" align="center-left"/>
+<attribute name="PACKAGE" x="39.37" y="25.908" size="1.27" layer="97" rot="MR0" align="center-left"/>
+<attribute name="POWER" x="39.37" y="24.384" size="1.27" layer="97" rot="MR0" align="center-left"/>
+<attribute name="TEMP" x="39.37" y="22.86" size="1.27" layer="97" rot="MR0" align="center-left"/>
+<attribute name="SKU" x="39.37" y="27.432" size="1.27" layer="97" rot="MR0" align="center-left"/>
+</instance>
+<instance part="SUPPLY70" gate="G$1" x="40.64" y="15.24" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7357,6 +7505,10 @@ Page 4: USB Tranceiver</text>
 <wire x1="27.94" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="33.02" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="30.48" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
+<junction x="27.94" y="33.02"/>
 </segment>
 </net>
 <net name="USB_RESET" class="0">
@@ -7417,6 +7569,13 @@ Page 4: USB Tranceiver</text>
 <pinref part="RN1" gate="C" pin="1"/>
 <wire x1="144.78" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="99.06" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PGND" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="SUPPLY70" gate="G$1" pin="PGND"/>
+<wire x1="40.64" y1="22.86" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
