@@ -5259,14 +5259,14 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <part name="SUPPLY62" library="CougsInSpace-PowerSymbols" deviceset="5.0V" device=""/>
 <part name="SUPPLY56" library="CougsInSpace-PowerSymbols" deviceset="5.0V" device=""/>
 <part name="OFFSHEET11" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-OUT" device=""/>
-<part name="J6" library="CougsInSpace-Connectors" deviceset="1X04" device="THT2.54-1X04-LOCK"/>
+<part name="J6" library="CougsInSpace-Connectors" deviceset="1X04" device="THT2.54-1X04-LOCK" value="FAN"/>
 <part name="OFFSHEET47" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-OUT" device=""/>
 <part name="OFFSHEET49" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
 <part name="OFFSHEET50" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-IN" device=""/>
 <part name="SUPPLY66" library="CougsInSpace-PowerSymbols" deviceset="12.0V" device=""/>
 <part name="SUPPLY67" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="OFFSHEET51" library="CougsInSpace-Aesthetics" deviceset="OFF_SHEET-OUT" device=""/>
-<part name="J7" library="CougsInSpace-Connectors" deviceset="BARREL" device="-2.1X5.5-R"/>
+<part name="J7" library="CougsInSpace-Connectors" deviceset="BARREL" device="-2.1X5.5-R" value="12 V Input"/>
 <part name="SUPPLY68" library="CougsInSpace-PowerSymbols" deviceset="12.0V" device=""/>
 <part name="SUPPLY69" library="CougsInSpace-PowerSymbols" deviceset="PGND" device=""/>
 <part name="R18" library="CougsInSpace-Resistors" deviceset="RES-V" device="-1608" technology="-0" value="0Ω &lt;20mΩ"/>
@@ -6171,19 +6171,6 @@ Page 4: USB Tranceiver</text>
 <junction x="43.18" y="147.32"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PA11"/>
-<wire x1="33.02" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FAN_SENSE" class="0">
-<segment>
-<wire x1="38.1" y1="66.04" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
-<label x="35.56" y="66.04" size="1.778" layer="95"/>
-<label x="35.56" y="66.04" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FAN_CONTROL" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PA6"/>
@@ -6209,6 +6196,13 @@ Page 4: USB Tranceiver</text>
 <wire x1="172.72" y1="167.64" x2="172.72" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="J7" gate="G$1" pin="CENTER"/>
 <wire x1="172.72" y1="165.1" x2="167.64" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FAN_SENSE" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PA11"/>
+<wire x1="33.02" y1="66.04" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
+<label x="35.56" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -6394,7 +6388,7 @@ Page 4: USB Tranceiver</text>
 <attribute name="SKU" x="29.21" y="118.872" size="1.27" layer="97" align="center-left"/>
 </instance>
 <instance part="OFFSHEET16" gate="G$1" x="83.82" y="55.88" smashed="yes" rot="MR0"/>
-<instance part="OFFSHEET24" gate="G$1" x="210.82" y="48.26" smashed="yes" rot="MR0"/>
+<instance part="OFFSHEET24" gate="G$1" x="106.68" y="132.08" smashed="yes" rot="MR0"/>
 <instance part="J2" gate="G$1" x="144.78" y="142.24" smashed="yes">
 <attribute name="VALUE" x="145.415" y="138.43" size="1.778" layer="96" align="center"/>
 <attribute name="NAME" x="145.415" y="148.59" size="1.778" layer="95" align="center"/>
@@ -6544,10 +6538,10 @@ Page 4: USB Tranceiver</text>
 </instance>
 <instance part="OFFSHEET49" gate="G$1" x="104.14" y="157.48" smashed="yes" rot="MR0"/>
 <instance part="OFFSHEET50" gate="G$1" x="104.14" y="154.94" smashed="yes" rot="MR0"/>
-<instance part="SUPPLY66" gate="G$1" x="96.52" y="162.56" smashed="yes">
-<attribute name="VALUE" x="96.52" y="166.116" size="1.27" layer="96" align="center"/>
+<instance part="SUPPLY66" gate="G$1" x="88.9" y="162.56" smashed="yes">
+<attribute name="VALUE" x="88.9" y="166.116" size="1.27" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY67" gate="G$1" x="91.44" y="162.56" smashed="yes" rot="R90"/>
+<instance part="SUPPLY67" gate="G$1" x="86.36" y="149.86" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7019,6 +7013,14 @@ Page 4: USB Tranceiver</text>
 <junction x="27.94" y="124.46"/>
 </segment>
 </net>
+<net name="12.0V" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="160.02" x2="88.9" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="SUPPLY66" gate="G$1" pin="12.0V"/>
+<wire x1="88.9" y1="160.02" x2="88.9" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="FAN_SENSE" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="3"/>
@@ -7033,24 +7035,12 @@ Page 4: USB Tranceiver</text>
 <label x="83.82" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FAN_SENSE1" class="0">
-<segment>
-<wire x1="81.28" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PGND" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY67" gate="G$1" pin="PGND"/>
-<wire x1="88.9" y1="162.56" x2="81.28" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="12.0V" class="0">
-<segment>
-<pinref part="J6" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="160.02" x2="96.52" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="SUPPLY66" gate="G$1" pin="12.0V"/>
-<wire x1="96.52" y1="160.02" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="162.56" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -7586,29 +7576,12 @@ Page 4: USB Tranceiver</text>
 <approved hash="104,4,119.38,106.68,U3,VCC,USB5V_FILTERED,,,"/>
 <approved hash="104,4,50.8,91.44,J1,VCC,USB5V,,,"/>
 <approved hash="104,4,50.8,83.82,J1,GND,DGND,,,"/>
-<approved hash="104,2,68.58,147.32,U1BASE,VDDA/VREF+,AVDD,,,"/>
-<approved hash="104,2,27.94,149.86,U1BASE,VBAT,5.0V,,,"/>
-<approved hash="104,2,27.94,137.16,U1BASE,VDDUSB,5.0V,,,"/>
-<approved hash="104,2,27.94,144.78,U1BASE,VDD,5.0V,,,"/>
-<approved hash="104,2,27.94,142.24,U1BASE,VDD,5.0V,,,"/>
-<approved hash="104,2,27.94,139.7,U1BASE,VDD,5.0V,,,"/>
-<approved hash="104,2,68.58,132.08,U1BASE,VSS,DGND,,,"/>
-<approved hash="104,2,68.58,134.62,U1BASE,VSS,DGND,,,"/>
-<approved hash="104,2,68.58,137.16,U1BASE,VSS,DGND,,,"/>
-<approved hash="104,2,68.58,139.7,U1BASE,VSS,DGND,,,"/>
-<approved hash="104,2,68.58,144.78,U1BASE,VSSA/VREF-,AGND,,,"/>
-<approved hash="104,3,149.86,81.28,B1,VDD,AVDD,,,"/>
-<approved hash="104,3,175.26,50.8,B1,VSS,DGND,,,"/>
-<approved hash="104,3,149.86,50.8,B1,LED+,AVDD,,,"/>
-<approved hash="104,3,149.86,48.26,B1,LED-,DGND,,,"/>
 <approved hash="104,3,50.8,129.54,U2,V+,5.0V,,,"/>
 <approved hash="104,3,50.8,114.3,U2,V-,DGND,,,"/>
 <approved hash="104,3,38.1,71.12,U6,VDD,5.0V,,,"/>
 <approved hash="104,3,38.1,60.96,U6,GND,DGND,,,"/>
-<approved hash="104,3,215.9,162.56,U4,VDD,5.0V,,,"/>
-<approved hash="104,3,215.9,152.4,U4,GND,DGND,,,"/>
-<approved hash="110,3,73.66,119.38,FET_GATE,FEEDBACK,,,,"/>
-<approved hash="111,3,73.66,119.38,FET_GATE,,,,,"/>
+<approved hash="113,3,74.9842,156.813,J6,,,,,"/>
+<approved hash="113,2,160.826,161.639,J7,,,,,"/>
 </errors>
 </schematic>
 </drawing>
