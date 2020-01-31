@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -587,7 +587,7 @@ Buffer</text>
 <pin name="CM" x="10.16" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="BME280">
-<description>&lt;h3&gt;BME280 - Humidity Sensor&lt;/h3&gt;</description>
+<description>&lt;h3&gt;BME280 - Pressure, Temp, Humidity Sensor&lt;/h3&gt;</description>
 <pin name="VDD" x="-12.7" y="5.08" length="short" direction="pwr"/>
 <pin name="DGND@1" x="-12.7" y="-2.54" length="short" direction="pwr"/>
 <pin name="DGND@2" x="-12.7" y="-5.08" length="short" direction="pwr"/>
@@ -787,7 +787,7 @@ Buffer</text>
 </devices>
 </deviceset>
 <deviceset name="BME280" prefix="U">
-<description>&lt;h3&gt;BME280 - Humidity Sensor&lt;/h3&gt;</description>
+<description>&lt;h3&gt;BME280 - Pressure, Temp, Humidity Sensor&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="BME280" x="0" y="0"/>
 </gates>
