@@ -359,6 +359,13 @@
 <pin name="9.0V_1" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
+<symbol name="12V">
+<description>&lt;h3&gt;12.0V Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="12.0V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="3.556" size="1.27" layer="96" align="center">&gt;VALUE</text>
+</symbol>
 <symbol name="AGND">
 <description>&lt;h3&gt;Analog Ground&lt;/h3&gt;</description>
 <wire x1="-1.778" y1="0" x2="1.778" y2="0" width="0.254" layer="94"/>
@@ -861,6 +868,19 @@
 <description>&lt;h3&gt;9.0V Supply - Channel 1&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="9.0V-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="12.0V" prefix="SUPPLY">
+<description>&lt;h3&gt;12V Supply&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="12V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
