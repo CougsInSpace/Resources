@@ -1136,6 +1136,13 @@
 <attribute name="TEMP" value="-40~275°C"/>
 <attribute name="VALUE" value="15Ω 5%"/>
 </technology>
+<technology name="-5R">
+<attribute name="PACKAGE" value="THT 15mm"/>
+<attribute name="POWER" value="1W"/>
+<attribute name="SKU" value="25-5.00"/>
+<attribute name="TEMP" value="-65~250°C"/>
+<attribute name="VALUE" value="5Ω 1%"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1581,6 +1588,13 @@
 <attribute name="SKU" value="25-15.0"/>
 <attribute name="TEMP" value="-40~275°C"/>
 <attribute name="VALUE" value="15Ω 5%"/>
+</technology>
+<technology name="-5R">
+<attribute name="PACKAGE" value="THT 15mm"/>
+<attribute name="POWER" value="1W"/>
+<attribute name="SKU" value="25-5.00"/>
+<attribute name="TEMP" value="-65~250°C"/>
+<attribute name="VALUE" value="5Ω 1%"/>
 </technology>
 </technologies>
 </device>
