@@ -191,12 +191,8 @@
 <wire x1="-2.2" y1="-1.5" x2="-2.2" y2="-1.4" width="0.15" layer="21"/>
 <wire x1="-2.2" y1="-1.5" x2="2.2" y2="-1.5" width="0.15" layer="51"/>
 <wire x1="2.2" y1="1.5" x2="-2.2" y2="1.5" width="0.15" layer="51"/>
-<polygon width="0.15" layer="21">
-<vertex x="-4.175" y="1.9"/>
-<vertex x="-4.175" y="1.2"/>
-<vertex x="-3.475" y="1.9"/>
-</polygon>
 <text x="0" y="2.4" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="-4.2" y1="1.3" x2="0" y2="1.9" layer="21"/>
 </package>
 <package name="WSON-6">
 <description>&lt;h3&gt;Very Very Thin Small Outline No Lead Package (WSON) - 6 Pins&lt;/h3&gt;</description>
