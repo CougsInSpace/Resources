@@ -888,131 +888,131 @@
 </package>
 <package name="PCIE-8">
 <description>&lt;h3&gt;PCIe x8&lt;/h3&gt;</description>
-<hole x="0" y="0" drill="2.35"/>
-<hole x="40.15" y="0" drill="2.35"/>
-<pad name="A11" x="-1.65" y="1.25" drill="0.7"/>
-<pad name="A10" x="-2.65" y="3.25" drill="0.7"/>
-<pad name="B10" x="-2.65" y="-3.25" drill="0.7"/>
-<pad name="B11" x="-1.65" y="-1.25" drill="0.7"/>
-<pad name="A9" x="-3.65" y="1.25" drill="0.7"/>
-<pad name="A8" x="-4.65" y="3.25" drill="0.7"/>
-<pad name="B8" x="-4.65" y="-3.25" drill="0.7"/>
-<pad name="B9" x="-3.65" y="-1.25" drill="0.7"/>
-<pad name="A7" x="-5.65" y="1.25" drill="0.7"/>
-<pad name="A6" x="-6.65" y="3.25" drill="0.7"/>
-<pad name="B6" x="-6.65" y="-3.25" drill="0.7"/>
-<pad name="B7" x="-5.65" y="-1.25" drill="0.7"/>
-<pad name="A5" x="-7.65" y="1.25" drill="0.7"/>
-<pad name="A4" x="-8.65" y="3.25" drill="0.7"/>
-<pad name="B4" x="-8.65" y="-3.25" drill="0.7"/>
-<pad name="B5" x="-7.65" y="-1.25" drill="0.7"/>
-<pad name="A3" x="-9.65" y="1.25" drill="0.7"/>
-<pad name="A2" x="-10.65" y="3.25" drill="0.7"/>
-<pad name="B2" x="-10.65" y="-3.25" drill="0.7"/>
-<pad name="B3" x="-9.65" y="-1.25" drill="0.7"/>
-<pad name="A1" x="-11.65" y="1.25" drill="0.7"/>
-<pad name="B1" x="-11.65" y="-1.25" drill="0.7"/>
-<pad name="A12" x="1.35" y="3.25" drill="0.7"/>
-<pad name="B12" x="1.35" y="-3.25" drill="0.7"/>
-<pad name="B13" x="2.35" y="-1.25" drill="0.7"/>
-<pad name="A13" x="2.35" y="1.25" drill="0.7"/>
-<pad name="A14" x="3.35" y="3.25" drill="0.7"/>
-<pad name="B14" x="3.35" y="-3.25" drill="0.7"/>
-<pad name="B15" x="4.35" y="-1.25" drill="0.7"/>
-<pad name="A15" x="4.35" y="1.25" drill="0.7"/>
-<pad name="A16" x="5.35" y="3.25" drill="0.7"/>
-<pad name="B16" x="5.35" y="-3.25" drill="0.7"/>
-<pad name="B17" x="6.35" y="-1.25" drill="0.7"/>
-<pad name="A17" x="6.35" y="1.25" drill="0.7"/>
-<pad name="A18" x="7.35" y="3.25" drill="0.7"/>
-<pad name="B18" x="7.35" y="-3.25" drill="0.7"/>
-<pad name="B19" x="8.35" y="-1.25" drill="0.7"/>
-<pad name="A19" x="8.35" y="1.25" drill="0.7"/>
-<pad name="A20" x="9.35" y="3.25" drill="0.7"/>
-<pad name="B20" x="9.35" y="-3.25" drill="0.7"/>
-<pad name="B21" x="10.35" y="-1.25" drill="0.7"/>
-<pad name="A21" x="10.35" y="1.25" drill="0.7"/>
-<pad name="A22" x="11.35" y="3.25" drill="0.7"/>
-<pad name="B22" x="11.35" y="-3.25" drill="0.7"/>
-<pad name="B23" x="12.35" y="-1.25" drill="0.7"/>
-<pad name="A23" x="12.35" y="1.25" drill="0.7"/>
-<pad name="A24" x="13.35" y="3.25" drill="0.7"/>
-<pad name="B24" x="13.35" y="-3.25" drill="0.7"/>
-<pad name="B25" x="14.35" y="-1.25" drill="0.7"/>
-<pad name="A25" x="14.35" y="1.25" drill="0.7"/>
-<pad name="A26" x="15.35" y="3.25" drill="0.7"/>
-<pad name="B26" x="15.35" y="-3.25" drill="0.7"/>
-<pad name="B27" x="16.35" y="-1.25" drill="0.7"/>
-<pad name="A27" x="16.35" y="1.25" drill="0.7"/>
-<pad name="A28" x="17.35" y="3.25" drill="0.7"/>
-<pad name="B28" x="17.35" y="-3.25" drill="0.7"/>
-<pad name="B29" x="18.35" y="-1.25" drill="0.7"/>
-<pad name="A29" x="18.35" y="1.25" drill="0.7"/>
-<pad name="A30" x="19.35" y="3.25" drill="0.7"/>
-<pad name="B30" x="19.35" y="-3.25" drill="0.7"/>
-<pad name="B31" x="20.35" y="-1.25" drill="0.7"/>
-<pad name="A31" x="20.35" y="1.25" drill="0.7"/>
-<pad name="A32" x="21.35" y="3.25" drill="0.7"/>
-<pad name="B32" x="21.35" y="-3.25" drill="0.7"/>
-<pad name="B33" x="22.35" y="-1.25" drill="0.7"/>
-<pad name="A33" x="22.35" y="1.25" drill="0.7"/>
-<pad name="A34" x="23.35" y="3.25" drill="0.7"/>
-<pad name="B34" x="23.35" y="-3.25" drill="0.7"/>
-<pad name="B35" x="24.35" y="-1.25" drill="0.7"/>
-<pad name="A35" x="24.35" y="1.25" drill="0.7"/>
-<pad name="A36" x="25.35" y="3.25" drill="0.7"/>
-<pad name="B36" x="25.35" y="-3.25" drill="0.7"/>
-<pad name="B37" x="26.35" y="-1.25" drill="0.7"/>
-<pad name="A37" x="26.35" y="1.25" drill="0.7"/>
-<pad name="A38" x="27.35" y="3.25" drill="0.7"/>
-<pad name="B38" x="27.35" y="-3.25" drill="0.7"/>
-<pad name="B39" x="28.35" y="-1.25" drill="0.7"/>
-<pad name="A39" x="28.35" y="1.25" drill="0.7"/>
-<pad name="A40" x="29.35" y="3.25" drill="0.7"/>
-<pad name="B40" x="29.35" y="-3.25" drill="0.7"/>
-<pad name="B41" x="30.35" y="-1.25" drill="0.7"/>
-<pad name="A41" x="30.35" y="1.25" drill="0.7"/>
-<pad name="A42" x="31.35" y="3.25" drill="0.7"/>
-<pad name="B42" x="31.35" y="-3.25" drill="0.7"/>
-<pad name="B43" x="32.35" y="-1.25" drill="0.7"/>
-<pad name="A43" x="32.35" y="1.25" drill="0.7"/>
-<pad name="A44" x="33.35" y="3.25" drill="0.7"/>
-<pad name="B44" x="33.35" y="-3.25" drill="0.7"/>
-<pad name="B45" x="34.35" y="-1.25" drill="0.7"/>
-<pad name="A45" x="34.35" y="1.25" drill="0.7"/>
-<pad name="A46" x="35.35" y="3.25" drill="0.7"/>
-<pad name="B46" x="35.35" y="-3.25" drill="0.7"/>
-<pad name="B47" x="36.35" y="-1.25" drill="0.7"/>
-<pad name="A47" x="36.35" y="1.25" drill="0.7"/>
-<pad name="A48" x="37.35" y="3.25" drill="0.7"/>
-<pad name="B48" x="37.35" y="-3.25" drill="0.7"/>
-<pad name="B49" x="38.35" y="-1.25" drill="0.7"/>
-<pad name="A49" x="38.35" y="1.25" drill="0.7"/>
-<wire x1="-14.65" y1="3.7" x2="41.35" y2="3.7" width="0.15" layer="21"/>
-<wire x1="41.35" y1="3.7" x2="41.35" y2="-3.7" width="0.15" layer="21"/>
-<wire x1="41.35" y1="-3.7" x2="-14.65" y2="-3.7" width="0.15" layer="21"/>
-<wire x1="-14.65" y1="-3.7" x2="-14.65" y2="3.7" width="0.15" layer="21"/>
-<wire x1="-14.65" y1="-3.7" x2="-14.65" y2="-5.1" width="0.15" layer="51"/>
-<wire x1="-14.65" y1="-5.1" x2="41.35" y2="-5.1" width="0.15" layer="51"/>
-<wire x1="-15.1" y1="4.2" x2="41.8" y2="4.2" width="0.15" layer="21"/>
-<wire x1="41.8" y1="4.2" x2="41.8" y2="-4.2" width="0.15" layer="21"/>
-<wire x1="41.8" y1="-4.2" x2="-15.1" y2="-4.2" width="0.15" layer="21"/>
-<wire x1="-15.1" y1="-4.2" x2="-15.1" y2="4.2" width="0.15" layer="21"/>
-<wire x1="41.35" y1="-5.1" x2="41.35" y2="-3.7" width="0.15" layer="51"/>
-<wire x1="41.35" y1="-3.7" x2="41.35" y2="3.7" width="0.15" layer="51"/>
-<wire x1="41.35" y1="3.7" x2="-14.65" y2="3.7" width="0.15" layer="51"/>
-<wire x1="-14.65" y1="3.7" x2="-14.65" y2="-3.7" width="0.15" layer="51"/>
-<wire x1="-14.65" y1="-3.7" x2="41.35" y2="-3.7" width="0.15" layer="51"/>
-<text x="7.6" y="-4.4" size="0.8" layer="51" font="vector" ratio="15" align="center">Under lip</text>
-<text x="0" y="-4.4" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<wire x1="-15.1" y1="4.2" x2="41.8" y2="4.2" width="0.15" layer="39"/>
-<wire x1="41.8" y1="4.2" x2="41.8" y2="-4.2" width="0.15" layer="39"/>
-<wire x1="41.8" y1="-4.2" x2="-15.1" y2="-4.2" width="0.15" layer="39"/>
-<wire x1="-15.1" y1="-4.2" x2="-15.1" y2="4.2" width="0.15" layer="39"/>
-<wire x1="-12.7" y1="4.2" x2="39.5" y2="4.2" width="0.15" layer="40"/>
-<wire x1="39.5" y1="4.2" x2="39.5" y2="-4.2" width="0.15" layer="40"/>
-<wire x1="39.5" y1="-4.2" x2="-12.7" y2="-4.2" width="0.15" layer="40"/>
-<wire x1="-12.7" y1="-4.2" x2="-12.7" y2="4.2" width="0.15" layer="40"/>
+<hole x="0.15" y="0" drill="2.35"/>
+<hole x="40.3" y="0" drill="2.35"/>
+<pad name="A11" x="-1.5" y="1.25" drill="0.7"/>
+<pad name="A10" x="-2.5" y="3.25" drill="0.7"/>
+<pad name="B10" x="-2.5" y="-3.25" drill="0.7"/>
+<pad name="B11" x="-1.5" y="-1.25" drill="0.7"/>
+<pad name="A9" x="-3.5" y="1.25" drill="0.7"/>
+<pad name="A8" x="-4.5" y="3.25" drill="0.7"/>
+<pad name="B8" x="-4.5" y="-3.25" drill="0.7"/>
+<pad name="B9" x="-3.5" y="-1.25" drill="0.7"/>
+<pad name="A7" x="-5.5" y="1.25" drill="0.7"/>
+<pad name="A6" x="-6.5" y="3.25" drill="0.7"/>
+<pad name="B6" x="-6.5" y="-3.25" drill="0.7"/>
+<pad name="B7" x="-5.5" y="-1.25" drill="0.7"/>
+<pad name="A5" x="-7.5" y="1.25" drill="0.7"/>
+<pad name="A4" x="-8.5" y="3.25" drill="0.7"/>
+<pad name="B4" x="-8.5" y="-3.25" drill="0.7"/>
+<pad name="B5" x="-7.5" y="-1.25" drill="0.7"/>
+<pad name="A3" x="-9.5" y="1.25" drill="0.7"/>
+<pad name="A2" x="-10.5" y="3.25" drill="0.7"/>
+<pad name="B2" x="-10.5" y="-3.25" drill="0.7"/>
+<pad name="B3" x="-9.5" y="-1.25" drill="0.7"/>
+<pad name="A1" x="-11.5" y="1.25" drill="0.7"/>
+<pad name="B1" x="-11.5" y="-1.25" drill="0.7"/>
+<pad name="A12" x="1.5" y="3.25" drill="0.7"/>
+<pad name="B12" x="1.5" y="-3.25" drill="0.7"/>
+<pad name="B13" x="2.5" y="-1.25" drill="0.7"/>
+<pad name="A13" x="2.5" y="1.25" drill="0.7"/>
+<pad name="A14" x="3.5" y="3.25" drill="0.7"/>
+<pad name="B14" x="3.5" y="-3.25" drill="0.7"/>
+<pad name="B15" x="4.5" y="-1.25" drill="0.7"/>
+<pad name="A15" x="4.5" y="1.25" drill="0.7"/>
+<pad name="A16" x="5.5" y="3.25" drill="0.7"/>
+<pad name="B16" x="5.5" y="-3.25" drill="0.7"/>
+<pad name="B17" x="6.5" y="-1.25" drill="0.7"/>
+<pad name="A17" x="6.5" y="1.25" drill="0.7"/>
+<pad name="A18" x="7.5" y="3.25" drill="0.7"/>
+<pad name="B18" x="7.5" y="-3.25" drill="0.7"/>
+<pad name="B19" x="8.5" y="-1.25" drill="0.7"/>
+<pad name="A19" x="8.5" y="1.25" drill="0.7"/>
+<pad name="A20" x="9.5" y="3.25" drill="0.7"/>
+<pad name="B20" x="9.5" y="-3.25" drill="0.7"/>
+<pad name="B21" x="10.5" y="-1.25" drill="0.7"/>
+<pad name="A21" x="10.5" y="1.25" drill="0.7"/>
+<pad name="A22" x="11.5" y="3.25" drill="0.7"/>
+<pad name="B22" x="11.5" y="-3.25" drill="0.7"/>
+<pad name="B23" x="12.5" y="-1.25" drill="0.7"/>
+<pad name="A23" x="12.5" y="1.25" drill="0.7"/>
+<pad name="A24" x="13.5" y="3.25" drill="0.7"/>
+<pad name="B24" x="13.5" y="-3.25" drill="0.7"/>
+<pad name="B25" x="14.5" y="-1.25" drill="0.7"/>
+<pad name="A25" x="14.5" y="1.25" drill="0.7"/>
+<pad name="A26" x="15.5" y="3.25" drill="0.7"/>
+<pad name="B26" x="15.5" y="-3.25" drill="0.7"/>
+<pad name="B27" x="16.5" y="-1.25" drill="0.7"/>
+<pad name="A27" x="16.5" y="1.25" drill="0.7"/>
+<pad name="A28" x="17.5" y="3.25" drill="0.7"/>
+<pad name="B28" x="17.5" y="-3.25" drill="0.7"/>
+<pad name="B29" x="18.5" y="-1.25" drill="0.7"/>
+<pad name="A29" x="18.5" y="1.25" drill="0.7"/>
+<pad name="A30" x="19.5" y="3.25" drill="0.7"/>
+<pad name="B30" x="19.5" y="-3.25" drill="0.7"/>
+<pad name="B31" x="20.5" y="-1.25" drill="0.7"/>
+<pad name="A31" x="20.5" y="1.25" drill="0.7"/>
+<pad name="A32" x="21.5" y="3.25" drill="0.7"/>
+<pad name="B32" x="21.5" y="-3.25" drill="0.7"/>
+<pad name="B33" x="22.5" y="-1.25" drill="0.7"/>
+<pad name="A33" x="22.5" y="1.25" drill="0.7"/>
+<pad name="A34" x="23.5" y="3.25" drill="0.7"/>
+<pad name="B34" x="23.5" y="-3.25" drill="0.7"/>
+<pad name="B35" x="24.5" y="-1.25" drill="0.7"/>
+<pad name="A35" x="24.5" y="1.25" drill="0.7"/>
+<pad name="A36" x="25.5" y="3.25" drill="0.7"/>
+<pad name="B36" x="25.5" y="-3.25" drill="0.7"/>
+<pad name="B37" x="26.5" y="-1.25" drill="0.7"/>
+<pad name="A37" x="26.5" y="1.25" drill="0.7"/>
+<pad name="A38" x="27.5" y="3.25" drill="0.7"/>
+<pad name="B38" x="27.5" y="-3.25" drill="0.7"/>
+<pad name="B39" x="28.5" y="-1.25" drill="0.7"/>
+<pad name="A39" x="28.5" y="1.25" drill="0.7"/>
+<pad name="A40" x="29.5" y="3.25" drill="0.7"/>
+<pad name="B40" x="29.5" y="-3.25" drill="0.7"/>
+<pad name="B41" x="30.5" y="-1.25" drill="0.7"/>
+<pad name="A41" x="30.5" y="1.25" drill="0.7"/>
+<pad name="A42" x="31.5" y="3.25" drill="0.7"/>
+<pad name="B42" x="31.5" y="-3.25" drill="0.7"/>
+<pad name="B43" x="32.5" y="-1.25" drill="0.7"/>
+<pad name="A43" x="32.5" y="1.25" drill="0.7"/>
+<pad name="A44" x="33.5" y="3.25" drill="0.7"/>
+<pad name="B44" x="33.5" y="-3.25" drill="0.7"/>
+<pad name="B45" x="34.5" y="-1.25" drill="0.7"/>
+<pad name="A45" x="34.5" y="1.25" drill="0.7"/>
+<pad name="A46" x="35.5" y="3.25" drill="0.7"/>
+<pad name="B46" x="35.5" y="-3.25" drill="0.7"/>
+<pad name="B47" x="36.5" y="-1.25" drill="0.7"/>
+<pad name="A47" x="36.5" y="1.25" drill="0.7"/>
+<pad name="A48" x="37.5" y="3.25" drill="0.7"/>
+<pad name="B48" x="37.5" y="-3.25" drill="0.7"/>
+<pad name="B49" x="38.5" y="-1.25" drill="0.7"/>
+<pad name="A49" x="38.5" y="1.25" drill="0.7"/>
+<wire x1="-14.5" y1="3.7" x2="41.5" y2="3.7" width="0.15" layer="21"/>
+<wire x1="41.5" y1="3.7" x2="41.5" y2="-3.7" width="0.15" layer="21"/>
+<wire x1="41.5" y1="-3.7" x2="-14.5" y2="-3.7" width="0.15" layer="21"/>
+<wire x1="-14.5" y1="-3.7" x2="-14.5" y2="3.7" width="0.15" layer="21"/>
+<wire x1="-14.5" y1="-3.7" x2="-14.5" y2="-5.1" width="0.15" layer="51"/>
+<wire x1="-14.5" y1="-5.1" x2="41.5" y2="-5.1" width="0.15" layer="51"/>
+<wire x1="-14.95" y1="4.2" x2="41.95" y2="4.2" width="0.15" layer="21"/>
+<wire x1="41.95" y1="4.2" x2="41.95" y2="-4.2" width="0.15" layer="21"/>
+<wire x1="41.95" y1="-4.2" x2="-14.95" y2="-4.2" width="0.15" layer="21"/>
+<wire x1="-14.95" y1="-4.2" x2="-14.95" y2="4.2" width="0.15" layer="21"/>
+<wire x1="41.5" y1="-5.1" x2="41.5" y2="-3.7" width="0.15" layer="51"/>
+<wire x1="41.5" y1="-3.7" x2="41.5" y2="3.7" width="0.15" layer="51"/>
+<wire x1="41.5" y1="3.7" x2="-14.5" y2="3.7" width="0.15" layer="51"/>
+<wire x1="-14.5" y1="3.7" x2="-14.5" y2="-3.7" width="0.15" layer="51"/>
+<wire x1="-14.5" y1="-3.7" x2="41.5" y2="-3.7" width="0.15" layer="51"/>
+<text x="7.75" y="-4.4" size="0.8" layer="51" font="vector" ratio="15" align="center">Under lip</text>
+<text x="0.15" y="-4.4" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-14.95" y1="4.2" x2="41.95" y2="4.2" width="0.15" layer="39"/>
+<wire x1="41.95" y1="4.2" x2="41.95" y2="-4.2" width="0.15" layer="39"/>
+<wire x1="41.95" y1="-4.2" x2="-14.95" y2="-4.2" width="0.15" layer="39"/>
+<wire x1="-14.95" y1="-4.2" x2="-14.95" y2="4.2" width="0.15" layer="39"/>
+<wire x1="-12.55" y1="4.2" x2="39.65" y2="4.2" width="0.15" layer="40"/>
+<wire x1="39.65" y1="4.2" x2="39.65" y2="-4.2" width="0.15" layer="40"/>
+<wire x1="39.65" y1="-4.2" x2="-12.55" y2="-4.2" width="0.15" layer="40"/>
+<wire x1="-12.55" y1="-4.2" x2="-12.55" y2="4.2" width="0.15" layer="40"/>
 </package>
 <package name="TERMINAL_SPRING-02">
 <description>&lt;h3&gt;Terminal Block - Spring Clamp - 2 Pins&lt;/h3&gt;</description>
