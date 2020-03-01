@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,20 +53,20 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="58" name="bCAD" color="9" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="9" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -3092,6 +3092,13 @@ Last character is an incremented letter for each variant of the same value and p
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-0">
+<attribute name="PACKAGE" value="3216"/>
+<attribute name="POWER" value="1/4W"/>
+<attribute name="SKU" value="23-0000"/>
+<attribute name="TEMP" value="70°C Max 2A"/>
+<attribute name="VALUE" value="0Ω &lt;20mΩ"/>
+</technology>
 <technology name="-0.01R">
 <attribute name="PACKAGE" value="3216"/>
 <attribute name="POWER" value="1/2W"/>
@@ -3135,6 +3142,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="25-15.0"/>
 <attribute name="TEMP" value="-40~275°C"/>
 <attribute name="VALUE" value="15Ω 5%"/>
+</technology>
+<technology name="-5R">
+<attribute name="PACKAGE" value="THT 15mm"/>
+<attribute name="POWER" value="1W"/>
+<attribute name="SKU" value="25-5.00"/>
+<attribute name="TEMP" value="-65~250°C"/>
+<attribute name="VALUE" value="5Ω 1%"/>
 </technology>
 </technologies>
 </device>
@@ -3531,6 +3545,13 @@ Last character is an incremented letter for each variant of the same value and p
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
+<technology name="-0">
+<attribute name="PACKAGE" value="3216"/>
+<attribute name="POWER" value="1/4W"/>
+<attribute name="SKU" value="23-0000"/>
+<attribute name="TEMP" value="70°C Max 2A"/>
+<attribute name="VALUE" value="0Ω &lt;50mΩ"/>
+</technology>
 <technology name="-0.01R">
 <attribute name="PACKAGE" value="3216"/>
 <attribute name="POWER" value="1/2W"/>
@@ -3574,6 +3595,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="25-15.0"/>
 <attribute name="TEMP" value="-40~275°C"/>
 <attribute name="VALUE" value="15Ω 5%"/>
+</technology>
+<technology name="-5R">
+<attribute name="PACKAGE" value="THT 15mm"/>
+<attribute name="POWER" value="1W"/>
+<attribute name="SKU" value="25-5.00"/>
+<attribute name="TEMP" value="-65~250°C"/>
+<attribute name="VALUE" value="5Ω 1%"/>
 </technology>
 </technologies>
 </device>
@@ -3844,6 +3872,13 @@ Last character is an incremented letter for each variant of the same value and p
 <attribute name="SKU" value="63-0002"/>
 <attribute name="VALUE" value="Red"/>
 <attribute name="VF" value="2V"/>
+</technology>
+<technology name="-WHT">
+<attribute name="CURRENT" value="20mA"/>
+<attribute name="PACKAGE" value="1608"/>
+<attribute name="SKU" value="63-0005"/>
+<attribute name="VALUE" value="White"/>
+<attribute name="VF" value="2.9V"/>
 </technology>
 <technology name="-YLW">
 <attribute name="CURRENT" value="20mA"/>
@@ -5223,6 +5258,220 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 </deviceset>
 </devicesets>
 </library>
+<library name="CougsInSpace-Hardware">
+<description>&lt;h3&gt;Hardware&lt;/h3&gt;
+&lt;p&gt;Stand offs, heatsinks, etc.&lt;/p&gt;
+&lt;p&gt;SKUs&lt;br&gt;
+48-0000 to 48-0099: Hardware&lt;br&gt;
+48-0100 to 48-0999: Bolts&lt;br&gt;
+48-1000 and beyond: More hardware&lt;/p&gt;
+&lt;p&gt;For bolts, there is a leading zero, first numer is diameter, second is length, third is increment for each similar one. 48-023x is an M2 x 3mm&lt;/p&gt;</description>
+<packages>
+<package name="HEATSINK-AM4">
+<description>&lt;h3&gt;Heatsink - AM4 Mount&lt;/h3&gt;</description>
+<pad name="1" x="-45" y="27" drill="5.7" diameter="10"/>
+<pad name="V1" x="-41.1" y="27" drill="0.35" diameter="1"/>
+<pad name="V2" x="-41.3352" y="28.333878125" drill="0.35" diameter="1"/>
+<pad name="V3" x="-42.012428125" y="29.506871875" drill="0.35" diameter="1"/>
+<pad name="V4" x="-43.05" y="30.3775" drill="0.35" diameter="1"/>
+<pad name="V5" x="-44.322771875" y="30.84075" drill="0.35" diameter="1"/>
+<pad name="V6" x="-45.677228125" y="30.84075" drill="0.35" diameter="1"/>
+<pad name="V7" x="-46.95" y="30.3775" drill="0.35" diameter="1"/>
+<pad name="V8" x="-47.987571875" y="29.506871875" drill="0.35" diameter="1"/>
+<pad name="V9" x="-48.6648" y="28.333878125" drill="0.35" diameter="1"/>
+<pad name="V10" x="-48.9" y="27" drill="0.35" diameter="1"/>
+<pad name="V11" x="-48.6648" y="25.666121875" drill="0.35" diameter="1"/>
+<pad name="V12" x="-47.987571875" y="24.493128125" drill="0.35" diameter="1"/>
+<pad name="V13" x="-46.95" y="23.6225" drill="0.35" diameter="1"/>
+<pad name="V14" x="-45.677228125" y="23.15925" drill="0.35" diameter="1"/>
+<pad name="V15" x="-44.322771875" y="23.15925" drill="0.35" diameter="1"/>
+<pad name="V16" x="-43.05" y="23.6225" drill="0.35" diameter="1"/>
+<pad name="V17" x="-42.012428125" y="24.493128125" drill="0.35" diameter="1"/>
+<pad name="V18" x="-41.3352" y="25.666121875" drill="0.35" diameter="1"/>
+<rectangle x1="-20" y1="-20" x2="20" y2="20" layer="51"/>
+<wire x1="45" y1="-34.2" x2="-45" y2="-34.2" width="0.15" layer="22"/>
+<wire x1="-45" y1="-34.2" x2="-52.2" y2="-27" width="0.15" layer="22" curve="-90"/>
+<wire x1="-52.2" y1="-27" x2="-52.2" y2="27" width="0.15" layer="22"/>
+<wire x1="-52.2" y1="27" x2="-45" y2="34.2" width="0.15" layer="22" curve="-90"/>
+<wire x1="-45" y1="34.2" x2="45" y2="34.2" width="0.15" layer="22"/>
+<wire x1="45" y1="34.2" x2="52.2" y2="27" width="0.15" layer="22" curve="-90"/>
+<wire x1="52.2" y1="27" x2="52.2" y2="-27" width="0.15" layer="22"/>
+<wire x1="52.2" y1="-27" x2="45" y2="-34.2" width="0.15" layer="22" curve="-90"/>
+<wire x1="-12" y1="12" x2="12" y2="12" width="0.15" layer="22"/>
+<wire x1="12" y1="12" x2="12" y2="-12" width="0.15" layer="22"/>
+<wire x1="12" y1="-12" x2="-12" y2="-12" width="0.15" layer="22"/>
+<wire x1="-12" y1="-12" x2="-12" y2="12" width="0.15" layer="22"/>
+<text x="0" y="0" size="0.8" layer="52" font="vector" ratio="15" rot="MR0" align="center">3mm height limit</text>
+<polygon width="0.15" layer="40">
+<vertex x="-12" y="0.1"/>
+<vertex x="-52.2" y="0.1"/>
+<vertex x="-52.2" y="27" curve="-90"/>
+<vertex x="-45" y="34.2"/>
+<vertex x="45" y="34.2" curve="-90"/>
+<vertex x="52.2" y="27"/>
+<vertex x="52.2" y="-27" curve="-90"/>
+<vertex x="45" y="-34.2"/>
+<vertex x="-45" y="-34.2" curve="-90"/>
+<vertex x="-52.2" y="-27"/>
+<vertex x="-52.2" y="-0.1"/>
+<vertex x="-12" y="-0.1"/>
+<vertex x="-12" y="-12"/>
+<vertex x="12" y="-12"/>
+<vertex x="12" y="12"/>
+<vertex x="-12" y="12"/>
+</polygon>
+<wire x1="-47.5" y1="30.5" x2="-35.25" y2="30.5" width="0.15" layer="21"/>
+<wire x1="-35.25" y1="30.5" x2="-35.25" y2="-30.5" width="0.15" layer="21"/>
+<wire x1="-35.25" y1="-30.5" x2="-47.5" y2="-30.5" width="0.15" layer="21"/>
+<circle x="-45" y="-27" radius="6" width="0" layer="21"/>
+<circle x="45" y="27" radius="6" width="0" layer="21"/>
+<circle x="45" y="-27" radius="6" width="0" layer="21"/>
+<wire x1="35.25" y1="-30.5" x2="35.25" y2="30.5" width="0.15" layer="21"/>
+<wire x1="35.25" y1="30.5" x2="47.5" y2="30.5" width="0.15" layer="21"/>
+<wire x1="47.5" y1="30.5" x2="47.5" y2="-30.5" width="0.15" layer="21"/>
+<polygon width="0.15" layer="39">
+<vertex x="-51" y="33"/>
+<vertex x="-39" y="33"/>
+<vertex x="-39" y="31"/>
+<vertex x="-35" y="31"/>
+<vertex x="-35" y="-31"/>
+<vertex x="-40" y="-31"/>
+<vertex x="-40" y="-33"/>
+<vertex x="-51" y="-33"/>
+<vertex x="-51" y="-22"/>
+<vertex x="-48" y="-22"/>
+<vertex x="-48" y="22"/>
+<vertex x="-51" y="22"/>
+</polygon>
+<polygon width="0.15" layer="39">
+<vertex x="51" y="-33"/>
+<vertex x="39" y="-33"/>
+<vertex x="39" y="-31"/>
+<vertex x="35" y="-31"/>
+<vertex x="35" y="31"/>
+<vertex x="40" y="31"/>
+<vertex x="40" y="33"/>
+<vertex x="51" y="33"/>
+<vertex x="51" y="22"/>
+<vertex x="48" y="22"/>
+<vertex x="48" y="-22"/>
+<vertex x="51" y="-22"/>
+</polygon>
+<pad name="2" x="-45" y="-27" drill="5.7" diameter="10"/>
+<pad name="V19" x="-41.1" y="-27" drill="0.35" diameter="1"/>
+<pad name="V20" x="-41.3352" y="-25.666121875" drill="0.35" diameter="1"/>
+<pad name="V21" x="-42.012428125" y="-24.493128125" drill="0.35" diameter="1"/>
+<pad name="V22" x="-43.05" y="-23.6225" drill="0.35" diameter="1"/>
+<pad name="V23" x="-44.322771875" y="-23.15925" drill="0.35" diameter="1"/>
+<pad name="V24" x="-45.677228125" y="-23.15925" drill="0.35" diameter="1"/>
+<pad name="V25" x="-46.95" y="-23.6225" drill="0.35" diameter="1"/>
+<pad name="V26" x="-47.987571875" y="-24.493128125" drill="0.35" diameter="1"/>
+<pad name="V27" x="-48.6648" y="-25.666121875" drill="0.35" diameter="1"/>
+<pad name="V28" x="-48.9" y="-27" drill="0.35" diameter="1"/>
+<pad name="V29" x="-48.6648" y="-28.333878125" drill="0.35" diameter="1"/>
+<pad name="V30" x="-47.987571875" y="-29.506871875" drill="0.35" diameter="1"/>
+<pad name="V31" x="-46.95" y="-30.3775" drill="0.35" diameter="1"/>
+<pad name="V32" x="-45.677228125" y="-30.84075" drill="0.35" diameter="1"/>
+<pad name="V33" x="-44.322771875" y="-30.84075" drill="0.35" diameter="1"/>
+<pad name="V34" x="-43.05" y="-30.3775" drill="0.35" diameter="1"/>
+<pad name="V35" x="-42.012428125" y="-29.506871875" drill="0.35" diameter="1"/>
+<pad name="V36" x="-41.3352" y="-28.333878125" drill="0.35" diameter="1"/>
+<pad name="3" x="45" y="-27" drill="5.7" diameter="10"/>
+<pad name="V37" x="48.9" y="-27" drill="0.35" diameter="1"/>
+<pad name="V38" x="48.6648" y="-25.666121875" drill="0.35" diameter="1"/>
+<pad name="V39" x="47.987571875" y="-24.493128125" drill="0.35" diameter="1"/>
+<pad name="V40" x="46.95" y="-23.6225" drill="0.35" diameter="1"/>
+<pad name="V41" x="45.677228125" y="-23.15925" drill="0.35" diameter="1"/>
+<pad name="V42" x="44.322771875" y="-23.15925" drill="0.35" diameter="1"/>
+<pad name="V43" x="43.05" y="-23.6225" drill="0.35" diameter="1"/>
+<pad name="V44" x="42.012428125" y="-24.493128125" drill="0.35" diameter="1"/>
+<pad name="V45" x="41.3352" y="-25.666121875" drill="0.35" diameter="1"/>
+<pad name="V46" x="41.1" y="-27" drill="0.35" diameter="1"/>
+<pad name="V47" x="41.3352" y="-28.333878125" drill="0.35" diameter="1"/>
+<pad name="V48" x="42.012428125" y="-29.506871875" drill="0.35" diameter="1"/>
+<pad name="V49" x="43.05" y="-30.3775" drill="0.35" diameter="1"/>
+<pad name="V50" x="44.322771875" y="-30.84075" drill="0.35" diameter="1"/>
+<pad name="V51" x="45.677228125" y="-30.84075" drill="0.35" diameter="1"/>
+<pad name="V52" x="46.95" y="-30.3775" drill="0.35" diameter="1"/>
+<pad name="V53" x="47.987571875" y="-29.506871875" drill="0.35" diameter="1"/>
+<pad name="V54" x="48.6648" y="-28.333878125" drill="0.35" diameter="1"/>
+<pad name="4" x="45" y="27" drill="5.7" diameter="10"/>
+<pad name="V55" x="48.9" y="27" drill="0.35" diameter="1"/>
+<pad name="V56" x="48.6648" y="28.333878125" drill="0.35" diameter="1"/>
+<pad name="V57" x="47.987571875" y="29.506871875" drill="0.35" diameter="1"/>
+<pad name="V58" x="46.95" y="30.3775" drill="0.35" diameter="1"/>
+<pad name="V59" x="45.677228125" y="30.84075" drill="0.35" diameter="1"/>
+<pad name="V60" x="44.322771875" y="30.84075" drill="0.35" diameter="1"/>
+<pad name="V61" x="43.05" y="30.3775" drill="0.35" diameter="1"/>
+<pad name="V62" x="42.012428125" y="29.506871875" drill="0.35" diameter="1"/>
+<pad name="V63" x="41.3352" y="28.333878125" drill="0.35" diameter="1"/>
+<pad name="V64" x="41.1" y="27" drill="0.35" diameter="1"/>
+<pad name="V65" x="41.3352" y="25.666121875" drill="0.35" diameter="1"/>
+<pad name="V66" x="42.012428125" y="24.493128125" drill="0.35" diameter="1"/>
+<pad name="V67" x="43.05" y="23.6225" drill="0.35" diameter="1"/>
+<pad name="V68" x="44.322771875" y="23.15925" drill="0.35" diameter="1"/>
+<pad name="V69" x="45.677228125" y="23.15925" drill="0.35" diameter="1"/>
+<pad name="V70" x="46.95" y="23.6225" drill="0.35" diameter="1"/>
+<pad name="V71" x="47.987571875" y="24.493128125" drill="0.35" diameter="1"/>
+<pad name="V72" x="48.6648" y="25.666121875" drill="0.35" diameter="1"/>
+<wire x1="47.5" y1="-30.5" x2="35.25" y2="-30.5" width="0.15" layer="21"/>
+<wire x1="-47.5" y1="-30.5" x2="-47.5" y2="30.5" width="0.15" layer="21"/>
+<circle x="-45" y="27" radius="6" width="0" layer="21"/>
+<text x="-48" y="0" size="0.8" layer="21" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="HEATSINK">
+<description>&lt;h3&gt;Heatsink&lt;/h3&gt;</description>
+<pin name="CHASSIS" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="4.445" y1="2.54" x2="4.445" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.175" y1="2.54" x2="3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="2.54" x2="-0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="2.54" x2="-3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="2.54" x2="-4.445" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-3.81" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-5.842" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="-7.874" size="1.778" layer="97" align="center">&gt;SKU</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HEATSINK" prefix="H">
+<description>&lt;h3&gt;Heatsink&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="HEATSINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-AM4" package="HEATSINK-AM4">
+<connects>
+<connect gate="G$1" pin="CHASSIS" pad="1 2 3 4 V1 V2 V3 V4 V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20 V21 V22 V23 V24 V25 V26 V27 V28 V29 V30 V31 V32 V33 V34 V35 V36 V37 V38 V39 V40 V41 V42 V43 V44 V45 V46 V47 V48 V49 V50 V51 V52 V53 V54 V55 V56 V57 V58 V59 V60 V61 V62 V63 V64 V65 V66 V67 V68 V69 V70 V71 V72"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SKU" value="48-0003"/>
+<attribute name="VALUE" value="AM4 Heatsink"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="DESIGNER" value="Ailee Simpson"/>
@@ -5466,6 +5715,9 @@ Last character is an incremented letter for each variant of the same value A-Z. 
 <part name="FRAME3" library="CougsInSpace-Aesthetics" deviceset="FRAME-A" device="">
 <attribute name="TITLE" value="USB Transceiver"/>
 </part>
+<part name="H1" library="CougsInSpace-Hardware" deviceset="HEATSINK" device="-AM4" value="AM4 Heatsink"/>
+<part name="FRAME5" library="CougsInSpace-Aesthetics" deviceset="FRAME-A" device=""/>
+<part name="SUPPLY50" library="CougsInSpace-PowerSymbols" deviceset="CHASSIS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8005,6 +8257,37 @@ Page 4: USB Transceiver</text>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY15" gate="G$1" pin="3.1V"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="H1" gate="G$1" x="198.12" y="63.5" smashed="yes">
+<attribute name="NAME" x="198.12" y="59.69" size="1.778" layer="95" align="center"/>
+<attribute name="VALUE" x="198.12" y="57.658" size="1.778" layer="96" align="center"/>
+<attribute name="SKU" x="198.12" y="55.626" size="1.778" layer="97" align="center"/>
+</instance>
+<instance part="FRAME5" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="PART_NUMBER" x="257.81" y="13.97" size="3.81" layer="94" ratio="15" align="bottom-right"/>
+<attribute name="PROJECT" x="227.33" y="13.97" size="3.81" layer="94" ratio="15" align="bottom-right"/>
+<attribute name="DESIGNER" x="227.33" y="7.62" size="3.81" layer="94" ratio="15" align="bottom-right"/>
+<attribute name="LAST_DATE_TIME" x="227.33" y="1.27" size="3.81" layer="94" ratio="15" align="bottom-right"/>
+<attribute name="REV" x="257.81" y="7.62" size="3.81" layer="94" ratio="15" align="bottom-right"/>
+<attribute name="SHEET" x="257.81" y="1.27" size="3.81" layer="94" ratio="15" align="bottom-right"/>
+</instance>
+<instance part="SUPPLY50" gate="G$1" x="177.8" y="60.96" smashed="yes"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="CHASSIS" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="CHASSIS"/>
+<wire x1="190.5" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="SUPPLY50" gate="G$1" pin="CHASSIS"/>
 </segment>
 </net>
 </nets>
