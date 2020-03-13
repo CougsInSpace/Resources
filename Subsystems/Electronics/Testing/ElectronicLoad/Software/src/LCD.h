@@ -112,7 +112,7 @@ class ST7565 {
         uint8_t color);
   void drawline(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, 
         uint8_t color);
-  void drawchar(uint8_t x, uint8_t line, char c);
+  void drawchar(uint8_t x, uint8_t line, char c, bool highlighted = false);
   void drawstring(uint8_t x, uint8_t line, char *c);
   /*void drawbitmap(uint8_t x, uint8_t y, 
           const uint8_t *bitmap, uint8_t w, uint8_t h,

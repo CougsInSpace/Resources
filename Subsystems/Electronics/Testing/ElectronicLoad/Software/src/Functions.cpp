@@ -13,8 +13,8 @@
 // 10A range cannot be bypassed: 1 to 10 A
 
  DigitalIn knobPushIn(ENCODER_SW);
- DigitalIn knobChannelA(channelA);
- DigitalIn knobChannelB(channelB);
+ DigitalIn knobChannelA(KNOB_CHANNEL_A);
+ DigitalIn knobChannelB(KNOB_CHANNEL_B);
 
  AnalogIn buttonPushIn(UI_BUTTON1);
 
@@ -130,7 +130,7 @@ double lcdInputCurrentDisplayed(double selectedDigit){
 
   currentCurrent = getCurrentCurrent();
 
-  sprintf(buf, "Input Current: %4.fmA", currentCurrent);
+  sprintf(buf, "Input Current: %4.d", currentCurrent);
 
     lcd.drawstring(1, 1, buf); // Drawstring and then draw the highlighted Character afterwards
     highlightedDigit = currentCurrent * (int)pow(10, selectedDigit) % 10; // Used in drawchar, variable represents the number that is highlighted
