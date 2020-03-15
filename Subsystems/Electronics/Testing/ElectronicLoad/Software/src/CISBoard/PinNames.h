@@ -192,8 +192,8 @@ typedef enum {
 
   FAN_PWM = PA_8,
 
-  channelA  = PC_7, // GPIO - encoder_A - knob twist clockwise
-  channelB  = PC_8, // GPIO - encoder_B - knob twist counter-clockwise
+  KNOB_CHANNEL_A  = PC_7, // GPIO - encoder_A - knob twist clockwise
+  KNOB_CHANNEL_B  = PC_8, // GPIO - encoder_B - knob twist counter-clockwise
   ENCODER_SW = PC_9, // GPIO - encoder - knob push
 
   UI_BUTTON1 = PC_11, // Switch modes (my choice, Bradley demands it)
