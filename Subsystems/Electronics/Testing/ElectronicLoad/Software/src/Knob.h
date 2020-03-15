@@ -4,29 +4,24 @@
 #include "Functions.h"
 #include "QEI.h"
 
+class Knob {
+private:
+  QEI encoder;
 
+  int lastPulse = 0, currentPosition = 0, current = 0;
 
-class Knob
-{
-    private:
-    QEI encoder;
+public:
+  Knob(PinName channelA, PinName channelB);
 
-    int lastPulse = 0, currentPosition = 0, current = 0;
+  int8_t getMovement();
 
-    public: 
+  int8_t isPressed();
 
-    Knob(PinName channelA, PinName channelB);
+  int getPosition();
 
-    int8_t getMovement();
+  int getCurrent();
 
-    int8_t isPressed();
+  int8_t reset();
+};
 
-    int getPosition();
-
-    int getCurrent();
-
-    int8_t reset();
-
-    };
-
-    #endif /* _KNOB_H_ */
+#endif /* _KNOB_H_ */
