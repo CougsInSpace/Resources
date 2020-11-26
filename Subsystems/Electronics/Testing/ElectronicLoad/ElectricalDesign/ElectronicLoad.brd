@@ -1507,26 +1507,26 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-50.8" y="-42" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="SKU" value="03-0001" x="-82.02" y="-94.07" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C1" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-25" y="-7" smashed="yes">
-<attribute name="NAME" x="-25" y="-5.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-4.68" y="-94.63" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-104A" x="-4.68" y="-94.63" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="X7R" x="-4.68" y="-94.63" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-4.68" y="-94.63" size="1.778" layer="27" display="off"/>
+<element name="C1" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-81" y="-18" smashed="yes">
+<attribute name="NAME" x="-81" y="-16.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-60.68" y="-105.63" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-104A" x="-60.68" y="-105.63" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X7R" x="-60.68" y="-105.63" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-60.68" y="-105.63" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C10" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-25" y="-5" smashed="yes">
-<attribute name="NAME" x="-25" y="-3.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="25.8" y="-92.63" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-104A" x="25.8" y="-92.63" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="X7R" x="25.8" y="-92.63" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="25.8" y="-92.63" size="1.778" layer="27" display="off"/>
+<element name="C10" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-87" y="-18" smashed="yes">
+<attribute name="NAME" x="-87" y="-16.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-36.2" y="-105.63" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-104A" x="-36.2" y="-105.63" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X7R" x="-36.2" y="-105.63" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-36.2" y="-105.63" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C11" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-28" y="-5" smashed="yes">
-<attribute name="NAME" x="-28" y="-3.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="26.61" y="-92.63" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-104A" x="26.61" y="-92.63" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="X7R" x="26.61" y="-92.63" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="26.61" y="-92.63" size="1.778" layer="27" display="off"/>
+<element name="C11" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-90" y="-18" smashed="yes">
+<attribute name="NAME" x="-90" y="-16.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-35.39" y="-105.63" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-104A" x="-35.39" y="-105.63" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X7R" x="-35.39" y="-105.63" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-35.39" y="-105.63" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C12" library="CougsInSpace-Capacitors" package="4028-POL" value="4.7µF 10%" x="2" y="-6" smashed="yes">
 <attribute name="ESR" value="Max 900mΩ" x="74.39" y="-87.28" size="1.778" layer="27" display="off"/>
@@ -1535,208 +1535,208 @@ design rules under a new name.</description>
 <attribute name="SKU" value="16-475A" x="74.39" y="-87.28" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="20V" x="74.39" y="-87.28" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C13" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-3" y="-11" smashed="yes" rot="R90">
-<attribute name="NAME" x="-4.4" y="-11" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="PACKAGE" value="1608" x="84.63" y="47.42" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SKU" value="11-104A" x="84.63" y="47.42" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMP" value="X7R" x="84.63" y="47.42" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="84.63" y="47.42" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C13" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-3" y="-6" smashed="yes" rot="R90">
+<attribute name="NAME" x="-4.4" y="-6" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="PACKAGE" value="1608" x="84.63" y="52.42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SKU" value="11-104A" x="84.63" y="52.42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TEMP" value="X7R" x="84.63" y="52.42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="84.63" y="52.42" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C14" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-31" y="-18" smashed="yes" rot="R180">
-<attribute name="NAME" x="-31" y="-19.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-93.23" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-105B" x="-93.23" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-93.23" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="16V" x="-93.23" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C14" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-55" y="-30" smashed="yes" rot="R180">
+<attribute name="NAME" x="-57.6" y="-30" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-117.23" y="57.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-105B" x="-117.23" y="57.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-117.23" y="57.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="16V" x="-117.23" y="57.63" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C15" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-25" y="-18" smashed="yes" rot="R180">
-<attribute name="NAME" x="-25" y="-19.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-91.04" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-105B" x="-91.04" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-91.04" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="16V" x="-91.04" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C15" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-55" y="-32" smashed="yes" rot="R180">
+<attribute name="NAME" x="-55" y="-33.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-121.04" y="55.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-105B" x="-121.04" y="55.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-121.04" y="55.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="16V" x="-121.04" y="55.63" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C16" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-28" y="-18" smashed="yes">
-<attribute name="NAME" x="-28" y="-16.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="41.85" y="-105.63" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-105B" x="41.85" y="-105.63" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="X7R" x="41.85" y="-105.63" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="16V" x="41.85" y="-105.63" size="1.778" layer="27" display="off"/>
+<element name="C16" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-55" y="-34" smashed="yes">
+<attribute name="NAME" x="-55" y="-32.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="14.85" y="-121.63" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-105B" x="14.85" y="-121.63" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X7R" x="14.85" y="-121.63" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="16V" x="14.85" y="-121.63" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C17" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-25" y="-20" smashed="yes" rot="R180">
-<attribute name="NAME" x="-25" y="-21.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-98.66" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-105B" x="-98.66" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-98.66" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="16V" x="-98.66" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C17" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-59" y="-36" smashed="yes" rot="R180">
+<attribute name="NAME" x="-59" y="-37.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-132.66" y="51.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-105B" x="-132.66" y="51.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-132.66" y="51.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="16V" x="-132.66" y="51.63" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C18" library="CougsInSpace-Capacitors" package="1608" value="10pF 5%" x="-18" y="-20" smashed="yes" rot="R180">
-<attribute name="NAME" x="-18" y="-21.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-95.47" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-100A" x="-95.47" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="C0G" x="-95.47" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="100V" x="-95.47" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C18" library="CougsInSpace-Capacitors" package="1608" value="10pF 5%" x="-73" y="-8" smashed="yes" rot="R270">
+<attribute name="NAME" x="-71.6" y="-8" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-160.63" y="-85.47" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SKU" value="11-100A" x="-160.63" y="-85.47" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMP" value="C0G" x="-160.63" y="-85.47" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="100V" x="-160.63" y="-85.47" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C19" library="CougsInSpace-Capacitors" package="1608" value="1nF 1%" x="-34" y="-20" smashed="yes" rot="R180">
-<attribute name="NAME" x="-34" y="-21.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-115.28" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-102B" x="-115.28" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="C0G" x="-115.28" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-115.28" y="67.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C19" library="CougsInSpace-Capacitors" package="1608" value="1nF 1%" x="-56" y="-38" smashed="yes" rot="R90">
+<attribute name="NAME" x="-57.4" y="-38" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="PACKAGE" value="1608" x="31.63" y="43.28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SKU" value="11-102B" x="31.63" y="43.28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TEMP" value="C0G" x="31.63" y="43.28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="31.63" y="43.28" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C2" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-31" y="-12" smashed="yes" rot="R180">
-<attribute name="NAME" x="-31" y="-13.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-55.13" y="75.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-104A" x="-55.13" y="75.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-55.13" y="75.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-55.13" y="75.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C2" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-84" y="-18" smashed="yes" rot="R180">
+<attribute name="NAME" x="-84" y="-16.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-108.13" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-104A" x="-108.13" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-108.13" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-108.13" y="69.63" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C20" library="CougsInSpace-Capacitors" package="1608" value="1nF 1%" x="-27" y="-12" smashed="yes">
-<attribute name="NAME" x="-27" y="-10.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="58.09" y="-99.63" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-102B" x="58.09" y="-99.63" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="C0G" x="58.09" y="-99.63" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="58.09" y="-99.63" size="1.778" layer="27" display="off"/>
+<element name="C20" library="CougsInSpace-Capacitors" package="1608" value="1nF 1%" x="-56" y="-41" smashed="yes" rot="R270">
+<attribute name="NAME" x="-54.6" y="-41" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-143.63" y="-126.09" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SKU" value="11-102B" x="-143.63" y="-126.09" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMP" value="C0G" x="-143.63" y="-126.09" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-143.63" y="-126.09" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C21" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-31" y="-20" smashed="yes">
-<attribute name="NAME" x="-31" y="-18.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="57.9" y="-107.63" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-105A" x="57.9" y="-107.63" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="X5R" x="57.9" y="-107.63" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="6.3V" x="57.9" y="-107.63" size="1.778" layer="27" display="off"/>
+<element name="C21" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-55" y="-24" smashed="yes">
+<attribute name="NAME" x="-55" y="-22.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="33.9" y="-111.63" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-105A" x="33.9" y="-111.63" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X5R" x="33.9" y="-111.63" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="33.9" y="-111.63" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C22" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-28" y="-20" smashed="yes">
-<attribute name="NAME" x="-28" y="-18.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="64.71" y="-107.63" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-105B" x="64.71" y="-107.63" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="X7R" x="64.71" y="-107.63" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="16V" x="64.71" y="-107.63" size="1.778" layer="27" display="off"/>
+<element name="C22" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="-55" y="-28" smashed="yes" rot="R180">
+<attribute name="NAME" x="-57.6" y="-28" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-147.71" y="59.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-105B" x="-147.71" y="59.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-147.71" y="59.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="16V" x="-147.71" y="59.63" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C23" library="CougsInSpace-Capacitors" package="1608" value="10pF 5%" x="-18" y="-18" smashed="yes" rot="R180">
-<attribute name="NAME" x="-18" y="-19.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-33.24" y="73.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-100A" x="-33.24" y="73.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="C0G" x="-33.24" y="73.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="100V" x="-33.24" y="73.44" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C23" library="CougsInSpace-Capacitors" package="1608" value="10pF 5%" x="-75" y="-8" smashed="yes" rot="R270">
+<attribute name="NAME" x="-76.6" y="-8" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-166.44" y="-23.24" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SKU" value="11-100A" x="-166.44" y="-23.24" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMP" value="C0G" x="-166.44" y="-23.24" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="100V" x="-166.44" y="-23.24" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C24" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-25" y="-9" smashed="yes">
-<attribute name="NAME" x="-25" y="-7.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-5.95" y="-100.44" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-104A" x="-5.95" y="-100.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="X7R" x="-5.95" y="-100.44" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-5.95" y="-100.44" size="1.778" layer="27" display="off"/>
+<element name="C24" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-81" y="-20" smashed="yes">
+<attribute name="NAME" x="-81" y="-21.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-61.95" y="-111.44" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-104A" x="-61.95" y="-111.44" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X7R" x="-61.95" y="-111.44" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-61.95" y="-111.44" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C25" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-28" y="-7" smashed="yes" rot="R180">
-<attribute name="NAME" x="-28" y="-8.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-50.86" y="84.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-104A" x="-50.86" y="84.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-50.86" y="84.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-50.86" y="84.44" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C25" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-90" y="-20" smashed="yes">
+<attribute name="NAME" x="-90" y="-21.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-67.14" y="-111.44" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-104A" x="-67.14" y="-111.44" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X7R" x="-67.14" y="-111.44" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-67.14" y="-111.44" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C26" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-31" y="-4" smashed="yes">
-<attribute name="NAME" x="-31" y="-2.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-4.33" y="-95.44" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-104A" x="-4.33" y="-95.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="X7R" x="-4.33" y="-95.44" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-4.33" y="-95.44" size="1.778" layer="27" display="off"/>
+<element name="C26" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-90" y="-15" smashed="yes" rot="R180">
+<attribute name="NAME" x="-90" y="-13.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-116.67" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-104A" x="-116.67" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-116.67" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-116.67" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C27" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-31" y="-6" smashed="yes" rot="R180">
+<element name="C27" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-93" y="-15" smashed="yes" rot="R180">
+<attribute name="NAME" x="-93" y="-13.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-123.48" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-104A" x="-123.48" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-123.48" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-123.48" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C28" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="71" y="-23" smashed="yes">
+<attribute name="NAME" x="71" y="-24.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="105.29" y="-113.44" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-105A" x="105.29" y="-113.44" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X5R" x="105.29" y="-113.44" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="105.29" y="-113.44" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C29" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="71" y="-21" smashed="yes">
+<attribute name="NAME" x="71" y="-19.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="109.1" y="-111.44" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-105A" x="109.1" y="-111.44" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X5R" x="109.1" y="-111.44" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="6.3V" x="109.1" y="-111.44" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C3" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-5" y="-23" smashed="yes" rot="R180">
+<attribute name="NAME" x="-5" y="-24.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-32.94" y="64.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-104A" x="-32.94" y="64.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-32.94" y="64.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-32.94" y="64.63" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C4" library="CougsInSpace-Capacitors" package="1608" value="47pF 5%" x="-34" y="-9" smashed="yes">
+<attribute name="NAME" x="-34" y="-7.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-2.25" y="-96.63" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-470A" x="-2.25" y="-96.63" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="C0G" x="-2.25" y="-96.63" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="100V" x="-2.25" y="-96.63" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C5" library="CougsInSpace-Capacitors" package="1608" value="47pF 5%" x="-31" y="-9" smashed="yes" rot="R180">
 <attribute name="NAME" x="-31" y="-7.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-61.48" y="85.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-104A" x="-61.48" y="85.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-61.48" y="85.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-61.48" y="85.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PACKAGE" value="1608" x="-66.56" y="78.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-470A" x="-66.56" y="78.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="C0G" x="-66.56" y="78.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="100V" x="-66.56" y="78.63" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C28" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="36" y="-5" smashed="yes" rot="R180">
-<attribute name="NAME" x="36" y="-6.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="1.71" y="85.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-105A" x="1.71" y="85.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X5R" x="1.71" y="85.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="6.3V" x="1.71" y="85.44" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C6" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-18" y="-17" smashed="yes" rot="R180">
+<attribute name="NAME" x="-18" y="-18.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-57.37" y="70.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-104A" x="-57.37" y="70.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-57.37" y="70.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-57.37" y="70.63" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C29" library="CougsInSpace-Capacitors" package="1608" value="1µF 10%" x="36" y="-7" smashed="yes">
-<attribute name="NAME" x="36" y="-5.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="74.1" y="-97.44" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="11-105A" x="74.1" y="-97.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="X5R" x="74.1" y="-97.44" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="6.3V" x="74.1" y="-97.44" size="1.778" layer="27" display="off"/>
+<element name="C7" library="CougsInSpace-Capacitors" package="1608" value="10nF 10%" x="-21" y="-17" smashed="yes">
+<attribute name="NAME" x="-21" y="-15.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="22.18" y="-104.63" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="11-103A" x="22.18" y="-104.63" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="X7R" x="22.18" y="-104.63" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="22.18" y="-104.63" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C3" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-31" y="-10" smashed="yes" rot="R180">
-<attribute name="NAME" x="-31" y="-11.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-58.94" y="77.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-104A" x="-58.94" y="77.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-58.94" y="77.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-58.94" y="77.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C8" library="CougsInSpace-Capacitors" package="4028-POL" value="4.7µF 10%" x="1" y="-15" smashed="yes" rot="R180">
+<attribute name="ESR" value="Max 900mΩ" x="-3.54" y="31.03" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="1" y="-17.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="Tant-B" x="-3.54" y="31.03" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="16-475A" x="-3.54" y="31.03" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="20V" x="-3.54" y="31.03" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C4" library="CougsInSpace-Capacitors" package="1608" value="47pF 5%" x="33" y="-7" smashed="yes" rot="R180">
-<attribute name="NAME" x="33" y="-8.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="1.25" y="80.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-470A" x="1.25" y="80.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="C0G" x="1.25" y="80.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="100V" x="1.25" y="80.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C9" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="-3" y="-10" smashed="yes" rot="R180">
+<attribute name="NAME" x="-3" y="-11.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-49.99" y="77.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="11-104A" x="-49.99" y="77.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="X7R" x="-49.99" y="77.63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-49.99" y="77.63" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C5" library="CougsInSpace-Capacitors" package="1608" value="47pF 5%" x="33" y="-9" smashed="yes" rot="R180">
-<attribute name="NAME" x="33" y="-10.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-2.56" y="78.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-470A" x="-2.56" y="78.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="C0G" x="-2.56" y="78.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="100V" x="-2.56" y="78.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="DS1" library="CougsInSpace-LEDs" package="1608-POL" value="Green" x="-83" y="-4" smashed="yes">
+<attribute name="CURRENT" value="20mA" x="-41.09" y="-95.44" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-83" y="-2.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-41.09" y="-95.44" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="63-0001" x="-41.09" y="-95.44" size="1.778" layer="27" display="off"/>
+<attribute name="VF" value="2.2V" x="-41.09" y="-95.44" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C6" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="33" y="-11" smashed="yes" rot="R180">
-<attribute name="NAME" x="33" y="-12.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-6.37" y="76.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-104A" x="-6.37" y="76.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-6.37" y="76.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-6.37" y="76.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="DS3" library="CougsInSpace-LEDs" package="1608-POL" value="Green" x="16" y="-13" smashed="yes">
+<attribute name="CURRENT" value="20mA" x="61.72" y="-104.44" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="16" y="-11.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="61.72" y="-104.44" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="63-0001" x="61.72" y="-104.44" size="1.778" layer="27" display="off"/>
+<attribute name="VF" value="2.2V" x="61.72" y="-104.44" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C7" library="CougsInSpace-Capacitors" package="1608" value="10nF 10%" x="33" y="-13" smashed="yes" rot="R180">
-<attribute name="NAME" x="33" y="-14.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-10.18" y="74.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-103A" x="-10.18" y="74.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-10.18" y="74.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-10.18" y="74.63" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="DS5" library="CougsInSpace-LEDs" package="1608-POL" value="Red" x="16" y="-15" smashed="yes" rot="R180">
+<attribute name="CURRENT" value="20mA" x="-33.53" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="16" y="-16.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-33.53" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="63-0002" x="-33.53" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VF" value="2V" x="-33.53" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C8" library="CougsInSpace-Capacitors" package="4028-POL" value="4.7µF 10%" x="38" y="-21" smashed="yes">
-<attribute name="ESR" value="Max 900mΩ" x="42.54" y="-67.03" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="38" y="-18.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="Tant-B" x="42.54" y="-67.03" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="16-475A" x="42.54" y="-67.03" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="20V" x="42.54" y="-67.03" size="1.778" layer="27" display="off"/>
-</element>
-<element name="C9" library="CougsInSpace-Capacitors" package="1608" value="100nF 10%" x="33" y="-15" smashed="yes" rot="R180">
-<attribute name="NAME" x="33" y="-16.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-13.99" y="72.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="11-104A" x="-13.99" y="72.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="X7R" x="-13.99" y="72.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="50V" x="-13.99" y="72.63" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="DS1" library="CougsInSpace-LEDs" package="1608-POL" value="Green" x="-18" y="-24" smashed="yes" rot="R180">
-<attribute name="CURRENT" value="20mA" x="-59.91" y="67.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-18" y="-25.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-59.91" y="67.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="63-0001" x="-59.91" y="67.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VF" value="2.2V" x="-59.91" y="67.44" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="DS3" library="CougsInSpace-LEDs" package="1608-POL" value="Green" x="45" y="-7" smashed="yes">
-<attribute name="CURRENT" value="20mA" x="90.72" y="-98.44" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="45" y="-5.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="90.72" y="-98.44" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="63-0001" x="90.72" y="-98.44" size="1.778" layer="27" display="off"/>
-<attribute name="VF" value="2.2V" x="90.72" y="-98.44" size="1.778" layer="27" display="off"/>
-</element>
-<element name="DS5" library="CougsInSpace-LEDs" package="1608-POL" value="Red" x="42" y="-5" smashed="yes" rot="R180">
-<attribute name="CURRENT" value="20mA" x="-7.53" y="86.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="42" y="-6.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-7.53" y="86.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="63-0002" x="-7.53" y="86.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VF" value="2V" x="-7.53" y="86.44" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="FB1" library="CougsInSpace-Coils" package="1608" value="1.5kΩ @ 100MHz" x="1" y="-11" smashed="yes" rot="R180">
-<attribute name="CURRENT" value="500mA" x="-52.34" y="80.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DCR" value="500mΩ" x="-52.34" y="80.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="1" y="-12.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-52.34" y="80.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="36-152A" x="-52.34" y="80.44" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="FB1" library="CougsInSpace-Coils" package="1608" value="1.5kΩ @ 100MHz" x="-16.85" y="-14.35" smashed="yes" rot="R180">
+<attribute name="CURRENT" value="500mA" x="-70.19" y="77.09" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DCR" value="500mΩ" x="-70.19" y="77.09" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-16.85" y="-15.75" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-70.19" y="77.09" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="36-152A" x="-70.19" y="77.09" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="FB2" library="CougsInSpace-Coils" package="1608" value="1.5kΩ @ 100MHz" x="1" y="-9" smashed="yes">
 <attribute name="CURRENT" value="500mA" x="58.15" y="-100.44" size="1.778" layer="27" display="off"/>
@@ -1806,26 +1806,26 @@ design rules under a new name.</description>
 <attribute name="SKU" value="56-0008" x="-31.37" y="44.67" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VDS" value="75V" x="-31.37" y="44.67" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R1" library="CougsInSpace-Resistors" package="1608" value="50mΩ 1%" x="9" y="-7" smashed="yes" rot="R270">
-<attribute name="NAME" x="10.4" y="-7" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-82.44" y="-67.96" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="POWER" value="1/5W" x="-82.44" y="-67.96" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SKU" value="21-0.05" x="-82.44" y="-67.96" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TEMP" value="75ppm/°C" x="-82.44" y="-67.96" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R1" library="CougsInSpace-Resistors" package="1608" value="50mΩ 1%" x="-65" y="-9" smashed="yes">
+<attribute name="NAME" x="-65" y="-10.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-4.04" y="-100.44" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="1/5W" x="-4.04" y="-100.44" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="21-0.05" x="-4.04" y="-100.44" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="75ppm/°C" x="-4.04" y="-100.44" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R10" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="-18" y="-22" smashed="yes" rot="R180">
-<attribute name="NAME" x="-18" y="-23.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-105.63" y="69.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="1/10W" x="-105.63" y="69.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="21-0000" x="-105.63" y="69.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="-105.63" y="69.44" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R10" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="-85" y="0" smashed="yes" rot="R90">
+<attribute name="NAME" x="-86.4" y="0" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="PACKAGE" value="1608" x="6.44" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="POWER" value="1/10W" x="6.44" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SKU" value="21-0000" x="6.44" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TEMP" value="70°C Max 2A" x="6.44" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R11" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="13" y="-27" smashed="yes">
-<attribute name="NAME" x="13" y="-25.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-72.06" y="-96.44" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="POWER" value="1/8W" x="-72.06" y="-96.44" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SKU" value="21-1001" x="-72.06" y="-96.44" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TEMP" value="25ppm/°C" x="-72.06" y="-96.44" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R11" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="12" y="-27" smashed="yes">
+<attribute name="NAME" x="12" y="-25.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-73.06" y="-96.44" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="POWER" value="1/8W" x="-73.06" y="-96.44" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SKU" value="21-1001" x="-73.06" y="-96.44" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="-73.06" y="-96.44" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R12" library="CougsInSpace-Resistors" package="1608" value="30kΩ 1%" x="-4" y="-55" smashed="yes" rot="R180">
 <attribute name="NAME" x="-6" y="-55" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
@@ -1834,12 +1834,12 @@ design rules under a new name.</description>
 <attribute name="SKU" value="21-3002" x="-19.24" y="40.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP" value="100ppm/°C" x="-19.24" y="40.25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R13" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="42" y="-7" smashed="yes">
-<attribute name="NAME" x="42" y="-5.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="61.05" y="-102.25" size="1.778" layer="27" display="off"/>
-<attribute name="POWER" value="1/8W" x="61.05" y="-102.25" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="21-1001" x="61.05" y="-102.25" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="25ppm/°C" x="61.05" y="-102.25" size="1.778" layer="27" display="off"/>
+<element name="R13" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="9" y="-15" smashed="yes">
+<attribute name="NAME" x="6.4" y="-15" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" value="1608" x="28.05" y="-110.25" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="1/8W" x="28.05" y="-110.25" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="21-1001" x="28.05" y="-110.25" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="28.05" y="-110.25" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R14" library="CougsInSpace-Resistors" package="1608" value="30kΩ 1%" x="-4" y="-53" smashed="yes">
 <attribute name="NAME" x="-6" y="-53" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
@@ -1848,12 +1848,12 @@ design rules under a new name.</description>
 <attribute name="SKU" value="21-3002" x="18.86" y="-148.25" size="1.778" layer="27" display="off"/>
 <attribute name="TEMP" value="100ppm/°C" x="18.86" y="-148.25" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R15" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="39" y="-5" smashed="yes" rot="R180">
-<attribute name="NAME" x="39" y="-6.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="12.33" y="90.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="1/8W" x="12.33" y="90.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="21-1001" x="12.33" y="90.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="25ppm/°C" x="12.33" y="90.25" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R15" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="8.6" y="-13.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.6" y="-12.4" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-18.07" y="82.05" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/8W" x="-18.07" y="82.05" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="21-1001" x="-18.07" y="82.05" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="-18.07" y="82.05" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R16" library="CougsInSpace-Resistors" package="1608" value="10kΩ 0.1%" x="-4" y="-51" smashed="yes">
 <attribute name="NAME" x="-6" y="-51" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
@@ -1876,12 +1876,12 @@ design rules under a new name.</description>
 <attribute name="SKU" value="21-0000" x="-69.1" y="79.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP" value="70°C Max 2A" x="-69.1" y="79.25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R19" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="-31" y="-8" smashed="yes" rot="R180">
-<attribute name="NAME" x="-32.4" y="-8" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="PACKAGE" value="1608" x="64.25" y="33.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="POWER" value="1/10W" x="64.25" y="33.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SKU" value="21-0000" x="64.25" y="33.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="64.25" y="33.91" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R19" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="-55" y="-26" smashed="yes" rot="R180">
+<attribute name="NAME" x="-57.4" y="-26" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="PACKAGE" value="1608" x="40.25" y="15.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="POWER" value="1/10W" x="40.25" y="15.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SKU" value="21-0000" x="40.25" y="15.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TEMP" value="70°C Max 2A" x="40.25" y="15.91" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R2" library="CougsInSpace-Resistors" package="1632-KELVIN" value="5mΩ 1%" x="39" y="-55" smashed="yes" rot="MR90">
 <attribute name="NAME" x="41.7" y="-55" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
@@ -1890,26 +1890,26 @@ design rules under a new name.</description>
 <attribute name="SKU" value="23-5m00" x="-7.03" y="-77.13" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="TEMP" value="100ppm/°C" x="-7.03" y="-77.13" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="R20" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="-6" y="-20" smashed="yes" rot="R90">
-<attribute name="NAME" x="-7.4" y="-22" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="PACKAGE" value="1608" x="89.25" y="25.72" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="POWER" value="1/8W" x="89.25" y="25.72" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SKU" value="21-1001" x="89.25" y="25.72" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMP" value="25ppm/°C" x="89.25" y="25.72" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R20" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="-83" y="4" smashed="yes" rot="R180">
+<attribute name="NAME" x="-83" y="2.6" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-128.72" y="99.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/8W" x="-128.72" y="99.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="21-1001" x="-128.72" y="99.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="-128.72" y="99.25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R21" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="-31" y="-14" smashed="yes" rot="R180">
-<attribute name="NAME" x="-31" y="-15.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-80.53" y="81.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="1/10W" x="-80.53" y="81.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="21-0000" x="-80.53" y="81.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="70°C Max 2A" x="-80.53" y="81.25" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R21" library="CougsInSpace-Resistors" package="1608" value="0Ω &lt;20mΩ" x="-22" y="-21" smashed="yes" rot="R180">
+<attribute name="NAME" x="-22" y="-22.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-71.53" y="74.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/10W" x="-71.53" y="74.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="21-0000" x="-71.53" y="74.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="70°C Max 2A" x="-71.53" y="74.25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R22" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="8" y="-21" smashed="yes">
-<attribute name="NAME" x="8" y="-19.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="61.34" y="-116.25" size="1.778" layer="27" display="off"/>
-<attribute name="POWER" value="1/8W" x="61.34" y="-116.25" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="21-1001" x="61.34" y="-116.25" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="25ppm/°C" x="61.34" y="-116.25" size="1.778" layer="27" display="off"/>
+<element name="R22" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="-65" y="-17" smashed="yes">
+<attribute name="NAME" x="-65" y="-15.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-11.66" y="-112.25" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="1/8W" x="-11.66" y="-112.25" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="21-1001" x="-11.66" y="-112.25" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="-11.66" y="-112.25" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R23" library="CougsInSpace-Resistors" package="1608" value="1kΩ 0.1%" x="-4" y="-49" smashed="yes">
 <attribute name="NAME" x="-6.4" y="-49" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
@@ -1925,40 +1925,40 @@ design rules under a new name.</description>
 <attribute name="SKU" value="21-1002" x="56.96" y="-142.25" size="1.778" layer="27" display="off"/>
 <attribute name="TEMP" value="25ppm/°C" x="56.96" y="-142.25" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R3" library="CougsInSpace-Resistors" package="1608" value="27Ω 1%" x="33" y="-5" smashed="yes" rot="R180">
-<attribute name="NAME" x="33" y="-6.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-31.77" y="86.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="1/10W" x="-31.77" y="86.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="21-27.0" x="-31.77" y="86.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="100ppm/°C" x="-31.77" y="86.44" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R3" library="CougsInSpace-Resistors" package="1608" value="27Ω 1%" x="-31" y="-13" smashed="yes" rot="R180">
+<attribute name="NAME" x="-31" y="-14.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-95.77" y="78.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/10W" x="-95.77" y="78.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="21-27.0" x="-95.77" y="78.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="-95.77" y="78.44" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R4" library="CougsInSpace-Resistors" package="1608" value="27Ω 1%" x="45" y="-5" smashed="yes">
-<attribute name="NAME" x="45" y="-3.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="113.58" y="-96.44" size="1.778" layer="27" display="off"/>
-<attribute name="POWER" value="1/10W" x="113.58" y="-96.44" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="21-27.0" x="113.58" y="-96.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="100ppm/°C" x="113.58" y="-96.44" size="1.778" layer="27" display="off"/>
+<element name="R4" library="CougsInSpace-Resistors" package="1608" value="27Ω 1%" x="-31" y="-11" smashed="yes">
+<attribute name="NAME" x="-31" y="-9.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="37.58" y="-102.44" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="1/10W" x="37.58" y="-102.44" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="21-27.0" x="37.58" y="-102.44" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="37.58" y="-102.44" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R5" library="CougsInSpace-Resistors" package="1608" value="510mΩ 1%" x="9" y="-10" smashed="yes" rot="R270">
-<attribute name="NAME" x="10.4" y="-8" size="0.8" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="PACKAGE" value="1608" x="-82.44" y="-82.39" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="POWER" value="1/10W" x="-82.44" y="-82.39" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SKU" value="21-0.51" x="-82.44" y="-82.39" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TEMP" value="100ppm/°C" x="-82.44" y="-82.39" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R5" library="CougsInSpace-Resistors" package="1608" value="510mΩ 1%" x="-65" y="-7" smashed="yes" rot="R180">
+<attribute name="NAME" x="-65" y="-5.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1608" x="-137.39" y="84.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/10W" x="-137.39" y="84.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="21-0.51" x="-137.39" y="84.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="-137.39" y="84.44" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R6" library="CougsInSpace-Resistors" package="1632-KELVIN" value="5mΩ 1%" x="15" y="3" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.3" y="3" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="PACKAGE" value="1632" x="61.03" y="-15.32" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="POWER" value="1W" x="61.03" y="-15.32" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SKU" value="23-5m00" x="61.03" y="-15.32" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMP" value="100ppm/°C" x="61.03" y="-15.32" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R6" library="CougsInSpace-Resistors" package="1632-KELVIN" value="5mΩ 1%" x="-66" y="-13" smashed="yes" rot="R90">
+<attribute name="NAME" x="-68.7" y="-13" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="PACKAGE" value="1632" x="-19.97" y="-31.32" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="POWER" value="1W" x="-19.97" y="-31.32" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SKU" value="23-5m00" x="-19.97" y="-31.32" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="-19.97" y="-31.32" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R7" library="CougsInSpace-Resistors" package="1608" value="10kΩ 0.1%" x="39" y="-7" smashed="yes">
-<attribute name="NAME" x="39" y="-5.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1608" x="115.2" y="-98.44" size="1.778" layer="27" display="off"/>
-<attribute name="POWER" value="1/8W" x="115.2" y="-98.44" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="21-1002" x="115.2" y="-98.44" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="25ppm/°C" x="115.2" y="-98.44" size="1.778" layer="27" display="off"/>
+<element name="R7" library="CougsInSpace-Resistors" package="1608" value="10kΩ 0.1%" x="-10" y="-10" smashed="yes">
+<attribute name="NAME" x="-10" y="-8.6" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="1608" x="66.2" y="-101.44" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="1/8W" x="66.2" y="-101.44" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="21-1002" x="66.2" y="-101.44" size="1.778" layer="27" display="off"/>
+<attribute name="TEMP" value="25ppm/°C" x="66.2" y="-101.44" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R8" library="CougsInSpace-Resistors" package="1608" value="47kΩ 0.1%" x="9" y="-18" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.6" y="-20" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
@@ -1974,28 +1974,28 @@ design rules under a new name.</description>
 <attribute name="SKU" value="21-1001" x="98.44" y="65.82" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TEMP" value="25ppm/°C" x="98.44" y="65.82" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="RN1" library="CougsInSpace-Resistors" package="1632" value="10kΩ 1%" x="-16" y="-51" smashed="yes" rot="R180">
-<attribute name="NAME" x="-16" y="-52.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1632" x="-93.47" y="29.01" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="1/16W" x="-93.47" y="29.01" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="26-0000" x="-93.47" y="29.01" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="100ppm/°C" x="-93.47" y="29.01" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="RN1" library="CougsInSpace-Resistors" package="1632" value="10kΩ 1%" x="-22" y="-50" smashed="yes" rot="R180">
+<attribute name="NAME" x="-22" y="-51.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1632" x="-99.47" y="30.01" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/16W" x="-99.47" y="30.01" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="26-0000" x="-99.47" y="30.01" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="-99.47" y="30.01" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="RN2" library="CougsInSpace-Resistors" package="1632" value="10kΩ 1%" x="-16" y="-47" smashed="yes" rot="R180">
-<attribute name="NAME" x="-16" y="-48.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="PACKAGE" value="1632" x="-98.55" y="33.01" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="1/16W" x="-98.55" y="33.01" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SKU" value="26-0000" x="-98.55" y="33.01" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TEMP" value="100ppm/°C" x="-98.55" y="33.01" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="RN2" library="CougsInSpace-Resistors" package="1632" value="10kΩ 1%" x="-22" y="-46" smashed="yes" rot="R180">
+<attribute name="NAME" x="-22" y="-47.9" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="PACKAGE" value="1632" x="-104.55" y="34.01" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/16W" x="-104.55" y="34.01" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SKU" value="26-0000" x="-104.55" y="34.01" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TEMP" value="100ppm/°C" x="-104.55" y="34.01" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="SW1" library="CougsInSpace-Sensors" package="PEC12R-4-S" value="Nice Knob" x="-11" y="-34" smashed="yes" rot="R90">
-<attribute name="COUNTS" value="24PPR" x="56.31" y="4.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-21.1" y="-34" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="SKU" value="66-0006" x="56.31" y="4.1" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="SW1" library="CougsInSpace-Sensors" package="PEC12R-4-S" value="Nice Knob" x="-12" y="-35" smashed="yes" rot="R90">
+<attribute name="COUNTS" value="24PPR" x="55.31" y="3.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-22.1" y="-35" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="SKU" value="66-0006" x="55.31" y="3.1" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="SW2" library="CougsInSpace-Switches" package="THT-6060" value="Nice Button" x="-10" y="-51" smashed="yes" rot="R90">
-<attribute name="NAME" x="-13.9" y="-51" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="SKU" value="49-0005" x="52.23" y="37.9" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="SW2" library="CougsInSpace-Switches" package="THT-6060" value="Nice Button" x="-12" y="-52" smashed="yes">
+<attribute name="NAME" x="-12" y="-48.1" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="SKU" value="49-0005" x="76.9" y="-114.23" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP1" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-21" y="-11" smashed="yes">
 <attribute name="NAME" x="-21" y="-9.5" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
@@ -2006,41 +2006,41 @@ design rules under a new name.</description>
 <element name="TP6" library="CougsInSpace-Connectors" package="THT-1.0" value="TEST_POINT-THT-1.0" x="-21" y="-8" smashed="yes">
 <attribute name="NAME" x="-21" y="-6.4" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
 </element>
-<element name="U1" library="CougsInSpace-IC-µController" package="QFP-64-1010" value="STM32L476RGT" x="-28" y="46" smashed="yes" rot="R90">
-<attribute name="EXTRAPIN" value="PD2" x="36.77" y="112.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FLASH" value="1MB" x="36.77" y="112.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-35.2" y="46" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="SKU" value="61-0002" x="36.77" y="112.04" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U1" library="CougsInSpace-IC-µController" package="QFP-64-1010" value="STM32L476RGT" x="-73" y="3" smashed="yes" rot="R90">
+<attribute name="EXTRAPIN" value="PD2" x="-8.23" y="69.04" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="FLASH" value="1MB" x="-8.23" y="69.04" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-80.2" y="3" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="SKU" value="61-0002" x="-8.23" y="69.04" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U2" library="CougsInSpace-IC-Amplifiers" package="SOT23-5" value="AD8515" x="15" y="-22" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.6" y="-22" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="SKU" value="08-0002" x="96.28" y="32.61" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U3" library="CougsInSpace-IC-Comms" package="QFN-16-4040" value="FT230XQ" x="26" y="-22" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.9" y="-22" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="SKU" value="09-0002" x="107.28" y="12.29" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U3" library="CougsInSpace-IC-Comms" package="QFN-16-4040" value="FT230XQ" x="-6" y="-16" smashed="yes" rot="R90">
+<attribute name="NAME" x="-9.1" y="-16" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="SKU" value="09-0002" x="75.28" y="18.29" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U4" library="CougsInSpace-IC-Amplifiers" package="SOT363" value="INA199C1" x="21" y="-27" smashed="yes">
-<attribute name="GAIN" value="50 V/V" x="107.36" y="-107.01" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="21" y="-25.1" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="SKU" value="08-0003" x="107.36" y="-107.01" size="1.778" layer="27" display="off"/>
+<element name="U4" library="CougsInSpace-IC-Amplifiers" package="SOT363" value="INA199C1" x="44" y="-26" smashed="yes">
+<attribute name="GAIN" value="50 V/V" x="130.36" y="-106.01" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="44" y="-24.1" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="SKU" value="08-0003" x="130.36" y="-106.01" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U5" library="CougsInSpace-IC-Power" package="SOT23-5" value="LP5907MFX-3.1" x="37" y="-11" smashed="yes" rot="R90">
-<attribute name="IMAX" value="250mA" x="83.03" y="-12.81" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="34.6" y="-11" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="SKU" value="60-0009" x="83.03" y="-12.81" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VDO" value="&lt;250mV" x="83.03" y="-12.81" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VOUT" value="3.1V 2%" x="83.03" y="-12.81" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U5" library="CougsInSpace-IC-Power" package="SOT23-5" value="LP5907MFX-3.1" x="71" y="-17" smashed="yes" rot="R90">
+<attribute name="IMAX" value="250mA" x="117.03" y="-18.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="68.6" y="-17" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="SKU" value="60-0009" x="117.03" y="-18.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VDO" value="&lt;250mV" x="117.03" y="-18.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOUT" value="3.1V 2%" x="117.03" y="-18.81" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U6" library="CougsInSpace-IC-Amplifiers" package="SOT363" value="INA199C1" x="-13" y="-15" smashed="yes" rot="R90">
-<attribute name="GAIN" value="50 V/V" x="67.01" y="75.17" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-14.9" y="-15" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="SKU" value="08-0003" x="67.01" y="75.17" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U6" library="CougsInSpace-IC-Amplifiers" package="SOT363" value="INA199C1" x="-12" y="-15" smashed="yes" rot="R90">
+<attribute name="GAIN" value="50 V/V" x="68.01" y="75.17" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-13.9" y="-15" size="0.8" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="SKU" value="08-0003" x="68.01" y="75.17" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Y1" library="CougsInSpace-Clocks" package="SMD-5032" value="8MHz ±10ppm" x="3" y="-24" smashed="yes">
-<attribute name="LOADCAP" value="10pF" x="-10.24" y="-70.03" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="3" y="-21.4" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="SKU" value="40-805A" x="-10.24" y="-70.03" size="1.778" layer="27" display="off"/>
+<element name="Y1" library="CougsInSpace-Clocks" package="SMD-5032" value="8MHz ±10ppm" x="-74" y="-13" smashed="yes" rot="R180">
+<attribute name="LOADCAP" value="10pF" x="-60.76" y="33.03" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-74" y="-15.6" size="0.8" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="SKU" value="40-805A" x="-60.76" y="33.03" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="H1" library="CougsInSpace-Hardware" package="HEATSINK-AM4" value="AM4 Heatsink" x="0" y="31" locked="yes" smashed="yes">
 <attribute name="NAME" x="-48" y="31" size="0.8" layer="21" font="vector" ratio="15" rot="R90" align="center"/>
@@ -2053,14 +2053,14 @@ design rules under a new name.</description>
 <contactref element="R14" pad="1"/>
 <contactref element="R24" pad="2"/>
 <wire x1="-3.25" y1="-47" x2="-4.75" y2="-53" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.75" y1="40.25" x2="-3.25" y2="-47" width="0" layer="19" extent="1-1"/>
+<wire x1="-72.75" y1="-2.75" x2="-3.25" y2="-47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V_LOAD">
 <contactref element="U1" pad="11"/>
 <contactref element="R16" pad="2"/>
 <contactref element="R12" pad="1"/>
 <wire x1="-3.25" y1="-51" x2="-3.25" y2="-55" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.75" y1="40.25" x2="-3.25" y2="-51" width="0" layer="19" extent="1-1"/>
+<wire x1="-71.75" y1="-2.75" x2="-3.25" y2="-51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DGND">
 <contactref element="R10" pad="1"/>
@@ -2123,66 +2123,65 @@ design rules under a new name.</description>
 <contactref element="C9" pad="2"/>
 <contactref element="R21" pad="2"/>
 <contactref element="R17" pad="2"/>
-<wire x1="-31.75" y1="-6" x2="-31.75" y2="-5.5" width="0.2" layer="1"/>
-<wire x1="-27.25" y1="-5.5" x2="-27.25" y2="-5" width="0.2" layer="1"/>
+<wire x1="-89.25" y1="-18.5" x2="-89.25" y2="-18" width="0.2" layer="1"/>
 <wire x1="-47.2" y1="-59.4" x2="-49.15" y2="-62.1" width="0" layer="19" extent="1-1"/>
 <wire x1="-49" y1="-45" x2="-47.2" y2="-59.4" width="0" layer="19" extent="1-1"/>
-<wire x1="-38" y1="-30.73" x2="-49" y2="-45" width="0" layer="19" extent="16-16"/>
-<wire x1="-31.75" y1="-20" x2="-38" y2="-30.73" width="0" layer="19" extent="1-16"/>
-<wire x1="-31.75" y1="-18" x2="-31.75" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.75" y1="-14" x2="-31.75" y2="-18" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.75" y1="-12" x2="-31.75" y2="-14" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.75" y1="-10" x2="-31.75" y2="-12" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.75" y1="-6" x2="-31.75" y2="-10" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.25" y1="-4" x2="-31.75" y2="-5.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.75" y1="-7" x2="-31.75" y2="-6" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.25" y1="-5.5" x2="-28.75" y2="-7" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.25" y1="-5" x2="-27.25" y2="-5" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.25" y1="-7" x2="-24.25" y2="-5" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.25" y1="-9" x2="-24.25" y2="-7" width="0" layer="19" extent="1-1"/>
-<wire x1="-24" y1="-12.75" x2="-24.25" y2="-9" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.25" y1="-20" x2="-31.75" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.75" y1="-20" x2="-27.25" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.05" y1="-21.9" x2="-25.75" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.75" y1="-18" x2="-25.75" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.25" y1="-18" x2="-25.75" y2="-18" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.75" y1="-20" x2="-25.75" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.75" y1="-18" x2="-18.75" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.25" y1="-22" x2="-18.75" y2="-20" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.25" y1="-24" x2="-17.25" y2="-22" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.65" y1="-15.95" x2="-18.75" y2="-18" width="0" layer="19" extent="1-1"/>
-<wire x1="-13" y1="-15.95" x2="-13.65" y2="-15.95" width="0" layer="19" extent="1-1"/>
-<wire x1="7" y1="-18.75" x2="-13" y2="-15.95" width="0" layer="19" extent="1-1"/>
-<wire x1="7.25" y1="-21" x2="7" y2="-18.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-11" y1="-28.45" x2="-17.25" y2="-24" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.29" y1="-13.25" x2="-31.75" y2="-14" width="0" layer="19" extent="1-1"/>
-<wire x1="-4" y1="-34" x2="-11" y2="-28.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-11" y1="-39.55" x2="-4" y2="-34" width="0" layer="19" extent="1-1"/>
-<wire x1="-18" y1="-36.5" x2="-11" y2="-39.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-12.25" y1="-47.75" x2="-11" y2="-39.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-12.25" y1="-54.25" x2="-12.25" y2="-47.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-4.75" y1="-47" x2="-12.25" y2="-47.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.25" y1="-34" x2="-49" y2="-45" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.75" y1="-32" x2="-54.25" y2="-34" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.75" y1="-30" x2="-55.75" y2="-32" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.75" y1="-28" x2="-55.75" y2="-30" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.75" y1="-24" x2="-55.75" y2="-28" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.75" y1="-36" x2="-55.75" y2="-32" width="0" layer="19" extent="1-1"/>
+<wire x1="-49.15" y1="-21.9" x2="-55.75" y2="-24" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.75" y1="-17" x2="-55.75" y2="-24" width="0" layer="19" extent="1-1"/>
+<wire x1="-72.15" y1="-14.1" x2="-65.75" y2="-17" width="0" layer="19" extent="1-1"/>
+<wire x1="-75" y1="-8.75" x2="-75.85" y2="-11.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-73" y1="-8.75" x2="-75" y2="-8.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-80.25" y1="-18" x2="-75.85" y2="-11.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-80.25" y1="-20" x2="-80.25" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-84.75" y1="-18" x2="-80.25" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-86.25" y1="-18" x2="-84.75" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-89.25" y1="-18" x2="-86.25" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-89.25" y1="-20" x2="-89.25" y2="-18.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-90.75" y1="-15" x2="-89.25" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-93.75" y1="-15" x2="-90.75" y2="-15" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.75" y1="-0.25" x2="-75" y2="-8.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-85" y1="-0.75" x2="-78.75" y2="-0.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-83.75" y1="-4" x2="-85" y2="-0.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.25" y1="8.75" x2="-78.75" y2="-0.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.25" y1="6.25" x2="-76.25" y2="8.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.25" y1="-0.25" x2="-67.25" y2="6.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.29" y1="-13.25" x2="-49.15" y2="-21.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.25" y1="-9" x2="-40.29" y2="-13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.75" y1="-9" x2="-33.25" y2="-9" width="0" layer="19" extent="1-1"/>
+<wire x1="-24" y1="-12.75" x2="-31.75" y2="-9" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.25" y1="-17" x2="-24" y2="-12.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.75" y1="-17" x2="-20.25" y2="-17" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.75" y1="-21" x2="-20.25" y2="-17" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.05" y1="-21.9" x2="-22.75" y2="-21" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.65" y1="-15.95" x2="-18.75" y2="-17" width="0" layer="19" extent="1-1"/>
+<wire x1="-12" y1="-15.95" x2="-12.65" y2="-15.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.8" y1="-15.025" x2="-12" y2="-15.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-6" y1="-16" x2="-7.8" y2="-15.025" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.675" y1="-17.8" x2="-6" y2="-16" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.75" y1="-23" x2="-5.675" y2="-17.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.75" y1="-10" x2="-6" y2="-16" width="0" layer="19" extent="1-1"/>
+<wire x1="2.5" y1="-15" x2="-3.75" y2="-10" width="0" layer="19" extent="1-1"/>
+<wire x1="7" y1="-18.75" x2="2.5" y2="-15" width="0" layer="19" extent="1-1"/>
+<wire x1="-12" y1="-29.45" x2="-5.75" y2="-23" width="0" layer="19" extent="1-1"/>
+<wire x1="-5" y1="-35" x2="-12" y2="-29.45" width="0" layer="19" extent="1-1"/>
+<wire x1="-12" y1="-40.55" x2="-5" y2="-35" width="0" layer="19" extent="1-1"/>
+<wire x1="-19" y1="-37.5" x2="-12" y2="-40.55" width="0" layer="19" extent="1-1"/>
+<wire x1="15" y1="-23.31" x2="7" y2="-18.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.75" y1="-47" x2="-12" y2="-40.55" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.75" y1="-49" x2="-4.75" y2="-47" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.75" y1="-51" x2="-4.75" y2="-49" width="0" layer="19" extent="1-1"/>
-<wire x1="1.15" y1="-22.9" x2="7.25" y2="-21" width="0" layer="19" extent="1-1"/>
-<wire x1="15" y1="-23.31" x2="4.85" y2="-25.1" width="0" layer="19" extent="1-1"/>
-<wire x1="24.2" y1="-21.025" x2="15" y2="-23.31" width="0" layer="19" extent="1-1"/>
-<wire x1="26" y1="-22" x2="24.2" y2="-21.025" width="0" layer="19" extent="1-1"/>
-<wire x1="26.325" y1="-23.8" x2="26" y2="-22" width="0" layer="19" extent="1-1"/>
-<wire x1="20.05" y1="-27" x2="26.325" y2="-23.8" width="0" layer="19" extent="1-1"/>
-<wire x1="20.05" y1="-26.35" x2="20.05" y2="-27" width="0" layer="19" extent="1-1"/>
-<wire x1="32.25" y1="-15" x2="26" y2="-22" width="0" layer="19" extent="1-1"/>
-<wire x1="32.25" y1="-13" x2="32.25" y2="-15" width="0" layer="19" extent="1-1"/>
-<wire x1="32.25" y1="-11" x2="32.25" y2="-13" width="0" layer="19" extent="1-1"/>
-<wire x1="32.25" y1="-9" x2="32.25" y2="-11" width="0" layer="19" extent="1-1"/>
-<wire x1="32.25" y1="-7" x2="32.25" y2="-9" width="0" layer="19" extent="1-1"/>
-<wire x1="36.5" y1="-21" x2="32.25" y2="-15" width="0" layer="19" extent="1-1"/>
-<wire x1="-49.15" y1="-21.9" x2="-40.29" y2="-13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.05" y1="-62.1" x2="-12.25" y2="-54.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.75" y1="42.75" x2="-30.25" y2="-4" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.25" y1="51.75" x2="-33.75" y2="42.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.25" y1="49.25" x2="-31.25" y2="51.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.25" y1="42.75" x2="-22.25" y2="49.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.75" y1="-49.75" x2="-4.75" y2="-49" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.25" y1="-49.75" x2="-8.75" y2="-49.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-38" y1="-30.73" x2="-49.15" y2="-21.9" width="0" layer="19" extent="16-16"/>
+<wire x1="-26.05" y1="-62.1" x2="-15.25" y2="-49.75" width="0" layer="19" extent="1-1"/>
+<wire x1="43.05" y1="-25.35" x2="15" y2="-23.31" width="0" layer="19" extent="1-1"/>
+<wire x1="43.05" y1="-26" x2="43.05" y2="-25.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5.0V">
 <contactref element="U5" pad="3"/>
@@ -2195,78 +2194,78 @@ design rules under a new name.</description>
 <contactref element="C6" pad="1"/>
 <contactref element="C8" pad="A"/>
 <contactref element="TP6" pad="1"/>
-<wire x1="-21" y1="-8" x2="-27.25" y2="-7" width="0" layer="19" extent="1-1"/>
+<wire x1="-21" y1="-8" x2="-90.75" y2="-20" width="0" layer="19" extent="1-1"/>
 <wire x1="14.05" y1="-20.69" x2="-21" y2="-8" width="0" layer="19" extent="1-1"/>
-<wire x1="0.25" y1="-11" x2="14.05" y2="-20.69" width="0" layer="19" extent="1-1"/>
-<wire x1="33.75" y1="-11" x2="0.25" y2="-11" width="0" layer="19" extent="1-1"/>
-<wire x1="36.05" y1="-12.31" x2="33.75" y2="-11" width="0" layer="19" extent="1-1"/>
-<wire x1="37.95" y1="-12.31" x2="36.05" y2="-12.31" width="0" layer="19" extent="1-1"/>
-<wire x1="26.325" y1="-20.2" x2="37.95" y2="-12.31" width="0" layer="19" extent="1-1"/>
-<wire x1="36.75" y1="-5" x2="33.75" y2="-11" width="0" layer="19" extent="1-1"/>
-<wire x1="39.5" y1="-21" x2="26.325" y2="-20.2" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.6" y1="-14.35" x2="14.05" y2="-20.69" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.25" y1="-17" x2="-17.6" y2="-14.35" width="0" layer="19" extent="1-1"/>
+<wire x1="70.05" y1="-18.31" x2="-17.25" y2="-17" width="0" layer="19" extent="1-1"/>
+<wire x1="71.95" y1="-18.31" x2="70.05" y2="-18.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.675" y1="-14.2" x2="71.95" y2="-18.31" width="0" layer="19" extent="1-1"/>
+<wire x1="70.25" y1="-23" x2="-17.25" y2="-17" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.5" y1="-15" x2="-5.675" y2="-14.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX">
 <contactref element="U1" pad="42"/>
 <contactref element="U3" pad="2"/>
 <contactref element="RN1" pad="2"/>
-<wire x1="25.675" y1="-23.8" x2="-15.6" y2="-50.3" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.75" y1="51.75" x2="25.675" y2="-23.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.325" y1="-17.8" x2="-21.6" y2="-49.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-73.75" y1="8.75" x2="-6.325" y2="-17.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RX">
 <contactref element="U1" pad="43"/>
 <contactref element="U3" pad="15"/>
 <contactref element="RN1" pad="1"/>
-<wire x1="24.2" y1="-22.325" x2="-14.8" y2="-50.3" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.25" y1="51.75" x2="24.2" y2="-22.325" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.8" y1="-16.325" x2="-20.8" y2="-49.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-74.25" y1="8.75" x2="-7.8" y2="-16.325" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_ADJ">
 <contactref element="U1" pad="20"/>
 <contactref element="R8" pad="2"/>
-<wire x1="9" y1="-17.25" x2="-22.25" y2="43.75" width="0" layer="19" extent="1-1"/>
+<wire x1="9" y1="-17.25" x2="-67.25" y2="0.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TO_LED">
 <contactref element="U1" pad="54"/>
 <contactref element="R20" pad="2"/>
-<wire x1="-6" y1="-19.25" x2="-33.75" y2="47.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-83.75" y1="4" x2="-78.75" y2="4.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BOOT0">
 <contactref element="U1" pad="60"/>
 <contactref element="R10" pad="2"/>
-<wire x1="-33.75" y1="44.25" x2="-18.75" y2="-22" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.75" y1="1.25" x2="-85" y2="0.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSENSE">
 <contactref element="R11" pad="1"/>
 <contactref element="J5" pad="1"/>
-<wire x1="12.25" y1="-27" x2="-38" y2="-25.65" width="0" layer="19" extent="1-1"/>
+<wire x1="11.25" y1="-27" x2="-38" y2="-25.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWCLK">
 <contactref element="J5" pad="2"/>
 <contactref element="U1" pad="49"/>
-<wire x1="-38" y1="-28.19" x2="-33.75" y2="49.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-38" y1="-28.19" x2="-78.75" y2="6.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="J5" pad="4"/>
 <contactref element="U1" pad="46"/>
-<wire x1="-38" y1="-33.27" x2="-30.75" y2="51.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-38" y1="-33.27" x2="-75.75" y2="8.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="NRST">
 <contactref element="J5" pad="5"/>
 <contactref element="U1" pad="7"/>
-<wire x1="-38" y1="-35.81" x2="-28.75" y2="40.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-38" y1="-35.81" x2="-73.75" y2="-2.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWO">
 <contactref element="J5" pad="6"/>
 <contactref element="U1" pad="55"/>
-<wire x1="-38" y1="-38.35" x2="-33.75" y2="46.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-38" y1="-38.35" x2="-78.75" y2="3.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AGND">
 <contactref element="U1" pad="12"/>
 <contactref element="C12" pad="C"/>
 <contactref element="C13" pad="2"/>
 <contactref element="R17" pad="1"/>
-<wire x1="0.5" y1="-6" x2="-26.25" y2="40.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-3" y1="-10.25" x2="0.5" y2="-6" width="0" layer="19" extent="1-1"/>
-<wire x1="-24" y1="-11.25" x2="-3" y2="-10.25" width="0" layer="19" extent="1-1"/>
+<wire x1="0.5" y1="-6" x2="-71.25" y2="-2.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-3" y1="-5.25" x2="0.5" y2="-6" width="0" layer="19" extent="1-1"/>
+<wire x1="-24" y1="-11.25" x2="-3" y2="-5.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AVDD">
 <contactref element="U1" pad="13"/>
@@ -2274,104 +2273,104 @@ design rules under a new name.</description>
 <contactref element="C12" pad="A"/>
 <contactref element="C13" pad="1"/>
 <contactref element="TP1" pad="1"/>
-<wire x1="1.75" y1="-9" x2="-25.75" y2="40.25" width="0" layer="19" extent="1-1"/>
+<wire x1="1.75" y1="-9" x2="-70.75" y2="-2.75" width="0" layer="19" extent="1-1"/>
 <wire x1="3.5" y1="-6" x2="1.75" y2="-9" width="0" layer="19" extent="1-1"/>
-<wire x1="-3" y1="-11.75" x2="1.75" y2="-9" width="0" layer="19" extent="1-1"/>
-<wire x1="-21" y1="-11" x2="-3" y2="-11.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-3" y1="-6.75" x2="1.75" y2="-9" width="0" layer="19" extent="1-1"/>
+<wire x1="-21" y1="-11" x2="-3" y2="-6.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FET_1">
 <contactref element="U1" pad="25"/>
 <contactref element="Q2" pad="4"/>
-<wire x1="-22.25" y1="46.25" x2="24" y2="34.095" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.25" y1="3.25" x2="24" y2="34.095" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FET_2">
 <contactref element="U1" pad="37"/>
 <contactref element="Q3" pad="4"/>
-<wire x1="-26.25" y1="51.75" x2="24" y2="42.095" width="0" layer="19" extent="1-1"/>
+<wire x1="-71.25" y1="8.75" x2="24" y2="42.095" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI_SCK">
 <contactref element="U1" pad="21"/>
 <contactref element="B1" pad="14"/>
-<wire x1="-49" y1="-49.5" x2="-22.25" y2="44.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-49" y1="-49.5" x2="-67.25" y2="1.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI_MOSI">
 <contactref element="U1" pad="23"/>
 <contactref element="B1" pad="13"/>
-<wire x1="-22.25" y1="45.25" x2="-49" y2="-48" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.25" y1="2.25" x2="-49" y2="-48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD_A0">
 <contactref element="U1" pad="14"/>
 <contactref element="B1" pad="15"/>
-<wire x1="-25.25" y1="40.25" x2="-49" y2="-51" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.25" y1="-2.75" x2="-49" y2="-51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!LCD_RST">
 <contactref element="U1" pad="15"/>
 <contactref element="B1" pad="16"/>
-<wire x1="-24.75" y1="40.25" x2="-49" y2="-52.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.75" y1="-2.75" x2="-49" y2="-52.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!LCD_CS">
 <contactref element="U1" pad="16"/>
 <contactref element="B1" pad="17"/>
-<wire x1="-24.25" y1="40.25" x2="-49" y2="-54" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.25" y1="-2.75" x2="-49" y2="-54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC_A">
 <contactref element="SW1" pad="A"/>
 <contactref element="RN2" pad="2"/>
 <contactref element="U1" pad="38"/>
-<wire x1="-4" y1="-36.5" x2="-15.6" y2="-46.3" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.75" y1="51.75" x2="-4" y2="-36.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-5" y1="-37.5" x2="-21.6" y2="-45.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-71.75" y1="8.75" x2="-5" y2="-37.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC_B">
 <contactref element="SW1" pad="B"/>
 <contactref element="RN2" pad="3"/>
 <contactref element="U1" pad="39"/>
-<wire x1="-4" y1="-31.5" x2="-16.4" y2="-46.3" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.25" y1="51.75" x2="-4" y2="-31.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-5" y1="-32.5" x2="-22.4" y2="-45.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-72.25" y1="8.75" x2="-5" y2="-32.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC_SW">
 <contactref element="SW1" pad="2"/>
 <contactref element="RN2" pad="4"/>
 <contactref element="U1" pad="40"/>
-<wire x1="-18" y1="-31.5" x2="-17.2" y2="-46.3" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.75" y1="51.75" x2="-18" y2="-31.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-19" y1="-32.5" x2="-23.2" y2="-45.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-72.75" y1="8.75" x2="-19" y2="-32.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="NICE_BUTTON">
 <contactref element="SW2" pad="1"/>
 <contactref element="SW2" pad="2"/>
 <contactref element="U1" pad="52"/>
 <contactref element="RN2" pad="1"/>
-<wire x1="-7.75" y1="-47.75" x2="-7.75" y2="-54.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.8" y1="-46.3" x2="-7.75" y2="-47.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.75" y1="48.25" x2="-14.8" y2="-46.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.75" y1="-54.25" x2="-15.25" y2="-54.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.8" y1="-45.3" x2="-8.75" y2="-54.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.75" y1="5.25" x2="-20.8" y2="-45.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_LOAD">
 <contactref element="U1" pad="8"/>
 <contactref element="U6" pad="6"/>
-<wire x1="-13.65" y1="-14.05" x2="-28.25" y2="40.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.65" y1="-14.05" x2="-73.25" y2="-2.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_ALT">
 <contactref element="U1" pad="10"/>
 <contactref element="U4" pad="6"/>
-<wire x1="21.95" y1="-26.35" x2="-27.25" y2="40.25" width="0" layer="19" extent="1-1"/>
+<wire x1="44.95" y1="-25.35" x2="-72.25" y2="-2.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OSC_OUT">
 <contactref element="U1" pad="6"/>
 <contactref element="C18" pad="1"/>
 <contactref element="Y1" pad="1"/>
-<wire x1="-17.25" y1="-20" x2="-29.25" y2="40.25" width="0" layer="19" extent="1-1"/>
-<wire x1="1.15" y1="-25.1" x2="-17.25" y2="-20" width="0" layer="19" extent="1-1"/>
+<wire x1="-73" y1="-7.25" x2="-74.25" y2="-2.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-72.15" y1="-11.9" x2="-73" y2="-7.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OSC_IN">
 <contactref element="C23" pad="1"/>
 <contactref element="U1" pad="5"/>
 <contactref element="Y1" pad="3"/>
-<wire x1="-17.25" y1="-18" x2="-29.75" y2="40.25" width="0" layer="19" extent="1-1"/>
-<wire x1="4.85" y1="-22.9" x2="-17.25" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-75" y1="-7.25" x2="-74.75" y2="-2.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-75.85" y1="-14.1" x2="-75" y2="-7.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAN_CONTROL">
 <contactref element="U1" pad="22"/>
 <contactref element="J6" pad="4"/>
-<wire x1="21.46" y1="-8" x2="-22.25" y2="44.75" width="0" layer="19" extent="1-1"/>
+<wire x1="21.46" y1="-8" x2="-67.25" y2="1.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PGND">
 <contactref element="J7" pad="2"/>
@@ -2382,12 +2381,12 @@ design rules under a new name.</description>
 <contactref element="J6" pad="1"/>
 <contactref element="R18" pad="1"/>
 <contactref element="R21" pad="1"/>
-<wire x1="-30.25" y1="-16" x2="-30.25" y2="-14" width="0" layer="19" extent="1-1"/>
-<wire x1="29.08" y1="-8" x2="-30.25" y2="-14" width="0" layer="19" extent="1-1"/>
-<wire x1="35.25" y1="-5" x2="29.08" y2="-8" width="0" layer="19" extent="1-1"/>
-<wire x1="36.75" y1="-7" x2="35.25" y2="-5" width="0" layer="19" extent="1-1"/>
-<wire x1="37" y1="-12.31" x2="36.75" y2="-7" width="0" layer="19" extent="1-1"/>
-<wire x1="46" y1="-9.3" x2="37" y2="-12.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.25" y1="-16" x2="-21.25" y2="-21" width="0" layer="19" extent="1-1"/>
+<wire x1="29.08" y1="-8" x2="-21.25" y2="-21" width="0" layer="19" extent="1-1"/>
+<wire x1="71.75" y1="-23" x2="29.08" y2="-8" width="0" layer="19" extent="1-1"/>
+<wire x1="71.75" y1="-21" x2="71.75" y2="-23" width="0" layer="19" extent="1-1"/>
+<wire x1="71" y1="-18.31" x2="71.75" y2="-21" width="0" layer="19" extent="1-1"/>
+<wire x1="46" y1="-9.3" x2="71" y2="-18.31" width="0" layer="19" extent="1-1"/>
 <wire x1="49" y1="-14" x2="46" y2="-9.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12.0V">
@@ -2398,7 +2397,7 @@ design rules under a new name.</description>
 <signal name="FAN_SENSE">
 <contactref element="U1" pad="44"/>
 <contactref element="J6" pad="3"/>
-<wire x1="24" y1="-8" x2="-29.75" y2="51.75" width="0" layer="19" extent="1-1"/>
+<wire x1="24" y1="-8" x2="-74.75" y2="8.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.1V">
 <contactref element="U5" pad="5"/>
@@ -2434,55 +2433,53 @@ design rules under a new name.</description>
 <contactref element="DS5" pad="A"/>
 <contactref element="R7" pad="1"/>
 <contactref element="C3" pad="1"/>
-<wire x1="-30.25" y1="-6.39305" x2="-30.25" y2="-6" width="0.2" layer="1"/>
-<wire x1="-31.35695" y1="-4" x2="-31.75" y2="-4" width="0.2" layer="1"/>
-<wire x1="-17.2" y1="-47.7" x2="-49" y2="-46.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.4" y1="-47.7" x2="-17.2" y2="-47.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.6" y1="-47.7" x2="-16.4" y2="-47.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.8" y1="-47.7" x2="-15.6" y2="-47.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.2" y1="-51.7" x2="-17.2" y2="-47.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.4" y1="-51.7" x2="-17.2" y2="-51.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.6" y1="-51.7" x2="-16.4" y2="-51.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.8" y1="-51.7" x2="-15.6" y2="-51.7" width="0" layer="19" extent="1-1"/>
-<wire x1="13.75" y1="-27" x2="-14.8" y2="-47.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-12.35" y1="-15.95" x2="13.75" y2="-27" width="0" layer="19" extent="1-1"/>
-<wire x1="0.25" y1="-9" x2="13.75" y2="-27" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.75" y1="-9" x2="-12.35" y2="-15.95" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.75" y1="-7" x2="-25.75" y2="-9" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.75" y1="-5" x2="-25.75" y2="-7" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.75" y1="-5" x2="-25.75" y2="-5" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.25" y1="-6" x2="-28.75" y2="-5" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.25" y1="-8" x2="-30.25" y2="-6.39305" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.25" y1="-10" x2="-30.25" y2="-8" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.25" y1="-12" x2="-30.25" y2="-10" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.35695" y1="-4" x2="-30.25" y2="-6" width="0" layer="19" extent="1-1"/>
-<wire x1="20.05" y1="-27.65" x2="13.75" y2="-27" width="0" layer="19" extent="1-1"/>
-<wire x1="25.025" y1="-23.8" x2="20.05" y2="-27.65" width="0" layer="19" extent="1-1"/>
-<wire x1="36.05" y1="-9.69" x2="25.025" y2="-23.8" width="0" layer="19" extent="1-1"/>
-<wire x1="35.25" y1="-7" x2="36.05" y2="-9.69" width="0" layer="19" extent="1-1"/>
-<wire x1="38.25" y1="-7" x2="35.25" y2="-7" width="0" layer="19" extent="1-1"/>
-<wire x1="41.25" y1="-5" x2="38.25" y2="-7" width="0" layer="19" extent="1-1"/>
-<wire x1="45.75" y1="-7" x2="41.25" y2="-5" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.75" y1="40.25" x2="-31.75" y2="-4" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.75" y1="42.25" x2="-31.75" y2="40.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.75" y1="51.75" x2="-33.75" y2="42.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.25" y1="49.75" x2="-31.75" y2="51.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.25" y1="43.25" x2="-22.25" y2="49.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-87.75" y1="-18" x2="-90.75" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-92.25" y1="-15" x2="-90.75" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-89.25" y1="-15" x2="-92.25" y2="-15" width="0" layer="19" extent="1-1"/>
+<wire x1="-83.25" y1="-18" x2="-87.75" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-81.75" y1="-18" x2="-83.25" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-81.75" y1="-20" x2="-81.75" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.75" y1="-2.75" x2="-81.75" y2="-18" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.75" y1="-0.75" x2="-76.75" y2="-2.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.75" y1="8.75" x2="-78.75" y2="-0.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.25" y1="6.75" x2="-76.75" y2="8.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.25" y1="0.25" x2="-67.25" y2="6.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.25" y1="-26" x2="-81.75" y2="-20" width="0" layer="19" extent="1-1"/>
+<wire x1="-49" y1="-46.5" x2="-54.25" y2="-26" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.2" y1="-46.7" x2="-49" y2="-46.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.4" y1="-46.7" x2="-23.2" y2="-46.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.6" y1="-46.7" x2="-22.4" y2="-46.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.8" y1="-46.7" x2="-21.6" y2="-46.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.2" y1="-50.7" x2="-23.2" y2="-46.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.4" y1="-50.7" x2="-23.2" y2="-50.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.6" y1="-50.7" x2="-22.4" y2="-50.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.8" y1="-50.7" x2="-21.6" y2="-50.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.25" y1="-23" x2="-20.8" y2="-46.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.975" y1="-17.8" x2="-4.25" y2="-23" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.35" y1="-15.95" x2="-6.975" y2="-17.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.75" y1="-10" x2="-11.35" y2="-15.95" width="0" layer="19" extent="1-1"/>
+<wire x1="0.25" y1="-9" x2="-10.75" y2="-10" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="-15" x2="0.25" y2="-9" width="0" layer="19" extent="1-1"/>
+<wire x1="16.75" y1="-13" x2="15.25" y2="-15" width="0" layer="19" extent="1-1"/>
+<wire x1="12.75" y1="-27" x2="15.25" y2="-15" width="0" layer="19" extent="1-1"/>
+<wire x1="43.05" y1="-26.65" x2="16.75" y2="-13" width="0" layer="19" extent="1-1"/>
+<wire x1="70.25" y1="-21" x2="43.05" y2="-26.65" width="0" layer="19" extent="1-1"/>
+<wire x1="70.05" y1="-15.69" x2="70.25" y2="-21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TO_LED_ANODE">
 <contactref element="DS1" pad="A"/>
 <contactref element="R20" pad="1"/>
-<wire x1="-6" y1="-20.75" x2="-18.75" y2="-24" width="0" layer="19" extent="1-1"/>
+<wire x1="-82.25" y1="4" x2="-82.25" y2="-4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VOUT">
 <contactref element="B1" pad="10"/>
 <contactref element="C21" pad="2"/>
-<wire x1="-30.25" y1="-20" x2="-49" y2="-43.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.25" y1="-24" x2="-49" y2="-43.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD_V4">
 <contactref element="B1" pad="5"/>
 <contactref element="C22" pad="1"/>
-<wire x1="-28.75" y1="-20" x2="-49" y2="-36" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.25" y1="-28" x2="-49" y2="-36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_ALT+">
 <contactref element="J3" pad="1"/>
@@ -2512,8 +2509,8 @@ design rules under a new name.</description>
 <wire x1="27.35" y1="36" x2="30" y2="36.635" width="0" layer="19" extent="1-1"/>
 <wire x1="2.54" y1="18" x2="27.35" y2="36" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.46" y1="18" x2="2.54" y2="18" width="0" layer="19" extent="1-1"/>
-<wire x1="9" y1="-10.75" x2="-14.46" y2="18" width="0" layer="19" extent="1-1"/>
-<wire x1="15.95" y1="-20.69" x2="9" y2="-10.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.75" y1="-7" x2="-14.46" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="15.95" y1="-20.69" x2="-65.75" y2="-7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SHUNT_LOW">
 <contactref element="R1" pad="1"/>
@@ -2523,8 +2520,8 @@ design rules under a new name.</description>
 <contactref element="Q3" pad="3"/>
 <wire x1="24" y1="44.635" x2="24" y2="45.905" width="0" layer="19" extent="1-1"/>
 <wire x1="24" y1="43.365" x2="24" y2="44.635" width="0" layer="19" extent="1-1"/>
-<wire x1="15.59" y1="3.9" x2="24" y2="43.365" width="0" layer="19" extent="1-1"/>
-<wire x1="9" y1="-6.25" x2="15.59" y2="3.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.41" y1="-12.1" x2="24" y2="43.365" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.75" y1="-9" x2="-65.41" y2="-12.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SHUNT_MID">
 <contactref element="Q3" pad="5"/>
@@ -2544,18 +2541,18 @@ design rules under a new name.</description>
 <wire x1="24" y1="37.905" x2="27.35" y2="44" width="0" layer="19" extent="1-1"/>
 <wire x1="24" y1="36.635" x2="24" y2="37.905" width="0" layer="19" extent="1-1"/>
 <wire x1="24" y1="35.365" x2="24" y2="36.635" width="0" layer="19" extent="1-1"/>
-<wire x1="9" y1="-9.25" x2="24" y2="35.365" width="0" layer="19" extent="1-1"/>
-<wire x1="9" y1="-7.75" x2="9" y2="-9.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.25" y1="-7" x2="24" y2="35.365" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.25" y1="-9" x2="-64.25" y2="-7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUTPUT_SHUNT+">
 <contactref element="R6" pad="2-KELVIN"/>
 <contactref element="U6" pad="4"/>
-<wire x1="13.65" y1="3.875" x2="-12.35" y2="-14.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.35" y1="-12.125" x2="-11.35" y2="-14.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUTPUT_SHUNT-">
 <contactref element="R6" pad="1-KELVIN"/>
 <contactref element="U6" pad="5"/>
-<wire x1="-13" y1="-14.05" x2="13.65" y2="2.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-12" y1="-14.05" x2="-67.35" y2="-13.875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I_ALT-">
 <contactref element="J3" pad="2"/>
@@ -2565,52 +2562,52 @@ design rules under a new name.</description>
 <signal name="INPUT_SHUNT+">
 <contactref element="U4" pad="4"/>
 <contactref element="R2" pad="2-KELVIN"/>
-<wire x1="40.35" y1="-54.125" x2="21.95" y2="-27.65" width="0" layer="19" extent="1-1"/>
+<wire x1="40.35" y1="-54.125" x2="44.95" y2="-26.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INPUT_SHUNT-">
 <contactref element="R2" pad="1-KELVIN"/>
 <contactref element="U4" pad="5"/>
-<wire x1="40.35" y1="-55.875" x2="21.95" y2="-27" width="0" layer="19" extent="1-1"/>
+<wire x1="40.35" y1="-55.875" x2="44.95" y2="-26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD_V3">
 <contactref element="B1" pad="4"/>
 <contactref element="C14" pad="1"/>
-<wire x1="-30.25" y1="-18" x2="-49" y2="-34.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.25" y1="-30" x2="-49" y2="-34.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD_V2">
 <contactref element="B1" pad="3"/>
 <contactref element="C15" pad="1"/>
-<wire x1="-24.25" y1="-18" x2="-49" y2="-33" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.25" y1="-32" x2="-49" y2="-33" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD_V1">
 <contactref element="B1" pad="2"/>
 <contactref element="C16" pad="1"/>
-<wire x1="-28.75" y1="-18" x2="-49" y2="-31.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.75" y1="-34" x2="-49" y2="-31.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="C1+">
 <contactref element="B1" pad="8"/>
 <contactref element="C20" pad="1"/>
-<wire x1="-27.75" y1="-12" x2="-49" y2="-40.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-56" y1="-40.25" x2="-49" y2="-40.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="C1-">
 <contactref element="C20" pad="2"/>
 <contactref element="B1" pad="9"/>
-<wire x1="-26.25" y1="-12" x2="-49" y2="-42" width="0" layer="19" extent="1-1"/>
+<wire x1="-56" y1="-41.75" x2="-49" y2="-42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="C2+">
 <contactref element="B1" pad="7"/>
 <contactref element="C19" pad="1"/>
-<wire x1="-33.25" y1="-20" x2="-49" y2="-39" width="0" layer="19" extent="1-1"/>
+<wire x1="-56" y1="-38.75" x2="-49" y2="-39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="C2-">
 <contactref element="C19" pad="2"/>
 <contactref element="B1" pad="6"/>
-<wire x1="-34.75" y1="-20" x2="-49" y2="-37.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-56" y1="-37.25" x2="-49" y2="-37.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD_V0">
 <contactref element="B1" pad="1"/>
 <contactref element="C17" pad="1"/>
-<wire x1="-24.25" y1="-20" x2="-49" y2="-30" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.25" y1="-36" x2="-49" y2="-30" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OP_AMP_IN">
 <contactref element="R8" pad="1"/>
@@ -2622,7 +2619,7 @@ design rules under a new name.</description>
 <signal name="LCD_LED">
 <contactref element="B1" pad="A"/>
 <contactref element="R19" pad="2"/>
-<wire x1="-31.75" y1="-8" x2="-47.2" y2="-24.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.75" y1="-26" x2="-47.2" y2="-24.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LOAD_INPUT+">
 <contactref element="J2" pad="1"/>
@@ -2639,8 +2636,8 @@ design rules under a new name.</description>
 <contactref element="J2" pad="2"/>
 <contactref element="R6" pad="1"/>
 <contactref element="R22" pad="2"/>
-<wire x1="8.75" y1="-21" x2="15.59" y2="2.125" width="0" layer="19" extent="1-1"/>
-<wire x1="43.5" y1="-42.5" x2="8.75" y2="-21" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.25" y1="-17" x2="-65.41" y2="-13.875" width="0" layer="19" extent="1-1"/>
+<wire x1="43.5" y1="-42.5" x2="-64.25" y2="-17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSENSE_GND">
 <contactref element="J4" pad="3"/>
@@ -2660,35 +2657,35 @@ design rules under a new name.</description>
 <signal name="USB_P">
 <contactref element="U3" pad="6"/>
 <contactref element="R3" pad="2"/>
-<wire x1="27.8" y1="-22.325" x2="32.25" y2="-5" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.2" y1="-16.325" x2="-31.75" y2="-13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_N">
 <contactref element="U3" pad="7"/>
 <contactref element="R4" pad="2"/>
-<wire x1="27.8" y1="-21.675" x2="45.75" y2="-5" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.2" y1="-15.675" x2="-30.25" y2="-11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_CONN_P">
 <contactref element="R3" pad="1"/>
 <contactref element="C5" pad="1"/>
 <contactref element="J1" pad="3"/>
-<wire x1="33.75" y1="-5" x2="-40.29" y2="-10.75" width="0" layer="19" extent="1-1"/>
-<wire x1="33.75" y1="-9" x2="33.75" y2="-5" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.25" y1="-13" x2="-40.29" y2="-10.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.25" y1="-9" x2="-30.25" y2="-13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_CONN_N">
 <contactref element="R4" pad="1"/>
 <contactref element="C4" pad="1"/>
 <contactref element="J1" pad="2"/>
-<wire x1="33.75" y1="-7" x2="-38.29" y2="-10.75" width="0" layer="19" extent="1-1"/>
-<wire x1="44.25" y1="-5" x2="33.75" y2="-7" width="0" layer="19" extent="1-1"/>
+<wire x1="-34.75" y1="-9" x2="-38.29" y2="-10.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.75" y1="-11" x2="-34.75" y2="-9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB5V">
 <contactref element="FB1" pad="1"/>
 <contactref element="C7" pad="1"/>
 <contactref element="J1" pad="1"/>
 <contactref element="TP5" pad="1"/>
-<wire x1="1.75" y1="-11" x2="-38.29" y2="-13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-21" y1="-5" x2="1.75" y2="-11" width="0" layer="19" extent="1-1"/>
-<wire x1="33.75" y1="-13" x2="1.75" y2="-11" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.1" y1="-14.35" x2="-38.29" y2="-13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-21" y1="-5" x2="-16.1" y2="-14.35" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.75" y1="-17" x2="-16.1" y2="-14.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CHASSIS">
 <contactref element="J1" pad="SHIELD@1"/>
@@ -2853,38 +2850,38 @@ design rules under a new name.</description>
 <contactref element="R7" pad="2"/>
 <contactref element="C9" pad="1"/>
 <contactref element="U3" pad="9"/>
-<wire x1="26.975" y1="-20.2" x2="39.75" y2="-7" width="0" layer="19" extent="1-1"/>
-<wire x1="33.75" y1="-15" x2="26.975" y2="-20.2" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.025" y1="-14.2" x2="-9.25" y2="-10" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.25" y1="-10" x2="-5.025" y2="-14.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CBUS1">
 <contactref element="U3" pad="11"/>
 <contactref element="R15" pad="1"/>
-<wire x1="25.675" y1="-20.2" x2="39.75" y2="-5" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.325" y1="-14.2" x2="9.35" y2="-13.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CBUS2">
 <contactref element="U3" pad="5"/>
 <contactref element="R13" pad="1"/>
-<wire x1="27.8" y1="-22.975" x2="41.25" y2="-7" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.2" y1="-16.975" x2="8.25" y2="-15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXLED_C">
 <contactref element="R13" pad="2"/>
 <contactref element="DS5" pad="C"/>
-<wire x1="42.75" y1="-7" x2="42.75" y2="-5" width="0" layer="19" extent="1-1"/>
+<wire x1="9.75" y1="-15" x2="16.75" y2="-15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXLED_C">
 <contactref element="DS3" pad="C"/>
 <contactref element="R15" pad="2"/>
-<wire x1="38.25" y1="-5" x2="44.25" y2="-7" width="0" layer="19" extent="1-1"/>
+<wire x1="7.85" y1="-13.2" x2="15.25" y2="-13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!CTS">
 <contactref element="RN1" pad="4"/>
 <contactref element="U3" pad="4"/>
-<wire x1="26.975" y1="-23.8" x2="-17.2" y2="-50.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.025" y1="-17.8" x2="-23.2" y2="-49.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!RTS">
 <contactref element="U3" pad="16"/>
 <contactref element="RN1" pad="3"/>
-<wire x1="24.2" y1="-22.975" x2="-16.4" y2="-50.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.8" y1="-16.975" x2="-22.4" y2="-49.3" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
