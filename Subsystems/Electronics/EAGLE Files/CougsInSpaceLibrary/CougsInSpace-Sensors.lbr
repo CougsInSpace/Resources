@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -352,31 +352,31 @@
 <description>&lt;h3&gt;PEC12R-4-S&lt;/h3&gt;</description>
 <pad name="1" x="-2.5" y="7" drill="1" diameter="1.6"/>
 <pad name="2" x="2.5" y="7" drill="1" diameter="1.6"/>
-<pad name="B" x="2.5" y="-7" drill="1" diameter="1.6"/>
-<pad name="A" x="-2.5" y="-7" drill="1" diameter="1.6"/>
-<pad name="C" x="0" y="-7" drill="1" diameter="1.6"/>
-<pad name="SHIELD@2" x="5.55" y="0" drill="2.1" diameter="3.6"/>
-<pad name="SHIELD@1" x="-5.55" y="0" drill="2.1" diameter="3.6"/>
+<pad name="B" x="2.5" y="-7.5" drill="1" diameter="1.6"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1" diameter="1.6"/>
+<pad name="C" x="0" y="-7.5" drill="1" diameter="1.6"/>
+<pad name="SHIELD@2" x="6.02" y="0" drill="2.5" diameter="3.6"/>
+<pad name="SHIELD@1" x="-6.05" y="0" drill="2.5" diameter="3.6"/>
 <wire x1="-6.2" y1="6.7" x2="6.2" y2="6.7" width="0.15" layer="51"/>
 <wire x1="6.2" y1="6.7" x2="6.2" y2="-6.7" width="0.15" layer="51"/>
 <wire x1="6.2" y1="-6.7" x2="-6.2" y2="-6.7" width="0.15" layer="51"/>
 <wire x1="-6.2" y1="-6.7" x2="-6.2" y2="6.7" width="0.15" layer="51"/>
 <wire x1="-3.5" y1="6.7" x2="-6.2" y2="6.7" width="0.15" layer="21"/>
-<wire x1="-6.2" y1="6.7" x2="-6.2" y2="1.9" width="0.15" layer="21"/>
+<wire x1="-6.2" y1="6.7" x2="-6.2" y2="2" width="0.15" layer="21"/>
 <wire x1="-1.5" y1="6.7" x2="1.5" y2="6.7" width="0.15" layer="21"/>
 <wire x1="3.5" y1="6.7" x2="6.2" y2="6.7" width="0.15" layer="21"/>
-<wire x1="6.2" y1="6.7" x2="6.2" y2="1.9" width="0.15" layer="21"/>
-<wire x1="6.2" y1="-1.9" x2="6.2" y2="-6.7" width="0.15" layer="21"/>
-<wire x1="6.2" y1="-6.7" x2="3.4" y2="-6.7" width="0.15" layer="21"/>
-<wire x1="1" y1="-6.7" x2="1.5" y2="-6.7" width="0.15" layer="21"/>
-<wire x1="-1.5" y1="-6.7" x2="-1" y2="-6.7" width="0.15" layer="21"/>
-<wire x1="-3.5" y1="-6.7" x2="-6.2" y2="-6.7" width="0.15" layer="21"/>
-<wire x1="-6.2" y1="-6.7" x2="-6.2" y2="-1.9" width="0.15" layer="21"/>
-<wire x1="-7.7" y1="8.1" x2="7.7" y2="8.1" width="0.15" layer="21"/>
-<wire x1="7.7" y1="8.1" x2="7.7" y2="-8.2" width="0.15" layer="21"/>
-<wire x1="7.7" y1="-8.2" x2="-7.7" y2="-8.2" width="0.15" layer="21"/>
-<wire x1="-7.7" y1="-8.2" x2="-7.7" y2="8.1" width="0.15" layer="21"/>
-<rectangle x1="-7.7" y1="-8.2" x2="7.7" y2="8.1" layer="39"/>
+<wire x1="6.2" y1="6.7" x2="6.2" y2="2" width="0.15" layer="21"/>
+<wire x1="6.2" y1="-2" x2="6.2" y2="-6.7" width="0.15" layer="21"/>
+<wire x1="6.2" y1="-6.7" x2="3.1" y2="-6.7" width="0.15" layer="21"/>
+<wire x1="0.6" y1="-6.7" x2="1.9" y2="-6.7" width="0.15" layer="21"/>
+<wire x1="-1.9" y1="-6.7" x2="-0.6" y2="-6.7" width="0.15" layer="21"/>
+<wire x1="-3.1" y1="-6.7" x2="-6.2" y2="-6.7" width="0.15" layer="21"/>
+<wire x1="-6.2" y1="-6.7" x2="-6.2" y2="-2" width="0.15" layer="21"/>
+<wire x1="-8.2" y1="8.1" x2="8.2" y2="8.2" width="0.15" layer="21"/>
+<wire x1="8.2" y1="8.2" x2="8.2" y2="-8.6" width="0.15" layer="21"/>
+<wire x1="8.2" y1="-8.6" x2="-8.2" y2="-8.7" width="0.15" layer="21"/>
+<wire x1="-8.2" y1="-8.7" x2="-8.2" y2="8.1" width="0.15" layer="21"/>
+<rectangle x1="-8.2" y1="-8.7" x2="8.2" y2="8.1" layer="39"/>
 <text x="0" y="8.6" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="BME280">
