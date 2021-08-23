@@ -1,181 +1,66 @@
-#include <mbed.h>
+#include "Functions.h"
 
-#define RES_HIGH_SHORT (0.0008)
-#define RES_HIGH_ON (0.5)
-#define RES_MED_SHORT (0.0008)
-#define RES_MED_ON (0.05)
-#define RES_LOW_ON (0.005)
-#define GAIN_SHUNT (48.0 / 5.0)
-#define GAIN_OUTPUT_CURRENT ((5.0 / 50.0) / 0.005)
-#define GAIN_OUTPUT_VOLTAGE (5.0)
-#define GAIN_INPUT_CURRENT ((5.0 / 50.0) / 0.005)
-#define GAIN_INPUT_VOLTAGE (5.0)
-
-AnalogIn  currentIn(ADC_INPUT_CURRENT);
-AnalogIn  currentOut(ADC_OUTPUT_CURRENT);
-AnalogIn  voltageIn(ADC_INPUT_VOLTAGE);
-AnalogIn  voltageOut(ADC_OUTPUT_VOLTAGE);
-AnalogOut currentSet(DAC_OUTPUT_CURRENT_SET);
-
-Serial serial(USBTX, USBRX);
-
-DigitalOut bypassShunt100mA(SENSE_RANGE_HIGH); // 0 to 100 mA
-DigitalOut bypassShunt1A(SENSE_RANGE_MED);     // 0.1 to 1 A
-// 10A range cannot be bypassed: 1 to 10 A
-
-DigitalIn knobPushIn(ENCODER_SW);
-
-/**
- * @brief Set the current
- * Bypasses the proper shunt resistors
- * Constrains current to proper range of 0.0Ω to 10.0Ω
- *
- * @param current in amps
- */
-void setCurrent(double current) {
-  double shunt = 0.0;
-  if (current > 10.0)
-    current = 10.0;
-  if (current < 0.0)
-    current = 0.0;
-
-  if (current > 1.0) {
-    bypassShunt100mA = 1;
-    bypassShunt1A    = 1;
-    shunt            = RES_HIGH_SHORT + RES_MED_SHORT + RES_LOW_ON;
-  } else if (current > 0.1) {
-    bypassShunt100mA = 1;
-    bypassShunt1A    = 0;
-    shunt            = RES_HIGH_SHORT + RES_MED_ON + RES_LOW_ON;
-  } else {
-    bypassShunt100mA = 0;
-    bypassShunt1A    = 0;
-    shunt            = RES_HIGH_ON + RES_MED_ON + RES_LOW_ON;
-  }
-
-  double shuntVoltage = current * shunt;
-  shuntVoltage        = shuntVoltage * GAIN_SHUNT;
-  currentSet.write((float)shuntVoltage);
-}
-
-/**
- * @brief Get the output current
- *
- * @return double current in amps
- */
-double getOutputCurrent() {
-  return currentOut.read() * GAIN_OUTPUT_CURRENT;
-}
-
-/**
- * @brief Get the output voltage
- *
- * @return double voltage in volts
- */
-double getOutputVoltage() {
-  return voltageOut.read() * GAIN_OUTPUT_VOLTAGE;
-}
-
-/**
- * @brief Get the input current
- *
- * @return double current in amps
- */
-double getInputCurrent() {
-  return currentIn.read() * GAIN_INPUT_CURRENT;
-}
-
-/**
- * @brief Get the input voltage
- *
- * @return double voltage in volts
- */
-double getInputVoltage() {
-  return voltageIn.read() * GAIN_INPUT_VOLTAGE;
-}
-
-AnalogIn  currentIn(ADC_INPUT_CURRENT);
-AnalogIn  currentOut(ADC_OUTPUT_CURRENT);
-AnalogIn  voltageIn(ADC_INPUT_VOLTAGE);
-AnalogIn  voltageOut(ADC_OUTPUT_VOLTAGE);
-AnalogOut currentSet(DAC_OUTPUT_CURRENT_SET);
-
-Serial serial(USBTX, USBRX);
-
-DigitalOut bypassShunt100mA(SENSE_RANGE_HIGH); // 0 to 100 mA
-DigitalOut bypassShunt1A(SENSE_RANGE_MED);     // 0.1 to 1 A
-// 10A range cannot be bypassed: 1 to 10 A
-
-/**
- * @brief Set the current
- * Bypasses the proper shunt resistors
- * Constrains current to proper range of 0.0Ω to 10.0Ω
- *
- * @param current in amps
- */
-void setCurrent(double current) {
-  double shunt = 0.0;
-  if (current > 10.0)
-    current = 10.0;
-  if (current < 0.0)
-    current = 0.0;
-
-  if (current > 1.0) {
-    bypassShunt100mA = 1;
-    bypassShunt1A    = 1;
-    shunt            = RES_HIGH_SHORT + RES_MED_SHORT + RES_LOW_ON;
-  } else if (current > 0.1) {
-    bypassShunt100mA = 1;
-    bypassShunt1A    = 0;
-    shunt            = RES_HIGH_SHORT + RES_MED_ON + RES_LOW_ON;
-  } else {
-    bypassShunt100mA = 0;
-    bypassShunt1A    = 0;
-    shunt            = RES_HIGH_ON + RES_MED_ON + RES_LOW_ON;
-  }
-
-  double shuntVoltage = current * shunt;
-  shuntVoltage        = shuntVoltage * GAIN_SHUNT;
-  currentSet.write((float)shuntVoltage);
-}
-
-/**
- * @brief Get the output current
- *
- * @return double current in amps
- */
-double getOutputCurrent() {
-  return currentOut.read() * GAIN_OUTPUT_CURRENT;
-}
-
-/**
- * @brief Get the output voltage
- *
- * @return double voltage in volts
- */
-double getOutputVoltage() {
-  return voltageOut.read() * GAIN_OUTPUT_VOLTAGE;
-}
-
-/**
- * @brief Get the input current
- *
- * @return double current in amps
- */
-double getInputCurrent() {
-  return currentIn.read() * GAIN_INPUT_CURRENT;
-}
-
-/**
- * @brief Get the input voltage
- *
- * @return double voltage in volts
- */
-double getInputVoltage() {
-  return voltageIn.read() * GAIN_INPUT_VOLTAGE;
-}
+void init(); // Sets current = 0
 
 int main(void) {
-  return MBED_SUCCESS;
+  int  selectedDigit = 0, timesPressed = 0, currentCurrent = 0;
+  Knob niceKnob = Knob(
+      KNOB_CHANNEL_A, KNOB_CHANNEL_B); // Initializing the niceKnob Knob class
+  ST7565 lcd = ST7565(LCD_MOSI, LCD_SCK, LCD_CS1_N, LCD_RST_N,
+      LCD_A0); // Initializing the LCD screen
+
+  void lcdFunction(int selectedDigit); // Runs the LCD screen
+
+  currentCurrent =
+      getCurrentCurrent(); // Currently set value for electronic current
+
+  if (niceKnob.isPressed() == 1) {
+    timesPressed++; // Counts amount of times that the button has been pressed
+  } else {
+    int determineHDValue(
+        int selectedDigit, int timesPressed); // Calls digit selection function
+    void highlightDigit(int selectedDigit, int currentCurrent,
+        ST7565 lcd); // Calls digit highlighting function
+  }
 }
 
+/**
+ * @brief Takes in selectedDigit and timesPressed to determine
+ * which digit is supposed to be highlighted. This is achieved
+ * by verifying if the digit has gone through the whole integer
+ * or not
+ *
+ * @param selectedDigit
+ * @param timesPressed
+ * @return int
+ */
+int determineHDValue(int selectedDigit, int timesPressed) {
+  if (selectedDigit >= 3) {
+    selectedDigit = selectedDigit +
+                    timesPressed; // Determines current value of selectedDigit
+  } else {
+    selectedDigit = 0; // Resets selectedDigit
+  }
+  return selectedDigit;
+}
+
+/**
+ * @brief Takes in selectedDigit, currentCurrent, and lcd to change
+ * the selected digit to be a negative image or in this case the
+ * method used to highlight this digit
+ *
+ * @param selectedDigit
+ * @param currentCurrent
+ * @param lcd
+ */
+void highlightDigit(int selectedDigit, int currentCurrent, ST7565 lcd) {
+  int hdValue = 0, xCoordLocation = 0;
+
+  xCoordLocation = selectedDigit + 16;
+  hdValue        = (currentCurrent %
+             (10 * (int)pow(
+                       10, selectedDigit))); // Reveals the value of the digit
+                                             // in the selectedDigit's location
+
+  lcd.drawchar(xCoordLocation, 1, hdValue, true);
+}
