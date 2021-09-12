@@ -9,11 +9,10 @@ int8_t Knob::getMovement() {
 
   currentPulse = encoder.getPulses();
 
-  if (lastPulse != currentPulse) {
-    return (currentPulse - lastPulse);
-  } else {
-    return 0;
-  }
+  // finds the amount of movement from previous position
+  int delta = currentPulse - lastPulse;
+  lastPulse = currentPulse;
+  return delta;
 }
 
 int8_t Knob::isPressed() {
@@ -35,4 +34,15 @@ int Knob::getCurrent() {
 
 int8_t Knob::reset() {
   encoder.reset();
+}
+
+int Knob::modCurrent(){
+  // raw tells the amount of movement from the knob
+  int raw = 0;
+  while(true){
+    raw += knob.getMovement()
+
+    // changes the current based on the movement from the knob
+    current = (raw * 0.1)
+  }
 }

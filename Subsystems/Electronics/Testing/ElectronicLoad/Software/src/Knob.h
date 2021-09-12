@@ -22,6 +22,10 @@ public:
   int getCurrent();
 
   int8_t reset();
+
+  // modify current
+  int modCurrent();
+  
 };
 
 #endif /* _KNOB_H_ */

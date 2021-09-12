@@ -3,6 +3,7 @@
 void init(); // Sets current = 0
 
 int main(void) {
+  while(true){
   int  selectedDigit = 0, timesPressed = 0, currentCurrent = 0;
   Knob niceKnob = Knob(
       KNOB_CHANNEL_A, KNOB_CHANNEL_B); // Initializing the niceKnob Knob class
@@ -14,6 +15,7 @@ int main(void) {
   currentCurrent =
       getCurrentCurrent(); // Currently set value for electronic current
 
+  /*
   if (niceKnob.isPressed() == 1) {
     timesPressed++; // Counts amount of times that the button has been pressed
   } else {
@@ -22,6 +24,14 @@ int main(void) {
     void highlightDigit(int selectedDigit, int currentCurrent,
         ST7565 lcd); // Calls digit highlighting function
   }
+  */
+
+  // mods the current based off of knob movement
+  niceKnob.modCurrent();
+  // prints the current to the lcd display
+  lcd.drawchar(0,0, niceKnob.getCurrent());
+  }
+
 }
 
 /**
