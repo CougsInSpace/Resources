@@ -8,7 +8,7 @@ class Knob {
 private:
   QEI encoder;
 
-  int lastPulse = 0, currentPosition = 0, current = 0;
+  int lastPulse = 0, currentPosition = 0, current = 0.1;
 
 public:
   Knob(PinName channelA, PinName channelB);
@@ -19,12 +19,12 @@ public:
 
   int getPosition();
 
-  int getCurrent();
+  double getCurrent();
 
   int8_t reset();
 
   // modify current
-  int modCurrent();
+  double modCurrent();
   
 };
 

@@ -5,6 +5,8 @@ void init(); // Sets current = 0
 int main(void) {
   while(true){
   int  selectedDigit = 0, timesPressed = 0, currentCurrent = 0;
+  double currentPower = 0.0; // this is calculating the power
+
   Knob niceKnob = Knob(
       KNOB_CHANNEL_A, KNOB_CHANNEL_B); // Initializing the niceKnob Knob class
   ST7565 lcd = ST7565(LCD_MOSI, LCD_SCK, LCD_CS1_N, LCD_RST_N,
@@ -30,6 +32,15 @@ int main(void) {
   niceKnob.modCurrent();
   // prints the current to the lcd display
   lcd.drawchar(0,0, niceKnob.getCurrent());
+
+  // get the output voltage from the board and displays to the lcd
+  lcdOutputVoltageDisplayed();
+
+  // calculates the power by multiplying the voltage and current
+  currentPower = currentVoltage * niceKnob.getCurrent();
+  // prints power to the lcd display
+  lcd.drawchar(0,2, currentPower);
+
   }
 
 }
