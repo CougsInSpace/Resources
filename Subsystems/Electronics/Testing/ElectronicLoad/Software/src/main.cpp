@@ -6,10 +6,10 @@ int main(void) {
   while(true){
   int  selectedDigit = 0, timesPressed = 0, currentCurrent = 0;
   double currentPower = 0.0; // this is calculating the power
+  double currentVoltage = 0.0; // this stores voltage for calculation
 
-  Knob niceKnob = Knob(
-      KNOB_CHANNEL_A, KNOB_CHANNEL_B); // Initializing the niceKnob Knob class
-  ST7565 lcd = ST7565(LCD_MOSI, LCD_SCK, LCD_CS1_N, LCD_RST_N,
+  Knob niceKnob(KNOB_A, KNOB_B); // Initializing the niceKnob Knob class
+  ST7565 lcd(LCD_MOSI, LCD_SCK, LCD_CS1_N, LCD_RST_N,
       LCD_A0); // Initializing the LCD screen
 
   void lcdFunction(int selectedDigit); // Runs the LCD screen
@@ -37,6 +37,7 @@ int main(void) {
   lcdOutputVoltageDisplayed();
 
   // calculates the power by multiplying the voltage and current
+  currentVoltage = getOutputVoltage();
   currentPower = currentVoltage * niceKnob.getCurrent();
   // prints power to the lcd display
   lcd.drawchar(0,2, currentPower);

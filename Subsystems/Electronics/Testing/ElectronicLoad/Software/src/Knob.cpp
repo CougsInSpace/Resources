@@ -40,9 +40,9 @@ double Knob::modCurrent(){
   // raw tells the amount of movement from the knob
   int raw = 0;
   while(true){
-    raw += knob.getMovement()
+    raw += this->getMovement();
 
     // changes the current based on the movement from the knob
-    current = (raw * 0.1)
+    current = (raw * 0.1);
   }
 }

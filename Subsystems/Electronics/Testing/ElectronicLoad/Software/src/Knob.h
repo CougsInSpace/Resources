@@ -4,7 +4,7 @@
 #include "Functions.h"
 #include "QEI.h"
 
-class Knob {
+class Knob: private NonCopyable<Knob> {
 private:
   QEI encoder;
 

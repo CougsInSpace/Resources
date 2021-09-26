@@ -389,9 +389,9 @@ ST7565::ST7565(PinName mosi, PinName sclk, PinName cs, PinName rst, PinName a0)
  
 void ST7565::st7565_init(void)
 {
-    wait_ms(100); 
+    wait_us(100e3); 
     _rst = 0;
-    wait_ms(100);
+    wait_us(100e3);
     _rst = 1;
     
  
@@ -405,21 +405,21 @@ void ST7565::st7565_init(void)
     // turn on voltage converter (VC=1, VR=0, VF=0)
     st7565_command(CMD_SET_POWER_CONTROL | 0x4);
     // wait for 50% rising
-    wait_ms(50);
+    wait_us(50e3);
  
     // turn on voltage regulator (VC=1, VR=1, VF=0)
     st7565_command(CMD_SET_POWER_CONTROL | 0x6);
     // wait >=50ms
-    wait_ms(20);
+    wait_us(20e3);
  
     // turn on voltage follower (VC=1, VR=1, VF=1)
     st7565_command(CMD_SET_POWER_CONTROL | 0x7);
     // wait
-    wait_ms(10);
+    wait_us(10e3);
     
     // set lcd operating voltage (regulator resistor, ref voltage resistor)
     st7565_command(CMD_SET_RESISTOR_RATIO | 0x4);
-    wait_ms(10);
+    wait_us(10e3);
  
  
 //    st7565_set_brightness(INITIAL_CONTRAST);
@@ -433,9 +433,9 @@ void ST7565::st7565_init(void)
     
     // reference voltage resistor    
     st7565_command(CMD_SET_VOLUME_FIRST);
-    wait_ms(10);
+    wait_us(10e3);
     st7565_command(CMD_SET_VOLUME_SECOND);
-    wait_ms(10);
+    wait_us(10e3);
  
  
  

@@ -77,7 +77,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #define CMD_NOP  0xE3
 #define CMD_TEST  0xF0
  
-class ST7565 {
+class ST7565: private NonCopyable<ST7565> {
      
  private:
   SPI _spi;
