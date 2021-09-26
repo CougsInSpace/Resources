@@ -176,33 +176,34 @@ typedef enum {
   USBTX         = STDIO_UART_TX,
   USBRX         = STDIO_UART_RX,
 
-  /*** Comms HW V1.0 ***/
+  /** Electronic Load **/
   LED1 = PD_2,
 
-  /*** Electronic Load ***/
-  ADC_INPUT_CURRENT = PC_0,
+  ADC_INPUT_CURRENT = PC_2,
   ADC_INPUT_VOLTAGE = PC_1,
 
-  ADC_OUTPUT_CURRENT     = PC_2,
+  ADC_OUTPUT_CURRENT     = PC_0,
   ADC_OUTPUT_VOLTAGE     = PC_3,
   DAC_OUTPUT_CURRENT_SET = PA_4,
 
-  SENSE_RANGE_HIGH = PC_5, // GPIO = determine later
-  SENSE_RANGE_MED  = PC_6, // GPIO
+  FET_1 = PC_5,
+  FET_2 = PC_6,
 
-  FAN_PWM = PA_8,
+  FAN_PWM  = PA_6,
+  FAN_TACH = PA_11,
 
-  KNOB_CHANNEL_A  = PC_7, // GPIO - encoder_A - knob twist clockwise
-  KNOB_CHANNEL_B  = PC_8, // GPIO - encoder_B - knob twist counter-clockwise
-  ENCODER_SW = PC_9, // GPIO - encoder - knob push
+  KNOB_A    = PC_7,
+  KNOB_B    = PC_8,
+  KNOB_SW_N = PC_9,
 
-  UI_BUTTON1 = PC_11, // Switch modes (my choice, Bradley demands it)
+  NICE_BUTTON_N = PC_11,
 
-  LCD_MOSI  = PA_7, // LCD master to slave input
-  LCD_SCK   = PA_5, // LCD serial clock
-  LCD_A0    = PA_0,   // GPIO
-  LCD_RST_N = PA_1,   // GPIO Active low - pull to a low signal to reset
-  LCD_CS1_N = PA_2,   // GPIO Active low - pull to a low signal to reset
+  LCD_MOSI  = PA_7,
+  LCD_SCK   = PA_5,
+  LCD_A0    = PA_0,
+  LCD_RST_N = PA_1,
+  LCD_CS1_N = PA_2,
+
 } PinName;
 
 #ifdef __cplusplus
