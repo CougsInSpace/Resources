@@ -84,7 +84,7 @@
  * It defaults
  *
  * An optional index channel can be used which determines when a full
- * revolution has occured.
+ * revolution has occurred.
  *
  * If a 4 pules per revolution encoder was used, with X4 encoding,
  * the following would be observed.
@@ -151,17 +151,17 @@ QEI::QEI(PinName channelA,
     //X2 encoding uses interrupts on only channel A.
     //X4 encoding uses interrupts on      channel A,
     //and on channel B.
-    channelA_.rise(this, &QEI::encode);
-    channelA_.fall(this, &QEI::encode);
+    channelA_.rise(callback(this, &QEI::encode));
+    channelA_.fall(callback(this, &QEI::encode));
  
     //If we're using X4 encoding, then attach interrupts to channel B too.
     if (encoding == X4_ENCODING) {
-        channelB_.rise(this, &QEI::encode);
-        channelB_.fall(this, &QEI::encode);
+        channelB_.rise(callback(this, &QEI::encode));
+        channelB_.fall(callback(this, &QEI::encode));
     }
     //Index is optional.
     if (index !=  NC) {
-        index_.rise(this, &QEI::index);
+        index_.rise(callback(this, &QEI::index));
     }
  
 }
