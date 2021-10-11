@@ -143,7 +143,7 @@
 /**
  * Quadrature Encoder Interface.
  */
-class QEI {
+class QEI: private NonCopyable<QEI> {
  
 public:
  

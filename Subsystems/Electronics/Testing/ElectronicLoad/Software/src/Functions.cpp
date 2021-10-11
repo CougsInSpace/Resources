@@ -6,17 +6,17 @@ AnalogIn  voltageIn(ADC_INPUT_VOLTAGE);
 AnalogIn  voltageOut(ADC_OUTPUT_VOLTAGE);
 AnalogOut currentSet(DAC_OUTPUT_CURRENT_SET);
 
-Serial serial(USBTX, USBRX);
+BufferedSerial serial(USBTX, USBRX);
 
-DigitalOut bypassShunt100mA(SENSE_RANGE_HIGH); // 0 to 100 mA
-DigitalOut bypassShunt1A(SENSE_RANGE_MED);     // 0.1 to 1 A
+DigitalOut bypassShunt100mA(FET_2); // 0 to 100 mA
+DigitalOut bypassShunt1A(FET_1);     // 0.1 to 1 A
 // 10A range cannot be bypassed: 1 to 10 A
 
-DigitalIn knobPushIn(ENCODER_SW);
-DigitalIn knobChannelA(KNOB_CHANNEL_A);
-DigitalIn knobChannelB(KNOB_CHANNEL_B);
+DigitalIn knobPushIn(KNOB_SW_N);
+DigitalIn knobChannelA(KNOB_A);
+DigitalIn knobChannelB(KNOB_B);
 
-AnalogIn buttonPushIn(UI_BUTTON1);
+AnalogIn buttonPushIn(NICE_BUTTON_N); // come back later to check
 
 ST7565 lcd(LCD_MOSI, LCD_SCK, LCD_A0, LCD_RST_N, LCD_CS1_N);
 

@@ -25,7 +25,7 @@ extern AnalogIn  voltageIn;
 extern AnalogIn  voltageOut;
 extern AnalogOut currentSet;
 
-extern Serial serial;
+extern BufferedSerial serial;
 
 extern DigitalOut bypassShunt100mA; // 0 to 100 mA
 extern DigitalOut bypassShunt1A;    // 0.1 to 1 A
