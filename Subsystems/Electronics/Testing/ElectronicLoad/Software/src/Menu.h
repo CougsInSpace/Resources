@@ -6,29 +6,29 @@
 
 class Menu : private NonCopyable<Menu> {
 private:
-  double current, voltage;
-  double power, resistance;
+    AnalogIn outputVoltage;
+    AnalogIn outputCurrent;
+    AnalogIn inputVoltage;
+    AnalogIn inputCurrent;
 
 public:
-  Menu();
+  Menu(PinName pinOutputVoltage, PinName pinOutputCurrent, PinName pinInputVoltage, PinName pinInputCurrent);
 
+  void updateDisplay();
 
-  double getCurrent();
-  double getVoltage();
-  double getPower();
-  double getResistance();
+  // getters
+  double getOutputCurrent();
+  double getOutputVoltage();
+  double getInputCurrent();
+  double getInputVoltage();
 
-  void setCurrent(double newCurrent);
-  void setVoltage(double newVoltage);
-  void setPower(double newPower);
-  void setResistance(double newResistance);
-
-  double calculatePower();
+  // calculations
+  double calculatePower(double voltage, double current);
   double calculateResistance();
+  double calculateEfficiency();
 
-  void lcdDisplayCurrent();
-  void lcdDisplayPower();
-  void lcdDisplayResistance();
+  // display
+  void draw(int x, int line, double data, char dataType[20]);
 
 };
 

@@ -1,29 +1,43 @@
 #include "Menu.h"
 
-Menu::Menu(){
-    while(true){
-        int  selectedDigit = 0;
+/**
+ * @brief outputs a menu to the lcd displays that allows the user to view
+ * important values and allows user to change the current and power values
+ *
+ * @param pinOutputVoltage pin name for output voltage sensor
+ * @param pinOutputCurrent pin name for
+ * @param pinInputVoltage pin name for auxiliary voltage sensor
+ * @param pinInputCurrent pin name for
+ */
+Menu::Menu(PinName pinOutputVoltage, PinName pinOutputCurrent,
+    PinName pinInputVoltage, PinName pinInputCurrent) :
+  outputVoltage(pinOutputVoltage), outputCurrent(pinOutputCurrent), inputVoltage(pinInputVoltage), inputCurrent(pinInputCurrent) {
+  while (true) {
+    // will probably need to change niceknob a little to actually work properly
+    // with this program
+    Knob niceKnob(KNOB_A, KNOB_B); // Initializing the niceKnob Knob class
 
-        //char displayCurrent[20], displayPower[20], displayResistance[20]; 
+    ST7565 lcd(LCD_MOSI, LCD_SCK, LCD_CS1_N, LCD_RST_N,
+        LCD_A0); // Initializing the LCD screen
 
-        Knob niceKnob(KNOB_A, KNOB_B); // Initializing the niceKnob Knob class
-        ST7565 lcd(LCD_MOSI, LCD_SCK, LCD_CS1_N, LCD_RST_N, LCD_A0); // Initializing the LCD screen
+    // update the display with new values
+    updateDisplay();
+  }
+}
 
-        // retrives the current from the knob
-        setCurrent(niceKnob.getCurrent());
-        // sets the power to calculated power value
-        setPower(calculatePower());
-        // sets the resistance to calculated resistance value
-        setResistance(calculateResistance());
-
-        // need to figure out where to get the voltage
-        // also need to add in a option to change the power and current using the knob to traverse the screen for options.
-
-        // now since we have the values we now can print to the display
-        lcdDisplayCurrent();
-        lcdDisplayPower();
-        lcdDisplayResistance();
-    }
+/**
+ * @brief Calls all functions to display to  lcd
+ */
+void Menu::updateDisplay() {
+  // first section of the display
+  draw(0, 0, getOutputCurrent(), "%5.2fI");
+  draw(0, 0, calculatePower(getOutputVoltage(), getOutputCurrent()), "%5.2fW");
+  draw(0, 0, calculateResistance(), "%5.2fR");
+  // second section of the display
+  draw(32, 0, getInputCurrent(), "%5.2fI");
+  draw(32, 0, calculatePower(getInputVoltage(), getInputCurrent()), "%5.2fW");
+  draw(032, 0, calculateEfficiency(), "%5.2f%");
+  
 }
 
 /**
@@ -31,8 +45,8 @@ Menu::Menu(){
  *
  * @return double current returned
  */
-double Menu::getCurrent(){
-    return current;
+double Menu::getOutputCurrent() {
+  return outputCurrent.read() * GAIN_OUTPUT_CURRENT;
 }
 
 /**
@@ -40,17 +54,8 @@ double Menu::getCurrent(){
  *
  * @return double voltage returned
  */
-double Menu::getVoltage(){
-    return voltage;
-}
-
-/**
- * @brief returns the private variable power
- *
- * @return double power returned
- */
-double Menu::getPower(){
-    return power;
+double Menu::getOutputVoltage() {
+  return outputVoltage.read_voltage() * GAIN_OUTPUT_VOLTAGE;
 }
 
 /**
@@ -58,95 +63,67 @@ double Menu::getPower(){
  *
  * @return double resistance returned
  */
-double Menu::getResistance(){
-    return resistance;
+double Menu::getInputCurrent() {
+  return inputCurrent.read() * GAIN_INPUT_CURRENT;
 }
 
 /**
- * @brief sets the private data to new current
- */
-void Menu::setCurrent(double newCurrent){
-    current = newCurrent;
-}
-
-/**
- * @brief sets the private data to new voltage
- */
-void Menu::setVoltage(double newVoltage){
-    voltage = newVoltage;
-}
-
-/**
- * @brief sets the private data to new power
- */
-void Menu::setPower(double newPower){
-    power = newPower;
-}
-  
-  /**
- * @brief sets the private data to new resistance
- */
-void Menu::setResistance(double newResistance){
-    resistance = newResistance;
-}
-
-/**
- * @brief returns the the calculated value for power
+ * @brief returns the private variable Inputvoltage
  *
- * @return double power returned
+ * @return double voltage returned
  */
-double Menu::calculatePower(){
-    double power = 0;
+double Menu::getInputVoltage() {
+  return inputVoltage.read() * GAIN_INPUT_VOLTAGE;
+}
 
-    // calculates the power by multiplying the voltage and the current
-    power = getVoltage() * getCurrent();
 
-    return power;
+/**
+ * @brief calculates the power using voltage and current 
+ * @return double power
+ */
+double Menu::calculatePower(double voltage, double current) {
+  double power = 0.0;
+
+  // calculates the power by multiplying the voltage and the current
+  power = getOutputVoltage() * getOutputCurrent();
+
+  return power;
 }
 
 /**
- * @brief returns the the calculated value for resistance
- *
- * @return double resistance returned
+ * @brief calculates the resistance using voltage and current
+ * @return double resistance
  */
-double Menu::calculateResistance(){
-    double resistance = 0;
+double Menu::calculateResistance() {
+  double resistance = 0.0;
 
-    // calculates the power by multiplying the voltage and the current
-    resistance = getVoltage() / getCurrent();
+  // calculates the power by multiplying the voltage and the current
+  resistance = getOutputVoltage() / getOutputCurrent();
 
-    return resistance;
+  return resistance;
+}
+
+/**
+ * @brief calculates the efficiency using input power and output power 
+ * @return double efficiency
+ */
+double Menu::calculateEfficiency() {
+  double efficiency = 0.0;
+
+  // calculate the efficiency by dividing the output power by the input power;
+  efficiency = calculatePower(getOutputVoltage(), getOutputCurrent()) / calculatePower(getInputVoltage(), getInputCurrent());
+
+  return efficiency;
 }
 
 /**
  * @brief Display current
+ * @param int x and int line for placement in the board, double data, and char DataType
  */
-void Menu::lcdDisplayCurrent(){
-    char currentDisplay[20];
+void Menu::draw(int x, int line, double data, char dataType[5]) {
+  char display[20];
 
-    sprintf(currentDisplay, "I: %d", getCurrent());
+  sprintf(display, dataType, data);
 
-    lcd.drawstring(0, 1, currentDisplay);
-}
-
-/**
- * @brief Display power
- */
-void Menu::lcdDisplayPower(){
-    char powerDisplay[20];
-
-    sprintf(powerDisplay, "P: %d", getPower());
-
-    lcd.drawstring(0, 2, powerDisplay);
-}
-
-/**
- * @brief Display resistance
- */
-void Menu::lcdDisplayResistance(){
-    char resistanceDisplay[20];
-
-    sprintf(resistanceDisplay, "R: %d", getResistance());
-
-    lcd.drawstring(0, 3, resistanceDisplay);
+  lcd.drawstring(x, line, display);
 }
