@@ -42,15 +42,14 @@ Menu::Menu(PinName pinOutputVoltage, PinName pinOutputCurrent,
             //choice to mod power
         this->drawSelectDot(1);
          niceKnob.reset();
-         //somehow set power
-         //setPower(niceKnob.getMovement());
+         setCurrentWP(niceKnob.getMovement()*.1);
           }
 
           if(modifyChoice == 2){
             //choice to mod resistance
         this->drawSelectDot(2);
          niceKnob.reset();
-         setResistance(niceKnob.getMovement() % 4);
+         setCurrentWR(niceKnob.getMovement() % 4);
           }
 
 

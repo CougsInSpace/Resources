@@ -53,7 +53,16 @@ void setCurrent(double current);
  *
  * @param current through going throught the 4 different resistance setting in amps
  */
-void setResistance(double resistance);
+void setCurrentWR(double resistance);
+
+/**
+ * @brief Set the resistance and thus the current
+ * Bypasses the proper shunt resistors
+ * Constrains current to proper range of 0.0Ω to 10.0Ω
+ *
+ * @param current through going throught the 4 different resistance setting in amps
+ */
+void setCurrentWP(double power)
 
 /**
  * @brief Get the output current

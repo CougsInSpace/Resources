@@ -31,14 +31,14 @@ int main(void) {
   // mods the current based off of knob movement
   niceKnob.modCurrent();
   // prints the current to the lcd display
-  lcd.drawchar(0,0, niceKnob.getCurrent());
+  lcd.drawchar(0,0, getOutputCurrent());
 
   // get the output voltage from the board and displays to the lcd
   lcdOutputVoltageDisplayed();
 
   // calculates the power by multiplying the voltage and current
   currentVoltage = getOutputVoltage();
-  currentPower = currentVoltage * niceKnob.getCurrent();
+  currentPower = currentVoltage * getOutputCurrent();
   // prints power to the lcd display
   lcd.drawchar(0,2, currentPower);
 

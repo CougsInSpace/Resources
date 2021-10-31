@@ -53,6 +53,7 @@ void setCurrent(double current) {
   currentSet.write((float)shuntVoltage);
 }
 
+
 /**
  * @brief Set the resistance and thus the current
  * Bypasses the proper shunt resistors
@@ -60,7 +61,7 @@ void setCurrent(double current) {
  *
  * @param current through going throught the 4 different resistance setting in amps
  */
-void setResistance(double resistance) {
+void setCurrentWR(double resistance) {
   double shunt = 0.0;
 
   if (resistance == 0) {
@@ -81,7 +82,25 @@ void setResistance(double resistance) {
     shunt            = RES_HIGH_ON + RES_MED_ON + RES_LOW_ON;
   }
 
-  double shuntVoltage = getOutputCurrent() * shunt;
+  double shuntVoltage = getOutputVoltage() / shunt;
+  shuntVoltage        = shuntVoltage * GAIN_SHUNT;
+  currentSet.write((float)shuntVoltage);
+}
+
+/**
+ * @brief Set the resistance and thus the current
+ * Bypasses the proper shunt resistors
+ * Constrains current to proper range of 0.0Ω to 10.0Ω
+ *
+ * @param current by modulating the power 
+ */
+void setCurrentWP(double power) {
+   if (power > 100)
+    power = 100;
+  if (power < 0.0)
+    power = 0.0;
+
+  double shuntVoltage = power/getOutputVoltage();
   shuntVoltage        = shuntVoltage * GAIN_SHUNT;
   currentSet.write((float)shuntVoltage);
 }
