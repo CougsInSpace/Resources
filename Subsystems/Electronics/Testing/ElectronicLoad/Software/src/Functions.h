@@ -6,6 +6,8 @@
 #include "LCDfont.h"
 #include "PinNames.h"
 #include "QEI.h"
+#include "Menu.h"
+#include "fan.h"
 #include <mbed.h>
 
 #define RES_HIGH_SHORT (0.00082)
@@ -62,7 +64,7 @@ void setCurrentWR(double resistance);
  *
  * @param current through going throught the 4 different resistance setting in amps
  */
-void setCurrentWP(double power)
+void setCurrentWP(double power);
 
 /**
  * @brief Get the output current

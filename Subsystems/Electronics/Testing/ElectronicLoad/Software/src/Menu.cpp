@@ -22,7 +22,7 @@ Menu::Menu(PinName pinOutputVoltage, PinName pinOutputCurrent,
         LCD_A0); // Initializing the LCD screen
         
         if(niceKnob.isPressed()){
-          if(modifyChoice = 2){
+          if(modifyChoice == 2){
             modifyChoice = 0;
           }
           else {

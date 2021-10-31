@@ -4,43 +4,13 @@ void init(); // Sets current = 0
 
 int main(void) {
   while(true){
-  int  selectedDigit = 0, timesPressed = 0, currentCurrent = 0;
-  double currentPower = 0.0; // this is calculating the power
-  double currentVoltage = 0.0; // this stores voltage for calculation
+ 
 
-  Knob niceKnob(KNOB_A, KNOB_B); // Initializing the niceKnob Knob class
-  ST7565 lcd(LCD_MOSI, LCD_SCK, LCD_CS1_N, LCD_RST_N,
-      LCD_A0); // Initializing the LCD screen
+  Fan niceFan(FAN_PWM, FAN_TACH);
 
-  void lcdFunction(int selectedDigit); // Runs the LCD screen
-
-  currentCurrent =
-      getCurrentCurrent(); // Currently set value for electronic current
-
-  /*
-  if (niceKnob.isPressed() == 1) {
-    timesPressed++; // Counts amount of times that the button has been pressed
-  } else {
-    int determineHDValue(
-        int selectedDigit, int timesPressed); // Calls digit selection function
-    void highlightDigit(int selectedDigit, int currentCurrent,
-        ST7565 lcd); // Calls digit highlighting function
-  }
-  */
-
-  // mods the current based off of knob movement
-  niceKnob.modCurrent();
-  // prints the current to the lcd display
-  lcd.drawchar(0,0, getOutputCurrent());
-
-  // get the output voltage from the board and displays to the lcd
-  lcdOutputVoltageDisplayed();
-
-  // calculates the power by multiplying the voltage and current
-  currentVoltage = getOutputVoltage();
-  currentPower = currentVoltage * getOutputCurrent();
-  // prints power to the lcd display
-  lcd.drawchar(0,2, currentPower);
+ 
+ Menu niceMenu(ADC_OUTPUT_VOLTAGE, ADC_OUTPUT_CURRENT, ADC_INPUT_VOLTAGE, ADC_INPUT_CURRENT);
+ 
 
   }
 
