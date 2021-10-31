@@ -4,6 +4,7 @@
 #include "Functions.h"
 #include <mbed.h>
 
+
 class Menu : private NonCopyable<Menu> {
 private:
     AnalogIn outputVoltage;
@@ -29,6 +30,7 @@ public:
 
   // display
   void draw(int x, int line, double data, char dataType[20]);
+  void drawSelectDot(int line);
 
 };
 

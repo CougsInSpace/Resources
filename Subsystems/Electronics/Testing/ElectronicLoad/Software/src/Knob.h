@@ -19,12 +19,10 @@ public:
 
   int getPosition();
 
-  double getCurrent();
-
   int8_t reset();
 
   // modify current
-  double modCurrent();
+  void modCurrent();
   
 };
 

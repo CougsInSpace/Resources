@@ -27,22 +27,6 @@ int Knob::getPosition() {
   return (currentPosition + movement);
 }
 
-double Knob::getCurrent() {
-  current = (current + 0);
-  return current;
-}
-
 int8_t Knob::reset() {
   encoder.reset();
-}
-
-double Knob::modCurrent(){
-  // raw tells the amount of movement from the knob
-  int raw = 0;
-  while(true){
-    raw += this->getMovement();
-
-    // changes the current based on the movement from the knob
-    current = (raw * 0.1);
-  }
 }

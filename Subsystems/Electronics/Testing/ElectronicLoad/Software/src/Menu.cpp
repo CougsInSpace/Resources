@@ -12,6 +12,7 @@
 Menu::Menu(PinName pinOutputVoltage, PinName pinOutputCurrent,
     PinName pinInputVoltage, PinName pinInputCurrent) :
   outputVoltage(pinOutputVoltage), outputCurrent(pinOutputCurrent), inputVoltage(pinInputVoltage), inputCurrent(pinInputCurrent) {
+     int modifyChoice = 0;
   while (true) {
     // will probably need to change niceknob a little to actually work properly
     // with this program
@@ -19,6 +20,40 @@ Menu::Menu(PinName pinOutputVoltage, PinName pinOutputCurrent,
 
     ST7565 lcd(LCD_MOSI, LCD_SCK, LCD_CS1_N, LCD_RST_N,
         LCD_A0); // Initializing the LCD screen
+        
+        if(niceKnob.isPressed()){
+          if(modifyChoice = 2){
+            modifyChoice = 0;
+          }
+          else {
+            modifyChoice++;
+          }
+        }
+
+        //DRAW SELECT DOT ON the line to modify and modify that thing
+         if(modifyChoice == 0){
+           //choice to mod current
+        this->drawSelectDot(0);
+         niceKnob.reset();
+         setCurrent((niceKnob.getMovement()*.1));
+          }
+
+          if(modifyChoice == 1){
+            //choice to mod power
+        this->drawSelectDot(1);
+         niceKnob.reset();
+         //somehow set power
+         //setPower(niceKnob.getMovement());
+          }
+
+          if(modifyChoice == 2){
+            //choice to mod resistance
+        this->drawSelectDot(2);
+         niceKnob.reset();
+         setResistance(niceKnob.getMovement() % 4);
+          }
+
+
 
     // update the display with new values
     updateDisplay();
@@ -30,13 +65,13 @@ Menu::Menu(PinName pinOutputVoltage, PinName pinOutputCurrent,
  */
 void Menu::updateDisplay() {
   // first section of the display
-  draw(0, 0, getOutputCurrent(), "%5.2fI");
-  draw(0, 0, calculatePower(getOutputVoltage(), getOutputCurrent()), "%5.2fW");
-  draw(0, 0, calculateResistance(), "%5.2fR");
+  draw(8, 0, getOutputCurrent(), "%5.2fI");
+  draw(8, 1, calculatePower(getOutputVoltage(), getOutputCurrent()), "%5.2fW");
+  draw(8, 2, calculateResistance(), "%5.2fR");
   // second section of the display
-  draw(32, 0, getInputCurrent(), "%5.2fI");
-  draw(32, 0, calculatePower(getInputVoltage(), getInputCurrent()), "%5.2fW");
-  draw(032, 0, calculateEfficiency(), "%5.2f%");
+  draw(40, 0, getInputCurrent(), "%5.2fI");
+  draw(40, 1, calculatePower(getInputVoltage(), getInputCurrent()), "%5.2fW");
+  draw(40, 2, calculateEfficiency(), "%5.2f%");
   
 }
 
@@ -127,3 +162,8 @@ void Menu::draw(int x, int line, double data, char dataType[5]) {
 
   lcd.drawstring(x, line, display);
 }
+
+void Menu::drawSelectDot(int line){
+  lcd.fillcircle(0, line, 3, 1);
+}
+

@@ -8,12 +8,12 @@
 #include "QEI.h"
 #include <mbed.h>
 
-#define RES_HIGH_SHORT (0.0008)
-#define RES_HIGH_ON (0.5)
-#define RES_MED_SHORT (0.0008)
+#define RES_HIGH_SHORT (0.00082)
+#define RES_HIGH_ON (0.510)
+#define RES_MED_SHORT (0.00082)
 #define RES_MED_ON (0.05)
 #define RES_LOW_ON (0.005)
-#define GAIN_SHUNT (48.0 / 5.0)
+#define GAIN_SHUNT (48.0 / 3.1)
 #define GAIN_OUTPUT_CURRENT ((5.0 / 50.0) / 0.005)
 #define GAIN_OUTPUT_VOLTAGE (5.0)
 #define GAIN_INPUT_CURRENT ((5.0 / 50.0) / 0.005)
@@ -45,6 +45,15 @@ extern ST7565 lcd;
  * @param current in amps
  */
 void setCurrent(double current);
+
+/**
+ * @brief Set the resistance and thus the current
+ * Bypasses the proper shunt resistors
+ * Constrains current to proper range of 0.0Ω to 10.0Ω
+ *
+ * @param current through going throught the 4 different resistance setting in amps
+ */
+void setResistance(double resistance);
 
 /**
  * @brief Get the output current

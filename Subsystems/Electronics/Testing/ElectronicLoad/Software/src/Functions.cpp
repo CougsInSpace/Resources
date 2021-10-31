@@ -39,8 +39,8 @@ void setCurrent(double current) {
     bypassShunt1A    = 1;
     shunt            = RES_HIGH_SHORT + RES_MED_SHORT + RES_LOW_ON;
   } else if (current > 0.1) {
-    bypassShunt100mA = 1;
-    bypassShunt1A    = 0;
+    bypassShunt100mA = 0;
+    bypassShunt1A    = 1;
     shunt            = RES_HIGH_SHORT + RES_MED_ON + RES_LOW_ON;
   } else {
     bypassShunt100mA = 0;
@@ -49,6 +49,39 @@ void setCurrent(double current) {
   }
 
   double shuntVoltage = current * shunt;
+  shuntVoltage        = shuntVoltage * GAIN_SHUNT;
+  currentSet.write((float)shuntVoltage);
+}
+
+/**
+ * @brief Set the resistance and thus the current
+ * Bypasses the proper shunt resistors
+ * Constrains current to proper range of 0.0Ω to 10.0Ω
+ *
+ * @param current through going throught the 4 different resistance setting in amps
+ */
+void setResistance(double resistance) {
+  double shunt = 0.0;
+
+  if (resistance == 0) {
+    bypassShunt100mA = 1;
+    bypassShunt1A    = 1;
+    shunt            = RES_HIGH_SHORT + RES_MED_SHORT + RES_LOW_ON;
+  } else if (resistance == 1) {
+    bypassShunt100mA = 0;
+    bypassShunt1A    = 1;
+    shunt            = RES_HIGH_SHORT + RES_MED_ON + RES_LOW_ON;
+    } else if (resistance == 2) {
+    bypassShunt100mA = 1;
+    bypassShunt1A    = 0;
+    shunt            = RES_HIGH_SHORT + RES_MED_ON + RES_LOW_ON;
+  } else if(resistance == 3) {
+    bypassShunt100mA = 0;
+    bypassShunt1A    = 0;
+    shunt            = RES_HIGH_ON + RES_MED_ON + RES_LOW_ON;
+  }
+
+  double shuntVoltage = getOutputCurrent() * shunt;
   shuntVoltage        = shuntVoltage * GAIN_SHUNT;
   currentSet.write((float)shuntVoltage);
 }
