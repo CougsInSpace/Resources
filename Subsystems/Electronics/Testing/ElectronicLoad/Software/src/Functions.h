@@ -16,10 +16,10 @@
 #define RES_MED_ON (0.05)
 #define RES_LOW_ON (0.005)
 #define GAIN_SHUNT (48.0 / 3.1)
-#define GAIN_OUTPUT_CURRENT ((5.0 / 50.0) / 0.005)
-#define GAIN_OUTPUT_VOLTAGE (5.0)
-#define GAIN_INPUT_CURRENT ((5.0 / 50.0) / 0.005)
-#define GAIN_INPUT_VOLTAGE (5.0)
+#define GAIN_OUTPUT_CURRENT ((3.1 / 50.0) / 0.005)
+#define GAIN_OUTPUT_VOLTAGE (3.1 / (10.0/(10.0 + 30.0)))
+#define GAIN_INPUT_CURRENT ((3.1 / 50.0) / 0.005)
+#define GAIN_INPUT_VOLTAGE (3.1 / (10.0/(10.0 + 30.0)))
 
 extern AnalogIn  currentIn;
 extern AnalogIn  currentOut;
@@ -39,7 +39,7 @@ extern DigitalIn knobChannelB;
 
 extern AnalogIn buttonPushIn;
 
-extern ST7565 lcd;
+//extern ST7565 lcd;
 
 /**
  * @brief Set the Current in amps
@@ -108,49 +108,49 @@ int getInputButton();
  *
  * @return double display main screen
  */
-void mainDisplay(double selectedDigit);
+//void mainDisplay(double selectedDigit);
 
 /**
  * @brief Display input current on LCD
  *
  * @return input current displayed on the the lcd main screen
  */
-double lcdInputCurrentDisplayed(double selectedDigit);
+//double lcdInputCurrentDisplayed(double selectedDigit);
 
 /**
  * @brief Display output current on LCD
  *
  * @return ouput current displayed on the lcd main screen
  */
-double lcdOutputCurrentDisplayed();
+//double lcdOutputCurrentDisplayed();
 
 /**
  * @brief Display input voltage
  *
  * @return double input voltage displayed on the lcd main screen
  */
-double lcdInputVoltageDisplayed();
+//double lcdInputVoltageDisplayed();
 
 /**
  * @brief Display ouput voltage
  *
  * @return double output voltage displayed on the lcd main screen
  */
-double lcdOutputVoltageDisplayed();
+//double lcdOutputVoltageDisplayed();
 
 /**
  * @brief Run the main for if the button is pressed
  *
  * @return double display button menu
  */
-double lcdButtonMenu();
+//double lcdButtonMenu();
 
 /**
  * @brief Run the display of the lcd
  *
  * @return proper menu displayed
  */
-void lcdFunction(double selectedDigit);
+//void lcdFunction(double selectedDigit);
 
 /**
  * @brief  Sets current to zero

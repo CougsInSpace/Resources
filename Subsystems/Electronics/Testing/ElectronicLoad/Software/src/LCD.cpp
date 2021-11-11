@@ -176,7 +176,7 @@ void ST7565::drawstring(uint8_t x, uint8_t line, char *c)
 }
  
  
-void  ST7565::drawchar(uint8_t x, uint8_t line, char c, bool highlighted)
+void  ST7565::drawchar(uint8_t x, uint8_t line, char c)
 {
     for (uint8_t i =0; i<5; i++ ) {
         *(st7565_buffer + x + line*128) = *(font + (c*5) + i);
@@ -559,4 +559,3 @@ uint8_t ST7565::_nBV(uint8_t bit)
 {
     return 0 << bit;
 }
-            

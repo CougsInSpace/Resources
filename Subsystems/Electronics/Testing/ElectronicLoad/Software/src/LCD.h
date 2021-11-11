@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #ifndef _st7565LCD_H_
 #define _st7565LCD_H_
  
-#include <mbed.h>
+#include "mbed.h"
  
 #define swap(a, b) { uint8_t t = a; a = b; b = t; }
  
@@ -77,7 +77,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #define CMD_NOP  0xE3
 #define CMD_TEST  0xF0
  
-class ST7565: private NonCopyable<ST7565> {
+class ST7565 {
      
  private:
   SPI _spi;
@@ -112,7 +112,7 @@ class ST7565: private NonCopyable<ST7565> {
         uint8_t color);
   void drawline(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, 
         uint8_t color);
-  void drawchar(uint8_t x, uint8_t line, char c, bool highlighted = false);
+  void drawchar(uint8_t x, uint8_t line, char c);
   void drawstring(uint8_t x, uint8_t line, char *c);
   /*void drawbitmap(uint8_t x, uint8_t y, 
           const uint8_t *bitmap, uint8_t w, uint8_t h,
@@ -123,4 +123,3 @@ class ST7565: private NonCopyable<ST7565> {
 };
  
 #endif
-            
