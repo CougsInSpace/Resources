@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -509,6 +509,36 @@
 <text x="0" y="12" size="0.8" layer="51" font="vector" ratio="15" align="center">Pixels</text>
 <text x="0" y="-1.8" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="ORION-B16">
+<smd name="P$1" x="8.28" y="-7.62" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$2" x="8.28" y="-6.35" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$3" x="8.28" y="-5.08" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$4" x="8.28" y="-3.81" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$5" x="8.28" y="-2.54" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$6" x="8.28" y="-1.27" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$7" x="8.28" y="0" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$8" x="8.28" y="2.81" dx="1.6764" dy="0.8" layer="1"/>
+<smd name="P$9" x="8.28" y="4.08" dx="1.6764" dy="0.8" layer="1"/>
+<smd name="P$10" x="8.28" y="5.35" dx="1.6764" dy="0.8" layer="1"/>
+<smd name="P$11" x="8.28" y="6.62" dx="1.6764" dy="0.8" layer="1"/>
+<smd name="P$12" x="8.28" y="7.89" dx="1.6764" dy="0.8" layer="1"/>
+<smd name="P$13" x="-3.81" y="-7.62" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$14" x="-3.81" y="-6.35" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$15" x="-3.81" y="-5.08" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$16" x="-3.81" y="-3.81" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$17" x="-3.81" y="-2.54" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$18" x="-3.81" y="-1.27" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$19" x="-3.81" y="0" dx="1.6764" dy="0.8128" layer="1"/>
+<smd name="P$20" x="-3.81" y="2.81" dx="1.6764" dy="0.8" layer="1"/>
+<smd name="P$21" x="-3.81" y="4.08" dx="1.6764" dy="0.8" layer="1"/>
+<smd name="P$22" x="-3.81" y="5.35" dx="1.6764" dy="0.8" layer="1"/>
+<smd name="P$23" x="-3.81" y="6.62" dx="1.6764" dy="0.8" layer="1"/>
+<smd name="P$24" x="-3.81" y="7.89" dx="1.6764" dy="0.8" layer="1"/>
+<wire x1="-4" y1="8.5" x2="-4" y2="-9" width="0.1524" layer="1"/>
+<wire x1="-4" y1="-9" x2="8.2" y2="-9" width="0.1524" layer="1"/>
+<wire x1="8.2" y1="-9" x2="8.2" y2="8.5" width="0.1524" layer="1"/>
+<wire x1="8.2" y1="8.5" x2="-4" y2="8.5" width="0.1524" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CIS_BUS-POWER">
@@ -694,6 +724,34 @@
 <text x="0" y="-21.082" size="1.778" layer="97" align="center">&gt;SKU</text>
 <pin name="SHIELD" x="12.7" y="-15.24" visible="pin" length="short" direction="pas" rot="R180"/>
 <pin name="VOUT" x="-12.7" y="15.24" length="short" direction="pwr"/>
+</symbol>
+<symbol name="ORION_B16">
+<description>&lt;h3&gt; Orion B16 GPS Module &lt;/h3&gt;</description>
+<pin name="BOOT_SEL" x="15.24" y="27.94" length="short" direction="in"/>
+<pin name="SPI_MISO" x="45.72" y="7.62" length="short" direction="out" rot="R180"/>
+<pin name="1PPS" x="15.24" y="22.86" length="short" direction="out"/>
+<pin name="!RSTN" x="15.24" y="17.78" length="short" direction="in"/>
+<pin name="!SPI_CSN" x="45.72" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="DGND@1" x="15.24" y="12.7" length="short" direction="pwr"/>
+<pin name="RF_IN" x="45.72" y="35.56" length="short" direction="in" rot="R180"/>
+<pin name="DGND@2" x="15.24" y="10.16" length="short" direction="pwr"/>
+<pin name="DGND@3" x="15.24" y="7.62" length="short" direction="pwr"/>
+<pin name="SPI_MOSI" x="45.72" y="10.16" length="short" direction="out" rot="R180"/>
+<pin name="SPI_CLK" x="45.72" y="12.7" length="short" direction="in" rot="R180"/>
+<pin name="SDA" x="45.72" y="25.4" length="short" rot="R180"/>
+<pin name="TXD" x="45.72" y="20.32" length="short" direction="out" rot="R180"/>
+<pin name="RXD" x="45.72" y="17.78" length="short" direction="out" rot="R180"/>
+<pin name="V_BCKP" x="15.24" y="33.02" length="short" direction="pwr"/>
+<pin name="VCC" x="15.24" y="35.56" length="short" direction="pwr"/>
+<pin name="DGND@4" x="15.24" y="5.08" length="short" direction="pwr"/>
+<wire x1="17.78" y1="2.54" x2="17.78" y2="38.1" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="38.1" x2="43.18" y2="38.1" width="0.1524" layer="94"/>
+<wire x1="43.18" y1="38.1" x2="43.18" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="43.18" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="94"/>
+<pin name="SCL" x="45.72" y="22.86" length="short" direction="in" rot="R180"/>
+<text x="30.48" y="40.64" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="30.48" y="0" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="30.48" y="-2.54" size="1.778" layer="97" align="center">&gt;SKU</text>
 </symbol>
 </symbols>
 <devicesets>
