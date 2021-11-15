@@ -2,12 +2,11 @@
 #define _FUNCTIONS_H_
 
 #include "Knob.h"
-#include "LCD.h"
-#include "LCDfont.h"
 #include "PinNames.h"
 #include "QEI.h"
 #include "Menu.h"
 #include "fan.h"
+#include "LCD.h"
 #include <mbed.h>
 
 #define RES_HIGH_SHORT (0.00082)
@@ -21,10 +20,10 @@
 #define GAIN_INPUT_CURRENT ((3.1 / 50.0) / 0.005)
 #define GAIN_INPUT_VOLTAGE (3.1 / (10.0/(10.0 + 30.0)))
 
-extern AnalogIn  currentIn;
-extern AnalogIn  currentOut;
-extern AnalogIn  voltageIn;
-extern AnalogIn  voltageOut;
+extern AnalogIn  currentIn; // works
+extern AnalogIn  currentOut; // works
+extern AnalogIn  voltageIn; // works
+extern AnalogIn  voltageOut; // works
 extern AnalogOut currentSet;
 
 extern BufferedSerial serial;
@@ -37,7 +36,7 @@ extern DigitalIn knobPushIn;
 extern DigitalIn knobChannelA;
 extern DigitalIn knobChannelB;
 
-extern AnalogIn buttonPushIn;
+extern DigitalIn buttonPushIn;
 
 //extern ST7565 lcd;
 

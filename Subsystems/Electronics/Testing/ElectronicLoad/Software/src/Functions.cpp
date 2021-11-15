@@ -16,7 +16,7 @@ DigitalIn knobPushIn(KNOB_SW_N);
 DigitalIn knobChannelA(KNOB_A);
 DigitalIn knobChannelB(KNOB_B);
 
-AnalogIn buttonPushIn(NICE_BUTTON_N); // come back later to check
+DigitalIn buttonPushIn(NICE_BUTTON_N); // come back later to check
 
 // //ST7565 lcd(LCD_MOSI, LCD_SCK, LCD_A0, LCD_RST_N, LCD_CS1_N);
 
@@ -50,7 +50,7 @@ void setCurrent(double current) {
 
   double shuntVoltage = current * shunt;
   shuntVoltage        = shuntVoltage * GAIN_SHUNT;
-  currentSet.write((float)shuntVoltage);
+  // currentSet.write((float)shuntVoltage);
 }
 
 
@@ -84,7 +84,7 @@ void setCurrentWR(double resistance) {
 
   double shuntVoltage = getOutputVoltage() / shunt;
   shuntVoltage        = shuntVoltage * GAIN_SHUNT;
-  currentSet.write((float)shuntVoltage);
+  // currentSet.write((float)shuntVoltage);
 }
 
 /**
@@ -102,7 +102,7 @@ void setCurrentWP(double power) {
 
   double shuntVoltage = power/getOutputVoltage();
   shuntVoltage        = shuntVoltage * GAIN_SHUNT;
-  currentSet.write((float)shuntVoltage);
+  // currentSet.write((float)shuntVoltage);
 }
 
 /**
@@ -141,9 +141,9 @@ double getInputVoltage() {
   return voltageIn.read() * GAIN_INPUT_VOLTAGE;
 }
 
-// // int getInputButton() {
-// //   return buttonPushIn.read();
-// // }
+int getInputButton() {
+  return buttonPushIn.read();
+}
 
 // /* The LCD Screen has 4 lines high and 25 characters wide.*/
 
