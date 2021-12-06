@@ -1,83 +1,110 @@
-// #include "Functions.h"
-
-// void init(); // Sets current = 0
-
-#include "Functions.h"
-
 #include <mbed.h>
 
+#include "Configuration.h"
+#include "LoadObjects.h"
 
-int main(void) {
-  // ST7565 lcd(LCD_MOSI, LCD_SCK, LCD_CS1_N, LCD_RST_N, LCD_A0);
+void controlLoop() {
+  // Measure sensors
+  outputCurrent = adcOutputCurrent.read() * GAIN_OUTPUT_CURRENT;
+  outputVoltage = adcOutputVoltage.read() * GAIN_OUTPUT_VOLTAGE;
+  inputCurrent  = adcInputCurrent.read() * GAIN_INPUT_CURRENT;
+  inputVoltage  = adcInputVoltage.read() * GAIN_INPUT_VOLTAGE;
 
-  // lcd.begin(0x18);
-  // lcd.clear_display();
-  // lcd.clear();
-  // lcd.drawstring(0,0, "I: ");
-  // lcd.drawstring(0,1, "P: ");
-  // lcd.display();
+  // Adjust DAC
+  // TODO allow other modes
+  // TODO add feedback from sense resistor
+  double current = targetCurrent;
 
-  Menu niceMenu(ADC_OUTPUT_VOLTAGE, ADC_OUTPUT_CURRENT, ADC_INPUT_VOLTAGE, ADC_INPUT_CURRENT);
-  DigitalOut status(LED1);
-  
-  Fan niceFan(FAN_PWM, FAN_TACH);
+  double shunt = 0.0;
+  if (current > 10.0)
+    current = 10.0;
+  if (current < 0.0)
+    current = 0.0;
 
-  //BufferedSerial serial(USBTX, USBRX, 9600);
+  if (current > 1.0) {
+    bypassShunt100mA = 1;
+    bypassShunt1A    = 1;
+    shunt            = RES_HIGH_SHORT + RES_MED_SHORT + RES_LOW_ON;
+  } else if (current > 0.1) {
+    bypassShunt100mA = 0;
+    bypassShunt1A    = 1;
+    shunt            = RES_HIGH_SHORT + RES_MED_ON + RES_LOW_ON;
+  } else {
+    bypassShunt100mA = 0;
+    bypassShunt1A    = 0;
+    shunt            = RES_HIGH_ON + RES_MED_ON + RES_LOW_ON;
+  }
+
+  double shuntVoltage = current * shunt;
+  shuntVoltage        = shuntVoltage * GAIN_SHUNT;
+  dacOutputCurrent.write((float)shuntVoltage);
+}
+
+/**
+ * @brief Initializes the all of the subclasses of the PMIC
+ *
+ * @return mbed_error_status_t
+ */
+mbed_error_status_t initialize() {
+  puts("Initialization starting");
+  mbed_error_status_t error = MBED_SUCCESS;
+
+  lcd.begin(LCD_CONTRAST);
+  lcd.clear();
+  lcd.drawstring(0, 0, "Electronic Load");
+  lcd.drawstring(0, 1, "Software V0.1.0");
+  lcd.display();
+
+  wait_us(1e6);
+  puts("Initialization complete");
+  return error;
+}
+
+/**
+ * @brief Executes the main loop of the PMIC
+ *
+ * @return mbed_error_status_t error code
+ */
+mbed_error_status_t run() {
+  uint32_t now        = HAL_GetTick();
+  uint32_t nextRender = now + PERIOD_MS_RENDER;
+
+  int lastKnob = knob.getPulses();
 
   while (true) {
-    //outputPower = outputVoltage * outputCurrent;
-    //printf("Knob: %d\r\n", niceKnob.getPulses());
+    now = HAL_GetTick();
+    if (now >= nextRender &&
+        (nextRender >= PERIOD_MS_RENDER || now <= PERIOD_MS_RENDER)) {
+      statusLED  = !statusLED;
+      nextRender = now + PERIOD_MS_RENDER;
 
-    // char buf[128];
-    // int  pulses = niceKnob.getPulses();
-    // int n = snprintf(buf, 128, "Knob: %d\r\n", pulses);
-    //serial.write(buf, n);
+      menu.render();
+      printf("%d %d Target: %f\n", bypassShunt1A.read(),
+          bypassShunt100mA.read(), targetCurrent);
+    }
 
-    status = !status;
-    wait_us(500e3);
+    controlLoop();
+
+    int currentKnob = knob.getPulses();
+    menu.update(currentKnob - lastKnob);
+    lastKnob = currentKnob;
   }
 }
 
-// /**
-//  * @brief Takes in selectedDigit and timesPressed to determine
-//  * which digit is supposed to be highlighted. This is achieved
-//  * by verifying if the digit has gone through the whole integer
-//  * or not
-//  *
-//  * @param selectedDigit
-//  * @param timesPressed
-//  * @return int
-//  */
-// int determineHDValue(int selectedDigit, int timesPressed) {
-//   if (selectedDigit >= 3) {
-//     selectedDigit = selectedDigit +
-//                     timesPressed; // Determines current value of
-//                     selectedDigit
-//   } else {
-//     selectedDigit = 0; // Resets selectedDigit
-//   }
-//   return selectedDigit;
-// }
-
-// /**
-//  * @brief Takes in selectedDigit, currentCurrent, and lcd to change
-//  * the selected digit to be a negative image or in this case the
-//  * method used to highlight this digit
-//  *
-//  * @param selectedDigit
-//  * @param currentCurrent
-//  * @param lcd
-//  */
-// void highlightDigit(int selectedDigit, int currentCurrent, ST7565 lcd) {
-//   int hdValue = 0, xCoordLocation = 0;
-
-//   xCoordLocation = selectedDigit + 16;
-//   hdValue        = (currentCurrent %
-//              (10 * (int)pow(
-//                        10, selectedDigit))); // Reveals the value of the
-//                        digit
-//                                              // in the selectedDigit's
-//                                              location
-
-//   lcd.drawchar(xCoordLocation, 1, hdValue, true);
-// }
+/**
+ * Program start routine
+ * @return error code
+ */
+int main(void) {
+  mbed_error_status_t error = initialize();
+  if (error) {
+    printf("Failed to initialize: 0x%02X", error);
+    return error;
+  }
+  error = run();
+  if (error) {
+    printf("Failed to run: 0x%02X", error);
+    return error;
+  }
+  return MBED_SUCCESS;
+}

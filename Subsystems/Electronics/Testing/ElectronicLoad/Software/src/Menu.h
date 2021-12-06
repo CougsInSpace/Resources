@@ -1,31 +1,22 @@
-#ifndef _Menu_H_
-#define _Menu_H_
+#ifndef _MENU_H_
+#define _MENU_H_
 
-#include "Functions.h"
 #include <mbed.h>
 
-
-class Menu : private NonCopyable<Menu> {
+class Menu {
 private:
-    AnalogIn outputVoltage;
-    AnalogIn outputCurrent;
-    AnalogIn inputVoltage;
-    AnalogIn inputCurrent;
+  enum class Page : uint8_t { VALUES };
+
+  Page currentPage = Page::VALUES;
+
+  void drawNumber(
+      const int x, const int line, const char * format, const double data);
 
 public:
-  Menu(PinName pinOutputVoltage, PinName pinOutputCurrent, PinName pinInputVoltage, PinName pinInputCurrent);
+  Menu();
 
-  void updateDisplay();
-
-  // calculations
-  double calculatePower(double voltage, double current);
-  double calculateResistance();
-  double calculateEfficiency();
-
-  // display
-  void draw(int x, int line, double data, char dataType[10]);
-  void drawSelectDot(int x, int line);
-
+  void update(int knobMovement);
+  void render();
 };
 
-#endif
+#endif /* _MENU_H_ */
