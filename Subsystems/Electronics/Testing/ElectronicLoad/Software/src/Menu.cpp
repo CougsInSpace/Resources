@@ -38,7 +38,7 @@ void Menu::render() {
       drawNumber(16, 1, "%5.2f", outputPower);
       drawNumber(16, 2, "%5.2f", outputResistance);
       drawNumber(16, 3, "%5.2f", outputVoltage);
-      drawNumber(72, 0, "%5.2f", inputCurrent);
+      drawNumber(72, 0, "%5.4f", inputCurrent);
       drawNumber(72, 1, "%5.2f", inputPower);
       drawNumber(72, 2, "%5.2f", efficiency);
       // TODO cursor

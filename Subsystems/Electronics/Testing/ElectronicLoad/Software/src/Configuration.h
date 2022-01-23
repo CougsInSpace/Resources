@@ -14,8 +14,8 @@
 #define RES_LOW_ON (0.005)
 #define GAIN_SHUNT (48.0 / 3.1)
 #define GAIN_OUTPUT_CURRENT ((3.1 / 50.0) / 0.005)
-#define GAIN_OUTPUT_VOLTAGE (3.1 / (10.0 / (10.0 + 30.0)))
+#define GAIN_OUTPUT_VOLTAGE (3.1 / (10.0 / (10.0 + 30.2)))
 #define GAIN_INPUT_CURRENT ((3.1 / 50.0) / 0.005)
-#define GAIN_INPUT_VOLTAGE (3.1 / (10.0 / (10.0 + 30.0)))
+#define GAIN_INPUT_VOLTAGE (3.1 / (9.94 / (9.94 + 30.1)))
 
 #endif /* _CONFIGURATION_H_ */
