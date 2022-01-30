@@ -9,7 +9,7 @@ void Menu::update(int knobMovement) {
     case Page::VALUES: {
       // If cursor is not selected, move cursor
       // if cursor is selected, adjust value
-      targetCurrent += 0.001 * knobMovement;
+      targetCurrent += 0.1 * knobMovement;
       if (targetCurrent > 10.0)
         targetCurrent = 10.0;
       if (targetCurrent < 0.0)
