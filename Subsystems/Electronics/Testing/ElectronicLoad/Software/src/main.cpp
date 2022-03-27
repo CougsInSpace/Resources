@@ -21,10 +21,16 @@ void controlLoop() {
   if (current < 0.0)
     current = 0.0;
 
-  if (current > 1.0) {
+  if (current > 3.0) {
     bypassShunt100mA = 1;
     bypassShunt1A    = 1;
-    shunt            = RES_HIGH_SHORT + RES_MED_SHORT + RES_LOW_ON;
+    shunt            = 0.0145;  //RES_HIGH_SHORT + RES_MED_SHORT + RES_LOW_ON;
+  }
+
+  else if (current > 1.0) {
+    bypassShunt100mA = 1;
+    bypassShunt1A    = 1;
+    shunt            = 0.013;  //RES_HIGH_SHORT + RES_MED_SHORT + RES_LOW_ON;
   } else if (current > 0.1) {
     bypassShunt100mA = 0;
     bypassShunt1A    = 1;

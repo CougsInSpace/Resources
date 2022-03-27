@@ -9,7 +9,7 @@ void Menu::update(int knobMovement) {
     case Page::VALUES: {
       // If cursor is not selected, move cursor
       // if cursor is selected, adjust value
-      targetCurrent += 0.1 * knobMovement;
+      targetCurrent += 0.01 * knobMovement;
       if (targetCurrent > 10.0)
         targetCurrent = 10.0;
       if (targetCurrent < 0.0)
@@ -30,6 +30,7 @@ void Menu::render() {
       lcd.drawstring(56, 0, "I: ");
       lcd.drawstring(56, 1, "P: ");
       lcd.drawstring(56, 2, "E: ");
+      lcd.drawstring(56, 3, "TC: ");
       double outputPower      = outputCurrent * outputVoltage;
       double inputPower       = inputCurrent * inputVoltage;
       double outputResistance = outputVoltage / outputCurrent;
@@ -41,6 +42,7 @@ void Menu::render() {
       drawNumber(72, 0, "%5.4f", inputCurrent);
       drawNumber(72, 1, "%5.2f", inputPower);
       drawNumber(72, 2, "%5.2f", efficiency);
+      drawNumber(72, 3, "%5.2f", targetCurrent);
       // TODO cursor
     } break;
   }
