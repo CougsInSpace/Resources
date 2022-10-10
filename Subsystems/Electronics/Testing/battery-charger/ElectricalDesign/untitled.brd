@@ -151,47 +151,6 @@
 <wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
-<library name="CougsInSpace-Resistors">
-<description>&lt;h3&gt;Resistors&lt;/h3&gt;
-&lt;p&gt;Various resistor types, sizes, and values.&lt;/p&gt;
-&lt;p&gt;SKUs&lt;br&gt;
-20-xxxx: Resistor 1005 (0402 in)&lt;br&gt;
-21-xxxx: Resistor 1608 (0603 in)&lt;br&gt;
-22-xxxx: Resistor 2012 (0805 in)&lt;br&gt;
-23-xxxx: Resistor 3216 (1206 in)&lt;br&gt;
-24-xxxx: Resistor 3225 (1210 in) and larger&lt;br&gt;
-25-xxxx: Resistor THT&lt;br&gt;
-26-xxxx: All other resistors&lt;br&gt;
-&lt;p&gt;4 characters are a standard 4-stripe resistor numbering (i.e 2223 = 222 * 10³Ω = 222 kΩ). Values requiring a negative exponent will use a decimal notation instead (i.e. 0.10Ω). If multiple variants of the same value and package exist, an incremented suffix is added (i.e. 21-1001 and 21-1001A)&lt;/p&gt;</description>
-<packages>
-<package name="1632">
-<description>&lt;h3&gt;1632 (0612 in)&lt;/h3&gt;</description>
-<smd name="2" x="-0.4" y="-0.7" dx="0.5" dy="0.7" layer="1"/>
-<smd name="3" x="0.4" y="-0.7" dx="0.5" dy="0.7" layer="1"/>
-<smd name="6" x="0.4" y="0.7" dx="0.5" dy="0.7" layer="1"/>
-<smd name="7" x="-0.4" y="0.7" dx="0.5" dy="0.7" layer="1"/>
-<smd name="1" x="-1.2" y="-0.7" dx="0.64" dy="0.7" layer="1"/>
-<smd name="8" x="-1.2" y="0.7" dx="0.64" dy="0.7" layer="1"/>
-<smd name="4" x="1.2" y="-0.7" dx="0.64" dy="0.7" layer="1"/>
-<smd name="5" x="1.2" y="0.7" dx="0.64" dy="0.7" layer="1"/>
-<wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.15" layer="51"/>
-<wire x1="1.6" y1="0.75" x2="1.6" y2="-0.75" width="0.15" layer="51"/>
-<wire x1="1.6" y1="-0.75" x2="-1.6" y2="-0.75" width="0.15" layer="51"/>
-<wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.15" layer="51"/>
-<wire x1="-1.7" y1="0.8" x2="-1.7" y2="-0.8" width="0.15" layer="21"/>
-<wire x1="1.7" y1="0.8" x2="1.7" y2="-0.8" width="0.15" layer="21"/>
-<wire x1="-2" y1="1.375" x2="2" y2="1.375" width="0.15" layer="21"/>
-<wire x1="2" y1="1.375" x2="2" y2="-1.375" width="0.15" layer="21"/>
-<wire x1="2" y1="-1.375" x2="-2" y2="-1.375" width="0.15" layer="21"/>
-<wire x1="-2" y1="-1.375" x2="-2" y2="1.375" width="0.15" layer="21"/>
-<wire x1="-2" y1="1.375" x2="2" y2="1.375" width="0.15" layer="39"/>
-<wire x1="2" y1="1.375" x2="2" y2="-1.375" width="0.15" layer="39"/>
-<wire x1="2" y1="-1.375" x2="-2" y2="-1.375" width="0.15" layer="39"/>
-<wire x1="-2" y1="-1.375" x2="-2" y2="1.375" width="0.15" layer="39"/>
-<text x="0" y="1.9" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -385,13 +344,6 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="RN1" library="CougsInSpace-Resistors" package="1632" value="10kΩ 1%" x="2.54" y="-3.81" smashed="yes">
-<attribute name="NAME" x="2.54" y="-1.91" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="PACKAGE" value="1632" x="2.54" y="-3.81" size="1.778" layer="27" display="off"/>
-<attribute name="POWER" value="1/16W" x="2.54" y="-3.81" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="26-0000" x="2.54" y="-3.81" size="1.778" layer="27" display="off"/>
-<attribute name="TEMP" value="100ppm/°C" x="2.54" y="-3.81" size="1.778" layer="27" display="off"/>
-</element>
 </elements>
 <signals>
 </signals>
