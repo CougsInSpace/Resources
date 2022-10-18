@@ -1,8 +1,7 @@
-# Structures Team
-## Team Lead: James Hallstrom
-
 Project Title:
 P-Pod (Poly Picosatellite) Orbital Deployer Replica
+
+Project Lead: Regan Mills
 
 Description:
 The Poly Picosatellite Orbital Deployer (P-POD) is a standard deployment system that ensures
