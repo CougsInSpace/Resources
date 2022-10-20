@@ -20,3 +20,5 @@ Name: "CP1-SYS-Redesign_of_theP-POD"
 - Redesign of the Poly Picosatellite Orbital Deployer for the Dnepr Launch Vehicle. Essentially a recollection and rework of the P-Pod
 	after its first launch.
 
+Name: "Nanoracks-CubeSat-Deployer-NRCSD-IDD.pdf"
+- Interface Definition Document for Nanoracks P-Pod Equivelant (Our Launch Host)
