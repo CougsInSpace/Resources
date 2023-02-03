@@ -1706,6 +1706,22 @@ varies due to cylinder</text>
 </package>
 </packages>
 </library>
+<library name="CougsInSpace-Connectors">
+<description>&lt;h3&gt;Connectors&lt;/h3&gt;
+&lt;p&gt;Various PTH and SMD connectors. Also has test points.&lt;/p&gt;
+&lt;p&gt;SKUs&lt;br&gt;
+04-xxxx: SMD&lt;br&gt;
+05-xxxx: THT</description>
+<packages>
+<package name="SMD-C-1.25">
+<description>&lt;h3&gt;SMD Circular - 1.25mm&lt;/h3&gt;</description>
+<smd name="1" x="0" y="0" dx="1.25" dy="1.25" layer="1" roundness="100"/>
+<text x="0" y="1.5" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="0.95" width="0.15" layer="21"/>
+<circle x="0" y="0" radius="0.95" width="0.15" layer="39"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2744,6 +2760,42 @@ design rules under a new name.</description>
 <attribute name="SKU" value="63-0004" x="-158.75" y="-560.07" size="1.778" layer="27" display="off"/>
 <attribute name="VF" value="3.3V" x="-158.75" y="-560.07" size="1.778" layer="27" display="off"/>
 </element>
+<element name="TP1-5.0V" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-158.75" y="-609.6" smashed="yes">
+<attribute name="NAME" x="-158.75" y="-608.1" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP2-CHARGER" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-158.75" y="-613.41" smashed="yes">
+<attribute name="NAME" x="-158.75" y="-611.91" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP3-TS" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-158.75" y="-617.22" smashed="yes">
+<attribute name="NAME" x="-158.75" y="-615.72" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP4-BATT_A" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-160.02" y="-621.03" smashed="yes">
+<attribute name="NAME" x="-160.02" y="-619.53" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP5-BATT_B" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-160.02" y="-624.84" smashed="yes">
+<attribute name="NAME" x="-160.02" y="-623.34" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP6-BATT_C" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-160.02" y="-628.65" smashed="yes">
+<attribute name="NAME" x="-160.02" y="-627.15" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP7-TEMP_A" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-160.02" y="-632.46" smashed="yes">
+<attribute name="NAME" x="-160.02" y="-630.96" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP8-TEMP_B" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-160.02" y="-636.27" smashed="yes">
+<attribute name="NAME" x="-160.02" y="-634.77" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP9-TEMP_C" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-160.02" y="-640.08" smashed="yes">
+<attribute name="NAME" x="-160.02" y="-638.58" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP10-USB_5.0V" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-161.29" y="-643.89" smashed="yes">
+<attribute name="NAME" x="-161.29" y="-642.39" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP11-CN2102N_VDD" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-161.29" y="-647.7" smashed="yes">
+<attribute name="NAME" x="-161.29" y="-646.2" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
+<element name="TP12-3.3V" library="CougsInSpace-Connectors" package="SMD-C-1.25" value="TEST_POINT-SMD-C-1.25" x="-165.1" y="-651.51" smashed="yes">
+<attribute name="NAME" x="-165.1" y="-650.01" size="0.8" layer="25" font="vector" ratio="15" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="PGND">
@@ -3042,6 +3094,7 @@ design rules under a new name.</description>
 <contactref element="C7" pad="1"/>
 <contactref element="D4" pad="1"/>
 <contactref element="C13" pad="1"/>
+<contactref element="TP2-CHARGER" pad="1"/>
 <wire x1="-42.66" y1="-184.15" x2="-43.36" y2="-187.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.46" y1="-180.34" x2="-42.66" y2="-184.15" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.66" y1="-158.75" x2="-40.46" y2="-180.34" width="0" layer="19" extent="1-1"/>
@@ -3054,6 +3107,7 @@ design rules under a new name.</description>
 <wire x1="-9.64" y1="-29.21" x2="-8.14" y2="-33.02" width="0" layer="19" extent="1-1"/>
 <wire x1="-8.14" y1="-21.59" x2="-9.64" y2="-29.21" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.06" y1="3.06" x2="-8.14" y2="-21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-158.75" y1="-613.41" x2="-43.36" y2="-187.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BQ24650_VFB">
 <contactref element="U1" pad="8"/>
@@ -3238,6 +3292,7 @@ design rules under a new name.</description>
 <contactref element="C24" pad="1"/>
 <contactref element="D8" pad="1"/>
 <contactref element="C33" pad="1"/>
+<contactref element="TP1-5.0V" pad="1"/>
 <wire x1="-38.35" y1="-202.06" x2="-36.99" y2="-212.09" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.31" y1="-202.06" x2="-38.35" y2="-202.06" width="0" layer="19" extent="1-1"/>
 <wire x1="-66.17" y1="-209.93" x2="-38.35" y2="-202.06" width="0" layer="19" extent="1-1"/>
@@ -3262,6 +3317,7 @@ design rules under a new name.</description>
 <wire x1="-160.77" y1="-538.48" x2="-159.93" y2="-529.26" width="0" layer="19" extent="1-1"/>
 <wire x1="-159.93" y1="-543.23" x2="-160.77" y2="-538.48" width="0" layer="19" extent="1-1"/>
 <wire x1="-160.77" y1="-552.45" x2="-159.93" y2="-543.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-158.75" y1="-609.6" x2="-160.77" y2="-552.45" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.2" y1="3.49" x2="-35.31" y2="-202.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BQ24650_VCC">
@@ -3360,27 +3416,33 @@ design rules under a new name.</description>
 <contactref element="C15" pad="1"/>
 <contactref element="BT1" pad="C"/>
 <contactref element="R6" pad="2"/>
+<contactref element="TP4-BATT_A" pad="1"/>
 <wire x1="-41.16" y1="-66.04" x2="-43.36" y2="-162.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.44" y1="-51.12" x2="-41.16" y2="-66.04" width="0" layer="19" extent="1-1"/>
 <wire x1="30.92" y1="-91.44" x2="-30.44" y2="-51.12" width="0" layer="19" extent="1-1"/>
+<wire x1="-160.02" y1="-621.03" x2="-43.36" y2="-162.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D4_OUT">
 <contactref element="D4" pad="5"/>
 <contactref element="C16" pad="1"/>
 <contactref element="BT2" pad="C"/>
 <contactref element="R10" pad="2"/>
+<contactref element="TP5-BATT_B" pad="1"/>
 <wire x1="-29.73" y1="-121.92" x2="-43.36" y2="-166.37" width="0" layer="19" extent="1-1"/>
 <wire x1="30.92" y1="-110.49" x2="-29.73" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.52" y1="-51.12" x2="-29.73" y2="-121.92" width="0" layer="19" extent="1-1"/>
+<wire x1="-160.02" y1="-624.84" x2="-43.36" y2="-166.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D5_OUT">
 <contactref element="D5" pad="5"/>
 <contactref element="C17" pad="1"/>
 <contactref element="BT3" pad="C"/>
+<contactref element="TP6-BATT_C" pad="1"/>
 <contactref element="R14" pad="2"/>
 <wire x1="-29.73" y1="-146.05" x2="-43.36" y2="-170.18" width="0" layer="19" extent="1-1"/>
 <wire x1="30.92" y1="-134.62" x2="-29.73" y2="-146.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.6" y1="-51.12" x2="-29.73" y2="-146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-160.02" y1="-628.65" x2="-43.36" y2="-170.18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STAT4">
 <contactref element="D3" pad="4"/>
@@ -3432,12 +3494,14 @@ design rules under a new name.</description>
 <contactref element="R35" pad="2"/>
 <contactref element="R36" pad="2"/>
 <contactref element="J3" pad="1"/>
+<contactref element="TP10-USB_5.0V" pad="1"/>
 <wire x1="-111.94" y1="-359.41" x2="-111.24" y2="-367.03" width="0" layer="19" extent="1-1"/>
 <wire x1="-135.71" y1="-419.33" x2="-111.24" y2="-367.03" width="0" layer="19" extent="1-1"/>
 <wire x1="-134.85" y1="-420.19" x2="-135.71" y2="-419.33" width="0" layer="19" extent="1-1"/>
 <wire x1="-133.87" y1="-426.72" x2="-134.85" y2="-420.19" width="0" layer="19" extent="1-1"/>
 <wire x1="-133.87" y1="-430.53" x2="-133.87" y2="-426.72" width="0" layer="19" extent="1-1"/>
 <wire x1="-129.51" y1="-445.435" x2="-133.87" y2="-430.53" width="0" layer="19" extent="1-1"/>
+<wire x1="-161.29" y1="-643.89" x2="-129.51" y2="-445.435" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CP2102N_RTS">
 <contactref element="Q6" pad="2"/>
@@ -3487,8 +3551,10 @@ design rules under a new name.</description>
 <contactref element="U5" pad="6"/>
 <contactref element="C28" pad="1"/>
 <contactref element="C26" pad="1"/>
+<contactref element="TP11-CN2102N_VDD" pad="1"/>
 <wire x1="-111.94" y1="-363.22" x2="-111.24" y2="-370.84" width="0" layer="19" extent="1-1"/>
 <wire x1="-135.71" y1="-418.83" x2="-111.24" y2="-370.84" width="0" layer="19" extent="1-1"/>
+<wire x1="-161.29" y1="-647.7" x2="-135.71" y2="-418.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UART_TXD-ESP_RXD">
 <contactref element="U5" pad="26"/>
@@ -3533,7 +3599,9 @@ design rules under a new name.</description>
 <signal name="TS-ESP">
 <contactref element="U1" pad="4"/>
 <contactref element="U7" pad="14"/>
-<wire x1="-111.14" y1="-400.07" x2="-5.56" y2="3.06" width="0" layer="19" extent="1-1"/>
+<contactref element="TP3-TS" pad="1"/>
+<wire x1="-111.14" y1="-400.07" x2="-158.75" y2="-617.22" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.56" y1="3.06" x2="-111.14" y2="-400.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="U$1" pad="2"/>
@@ -3545,6 +3613,7 @@ design rules under a new name.</description>
 <contactref element="R38" pad="2"/>
 <contactref element="R39" pad="2"/>
 <contactref element="R40" pad="2"/>
+<contactref element="TP12-3.3V" pad="1"/>
 <wire x1="-90.92" y1="-407.67" x2="-96.315" y2="-407.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-106.68" y1="-418.389" x2="-96.315" y2="-407.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-107.43" y1="-422.91" x2="-106.68" y2="-418.389" width="0" layer="19" extent="1-1"/>
@@ -3553,27 +3622,34 @@ design rules under a new name.</description>
 <wire x1="-133.87" y1="-474.98" x2="-133.87" y2="-471.17" width="0" layer="19" extent="1-1"/>
 <wire x1="-133.87" y1="-478.79" x2="-133.87" y2="-474.98" width="0" layer="19" extent="1-1"/>
 <wire x1="-133.87" y1="-482.6" x2="-133.87" y2="-478.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-165.1" y1="-651.51" x2="-133.87" y2="-482.6" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="TEMP1">
+<signal name="TEMP_A">
 <contactref element="RT1" pad="2"/>
 <contactref element="R38" pad="1"/>
 <contactref element="U7" pad="11"/>
+<contactref element="TP7-TEMP_A" pad="1"/>
 <wire x1="-135.37" y1="-474.98" x2="-111.14" y2="-397.52" width="0" layer="19" extent="1-1"/>
 <wire x1="-133.87" y1="-486.41" x2="-135.37" y2="-474.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-160.02" y1="-632.46" x2="-133.87" y2="-486.41" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="TEMP2">
+<signal name="TEMP_B">
 <contactref element="RT2" pad="2"/>
 <contactref element="R39" pad="1"/>
 <contactref element="U7" pad="12"/>
+<contactref element="TP8-TEMP_B" pad="1"/>
 <wire x1="-135.37" y1="-478.79" x2="-111.14" y2="-398.37" width="0" layer="19" extent="1-1"/>
 <wire x1="-133.87" y1="-490.22" x2="-135.37" y2="-478.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-160.02" y1="-636.27" x2="-133.87" y2="-490.22" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="TEMP3">
+<signal name="TEMP_C">
 <contactref element="RT3" pad="2"/>
 <contactref element="R40" pad="1"/>
 <contactref element="U7" pad="13"/>
+<contactref element="TP9-TEMP_C" pad="1"/>
 <wire x1="-135.37" y1="-482.6" x2="-133.87" y2="-494.03" width="0" layer="19" extent="1-1"/>
 <wire x1="-111.14" y1="-399.22" x2="-135.37" y2="-482.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-160.02" y1="-640.08" x2="-133.87" y2="-494.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP32_IO19">
 <contactref element="U7" pad="23"/>
