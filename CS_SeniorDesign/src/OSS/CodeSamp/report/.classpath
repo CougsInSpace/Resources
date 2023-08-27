@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.core.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.core.swing.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.core.swt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.attr.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.core.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.core.swing.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.javadocs.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.plugin.accessconstraints.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.plugin.astrogator.plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.plugin.crdn.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.plugin.graphics.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.plugin.stk.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.plugin.util.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.ui.application.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.ui.core.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stk.ui.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkengine.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkgraphics.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkobjects.astrogator.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkobjects.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkutil.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkvgt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkx.initialization.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkx.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkx.swing.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.stkx.swt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.swing.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/AGI/STK 11/bin/agi.swt.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
