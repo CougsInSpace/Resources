@@ -1,0 +1,30 @@
+# Autodesk old versions
+OldVersions/
+*.ipj
+
+# EAGLE old versions
+*.b#*
+*.s#*
+*.epf
+*.l#*
+
+# Lock Files
+*.lck
+
+# Microsoft Lock Files
+*~$*
+
+#  LTSpice Simulation Results
+*.log*
+*.raw*
+*.plt*
+*.net
+
+# Visual Studio Code
+*.code-workspace
+extensions.json
+settings.json
+*.DB
+
+# Microsoft Office Lock Files
+*~$*
