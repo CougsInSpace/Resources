@@ -1,10 +1,10 @@
 # Project Name #
 ## Author - Butch T. Cougar ##
 
-Date Started - 00/00/0000
-Date Updated - 00/00/0000 Revision 1.0
-Date Updated - 00/00/0000 Revision 2.0
-Date Completed
+- Date Started - 00/00/0000
+- Date Updated - 00/00/0000 Revision 1.0
+- Date Updated - 00/00/0000 Revision 2.0
+- Date Completed -
 
 
 ## Included Files: ##
