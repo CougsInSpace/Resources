@@ -1,0 +1,1556 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fc6ce3e51de, pid=25864, tid=0x00007fc6cf8f8700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_191-b12) (build 1.8.0_191-8u191-b12-2ubuntu0.18.04.1-b12)
+# Java VM: OpenJDK 64-Bit Server VM (25.191-b12 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libagjnicore.so+0x171de]
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fc6f007a000):  VMThread [stack: 0x00007fc6cf7f9000,0x00007fc6cf8f9000] [id=25875]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000030
+
+Registers:
+RAX=0x0000000000000000, RBX=0x0000000000000002, RCX=0x00007fc6f7e57320, RDX=0x0000000000000000
+RSP=0x00007fc6cf8f7a30, RBP=0x00007fc67c381e10, RSI=0x00007fc6ce40c930, RDI=0x00007fc6f007a1e0
+R8 =0x0000000000000071, R9 =0x00007fc67d8c5b90, R10=0x000000000000002e, R11=0x00007fc6cdbf6ba0
+R12=0x00007fc6f8668718, R13=0x0000000000003c83, R14=0x00007fc6f866d628, R15=0x00007fc67c2e22d0
+RIP=0x00007fc6ce3e51de, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007fc6cf8f7a30)
+0x00007fc6cf8f7a30:   00007fc6ce1788e8 00007fc6f007a1e0
+0x00007fc6cf8f7a40:   000000000000008f 00007fc67c307630
+0x00007fc6cf8f7a50:   00007fc67c381e10 00007fc688dc6d6d
+0x00007fc6cf8f7a60:   00007fc67c2e22d0 00007fc6cd1b31f9
+0x00007fc6cf8f7a70:   0000000000000000 00007fc67c307630
+0x00007fc6cf8f7a80:   00007fc67c307630 00007fc688768dce
+0x00007fc6cf8f7a90:   00007fc67c307630 00007fc6cdbf6df4
+0x00007fc6cf8f7aa0:   00007fc67c2e22d0 00007fc67c307630
+0x00007fc6cf8f7ab0:   000000000000008f 00007fc688768e60
+0x00007fc6cf8f7ac0:   0000000000003c83 0000000000000001
+0x00007fc6cf8f7ad0:   000000000000008f 00007fc67c307630
+0x00007fc6cf8f7ae0:   000000000000008f 00007fc68876b5a1
+0x00007fc6cf8f7af0:   0000000000000001 00007fc6f82c0041
+0x00007fc6cf8f7b00:   00007fc6cf8f7b50 00000001f0029360
+0x00007fc6cf8f7b10:   00007fc6f0029748 000000000000008f
+0x00007fc6cf8f7b20:   00007fc6cf8f7b70 00007fc6f0029360
+0x00007fc6cf8f7b30:   00007fc6f0029748 00007fc6f0029370
+0x00007fc6cf8f7b40:   00007fc65b2896f0 00007fc6f82c013a
+0x00007fc6cf8f7b50:   00007fc6cf8f7b70 00007fc6f733260c
+0x00007fc6cf8f7b60:   0000000000000001 00007fc6f0079280
+0x00007fc6cf8f7b70:   00007fc6cf8f7bc0 00007fc6f776fdd6
+0x00007fc6cf8f7b80:   0000000000004fb8 00000000000003d8
+0x00007fc6cf8f7b90:   00007fc6f7c212e0 00007fc6f0079280
+0x00007fc6cf8f7ba0:   0000000000000000 00007fc65b2896f0
+0x00007fc6cf8f7bb0:   00007fc6f6fac8a0 00007fc6f0029360
+0x00007fc6cf8f7bc0:   00007fc6cf8f7ca0 00007fc6f776e075
+0x00007fc6cf8f7bd0:   0000000000000000 00000000cf8f7bf0
+0x00007fc6cf8f7be0:   00007fc6cf8f7c30 00007fc6f764cf14
+0x00007fc6cf8f7bf0:   00007fc6cf8f0100 0000000000000000
+0x00007fc6cf8f7c00:   0000000000000000 00007fc6f000ec00
+0x00007fc6cf8f7c10:   00007fc6cf8f7c30 00000000000003d8
+0x00007fc6cf8f7c20:   431bde82d7b634db 00007fc6f0029748 
+
+Instructions: (pc=0x00007fc6ce3e51de)
+0x00007fc6ce3e51be:   48 8b 07 48 8d 74 24 08 ff 50 20 31 d2 85 c0 75
+0x00007fc6ce3e51ce:   4d 48 8b 7c 24 08 48 8d 35 55 77 02 00 48 8b 07
+0x00007fc6ce3e51de:   ff 50 30 48 8b 7c 24 08 48 89 c5 48 8d 0d 66 77
+0x00007fc6ce3e51ee:   02 00 48 8d 15 64 77 02 00 48 89 ee 48 8b 07 ff 
+
+Register to memory mapping:
+
+RAX=0x0000000000000000 is an unknown value
+RBX=0x0000000000000002 is an unknown value
+RCX=0x00007fc6f7e57320: <offset 0x21a320> in /lib/x86_64-linux-gnu/libpthread.so.0 at 0x00007fc6f7c3d000
+RDX=0x0000000000000000 is an unknown value
+RSP=0x00007fc6cf8f7a30 is an unknown value
+RBP=0x00007fc67c381e10 is an unknown value
+RSI=0x00007fc6ce40c930: <offset 0x3e930> in /home/elijah/tools/stk11.5.0/bin/libagjnicore.so at 0x00007fc6ce3ce000
+RDI=0x00007fc6f007a1e0 is an unknown value
+R8 =0x0000000000000071 is an unknown value
+R9 =0x00007fc67d8c5b90 is an unknown value
+R10=0x000000000000002e is an unknown value
+R11=0x00007fc6cdbf6ba0: AgUtAppPathInstallSet+0 in /home/elijah/tools/stk11.5.0/bin/libagutil.so at 0x00007fc6cd9c1000
+R12=0x00007fc6f8668718: <offset 0x3eb718> in /lib/x86_64-linux-gnu/libc.so.6 at 0x00007fc6f827d000
+R13=0x0000000000003c83 is an unknown value
+R14=0x00007fc6f866d628: <offset 0x3f0628> in /lib/x86_64-linux-gnu/libc.so.6 at 0x00007fc6f827d000
+R15=0x00007fc67c2e22d0 is an unknown value
+
+
+Stack: [0x00007fc6cf7f9000,0x00007fc6cf8f9000],  sp=0x00007fc6cf8f7a30,  free space=1018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libagjnicore.so+0x171de]
+
+VM_Operation (0x00007fc65b2896f0): Exit, mode: safepoint, requested by thread 0x00007fc6b4003800
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007fc6b4003800 JavaThread "SIGTERM handler" daemon [_thread_blocked, id=4167, stack(0x00007fc65b18a000,0x00007fc65b28b000)]
+  0x00007fc680002800 JavaThread "AWT-EventQueue-1" [_thread_blocked, id=720, stack(0x00007fc68beff000,0x00007fc68c000000)]
+  0x00007fc680006000 JavaThread "AWT-Shutdown" [_thread_blocked, id=719, stack(0x00007fc68bdfe000,0x00007fc68beff000)]
+  0x00007fc67c38d000 JavaThread "TimerQueue" daemon [_thread_blocked, id=25895, stack(0x00007fc688076000,0x00007fc688177000)]
+  0x00007fc67c2e0800 JavaThread "Timer-0" [_thread_blocked, id=25892, stack(0x00007fc688abd000,0x00007fc688bbe000)]
+  0x00007fc6f000c000 JavaThread "DestroyJavaVM" [_thread_blocked, id=25867, stack(0x00007fc6f8987000,0x00007fc6f8a87000)]
+  0x00007fc6f02cd800 JavaThread "AWT-XAWT" daemon [_thread_in_native, id=25887, stack(0x00007fc69a77b000,0x00007fc69a87c000)]
+  0x00007fc6f02ac000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=25886, stack(0x00007fc69ac8c000,0x00007fc69ad8d000)]
+  0x00007fc6f00c1800 JavaThread "Service Thread" daemon [_thread_blocked, id=25882, stack(0x00007fc6ce722000,0x00007fc6ce823000)]
+  0x00007fc6f00be800 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=25881, stack(0x00007fc6ce824000,0x00007fc6ce924000)]
+  0x00007fc6f00bd000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=25880, stack(0x00007fc6ce925000,0x00007fc6cea25000)]
+  0x00007fc6f00ba000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=25879, stack(0x00007fc6cea26000,0x00007fc6ceb26000)]
+  0x00007fc6f00b8800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=25878, stack(0x00007fc6ceb26000,0x00007fc6cec27000)]
+  0x00007fc6f0086000 JavaThread "Finalizer" daemon [_thread_blocked, id=25877, stack(0x00007fc6cf5f6000,0x00007fc6cf6f7000)]
+  0x00007fc6f0083800 JavaThread "Reference Handler" daemon [_thread_blocked, id=25876, stack(0x00007fc6cf6f7000,0x00007fc6cf7f8000)]
+
+Other Threads:
+=>0x00007fc6f007a000 VMThread [stack: 0x00007fc6cf7f9000,0x00007fc6cf8f9000] [id=25875]
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007fc6f00087e0] Threads_lock - owner thread: 0x00007fc6f007a000
+
+Heap:
+ PSYoungGen      total 168960K, used 135902K [0x00000000d7180000, 0x00000000e6280000, 0x0000000100000000)
+  eden space 131072K, 99% used [0x00000000d7180000,0x00000000df126840,0x00000000df180000)
+  from space 37888K, 13% used [0x00000000e1700000,0x00000000e1c11390,0x00000000e3c00000)
+  to   space 38400K, 0% used [0x00000000df180000,0x00000000df180000,0x00000000e1700000)
+ ParOldGen       total 133632K, used 67377K [0x0000000085400000, 0x000000008d680000, 0x00000000d7180000)
+  object space 133632K, 50% used [0x0000000085400000,0x00000000895cc7b8,0x000000008d680000)
+ Metaspace       used 9925K, capacity 10210K, committed 10368K, reserved 1058816K
+  class space    used 1041K, capacity 1136K, committed 1152K, reserved 1048576K
+
+Card table byte_map: [0x00007fc6f4b4c000,0x00007fc6f4f23000] byte_map_base: 0x00007fc6f4722000
+
+Marking Bits: (ParMarkBitMap*) 0x00007fc6f7c20340
+ Begin Bits: [0x00007fc6dd2a0000, 0x00007fc6df150000)
+ End Bits:   [0x00007fc6df150000, 0x00007fc6e1000000)
+
+Polling page: 0x00007fc6f8aa1000
+
+CodeCache: size=245760Kb used=3855Kb max_used=3858Kb free=241904Kb
+ bounds [0x00007fc6e1000000, 0x00007fc6e13d0000, 0x00007fc6f0000000]
+ total_blobs=1503 nmethods=1048 adapters=370
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 5655.966 Thread 0x00007fc6f00be800 1044       3       java.util.concurrent.locks.ReentrantLock$NonfairSync::tryAcquire (6 bytes)
+Event: 5655.967 Thread 0x00007fc6f00be800 nmethod 1044 0x00007fc6e13b1650 code [0x00007fc6e13b17c0, 0x00007fc6e13b19c8]
+Event: 5840.515 Thread 0x00007fc6f00ba000 1045 %     4       java.awt.EventDispatchThread::pumpEventsForFilter @ 10 (47 bytes)
+Event: 5840.528 Thread 0x00007fc6f00ba000 nmethod 1045% 0x00007fc6e13bcb50 code [0x00007fc6e13bcce0, 0x00007fc6e13bcfe8]
+Event: 5959.058 Thread 0x00007fc6f00bd000 1046       4       java.awt.EventDispatchThread::pumpEventsForFilter (47 bytes)
+Event: 5959.068 Thread 0x00007fc6f00bd000 nmethod 1046 0x00007fc6e13c0690 code [0x00007fc6e13c0800, 0x00007fc6e13c09d0]
+Event: 7787.116 Thread 0x00007fc6f00be800 1047       3       java.util.concurrent.locks.ReentrantLock$Sync::nonfairTryAcquire (67 bytes)
+Event: 7787.119 Thread 0x00007fc6f00be800 nmethod 1047 0x00007fc6e13bdc50 code [0x00007fc6e13bde00, 0x00007fc6e13be528]
+Event: 8118.490 Thread 0x00007fc6f00be800 1048       3       java.util.logging.LogManager$LoggerContext::ensureDefaultLogger (70 bytes)
+Event: 8118.490 Thread 0x00007fc6f00be800 nmethod 1048 0x00007fc6e13c1810 code [0x00007fc6e13c19e0, 0x00007fc6e13c2268]
+
+GC Heap History (10 events):
+Event: 1.026 GC heap before
+{Heap before GC invocations=3 (full 0):
+ PSYoungGen      total 68608K, used 68599K [0x00000000d7180000, 0x00000000db980000, 0x0000000100000000)
+  eden space 63488K, 100% used [0x00000000d7180000,0x00000000daf80000,0x00000000daf80000)
+  from space 5120K, 99% used [0x00000000db480000,0x00000000db97df50,0x00000000db980000)
+  to   space 5120K, 0% used [0x00000000daf80000,0x00000000daf80000,0x00000000db480000)
+ ParOldGen       total 84992K, used 25185K [0x0000000085400000, 0x000000008a700000, 0x00000000d7180000)
+  object space 84992K, 29% used [0x0000000085400000,0x0000000086c984b0,0x000000008a700000)
+ Metaspace       used 9103K, capacity 9378K, committed 9600K, reserved 1058816K
+  class space    used 982K, capacity 1072K, committed 1152K, reserved 1048576K
+Event: 1.081 GC heap after
+Heap after GC invocations=3 (full 0):
+ PSYoungGen      total 68608K, used 5111K [0x00000000d7180000, 0x00000000df780000, 0x0000000100000000)
+  eden space 63488K, 0% used [0x00000000d7180000,0x00000000d7180000,0x00000000daf80000)
+  from space 5120K, 99% used [0x00000000daf80000,0x00000000db47df60,0x00000000db480000)
+  to   space 5120K, 0% used [0x00000000df280000,0x00000000df280000,0x00000000df780000)
+ ParOldGen       total 84992K, used 55313K [0x0000000085400000, 0x000000008a700000, 0x00000000d7180000)
+  object space 84992K, 65% used [0x0000000085400000,0x0000000088a047b8,0x000000008a700000)
+ Metaspace       used 9103K, capacity 9378K, committed 9600K, reserved 1058816K
+  class space    used 982K, capacity 1072K, committed 1152K, reserved 1048576K
+}
+Event: 1.081 GC heap before
+{Heap before GC invocations=4 (full 1):
+ PSYoungGen      total 68608K, used 5111K [0x00000000d7180000, 0x00000000df780000, 0x0000000100000000)
+  eden space 63488K, 0% used [0x00000000d7180000,0x00000000d7180000,0x00000000daf80000)
+  from space 5120K, 99% used [0x00000000daf80000,0x00000000db47df60,0x00000000db480000)
+  to   space 5120K, 0% used [0x00000000df280000,0x00000000df280000,0x00000000df780000)
+ ParOldGen       total 84992K, used 55313K [0x0000000085400000, 0x000000008a700000, 0x00000000d7180000)
+  object space 84992K, 65% used [0x0000000085400000,0x0000000088a047b8,0x000000008a700000)
+ Metaspace       used 9103K, capacity 9378K, committed 9600K, reserved 1058816K
+  class space    used 982K, capacity 1072K, committed 1152K, reserved 1048576K
+Event: 1.244 GC heap after
+Heap after GC invocations=4 (full 1):
+ PSYoungGen      total 68608K, used 0K [0x00000000d7180000, 0x00000000df780000, 0x0000000100000000)
+  eden space 63488K, 0% used [0x00000000d7180000,0x00000000d7180000,0x00000000daf80000)
+  from space 5120K, 0% used [0x00000000daf80000,0x00000000daf80000,0x00000000db480000)
+  to   space 5120K, 0% used [0x00000000df280000,0x00000000df280000,0x00000000df780000)
+ ParOldGen       total 133632K, used 51300K [0x0000000085400000, 0x000000008d680000, 0x00000000d7180000)
+  object space 133632K, 38% used [0x0000000085400000,0x00000000886193b0,0x000000008d680000)
+ Metaspace       used 9103K, capacity 9378K, committed 9600K, reserved 1058816K
+  class space    used 982K, capacity 1072K, committed 1152K, reserved 1048576K
+}
+Event: 1.561 GC heap before
+{Heap before GC invocations=5 (full 1):
+ PSYoungGen      total 68608K, used 62936K [0x00000000d7180000, 0x00000000df780000, 0x0000000100000000)
+  eden space 63488K, 99% used [0x00000000d7180000,0x00000000daef6030,0x00000000daf80000)
+  from space 5120K, 0% used [0x00000000daf80000,0x00000000daf80000,0x00000000db480000)
+  to   space 5120K, 0% used [0x00000000df280000,0x00000000df280000,0x00000000df780000)
+ ParOldGen       total 133632K, used 51300K [0x0000000085400000, 0x000000008d680000, 0x00000000d7180000)
+  object space 133632K, 38% used [0x0000000085400000,0x00000000886193b0,0x000000008d680000)
+ Metaspace       used 9133K, capacity 9378K, committed 9600K, reserved 1058816K
+  class space    used 983K, capacity 1072K, committed 1152K, reserved 1048576K
+Event: 1.590 GC heap after
+Heap after GC invocations=5 (full 1):
+ PSYoungGen      total 98816K, used 5119K [0x00000000d7180000, 0x00000000df780000, 0x0000000100000000)
+  eden space 93696K, 0% used [0x00000000d7180000,0x00000000d7180000,0x00000000dcd00000)
+  from space 5120K, 99% used [0x00000000df280000,0x00000000df77fc40,0x00000000df780000)
+  to   space 5120K, 0% used [0x00000000ded80000,0x00000000ded80000,0x00000000df280000)
+ ParOldGen       total 133632K, used 62070K [0x0000000085400000, 0x000000008d680000, 0x00000000d7180000)
+  object space 133632K, 46% used [0x0000000085400000,0x000000008909d868,0x000000008d680000)
+ Metaspace       used 9133K, capacity 9378K, committed 9600K, reserved 1058816K
+  class space    used 983K, capacity 1072K, committed 1152K, reserved 1048576K
+}
+Event: 1692.228 GC heap before
+{Heap before GC invocations=6 (full 1):
+ PSYoungGen      total 98816K, used 98815K [0x00000000d7180000, 0x00000000df780000, 0x0000000100000000)
+  eden space 93696K, 100% used [0x00000000d7180000,0x00000000dcd00000,0x00000000dcd00000)
+  from space 5120K, 99% used [0x00000000df280000,0x00000000df77fc40,0x00000000df780000)
+  to   space 5120K, 0% used [0x00000000ded80000,0x00000000ded80000,0x00000000df280000)
+ ParOldGen       total 133632K, used 62070K [0x0000000085400000, 0x000000008d680000, 0x00000000d7180000)
+  object space 133632K, 46% used [0x0000000085400000,0x000000008909d868,0x000000008d680000)
+ Metaspace       used 9875K, capacity 10146K, committed 10368K, reserved 1058816K
+  class space    used 1034K, capacity 1136K, committed 1152K, reserved 1048576K
+Event: 1692.259 GC heap after
+Heap after GC invocations=6 (full 1):
+ PSYoungGen      total 132096K, used 5092K [0x00000000d7180000, 0x00000000e3c00000, 0x0000000100000000)
+  eden space 126976K, 0% used [0x00000000d7180000,0x00000000d7180000,0x00000000ded80000)
+  from space 5120K, 99% used [0x00000000ded80000,0x00000000df279390,0x00000000df280000)
+  to   space 37888K, 0% used [0x00000000e1700000,0x00000000e1700000,0x00000000e3c00000)
+ ParOldGen       total 133632K, used 67369K [0x0000000085400000, 0x000000008d680000, 0x00000000d7180000)
+  object space 133632K, 50% used [0x0000000085400000,0x00000000895ca7b8,0x000000008d680000)
+ Metaspace       used 9875K, capacity 10146K, committed 10368K, reserved 1058816K
+  class space    used 1034K, capacity 1136K, committed 1152K, reserved 1048576K
+}
+Event: 4948.613 GC heap before
+{Heap before GC invocations=7 (full 1):
+ PSYoungGen      total 132096K, used 132068K [0x00000000d7180000, 0x00000000e3c00000, 0x0000000100000000)
+  eden space 126976K, 100% used [0x00000000d7180000,0x00000000ded80000,0x00000000ded80000)
+  from space 5120K, 99% used [0x00000000ded80000,0x00000000df279390,0x00000000df280000)
+  to   space 37888K, 0% used [0x00000000e1700000,0x00000000e1700000,0x00000000e3c00000)
+ ParOldGen       total 133632K, used 67369K [0x0000000085400000, 0x000000008d680000, 0x00000000d7180000)
+  object space 133632K, 50% used [0x0000000085400000,0x00000000895ca7b8,0x000000008d680000)
+ Metaspace       used 9890K, capacity 10210K, committed 10368K, reserved 1058816K
+  class space    used 1036K, capacity 1136K, committed 1152K, reserved 1048576K
+Event: 4948.630 GC heap after
+Heap after GC invocations=7 (full 1):
+ PSYoungGen      total 168960K, used 5188K [0x00000000d7180000, 0x00000000e6280000, 0x0000000100000000)
+  eden space 131072K, 0% used [0x00000000d7180000,0x00000000d7180000,0x00000000df180000)
+  from space 37888K, 13% used [0x00000000e1700000,0x00000000e1c11390,0x00000000e3c00000)
+  to   space 38400K, 0% used [0x00000000df180000,0x00000000df180000,0x00000000e1700000)
+ ParOldGen       total 133632K, used 67377K [0x0000000085400000, 0x000000008d680000, 0x00000000d7180000)
+  object space 133632K, 50% used [0x0000000085400000,0x00000000895cc7b8,0x000000008d680000)
+ Metaspace       used 9890K, capacity 10210K, committed 10368K, reserved 1058816K
+  class space    used 1036K, capacity 1136K, committed 1152K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 5144.113 Thread 0x00007fc6f034c800 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x00007fc6e13882b0 method=java.awt.EventQueue.eventToCacheIndex(Ljava/awt/AWTEvent;)I @ 68
+Event: 5144.113 Thread 0x00007fc6f034d800 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x00007fc6e136dca0 method=java.awt.EventQueue.eventToCacheIndex(Ljava/awt/AWTEvent;)I @ 68
+Event: 5144.114 Thread 0x00007fc6f034d800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fc6e13a7b54 method=java.awt.EventQueue.dispatchEventImpl(Ljava/awt/AWTEvent;Ljava/lang/Object;)V @ 6
+Event: 5144.114 Thread 0x00007fc6f034d800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fc6e138bc64 method=java.awt.EventDispatchThread.pumpEventsForFilter(ILjava/awt/Conditional;Ljava/awt/EventFilter;)V @ 14
+Event: 5144.114 Thread 0x00007fc6f034d800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fc6e13600c0 method=java.util.HashMap.removeNode(ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/util/HashMap$Node; @ 34
+Event: 5144.115 Thread 0x00007fc67c2e0800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fc6e1388c70 method=sun.awt.AWTAutoShutdown.notifyThreadBusy(Ljava/lang/Thread;)V @ 23
+Event: 5511.515 Thread 0x00007fc67c38d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fc6e1351350 method=java.util.concurrent.locks.ReentrantLock$Sync.nonfairTryAcquire(I)Z @ 19
+Event: 7629.465 Thread 0x00007fc67c38d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007fc6e1364050 method=java.util.concurrent.locks.ReentrantLock$Sync.nonfairTryAcquire(I)Z @ 19
+Event: 8118.489 Thread 0x00007fc6f00b8800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fc6e127aa80 method=java.util.Hashtable.get(Ljava/lang/Object;)Ljava/lang/Object; @ 6
+Event: 8118.489 Thread 0x00007fc6f00b8800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fc6e127aa80 method=java.util.Hashtable.get(Ljava/lang/Object;)Ljava/lang/Object; @ 6
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.334 Thread 0x00007fc6f000c000 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x00000000d75998b0) thrown at [/build/openjdk-8-5w_p1G/openjdk-8-8u191-b12/src/hotspot/src/share/vm/prims/methodHandles.cpp, line 1167]
+Event: 0.362 Thread 0x00007fc6f000c000 Exception <a 'java/io/FileNotFoundException'> (0x00000000d76198c0) thrown at [/build/openjdk-8-5w_p1G/openjdk-8-8u191-b12/src/hotspot/src/share/vm/prims/jni.cpp, line 709]
+Event: 0.378 Thread 0x00007fc6f000c000 Exception <a 'java/lang/ClassNotFoundException': sun/dc/DuctusRenderingEngine> (0x00000000d7638d20) thrown at [/build/openjdk-8-5w_p1G/openjdk-8-8u191-b12/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 0.664 Thread 0x00007fc6f00c1800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 71> (0x00000000d7213270) thrown at [/build/openjdk-8-5w_p1G/openjdk-8-8u191-b12/src/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp, line 366]
+Event: 0.665 Thread 0x00007fc6f00c1800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 18> (0x00000000d7213f88) thrown at [/build/openjdk-8-5w_p1G/openjdk-8-8u191-b12/src/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp, line 366]
+Event: 0.665 Thread 0x00007fc6f00c1800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 60> (0x00000000d7215030) thrown at [/build/openjdk-8-5w_p1G/openjdk-8-8u191-b12/src/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp, line 366]
+Event: 0.670 Thread 0x00007fc6f00c1800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d721d7b8) thrown at [/build/openjdk-8-5w_p1G/openjdk-8-8u191-b12/src/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 605]
+Event: 0.671 Thread 0x00007fc6f00c1800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d721f3a0) thrown at [/build/openjdk-8-5w_p1G/openjdk-8-8u191-b12/src/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 605]
+Event: 9.181 Thread 0x00007fc6f034d800 Exception <a 'agi/core/AgComException'> (0x00000000d8983d58) thrown at [/build/openjdk-8-5w_p1G/openjdk-8-8u191-b12/src/hotspot/src/share/vm/prims/jni.cpp, line 709]
+Event: 5144.114 Thread 0x00007fc6f034d800 Implicit null exception at 0x00007fc6e135fb92 to 0x00007fc6e1360091
+
+Events (10 events):
+Event: 8118.489 Thread 0x00007fc690003000 Thread added: 0x00007fc690003000
+Event: 8118.490 loading class sun/awt/X11/XSystemTrayPeer
+Event: 8118.490 loading class java/awt/peer/SystemTrayPeer
+Event: 8118.490 loading class java/awt/peer/SystemTrayPeer done
+Event: 8118.490 loading class sun/awt/X11/XMSelectionListener
+Event: 8118.490 loading class sun/awt/X11/XMSelectionListener done
+Event: 8118.490 loading class sun/awt/X11/XSystemTrayPeer done
+Event: 8118.491 Thread 0x00007fc690003000 Thread exited: 0x00007fc690003000
+Event: 8118.491 Thread 0x00007fc690001800 Thread exited: 0x00007fc690001800
+Event: 8118.491 Executing VM operation: Exit
+
+
+Dynamic libraries:
+85400000-8d680000 rw-p 00000000 00:00 0 
+8d680000-d7180000 ---p 00000000 00:00 0 
+d7180000-e6280000 rw-p 00000000 00:00 0 
+e6280000-100000000 ---p 00000000 00:00 0 
+100000000-100120000 rw-p 00000000 00:00 0 
+100120000-140000000 ---p 00000000 00:00 0 
+557d54b31000-557d54b32000 r-xp 00000000 08:01 10101746                   /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+557d54d31000-557d54d32000 r--p 00000000 08:01 10101746                   /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+557d54d32000-557d54d33000 rw-p 00001000 08:01 10101746                   /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+557d5536e000-557d5538f000 rw-p 00000000 00:00 0                          [heap]
+7fc64c000000-7fc64c021000 rw-p 00000000 00:00 0 
+7fc64c021000-7fc650000000 ---p 00000000 00:00 0 
+7fc653eff000-7fc653f02000 ---p 00000000 00:00 0 
+7fc653f02000-7fc654000000 rwxp 00000000 00:00 0 
+7fc654000000-7fc654021000 rw-p 00000000 00:00 0 
+7fc654021000-7fc658000000 ---p 00000000 00:00 0 
+7fc65b089000-7fc65b08c000 ---p 00000000 00:00 0 
+7fc65b08c000-7fc65b18a000 rwxp 00000000 00:00 0 
+7fc65b18a000-7fc65b18d000 ---p 00000000 00:00 0 
+7fc65b18d000-7fc65b28b000 rwxp 00000000 00:00 0 
+7fc65b28b000-7fc65b2b5000 r-xp 00000000 08:01 12851875                   /home/elijah/tools/stk11.5.0/bin/libagsearchipopt.so
+7fc65b2b5000-7fc65b4b5000 ---p 0002a000 08:01 12851875                   /home/elijah/tools/stk11.5.0/bin/libagsearchipopt.so
+7fc65b4b5000-7fc65b4b7000 r--p 0002a000 08:01 12851875                   /home/elijah/tools/stk11.5.0/bin/libagsearchipopt.so
+7fc65b4b7000-7fc65b4b8000 rw-p 0002c000 08:01 12851875                   /home/elijah/tools/stk11.5.0/bin/libagsearchipopt.so
+7fc65b4b8000-7fc65b4e4000 r-xp 00000000 08:01 12851876                   /home/elijah/tools/stk11.5.0/bin/libagsearchsnopt.so
+7fc65b4e4000-7fc65b6e4000 ---p 0002c000 08:01 12851876                   /home/elijah/tools/stk11.5.0/bin/libagsearchsnopt.so
+7fc65b6e4000-7fc65b6e6000 r--p 0002c000 08:01 12851876                   /home/elijah/tools/stk11.5.0/bin/libagsearchsnopt.so
+7fc65b6e6000-7fc65b6e7000 rw-p 0002e000 08:01 12851876                   /home/elijah/tools/stk11.5.0/bin/libagsearchsnopt.so
+7fc65b6e7000-7fc65b701000 r-xp 00000000 08:01 12851874                   /home/elijah/tools/stk11.5.0/bin/libagsearchbisection.so
+7fc65b701000-7fc65b900000 ---p 0001a000 08:01 12851874                   /home/elijah/tools/stk11.5.0/bin/libagsearchbisection.so
+7fc65b900000-7fc65b902000 r--p 00019000 08:01 12851874                   /home/elijah/tools/stk11.5.0/bin/libagsearchbisection.so
+7fc65b902000-7fc65b903000 rw-p 0001b000 08:01 12851874                   /home/elijah/tools/stk11.5.0/bin/libagsearchbisection.so
+7fc65b903000-7fc65baae000 rw-p 00000000 00:00 0 
+7fc65baae000-7fc65bbe3000 r-xp 00000000 08:01 12851692                   /home/elijah/tools/stk11.5.0/bin/libagasspkephem.so
+7fc65bbe3000-7fc65bde2000 ---p 00135000 08:01 12851692                   /home/elijah/tools/stk11.5.0/bin/libagasspkephem.so
+7fc65bde2000-7fc65bde3000 r--p 00134000 08:01 12851692                   /home/elijah/tools/stk11.5.0/bin/libagasspkephem.so
+7fc65bde3000-7fc65bdeb000 rw-p 00135000 08:01 12851692                   /home/elijah/tools/stk11.5.0/bin/libagasspkephem.so
+7fc65bdeb000-7fc6612d9000 rw-p 00000000 00:00 0 
+7fc6612d9000-7fc6612f0000 r-xp 00000000 08:01 15209270                   /lib/x86_64-linux-gnu/libresolv-2.27.so
+7fc6612f0000-7fc6614f0000 ---p 00017000 08:01 15209270                   /lib/x86_64-linux-gnu/libresolv-2.27.so
+7fc6614f0000-7fc6614f1000 r--p 00017000 08:01 15209270                   /lib/x86_64-linux-gnu/libresolv-2.27.so
+7fc6614f1000-7fc6614f2000 rw-p 00018000 08:01 15209270                   /lib/x86_64-linux-gnu/libresolv-2.27.so
+7fc6614f2000-7fc6614f4000 rw-p 00000000 00:00 0 
+7fc6614f4000-7fc6614f9000 r-xp 00000000 08:01 15209219                   /lib/x86_64-linux-gnu/libnss_dns-2.27.so
+7fc6614f9000-7fc6616f9000 ---p 00005000 08:01 15209219                   /lib/x86_64-linux-gnu/libnss_dns-2.27.so
+7fc6616f9000-7fc6616fa000 r--p 00005000 08:01 15209219                   /lib/x86_64-linux-gnu/libnss_dns-2.27.so
+7fc6616fa000-7fc6616fb000 rw-p 00006000 08:01 15209219                   /lib/x86_64-linux-gnu/libnss_dns-2.27.so
+7fc6616fb000-7fc6616fd000 r-xp 00000000 08:01 15209227                   /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc6616fd000-7fc6618fc000 ---p 00002000 08:01 15209227                   /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc6618fc000-7fc6618fd000 r--p 00001000 08:01 15209227                   /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc6618fd000-7fc6618fe000 rw-p 00002000 08:01 15209227                   /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc6618fe000-7fc661941000 r-xp 00000000 08:01 12851709                   /home/elijah/tools/stk11.5.0/bin/libagcomutilities.so
+7fc661941000-7fc661b41000 ---p 00043000 08:01 12851709                   /home/elijah/tools/stk11.5.0/bin/libagcomutilities.so
+7fc661b41000-7fc661b45000 r--p 00043000 08:01 12851709                   /home/elijah/tools/stk11.5.0/bin/libagcomutilities.so
+7fc661b45000-7fc661b47000 rw-p 00047000 08:01 12851709                   /home/elijah/tools/stk11.5.0/bin/libagcomutilities.so
+7fc661b47000-7fc661b65000 r-xp 00000000 08:01 12852018                   /home/elijah/tools/stk11.5.0/bin/liburiparser.so.1.0.12
+7fc661b65000-7fc661d64000 ---p 0001e000 08:01 12852018                   /home/elijah/tools/stk11.5.0/bin/liburiparser.so.1.0.12
+7fc661d64000-7fc661d65000 r--p 0001d000 08:01 12852018                   /home/elijah/tools/stk11.5.0/bin/liburiparser.so.1.0.12
+7fc661d65000-7fc661d66000 rw-p 0001e000 08:01 12852018                   /home/elijah/tools/stk11.5.0/bin/liburiparser.so.1.0.12
+7fc661d66000-7fc661d97000 r-xp 00000000 08:01 12851985                   /home/elijah/tools/stk11.5.0/bin/libkmlengine.so.0.0.0
+7fc661d97000-7fc661f97000 ---p 00031000 08:01 12851985                   /home/elijah/tools/stk11.5.0/bin/libkmlengine.so.0.0.0
+7fc661f97000-7fc661f98000 r--p 00031000 08:01 12851985                   /home/elijah/tools/stk11.5.0/bin/libkmlengine.so.0.0.0
+7fc661f98000-7fc661f99000 rw-p 00032000 08:01 12851985                   /home/elijah/tools/stk11.5.0/bin/libkmlengine.so.0.0.0
+7fc661f99000-7fc662057000 r-xp 00000000 08:01 12851982                   /home/elijah/tools/stk11.5.0/bin/libkmldom.so.0.0.0
+7fc662057000-7fc662256000 ---p 000be000 08:01 12851982                   /home/elijah/tools/stk11.5.0/bin/libkmldom.so.0.0.0
+7fc662256000-7fc66225d000 r--p 000bd000 08:01 12851982                   /home/elijah/tools/stk11.5.0/bin/libkmldom.so.0.0.0
+7fc66225d000-7fc662260000 rw-p 000c4000 08:01 12851982                   /home/elijah/tools/stk11.5.0/bin/libkmldom.so.0.0.0
+7fc662260000-7fc662292000 r-xp 00000000 08:01 12851979                   /home/elijah/tools/stk11.5.0/bin/libkmlconvenience.so.0.0.0
+7fc662292000-7fc662491000 ---p 00032000 08:01 12851979                   /home/elijah/tools/stk11.5.0/bin/libkmlconvenience.so.0.0.0
+7fc662491000-7fc662492000 r--p 00031000 08:01 12851979                   /home/elijah/tools/stk11.5.0/bin/libkmlconvenience.so.0.0.0
+7fc662492000-7fc662493000 rw-p 00032000 08:01 12851979                   /home/elijah/tools/stk11.5.0/bin/libkmlconvenience.so.0.0.0
+7fc662493000-7fc6624bd000 r-xp 00000000 08:01 12851976                   /home/elijah/tools/stk11.5.0/bin/libkmlbase.so.0.0.0
+7fc6624bd000-7fc6626bc000 ---p 0002a000 08:01 12851976                   /home/elijah/tools/stk11.5.0/bin/libkmlbase.so.0.0.0
+7fc6626bc000-7fc6626bd000 r--p 00029000 08:01 12851976                   /home/elijah/tools/stk11.5.0/bin/libkmlbase.so.0.0.0
+7fc6626bd000-7fc6626be000 rw-p 0002a000 08:01 12851976                   /home/elijah/tools/stk11.5.0/bin/libkmlbase.so.0.0.0
+7fc6626be000-7fc6626ec000 r-xp 00000000 08:01 12851956                   /home/elijah/tools/stk11.5.0/bin/libexpat.so.1.6.0
+7fc6626ec000-7fc6628ec000 ---p 0002e000 08:01 12851956                   /home/elijah/tools/stk11.5.0/bin/libexpat.so.1.6.0
+7fc6628ec000-7fc6628ee000 r--p 0002e000 08:01 12851956                   /home/elijah/tools/stk11.5.0/bin/libexpat.so.1.6.0
+7fc6628ee000-7fc6628ef000 rw-p 00030000 08:01 12851956                   /home/elijah/tools/stk11.5.0/bin/libexpat.so.1.6.0
+7fc6628ef000-7fc6628f7000 r-xp 00000000 08:01 12851998                   /home/elijah/tools/stk11.5.0/bin/libminizip_kml.so.0.0
+7fc6628f7000-7fc662af6000 ---p 00008000 08:01 12851998                   /home/elijah/tools/stk11.5.0/bin/libminizip_kml.so.0.0
+7fc662af6000-7fc662af7000 r--p 00007000 08:01 12851998                   /home/elijah/tools/stk11.5.0/bin/libminizip_kml.so.0.0
+7fc662af7000-7fc662af8000 rw-p 00008000 08:01 12851998                   /home/elijah/tools/stk11.5.0/bin/libminizip_kml.so.0.0
+7fc662af8000-7fc663ced000 r-xp 00000000 08:01 12851761                   /home/elijah/tools/stk11.5.0/bin/libagflight.so
+7fc663ced000-7fc663eec000 ---p 011f5000 08:01 12851761                   /home/elijah/tools/stk11.5.0/bin/libagflight.so
+7fc663eec000-7fc663fe0000 r--p 011f4000 08:01 12851761                   /home/elijah/tools/stk11.5.0/bin/libagflight.so
+7fc663fe0000-7fc66400b000 rw-p 012e8000 08:01 12851761                   /home/elijah/tools/stk11.5.0/bin/libagflight.so
+7fc66400b000-7fc664011000 rw-p 00000000 00:00 0 
+7fc664011000-7fc664036000 r-xp 00000000 08:01 12851763                   /home/elijah/tools/stk11.5.0/bin/libagflightutilities.so
+7fc664036000-7fc664235000 ---p 00025000 08:01 12851763                   /home/elijah/tools/stk11.5.0/bin/libagflightutilities.so
+7fc664235000-7fc664236000 r--p 00024000 08:01 12851763                   /home/elijah/tools/stk11.5.0/bin/libagflightutilities.so
+7fc664236000-7fc664237000 rw-p 00025000 08:01 12851763                   /home/elijah/tools/stk11.5.0/bin/libagflightutilities.so
+7fc664237000-7fc664238000 rw-p 00000000 00:00 0 
+7fc664238000-7fc664244000 r-xp 00000000 08:01 12851671                   /home/elijah/tools/stk11.5.0/bin/libagabstimedaycountlib.so
+7fc664244000-7fc664444000 ---p 0000c000 08:01 12851671                   /home/elijah/tools/stk11.5.0/bin/libagabstimedaycountlib.so
+7fc664444000-7fc664445000 r--p 0000c000 08:01 12851671                   /home/elijah/tools/stk11.5.0/bin/libagabstimedaycountlib.so
+7fc664445000-7fc664446000 rw-p 0000d000 08:01 12851671                   /home/elijah/tools/stk11.5.0/bin/libagabstimedaycountlib.so
+7fc664446000-7fc664480000 r-xp 00000000 08:01 12851803                   /home/elijah/tools/stk11.5.0/bin/libagiboost_serialization.so.1.66.0
+7fc664480000-7fc66467f000 ---p 0003a000 08:01 12851803                   /home/elijah/tools/stk11.5.0/bin/libagiboost_serialization.so.1.66.0
+7fc66467f000-7fc664682000 r--p 00039000 08:01 12851803                   /home/elijah/tools/stk11.5.0/bin/libagiboost_serialization.so.1.66.0
+7fc664682000-7fc664683000 rw-p 0003c000 08:01 12851803                   /home/elijah/tools/stk11.5.0/bin/libagiboost_serialization.so.1.66.0
+7fc664683000-7fc664699000 r-xp 00000000 08:01 12851926                   /home/elijah/tools/stk11.5.0/bin/libagutscalingutils.so
+7fc664699000-7fc664898000 ---p 00016000 08:01 12851926                   /home/elijah/tools/stk11.5.0/bin/libagutscalingutils.so
+7fc664898000-7fc664899000 r--p 00015000 08:01 12851926                   /home/elijah/tools/stk11.5.0/bin/libagutscalingutils.so
+7fc664899000-7fc66489a000 rw-p 00016000 08:01 12851926                   /home/elijah/tools/stk11.5.0/bin/libagutscalingutils.so
+7fc66489a000-7fc6648c1000 r-xp 00000000 08:01 12851924                   /home/elijah/tools/stk11.5.0/bin/libagutpseudospectralutils.so
+7fc6648c1000-7fc664ac0000 ---p 00027000 08:01 12851924                   /home/elijah/tools/stk11.5.0/bin/libagutpseudospectralutils.so
+7fc664ac0000-7fc664ac1000 r--p 00026000 08:01 12851924                   /home/elijah/tools/stk11.5.0/bin/libagutpseudospectralutils.so
+7fc664ac1000-7fc664ac2000 rw-p 00027000 08:01 12851924                   /home/elijah/tools/stk11.5.0/bin/libagutpseudospectralutils.so
+7fc664ac2000-7fc664afc000 r-xp 00000000 08:01 12851911                   /home/elijah/tools/stk11.5.0/bin/libagutcollocationcore.so
+7fc664afc000-7fc664cfb000 ---p 0003a000 08:01 12851911                   /home/elijah/tools/stk11.5.0/bin/libagutcollocationcore.so
+7fc664cfb000-7fc664cfc000 r--p 00039000 08:01 12851911                   /home/elijah/tools/stk11.5.0/bin/libagutcollocationcore.so
+7fc664cfc000-7fc664cfd000 rw-p 0003a000 08:01 12851911                   /home/elijah/tools/stk11.5.0/bin/libagutcollocationcore.so
+7fc664cfd000-7fc664d11000 r-xp 00000000 08:01 12851776                   /home/elijah/tools/stk11.5.0/bin/libaggxattrutil.so
+7fc664d11000-7fc664f10000 ---p 00014000 08:01 12851776                   /home/elijah/tools/stk11.5.0/bin/libaggxattrutil.so
+7fc664f10000-7fc664f11000 r--p 00013000 08:01 12851776                   /home/elijah/tools/stk11.5.0/bin/libaggxattrutil.so
+7fc664f11000-7fc664f12000 rw-p 00014000 08:01 12851776                   /home/elijah/tools/stk11.5.0/bin/libaggxattrutil.so
+7fc664f12000-7fc664f1d000 r-xp 00000000 08:01 12851873                   /home/elijah/tools/stk11.5.0/bin/libagsearch.so
+7fc664f1d000-7fc66511c000 ---p 0000b000 08:01 12851873                   /home/elijah/tools/stk11.5.0/bin/libagsearch.so
+7fc66511c000-7fc66511d000 r--p 0000a000 08:01 12851873                   /home/elijah/tools/stk11.5.0/bin/libagsearch.so
+7fc66511d000-7fc66511e000 rw-p 0000b000 08:01 12851873                   /home/elijah/tools/stk11.5.0/bin/libagsearch.so
+7fc66511e000-7fc665120000 r-xp 00000000 08:01 12851765                   /home/elijah/tools/stk11.5.0/bin/libaggatorplugin.so
+7fc665120000-7fc66531f000 ---p 00002000 08:01 12851765                   /home/elijah/tools/stk11.5.0/bin/libaggatorplugin.so
+7fc66531f000-7fc665320000 r--p 00001000 08:01 12851765                   /home/elijah/tools/stk11.5.0/bin/libaggatorplugin.so
+7fc665320000-7fc665321000 rw-p 00002000 08:01 12851765                   /home/elijah/tools/stk11.5.0/bin/libaggatorplugin.so
+7fc665321000-7fc665349000 r-xp 00000000 08:01 12851708                   /home/elijah/tools/stk11.5.0/bin/libagcomstackclasses.so
+7fc665349000-7fc665548000 ---p 00028000 08:01 12851708                   /home/elijah/tools/stk11.5.0/bin/libagcomstackclasses.so
+7fc665548000-7fc66554a000 r--p 00027000 08:01 12851708                   /home/elijah/tools/stk11.5.0/bin/libagcomstackclasses.so
+7fc66554a000-7fc66554b000 rw-p 00029000 08:01 12851708                   /home/elijah/tools/stk11.5.0/bin/libagcomstackclasses.so
+7fc66554b000-7fc66555e000 r-xp 00000000 08:01 12851891                   /home/elijah/tools/stk11.5.0/bin/libagstkplugin.so
+7fc66555e000-7fc66575d000 ---p 00013000 08:01 12851891                   /home/elijah/tools/stk11.5.0/bin/libagstkplugin.so
+7fc66575d000-7fc66575f000 r--p 00012000 08:01 12851891                   /home/elijah/tools/stk11.5.0/bin/libagstkplugin.so
+7fc66575f000-7fc665760000 rw-p 00014000 08:01 12851891                   /home/elijah/tools/stk11.5.0/bin/libagstkplugin.so
+7fc665760000-7fc66577c000 r-xp 00000000 08:01 12851930                   /home/elijah/tools/stk11.5.0/bin/libagviewerdatafile.so
+7fc66577c000-7fc66597c000 ---p 0001c000 08:01 12851930                   /home/elijah/tools/stk11.5.0/bin/libagviewerdatafile.so
+7fc66597c000-7fc66597d000 r--p 0001c000 08:01 12851930                   /home/elijah/tools/stk11.5.0/bin/libagviewerdatafile.so
+7fc66597d000-7fc66597e000 rw-p 0001d000 08:01 12851930                   /home/elijah/tools/stk11.5.0/bin/libagviewerdatafile.so
+7fc66597e000-7fc66597f000 rw-p 00000000 00:00 0 
+7fc66597f000-7fc665a1f000 r-xp 00000000 08:01 12851928                   /home/elijah/tools/stk11.5.0/bin/libagvehpop.so
+7fc665a1f000-7fc665c1f000 ---p 000a0000 08:01 12851928                   /home/elijah/tools/stk11.5.0/bin/libagvehpop.so
+7fc665c1f000-7fc665c24000 r--p 000a0000 08:01 12851928                   /home/elijah/tools/stk11.5.0/bin/libagvehpop.so
+7fc665c24000-7fc665c28000 rw-p 000a5000 08:01 12851928                   /home/elijah/tools/stk11.5.0/bin/libagvehpop.so
+7fc665c28000-7fc665c41000 r-xp 00000000 08:01 12851918                   /home/elijah/tools/stk11.5.0/bin/libagutnumericalopt.so
+7fc665c41000-7fc665e40000 ---p 00019000 08:01 12851918                   /home/elijah/tools/stk11.5.0/bin/libagutnumericalopt.so
+7fc665e40000-7fc665e41000 r--p 00018000 08:01 12851918                   /home/elijah/tools/stk11.5.0/bin/libagutnumericalopt.so
+7fc665e41000-7fc665e42000 rw-p 00019000 08:01 12851918                   /home/elijah/tools/stk11.5.0/bin/libagutnumericalopt.so
+7fc665e42000-7fc665e9a000 r-xp 00000000 08:01 12851915                   /home/elijah/tools/stk11.5.0/bin/libagutkml.so
+7fc665e9a000-7fc66609a000 ---p 00058000 08:01 12851915                   /home/elijah/tools/stk11.5.0/bin/libagutkml.so
+7fc66609a000-7fc66609d000 r--p 00058000 08:01 12851915                   /home/elijah/tools/stk11.5.0/bin/libagutkml.so
+7fc66609d000-7fc66609e000 rw-p 0005b000 08:01 12851915                   /home/elijah/tools/stk11.5.0/bin/libagutkml.so
+7fc66609e000-7fc66609f000 rw-p 00000000 00:00 0 
+7fc66609f000-7fc666472000 r-xp 00000000 08:01 12851892                   /home/elijah/tools/stk11.5.0/bin/libagstkradar.so
+7fc666472000-7fc666671000 ---p 003d3000 08:01 12851892                   /home/elijah/tools/stk11.5.0/bin/libagstkradar.so
+7fc666671000-7fc6666a0000 r--p 003d2000 08:01 12851892                   /home/elijah/tools/stk11.5.0/bin/libagstkradar.so
+7fc6666a0000-7fc6666a9000 rw-p 00401000 08:01 12851892                   /home/elijah/tools/stk11.5.0/bin/libagstkradar.so
+7fc6666a9000-7fc6666ab000 rw-p 00000000 00:00 0 
+7fc6666ab000-7fc66671b000 r-xp 00000000 08:01 12851885                   /home/elijah/tools/stk11.5.0/bin/libagstkflight.so
+7fc66671b000-7fc66691b000 ---p 00070000 08:01 12851885                   /home/elijah/tools/stk11.5.0/bin/libagstkflight.so
+7fc66691b000-7fc66691d000 r--p 00070000 08:01 12851885                   /home/elijah/tools/stk11.5.0/bin/libagstkflight.so
+7fc66691d000-7fc66691e000 rw-p 00072000 08:01 12851885                   /home/elijah/tools/stk11.5.0/bin/libagstkflight.so
+7fc66691e000-7fc66696e000 r-xp 00000000 08:01 12851884                   /home/elijah/tools/stk11.5.0/bin/libagstkempropagation.so
+7fc66696e000-7fc666b6d000 ---p 00050000 08:01 12851884                   /home/elijah/tools/stk11.5.0/bin/libagstkempropagation.so
+7fc666b6d000-7fc666b70000 r--p 0004f000 08:01 12851884                   /home/elijah/tools/stk11.5.0/bin/libagstkempropagation.so
+7fc666b70000-7fc666b71000 rw-p 00052000 08:01 12851884                   /home/elijah/tools/stk11.5.0/bin/libagstkempropagation.so
+7fc666b71000-7fc666b9d000 r-xp 00000000 08:01 12851883                   /home/elijah/tools/stk11.5.0/bin/libagstkcommrdrcomponentmgrext.so
+7fc666b9d000-7fc666d9d000 ---p 0002c000 08:01 12851883                   /home/elijah/tools/stk11.5.0/bin/libagstkcommrdrcomponentmgrext.so
+7fc666d9d000-7fc666d9e000 r--p 0002c000 08:01 12851883                   /home/elijah/tools/stk11.5.0/bin/libagstkcommrdrcomponentmgrext.so
+7fc666d9e000-7fc666d9f000 rw-p 0002d000 08:01 12851883                   /home/elijah/tools/stk11.5.0/bin/libagstkcommrdrcomponentmgrext.so
+7fc666d9f000-7fc666e82000 r-xp 00000000 08:01 12851882                   /home/elijah/tools/stk11.5.0/bin/libagstkcommrdrcommon.so
+7fc666e82000-7fc667081000 ---p 000e3000 08:01 12851882                   /home/elijah/tools/stk11.5.0/bin/libagstkcommrdrcommon.so
+7fc667081000-7fc66708a000 r--p 000e2000 08:01 12851882                   /home/elijah/tools/stk11.5.0/bin/libagstkcommrdrcommon.so
+7fc66708a000-7fc66708f000 rw-p 000eb000 08:01 12851882                   /home/elijah/tools/stk11.5.0/bin/libagstkcommrdrcommon.so
+7fc66708f000-7fc667464000 r-xp 00000000 08:01 12851880                   /home/elijah/tools/stk11.5.0/bin/libagstkcomm.so
+7fc667464000-7fc667663000 ---p 003d5000 08:01 12851880                   /home/elijah/tools/stk11.5.0/bin/libagstkcomm.so
+7fc667663000-7fc66768b000 r--p 003d4000 08:01 12851880                   /home/elijah/tools/stk11.5.0/bin/libagstkcomm.so
+7fc66768b000-7fc667696000 rw-p 003fc000 08:01 12851880                   /home/elijah/tools/stk11.5.0/bin/libagstkcomm.so
+7fc667696000-7fc667698000 rw-p 00000000 00:00 0 
+7fc667698000-7fc667739000 r-xp 00000000 08:01 12851879                   /home/elijah/tools/stk11.5.0/bin/libagstkantenna.so
+7fc667739000-7fc667938000 ---p 000a1000 08:01 12851879                   /home/elijah/tools/stk11.5.0/bin/libagstkantenna.so
+7fc667938000-7fc66793c000 r--p 000a0000 08:01 12851879                   /home/elijah/tools/stk11.5.0/bin/libagstkantenna.so
+7fc66793c000-7fc66793e000 rw-p 000a4000 08:01 12851879                   /home/elijah/tools/stk11.5.0/bin/libagstkantenna.so
+7fc66793e000-7fc6679b6000 r-xp 00000000 08:01 12851865                   /home/elijah/tools/stk11.5.0/bin/libagrf.so
+7fc6679b6000-7fc667bb5000 ---p 00078000 08:01 12851865                   /home/elijah/tools/stk11.5.0/bin/libagrf.so
+7fc667bb5000-7fc667bba000 r--p 00077000 08:01 12851865                   /home/elijah/tools/stk11.5.0/bin/libagrf.so
+7fc667bba000-7fc667bbe000 rw-p 0007c000 08:01 12851865                   /home/elijah/tools/stk11.5.0/bin/libagrf.so
+7fc667bbe000-7fc667bd0000 r-xp 00000000 08:01 12851858                   /home/elijah/tools/stk11.5.0/bin/libagmwengext.so
+7fc667bd0000-7fc667dcf000 ---p 00012000 08:01 12851858                   /home/elijah/tools/stk11.5.0/bin/libagmwengext.so
+7fc667dcf000-7fc667dd0000 r--p 00011000 08:01 12851858                   /home/elijah/tools/stk11.5.0/bin/libagmwengext.so
+7fc667dd0000-7fc667dd1000 rw-p 00012000 08:01 12851858                   /home/elijah/tools/stk11.5.0/bin/libagmwengext.so
+7fc667dd1000-7fc667dfe000 r-xp 00000000 08:01 12851856                   /home/elijah/tools/stk11.5.0/bin/libagms.so
+7fc667dfe000-7fc667ffd000 ---p 0002d000 08:01 12851856                   /home/elijah/tools/stk11.5.0/bin/libagms.so
+7fc667ffd000-7fc667fff000 r--p 0002c000 08:01 12851856                   /home/elijah/tools/stk11.5.0/bin/libagms.so
+7fc667fff000-7fc668000000 rw-p 0002e000 08:01 12851856                   /home/elijah/tools/stk11.5.0/bin/libagms.so
+7fc668000000-7fc668021000 rw-p 00000000 00:00 0 
+7fc668021000-7fc66c000000 ---p 00000000 00:00 0 
+7fc66c030000-7fc66c1db000 rw-p 00000000 00:00 0 
+7fc66c1db000-7fc66ce1a000 r-xp 00000000 08:01 12851764                   /home/elijah/tools/stk11.5.0/bin/libaggator.so
+7fc66ce1a000-7fc66d01a000 ---p 00c3f000 08:01 12851764                   /home/elijah/tools/stk11.5.0/bin/libaggator.so
+7fc66d01a000-7fc66d095000 r--p 00c3f000 08:01 12851764                   /home/elijah/tools/stk11.5.0/bin/libaggator.so
+7fc66d095000-7fc66d09f000 rw-p 00cba000 08:01 12851764                   /home/elijah/tools/stk11.5.0/bin/libaggator.so
+7fc66d09f000-7fc66d0ac000 rw-p 00000000 00:00 0 
+7fc66d0ac000-7fc66d0b8000 r-xp 00000000 08:01 12851750                   /home/elijah/tools/stk11.5.0/bin/libagconnectutil.so
+7fc66d0b8000-7fc66d2b7000 ---p 0000c000 08:01 12851750                   /home/elijah/tools/stk11.5.0/bin/libagconnectutil.so
+7fc66d2b7000-7fc66d2b8000 r--p 0000b000 08:01 12851750                   /home/elijah/tools/stk11.5.0/bin/libagconnectutil.so
+7fc66d2b8000-7fc66d2b9000 rw-p 0000c000 08:01 12851750                   /home/elijah/tools/stk11.5.0/bin/libagconnectutil.so
+7fc66d2b9000-7fc66d732000 r-xp 00000000 08:01 12851706                   /home/elijah/tools/stk11.5.0/bin/libagcommrdrfoundation.so
+7fc66d732000-7fc66d932000 ---p 00479000 08:01 12851706                   /home/elijah/tools/stk11.5.0/bin/libagcommrdrfoundation.so
+7fc66d932000-7fc66d974000 r--p 00479000 08:01 12851706                   /home/elijah/tools/stk11.5.0/bin/libagcommrdrfoundation.so
+7fc66d974000-7fc66d978000 rw-p 004bb000 08:01 12851706                   /home/elijah/tools/stk11.5.0/bin/libagcommrdrfoundation.so
+7fc66d978000-7fc66dfb0000 rw-p 00000000 00:00 0 
+7fc66dfb0000-7fc66dffb000 r-xp 00000000 08:01 12851701                   /home/elijah/tools/stk11.5.0/bin/libagcatalogservices.so
+7fc66dffb000-7fc66e1fa000 ---p 0004b000 08:01 12851701                   /home/elijah/tools/stk11.5.0/bin/libagcatalogservices.so
+7fc66e1fa000-7fc66e1fc000 r--p 0004a000 08:01 12851701                   /home/elijah/tools/stk11.5.0/bin/libagcatalogservices.so
+7fc66e1fc000-7fc66e1fd000 rw-p 0004c000 08:01 12851701                   /home/elijah/tools/stk11.5.0/bin/libagcatalogservices.so
+7fc66e1fd000-7fc66e36c000 r-xp 00000000 08:01 12851700                   /home/elijah/tools/stk11.5.0/bin/libagcat.so
+7fc66e36c000-7fc66e56b000 ---p 0016f000 08:01 12851700                   /home/elijah/tools/stk11.5.0/bin/libagcat.so
+7fc66e56b000-7fc66e573000 r--p 0016e000 08:01 12851700                   /home/elijah/tools/stk11.5.0/bin/libagcat.so
+7fc66e573000-7fc66e578000 rw-p 00176000 08:01 12851700                   /home/elijah/tools/stk11.5.0/bin/libagcat.so
+7fc66e578000-7fc66e59f000 r-xp 00000000 08:01 12851699                   /home/elijah/tools/stk11.5.0/bin/libagattsim.so
+7fc66e59f000-7fc66e79e000 ---p 00027000 08:01 12851699                   /home/elijah/tools/stk11.5.0/bin/libagattsim.so
+7fc66e79e000-7fc66e79f000 r--p 00026000 08:01 12851699                   /home/elijah/tools/stk11.5.0/bin/libagattsim.so
+7fc66e79f000-7fc66e7a0000 rw-p 00027000 08:01 12851699                   /home/elijah/tools/stk11.5.0/bin/libagattsim.so
+7fc66e7a0000-7fc66e807000 r-xp 00000000 08:01 12851696                   /home/elijah/tools/stk11.5.0/bin/libagat.so
+7fc66e807000-7fc66ea06000 ---p 00067000 08:01 12851696                   /home/elijah/tools/stk11.5.0/bin/libagat.so
+7fc66ea06000-7fc66ea09000 r--p 00066000 08:01 12851696                   /home/elijah/tools/stk11.5.0/bin/libagat.so
+7fc66ea09000-7fc66ea0b000 rw-p 00069000 08:01 12851696                   /home/elijah/tools/stk11.5.0/bin/libagat.so
+7fc66ea0b000-7fc66ea30000 r-xp 00000000 08:01 12851689                   /home/elijah/tools/stk11.5.0/bin/libagasplugin.so
+7fc66ea30000-7fc66ec30000 ---p 00025000 08:01 12851689                   /home/elijah/tools/stk11.5.0/bin/libagasplugin.so
+7fc66ec30000-7fc66ec32000 r--p 00025000 08:01 12851689                   /home/elijah/tools/stk11.5.0/bin/libagasplugin.so
+7fc66ec32000-7fc66ec33000 rw-p 00027000 08:01 12851689                   /home/elijah/tools/stk11.5.0/bin/libagasplugin.so
+7fc66ec33000-7fc66ec41000 r-xp 00000000 08:01 12851686                   /home/elijah/tools/stk11.5.0/bin/libagasiri20xxtec.so
+7fc66ec41000-7fc66ee40000 ---p 0000e000 08:01 12851686                   /home/elijah/tools/stk11.5.0/bin/libagasiri20xxtec.so
+7fc66ee40000-7fc66ee41000 r--p 0000d000 08:01 12851686                   /home/elijah/tools/stk11.5.0/bin/libagasiri20xxtec.so
+7fc66ee41000-7fc66ee42000 rw-p 0000e000 08:01 12851686                   /home/elijah/tools/stk11.5.0/bin/libagasiri20xxtec.so
+7fc66ee42000-7fc66ee44000 rw-p 00000000 00:00 0 
+7fc66ee44000-7fc66eed7000 r-xp 00000000 08:01 12851931                   /home/elijah/tools/stk11.5.0/bin/libagvolumetric.so
+7fc66eed7000-7fc66f0d6000 ---p 00093000 08:01 12851931                   /home/elijah/tools/stk11.5.0/bin/libagvolumetric.so
+7fc66f0d6000-7fc66f0dc000 r--p 00092000 08:01 12851931                   /home/elijah/tools/stk11.5.0/bin/libagvolumetric.so
+7fc66f0dc000-7fc66f0e0000 rw-p 00098000 08:01 12851931                   /home/elijah/tools/stk11.5.0/bin/libagvolumetric.so
+7fc66f0e0000-7fc66fccd000 r-xp 00000000 08:01 12851895                   /home/elijah/tools/stk11.5.0/bin/libagstkxengine.so
+7fc66fccd000-7fc66fecd000 ---p 00bed000 08:01 12851895                   /home/elijah/tools/stk11.5.0/bin/libagstkxengine.so
+7fc66fecd000-7fc66ff02000 r--p 00bed000 08:01 12851895                   /home/elijah/tools/stk11.5.0/bin/libagstkxengine.so
+7fc66ff02000-7fc66ff2e000 rw-p 00c22000 08:01 12851895                   /home/elijah/tools/stk11.5.0/bin/libagstkxengine.so
+7fc66ff2e000-7fc66ff4b000 rw-p 00000000 00:00 0 
+7fc66ff4b000-7fc66ff84000 r-xp 00000000 08:01 12851698                   /home/elijah/tools/stk11.5.0/bin/libagattrautomation.so
+7fc66ff84000-7fc670184000 ---p 00039000 08:01 12851698                   /home/elijah/tools/stk11.5.0/bin/libagattrautomation.so
+7fc670184000-7fc670187000 r--p 00039000 08:01 12851698                   /home/elijah/tools/stk11.5.0/bin/libagattrautomation.so
+7fc670187000-7fc670188000 rw-p 0003c000 08:01 12851698                   /home/elijah/tools/stk11.5.0/bin/libagattrautomation.so
+7fc670188000-7fc6701a0000 r-xp 00000000 08:01 12851859                   /home/elijah/tools/stk11.5.0/bin/libagmwengine.so
+7fc6701a0000-7fc67039f000 ---p 00018000 08:01 12851859                   /home/elijah/tools/stk11.5.0/bin/libagmwengine.so
+7fc67039f000-7fc6703a0000 r--p 00017000 08:01 12851859                   /home/elijah/tools/stk11.5.0/bin/libagmwengine.so
+7fc6703a0000-7fc6703a1000 rw-p 00018000 08:01 12851859                   /home/elijah/tools/stk11.5.0/bin/libagmwengine.so
+7fc6703a1000-7fc6703a2000 rw-p 00000000 00:00 0 
+7fc6703a2000-7fc6703af000 r-xp 00000000 08:01 12851871                   /home/elijah/tools/stk11.5.0/bin/libagscriptutil.so
+7fc6703af000-7fc6705af000 ---p 0000d000 08:01 12851871                   /home/elijah/tools/stk11.5.0/bin/libagscriptutil.so
+7fc6705af000-7fc6705b0000 r--p 0000d000 08:01 12851871                   /home/elijah/tools/stk11.5.0/bin/libagscriptutil.so
+7fc6705b0000-7fc6705b1000 rw-p 0000e000 08:01 12851871                   /home/elijah/tools/stk11.5.0/bin/libagscriptutil.so
+7fc6705b1000-7fc6705c3000 r-xp 00000000 08:01 12851866                   /home/elijah/tools/stk11.5.0/bin/libagscript.so
+7fc6705c3000-7fc6707c2000 ---p 00012000 08:01 12851866                   /home/elijah/tools/stk11.5.0/bin/libagscript.so
+7fc6707c2000-7fc6707c3000 r--p 00011000 08:01 12851866                   /home/elijah/tools/stk11.5.0/bin/libagscript.so
+7fc6707c3000-7fc6707c4000 rw-p 00012000 08:01 12851866                   /home/elijah/tools/stk11.5.0/bin/libagscript.so
+7fc6707c4000-7fc6707cf000 r-xp 00000000 08:01 12851867                   /home/elijah/tools/stk11.5.0/bin/libagscriptcommon.so
+7fc6707cf000-7fc6709cf000 ---p 0000b000 08:01 12851867                   /home/elijah/tools/stk11.5.0/bin/libagscriptcommon.so
+7fc6709cf000-7fc6709d0000 r--p 0000b000 08:01 12851867                   /home/elijah/tools/stk11.5.0/bin/libagscriptcommon.so
+7fc6709d0000-7fc6709d1000 rw-p 0000c000 08:01 12851867                   /home/elijah/tools/stk11.5.0/bin/libagscriptcommon.so
+7fc6709d1000-7fc6709f0000 r-xp 00000000 08:01 12851813                   /home/elijah/tools/stk11.5.0/bin/libagintegration.so
+7fc6709f0000-7fc670bf0000 ---p 0001f000 08:01 12851813                   /home/elijah/tools/stk11.5.0/bin/libagintegration.so
+7fc670bf0000-7fc670bf1000 r--p 0001f000 08:01 12851813                   /home/elijah/tools/stk11.5.0/bin/libagintegration.so
+7fc670bf1000-7fc670bf2000 rw-p 00020000 08:01 12851813                   /home/elijah/tools/stk11.5.0/bin/libagintegration.so
+7fc670bf2000-7fc670cee000 r-xp 00000000 08:01 12851801                   /home/elijah/tools/stk11.5.0/bin/libagiboost_regex.so.1.66.0
+7fc670cee000-7fc670eed000 ---p 000fc000 08:01 12851801                   /home/elijah/tools/stk11.5.0/bin/libagiboost_regex.so.1.66.0
+7fc670eed000-7fc670ef1000 r--p 000fb000 08:01 12851801                   /home/elijah/tools/stk11.5.0/bin/libagiboost_regex.so.1.66.0
+7fc670ef1000-7fc670ef3000 rw-p 000ff000 08:01 12851801                   /home/elijah/tools/stk11.5.0/bin/libagiboost_regex.so.1.66.0
+7fc670ef3000-7fc670ef4000 rw-p 00000000 00:00 0 
+7fc670ef4000-7fc6710d4000 r-xp 00000000 08:01 12851683                   /home/elijah/tools/stk11.5.0/bin/libagasgpsutil.so
+7fc6710d4000-7fc6712d4000 ---p 001e0000 08:01 12851683                   /home/elijah/tools/stk11.5.0/bin/libagasgpsutil.so
+7fc6712d4000-7fc6712e1000 r--p 001e0000 08:01 12851683                   /home/elijah/tools/stk11.5.0/bin/libagasgpsutil.so
+7fc6712e1000-7fc6712e4000 rw-p 001ed000 08:01 12851683                   /home/elijah/tools/stk11.5.0/bin/libagasgpsutil.so
+7fc6712e4000-7fc6712e5000 rw-p 00000000 00:00 0 
+7fc6712e5000-7fc6713d1000 r-xp 00000000 08:01 12851861                   /home/elijah/tools/stk11.5.0/bin/libagpathgen.so
+7fc6713d1000-7fc6715d0000 ---p 000ec000 08:01 12851861                   /home/elijah/tools/stk11.5.0/bin/libagpathgen.so
+7fc6715d0000-7fc6715d5000 r--p 000eb000 08:01 12851861                   /home/elijah/tools/stk11.5.0/bin/libagpathgen.so
+7fc6715d5000-7fc6715da000 rw-p 000f0000 08:01 12851861                   /home/elijah/tools/stk11.5.0/bin/libagpathgen.so
+7fc6715da000-7fc67163f000 r-xp 00000000 08:01 12851678                   /home/elijah/tools/stk11.5.0/bin/libagascomponents.so
+7fc67163f000-7fc67183e000 ---p 00065000 08:01 12851678                   /home/elijah/tools/stk11.5.0/bin/libagascomponents.so
+7fc67183e000-7fc671842000 r--p 00064000 08:01 12851678                   /home/elijah/tools/stk11.5.0/bin/libagascomponents.so
+7fc671842000-7fc671843000 rw-p 00068000 08:01 12851678                   /home/elijah/tools/stk11.5.0/bin/libagascomponents.so
+7fc671843000-7fc671844000 rw-p 00000000 00:00 0 
+7fc671844000-7fc6718fc000 r-xp 00000000 08:01 12851703                   /home/elijah/tools/stk11.5.0/bin/libagcelestial.so
+7fc6718fc000-7fc671afc000 ---p 000b8000 08:01 12851703                   /home/elijah/tools/stk11.5.0/bin/libagcelestial.so
+7fc671afc000-7fc671b03000 r--p 000b8000 08:01 12851703                   /home/elijah/tools/stk11.5.0/bin/libagcelestial.so
+7fc671b03000-7fc671b08000 rw-p 000bf000 08:01 12851703                   /home/elijah/tools/stk11.5.0/bin/libagcelestial.so
+7fc671b08000-7fc671bd0000 r-xp 00000000 08:01 12851760                   /home/elijah/tools/stk11.5.0/bin/libagfac.so
+7fc671bd0000-7fc671dd0000 ---p 000c8000 08:01 12851760                   /home/elijah/tools/stk11.5.0/bin/libagfac.so
+7fc671dd0000-7fc671dd8000 r--p 000c8000 08:01 12851760                   /home/elijah/tools/stk11.5.0/bin/libagfac.so
+7fc671dd8000-7fc671ddd000 rw-p 000d0000 08:01 12851760                   /home/elijah/tools/stk11.5.0/bin/libagfac.so
+7fc671ddd000-7fc671e1f000 r-xp 00000000 08:01 12851855                   /home/elijah/tools/stk11.5.0/bin/libaglt.so
+7fc671e1f000-7fc67201f000 ---p 00042000 08:01 12851855                   /home/elijah/tools/stk11.5.0/bin/libaglt.so
+7fc67201f000-7fc672021000 r--p 00042000 08:01 12851855                   /home/elijah/tools/stk11.5.0/bin/libaglt.so
+7fc672021000-7fc672022000 rw-p 00044000 08:01 12851855                   /home/elijah/tools/stk11.5.0/bin/libaglt.so
+7fc672022000-7fc67203c000 r-xp 00000000 08:01 12851922                   /home/elijah/tools/stk11.5.0/bin/libagutplugin.so
+7fc67203c000-7fc67223b000 ---p 0001a000 08:01 12851922                   /home/elijah/tools/stk11.5.0/bin/libagutplugin.so
+7fc67223b000-7fc67223d000 r--p 00019000 08:01 12851922                   /home/elijah/tools/stk11.5.0/bin/libagutplugin.so
+7fc67223d000-7fc67223e000 rw-p 0001b000 08:01 12851922                   /home/elijah/tools/stk11.5.0/bin/libagutplugin.so
+7fc67223e000-7fc672252000 r-xp 00000000 08:01 12851870                   /home/elijah/tools/stk11.5.0/bin/libagscriptmgmt.so
+7fc672252000-7fc672451000 ---p 00014000 08:01 12851870                   /home/elijah/tools/stk11.5.0/bin/libagscriptmgmt.so
+7fc672451000-7fc672452000 r--p 00013000 08:01 12851870                   /home/elijah/tools/stk11.5.0/bin/libagscriptmgmt.so
+7fc672452000-7fc672453000 rw-p 00014000 08:01 12851870                   /home/elijah/tools/stk11.5.0/bin/libagscriptmgmt.so
+7fc672453000-7fc672487000 r-xp 00000000 08:01 12851868                   /home/elijah/tools/stk11.5.0/bin/libagscriptdriver.so
+7fc672487000-7fc672686000 ---p 00034000 08:01 12851868                   /home/elijah/tools/stk11.5.0/bin/libagscriptdriver.so
+7fc672686000-7fc672688000 r--p 00033000 08:01 12851868                   /home/elijah/tools/stk11.5.0/bin/libagscriptdriver.so
+7fc672688000-7fc672689000 rw-p 00035000 08:01 12851868                   /home/elijah/tools/stk11.5.0/bin/libagscriptdriver.so
+7fc672689000-7fc67269a000 r-xp 00000000 08:01 12851834                   /home/elijah/tools/stk11.5.0/bin/libagjni.so
+7fc67269a000-7fc67289a000 ---p 00011000 08:01 12851834                   /home/elijah/tools/stk11.5.0/bin/libagjni.so
+7fc67289a000-7fc67289b000 r--p 00011000 08:01 12851834                   /home/elijah/tools/stk11.5.0/bin/libagjni.so
+7fc67289b000-7fc67289c000 rw-p 00012000 08:01 12851834                   /home/elijah/tools/stk11.5.0/bin/libagjni.so
+7fc67289c000-7fc67295d000 r-xp 00000000 08:01 12851758                   /home/elijah/tools/stk11.5.0/bin/libagcrdnplugin.so
+7fc67295d000-7fc672b5c000 ---p 000c1000 08:01 12851758                   /home/elijah/tools/stk11.5.0/bin/libagcrdnplugin.so
+7fc672b5c000-7fc672b68000 r--p 000c0000 08:01 12851758                   /home/elijah/tools/stk11.5.0/bin/libagcrdnplugin.so
+7fc672b68000-7fc672b6b000 rw-p 000cc000 08:01 12851758                   /home/elijah/tools/stk11.5.0/bin/libagcrdnplugin.so
+7fc672b6b000-7fc672e39000 r-xp 00000000 08:01 12851925                   /home/elijah/tools/stk11.5.0/bin/libagutrwhd.so
+7fc672e39000-7fc673039000 ---p 002ce000 08:01 12851925                   /home/elijah/tools/stk11.5.0/bin/libagutrwhd.so
+7fc673039000-7fc67303d000 r--p 002ce000 08:01 12851925                   /home/elijah/tools/stk11.5.0/bin/libagutrwhd.so
+7fc67303d000-7fc673042000 rw-p 002d2000 08:01 12851925                   /home/elijah/tools/stk11.5.0/bin/libagutrwhd.so
+7fc673042000-7fc67304d000 rw-p 00000000 00:00 0 
+7fc67304d000-7fc673089000 r-xp 00000000 08:01 12851869                   /home/elijah/tools/stk11.5.0/bin/libagscriptdriverinterface.so
+7fc673089000-7fc673289000 ---p 0003c000 08:01 12851869                   /home/elijah/tools/stk11.5.0/bin/libagscriptdriverinterface.so
+7fc673289000-7fc67328a000 r--p 0003c000 08:01 12851869                   /home/elijah/tools/stk11.5.0/bin/libagscriptdriverinterface.so
+7fc67328a000-7fc67328b000 rw-p 0003d000 08:01 12851869                   /home/elijah/tools/stk11.5.0/bin/libagscriptdriverinterface.so
+7fc67328b000-7fc6732b2000 r-xp 00000000 08:01 12851702                   /home/elijah/tools/stk11.5.0/bin/libagcategoryregistry.so
+7fc6732b2000-7fc6734b1000 ---p 00027000 08:01 12851702                   /home/elijah/tools/stk11.5.0/bin/libagcategoryregistry.so
+7fc6734b1000-7fc6734b3000 r--p 00026000 08:01 12851702                   /home/elijah/tools/stk11.5.0/bin/libagcategoryregistry.so
+7fc6734b3000-7fc6734b4000 rw-p 00028000 08:01 12851702                   /home/elijah/tools/stk11.5.0/bin/libagcategoryregistry.so
+7fc6734b4000-7fc6735a3000 r-xp 00000000 08:01 12851690                   /home/elijah/tools/stk11.5.0/bin/libagaspropagate.so
+7fc6735a3000-7fc6737a3000 ---p 000ef000 08:01 12851690                   /home/elijah/tools/stk11.5.0/bin/libagaspropagate.so
+7fc6737a3000-7fc6737a8000 r--p 000ef000 08:01 12851690                   /home/elijah/tools/stk11.5.0/bin/libagaspropagate.so
+7fc6737a8000-7fc6737a9000 rw-p 000f4000 08:01 12851690                   /home/elijah/tools/stk11.5.0/bin/libagaspropagate.so
+7fc6737a9000-7fc67383f000 r-xp 00000000 08:01 12851675                   /home/elijah/tools/stk11.5.0/bin/libagasatmosphere.so
+7fc67383f000-7fc673a3f000 ---p 00096000 08:01 12851675                   /home/elijah/tools/stk11.5.0/bin/libagasatmosphere.so
+7fc673a3f000-7fc673a40000 r--p 00096000 08:01 12851675                   /home/elijah/tools/stk11.5.0/bin/libagasatmosphere.so
+7fc673a40000-7fc673a54000 rw-p 00097000 08:01 12851675                   /home/elijah/tools/stk11.5.0/bin/libagasatmosphere.so
+7fc673a54000-7fc673b84000 r-xp 00000000 08:01 12851684                   /home/elijah/tools/stk11.5.0/bin/libagashpopplugin.so
+7fc673b84000-7fc673d84000 ---p 00130000 08:01 12851684                   /home/elijah/tools/stk11.5.0/bin/libagashpopplugin.so
+7fc673d84000-7fc673d8e000 r--p 00130000 08:01 12851684                   /home/elijah/tools/stk11.5.0/bin/libagashpopplugin.so
+7fc673d8e000-7fc673d91000 rw-p 0013a000 08:01 12851684                   /home/elijah/tools/stk11.5.0/bin/libagashpopplugin.so
+7fc673d91000-7fc673dad000 r-xp 00000000 08:01 12851679                   /home/elijah/tools/stk11.5.0/bin/libagascssisgp4.so
+7fc673dad000-7fc673fac000 ---p 0001c000 08:01 12851679                   /home/elijah/tools/stk11.5.0/bin/libagascssisgp4.so
+7fc673fac000-7fc673fad000 r--p 0001b000 08:01 12851679                   /home/elijah/tools/stk11.5.0/bin/libagascssisgp4.so
+7fc673fad000-7fc673fae000 rw-p 0001c000 08:01 12851679                   /home/elijah/tools/stk11.5.0/bin/libagascssisgp4.so
+7fc673fae000-7fc673fc1000 r-xp 00000000 08:01 12851681                   /home/elijah/tools/stk11.5.0/bin/libagasgisshpfile.so
+7fc673fc1000-7fc6741c0000 ---p 00013000 08:01 12851681                   /home/elijah/tools/stk11.5.0/bin/libagasgisshpfile.so
+7fc6741c0000-7fc6741c1000 r--p 00012000 08:01 12851681                   /home/elijah/tools/stk11.5.0/bin/libagasgisshpfile.so
+7fc6741c1000-7fc6741c2000 rw-p 00013000 08:01 12851681                   /home/elijah/tools/stk11.5.0/bin/libagasgisshpfile.so
+7fc6741c2000-7fc67426c000 r-xp 00000000 08:01 12851688                   /home/elijah/tools/stk11.5.0/bin/libagaspathgen.so
+7fc67426c000-7fc67446c000 ---p 000aa000 08:01 12851688                   /home/elijah/tools/stk11.5.0/bin/libagaspathgen.so
+7fc67446c000-7fc67446d000 r--p 000aa000 08:01 12851688                   /home/elijah/tools/stk11.5.0/bin/libagaspathgen.so
+7fc67446d000-7fc67446f000 rw-p 000ab000 08:01 12851688                   /home/elijah/tools/stk11.5.0/bin/libagaspathgen.so
+7fc67446f000-7fc674476000 rw-p 00000000 00:00 0 
+7fc674476000-7fc674484000 r-xp 00000000 08:01 12851910                   /home/elijah/tools/stk11.5.0/bin/libagutchangetracking.so
+7fc674484000-7fc674684000 ---p 0000e000 08:01 12851910                   /home/elijah/tools/stk11.5.0/bin/libagutchangetracking.so
+7fc674684000-7fc674685000 r--p 0000e000 08:01 12851910                   /home/elijah/tools/stk11.5.0/bin/libagutchangetracking.so
+7fc674685000-7fc674686000 rw-p 0000f000 08:01 12851910                   /home/elijah/tools/stk11.5.0/bin/libagutchangetracking.so
+7fc674686000-7fc6746ed000 r-xp 00000000 08:01 12851872                   /home/elijah/tools/stk11.5.0/bin/libagsdf.so
+7fc6746ed000-7fc6748ec000 ---p 00067000 08:01 12851872                   /home/elijah/tools/stk11.5.0/bin/libagsdf.so
+7fc6748ec000-7fc6748ee000 r--p 00066000 08:01 12851872                   /home/elijah/tools/stk11.5.0/bin/libagsdf.so
+7fc6748ee000-7fc6748ef000 rw-p 00068000 08:01 12851872                   /home/elijah/tools/stk11.5.0/bin/libagsdf.so
+7fc6748ef000-7fc67490b000 r-xp 00000000 08:01 12851705                   /home/elijah/tools/stk11.5.0/bin/libagclassext.so
+7fc67490b000-7fc674b0b000 ---p 0001c000 08:01 12851705                   /home/elijah/tools/stk11.5.0/bin/libagclassext.so
+7fc674b0b000-7fc674b0c000 r--p 0001c000 08:01 12851705                   /home/elijah/tools/stk11.5.0/bin/libagclassext.so
+7fc674b0c000-7fc674b0d000 rw-p 0001d000 08:01 12851705                   /home/elijah/tools/stk11.5.0/bin/libagclassext.so
+7fc674b0d000-7fc674b1c000 r-xp 00000000 08:01 12851687                   /home/elijah/tools/stk11.5.0/bin/libagasjplde.so
+7fc674b1c000-7fc674d1b000 ---p 0000f000 08:01 12851687                   /home/elijah/tools/stk11.5.0/bin/libagasjplde.so
+7fc674d1b000-7fc674d1c000 r--p 0000e000 08:01 12851687                   /home/elijah/tools/stk11.5.0/bin/libagasjplde.so
+7fc674d1c000-7fc674d1d000 rw-p 0000f000 08:01 12851687                   /home/elijah/tools/stk11.5.0/bin/libagasjplde.so
+7fc674d1d000-7fc674d22000 rw-p 00000000 00:00 0 
+7fc674d22000-7fc674d41000 r-xp 00000000 08:01 12851691                   /home/elijah/tools/stk11.5.0/bin/libagasreferenceframe.so
+7fc674d41000-7fc674f40000 ---p 0001f000 08:01 12851691                   /home/elijah/tools/stk11.5.0/bin/libagasreferenceframe.so
+7fc674f40000-7fc674f41000 r--p 0001e000 08:01 12851691                   /home/elijah/tools/stk11.5.0/bin/libagasreferenceframe.so
+7fc674f41000-7fc674f43000 rw-p 0001f000 08:01 12851691                   /home/elijah/tools/stk11.5.0/bin/libagasreferenceframe.so
+7fc674f43000-7fc674f71000 r-xp 00000000 08:01 12851693                   /home/elijah/tools/stk11.5.0/bin/libagastfmmtx.so
+7fc674f71000-7fc675171000 ---p 0002e000 08:01 12851693                   /home/elijah/tools/stk11.5.0/bin/libagastfmmtx.so
+7fc675171000-7fc675172000 r--p 0002e000 08:01 12851693                   /home/elijah/tools/stk11.5.0/bin/libagastfmmtx.so
+7fc675172000-7fc675173000 rw-p 0002f000 08:01 12851693                   /home/elijah/tools/stk11.5.0/bin/libagastfmmtx.so
+7fc675173000-7fc675174000 rw-p 00000000 00:00 0 
+7fc675174000-7fc675ad5000 r-xp 00000000 08:01 12851929                   /home/elijah/tools/stk11.5.0/bin/libagvgt.so
+7fc675ad5000-7fc675cd5000 ---p 00961000 08:01 12851929                   /home/elijah/tools/stk11.5.0/bin/libagvgt.so
+7fc675cd5000-7fc675dc7000 r--p 00961000 08:01 12851929                   /home/elijah/tools/stk11.5.0/bin/libagvgt.so
+7fc675dc7000-7fc675de7000 rw-p 00a53000 08:01 12851929                   /home/elijah/tools/stk11.5.0/bin/libagvgt.so
+7fc675de7000-7fc675de8000 rw-p 00000000 00:00 0 
+7fc675de8000-7fc67601b000 r-xp 00000000 08:01 12851927                   /home/elijah/tools/stk11.5.0/bin/libagveh.so
+7fc67601b000-7fc67621b000 ---p 00233000 08:01 12851927                   /home/elijah/tools/stk11.5.0/bin/libagveh.so
+7fc67621b000-7fc676228000 r--p 00233000 08:01 12851927                   /home/elijah/tools/stk11.5.0/bin/libagveh.so
+7fc676228000-7fc67622f000 rw-p 00240000 08:01 12851927                   /home/elijah/tools/stk11.5.0/bin/libagveh.so
+7fc67622f000-7fc676231000 rw-p 00000000 00:00 0 
+7fc676231000-7fc676396000 r-xp 00000000 08:01 12851921                   /home/elijah/tools/stk11.5.0/bin/libagutom.so
+7fc676396000-7fc676596000 ---p 00165000 08:01 12851921                   /home/elijah/tools/stk11.5.0/bin/libagutom.so
+7fc676596000-7fc67659b000 r--p 00165000 08:01 12851921                   /home/elijah/tools/stk11.5.0/bin/libagutom.so
+7fc67659b000-7fc67659f000 rw-p 0016a000 08:01 12851921                   /home/elijah/tools/stk11.5.0/bin/libagutom.so
+7fc67659f000-7fc6765a4000 rw-p 00000000 00:00 0 
+7fc6765a4000-7fc676707000 r-xp 00000000 08:01 12851909                   /home/elijah/tools/stk11.5.0/bin/libagutattrext.so
+7fc676707000-7fc676907000 ---p 00163000 08:01 12851909                   /home/elijah/tools/stk11.5.0/bin/libagutattrext.so
+7fc676907000-7fc676912000 r--p 00163000 08:01 12851909                   /home/elijah/tools/stk11.5.0/bin/libagutattrext.so
+7fc676912000-7fc676915000 rw-p 0016e000 08:01 12851909                   /home/elijah/tools/stk11.5.0/bin/libagutattrext.so
+7fc676915000-7fc676916000 rw-p 00000000 00:00 0 
+7fc676916000-7fc67699f000 r-xp 00000000 08:01 12851908                   /home/elijah/tools/stk11.5.0/bin/libagutattr.so
+7fc67699f000-7fc676b9e000 ---p 00089000 08:01 12851908                   /home/elijah/tools/stk11.5.0/bin/libagutattr.so
+7fc676b9e000-7fc676ba4000 r--p 00088000 08:01 12851908                   /home/elijah/tools/stk11.5.0/bin/libagutattr.so
+7fc676ba4000-7fc676ba6000 rw-p 0008e000 08:01 12851908                   /home/elijah/tools/stk11.5.0/bin/libagutattr.so
+7fc676ba6000-7fc676ba7000 rw-p 00000000 00:00 0 
+7fc676ba7000-7fc676ce3000 r-xp 00000000 08:01 12851894                   /home/elijah/tools/stk11.5.0/bin/libagstkutil.so
+7fc676ce3000-7fc676ee2000 ---p 0013c000 08:01 12851894                   /home/elijah/tools/stk11.5.0/bin/libagstkutil.so
+7fc676ee2000-7fc676efb000 r--p 0013b000 08:01 12851894                   /home/elijah/tools/stk11.5.0/bin/libagstkutil.so
+7fc676efb000-7fc676f00000 rw-p 00154000 08:01 12851894                   /home/elijah/tools/stk11.5.0/bin/libagstkutil.so
+7fc676f00000-7fc676f14000 r-xp 00000000 08:01 12851893                   /home/elijah/tools/stk11.5.0/bin/libagstksystem.so
+7fc676f14000-7fc677113000 ---p 00014000 08:01 12851893                   /home/elijah/tools/stk11.5.0/bin/libagstksystem.so
+7fc677113000-7fc677114000 r--p 00013000 08:01 12851893                   /home/elijah/tools/stk11.5.0/bin/libagstksystem.so
+7fc677114000-7fc677115000 rw-p 00014000 08:01 12851893                   /home/elijah/tools/stk11.5.0/bin/libagstksystem.so
+7fc677115000-7fc6772cb000 r-xp 00000000 08:01 12851877                   /home/elijah/tools/stk11.5.0/bin/libagsensor.so
+7fc6772cb000-7fc6774ca000 ---p 001b6000 08:01 12851877                   /home/elijah/tools/stk11.5.0/bin/libagsensor.so
+7fc6774ca000-7fc6774d5000 r--p 001b5000 08:01 12851877                   /home/elijah/tools/stk11.5.0/bin/libagsensor.so
+7fc6774d5000-7fc6774db000 rw-p 001c0000 08:01 12851877                   /home/elijah/tools/stk11.5.0/bin/libagsensor.so
+7fc6774db000-7fc6774dc000 rw-p 00000000 00:00 0 
+7fc6774dc000-7fc6776e4000 r-xp 00000000 08:01 12851814                   /home/elijah/tools/stk11.5.0/bin/libaginview.so
+7fc6776e4000-7fc6778e3000 ---p 00208000 08:01 12851814                   /home/elijah/tools/stk11.5.0/bin/libaginview.so
+7fc6778e3000-7fc6778f0000 r--p 00207000 08:01 12851814                   /home/elijah/tools/stk11.5.0/bin/libaginview.so
+7fc6778f0000-7fc6778f7000 rw-p 00214000 08:01 12851814                   /home/elijah/tools/stk11.5.0/bin/libaginview.so
+7fc6778f7000-7fc677915000 rw-p 00000000 00:00 0 
+7fc677915000-7fc677a19000 r-xp 00000000 08:01 12851759                   /home/elijah/tools/stk11.5.0/bin/libagdbase.so
+7fc677a19000-7fc677c19000 ---p 00104000 08:01 12851759                   /home/elijah/tools/stk11.5.0/bin/libagdbase.so
+7fc677c19000-7fc677c1b000 r--p 00104000 08:01 12851759                   /home/elijah/tools/stk11.5.0/bin/libagdbase.so
+7fc677c1b000-7fc677c1d000 rw-p 00106000 08:01 12851759                   /home/elijah/tools/stk11.5.0/bin/libagdbase.so
+7fc677c1d000-7fc677c1f000 rw-p 00000000 00:00 0 
+7fc677c1f000-7fc67881d000 r-xp 00000000 08:01 12851757                   /home/elijah/tools/stk11.5.0/bin/libagcrdn.so
+7fc67881d000-7fc678a1d000 ---p 00bfe000 08:01 12851757                   /home/elijah/tools/stk11.5.0/bin/libagcrdn.so
+7fc678a1d000-7fc678a87000 r--p 00bfe000 08:01 12851757                   /home/elijah/tools/stk11.5.0/bin/libagcrdn.so
+7fc678a87000-7fc678a98000 rw-p 00c68000 08:01 12851757                   /home/elijah/tools/stk11.5.0/bin/libagcrdn.so
+7fc678a98000-7fc678a9f000 rw-p 00000000 00:00 0 
+7fc678a9f000-7fc678cc9000 r-xp 00000000 08:01 12851756                   /home/elijah/tools/stk11.5.0/bin/libagcov.so
+7fc678cc9000-7fc678ec9000 ---p 0022a000 08:01 12851756                   /home/elijah/tools/stk11.5.0/bin/libagcov.so
+7fc678ec9000-7fc678ed7000 r--p 0022a000 08:01 12851756                   /home/elijah/tools/stk11.5.0/bin/libagcov.so
+7fc678ed7000-7fc678edd000 rw-p 00238000 08:01 12851756                   /home/elijah/tools/stk11.5.0/bin/libagcov.so
+7fc678edd000-7fc678f1a000 r-xp 00000000 08:01 12851707                   /home/elijah/tools/stk11.5.0/bin/libagcomponentmanager.so
+7fc678f1a000-7fc679119000 ---p 0003d000 08:01 12851707                   /home/elijah/tools/stk11.5.0/bin/libagcomponentmanager.so
+7fc679119000-7fc67911b000 r--p 0003c000 08:01 12851707                   /home/elijah/tools/stk11.5.0/bin/libagcomponentmanager.so
+7fc67911b000-7fc67911c000 rw-p 0003e000 08:01 12851707                   /home/elijah/tools/stk11.5.0/bin/libagcomponentmanager.so
+7fc67911c000-7fc67932d000 r-xp 00000000 08:01 12851704                   /home/elijah/tools/stk11.5.0/bin/libagchain.so
+7fc67932d000-7fc67952c000 ---p 00211000 08:01 12851704                   /home/elijah/tools/stk11.5.0/bin/libagchain.so
+7fc67952c000-7fc679537000 r--p 00210000 08:01 12851704                   /home/elijah/tools/stk11.5.0/bin/libagchain.so
+7fc679537000-7fc67953f000 rw-p 0021b000 08:01 12851704                   /home/elijah/tools/stk11.5.0/bin/libagchain.so
+7fc67953f000-7fc679543000 rw-p 00000000 00:00 0 
+7fc679543000-7fc6796fd000 r-xp 00000000 08:01 12851697                   /home/elijah/tools/stk11.5.0/bin/libagattr.so
+7fc6796fd000-7fc6798fc000 ---p 001ba000 08:01 12851697                   /home/elijah/tools/stk11.5.0/bin/libagattr.so
+7fc6798fc000-7fc679905000 r--p 001b9000 08:01 12851697                   /home/elijah/tools/stk11.5.0/bin/libagattr.so
+7fc679905000-7fc679908000 rw-p 001c2000 08:01 12851697                   /home/elijah/tools/stk11.5.0/bin/libagattr.so
+7fc679908000-7fc679909000 rw-p 00000000 00:00 0 
+7fc679909000-7fc67b32b000 r-xp 00000000 08:01 12851890                   /home/elijah/tools/stk11.5.0/bin/libagstkobjects.so
+7fc67b32b000-7fc67b52b000 ---p 01a22000 08:01 12851890                   /home/elijah/tools/stk11.5.0/bin/libagstkobjects.so
+7fc67b52b000-7fc67b798000 r--p 01a22000 08:01 12851890                   /home/elijah/tools/stk11.5.0/bin/libagstkobjects.so
+7fc67b798000-7fc67b7fb000 rw-p 01c8f000 08:01 12851890                   /home/elijah/tools/stk11.5.0/bin/libagstkobjects.so
+7fc67b7fb000-7fc67b7ff000 rw-p 00000000 00:00 0 
+7fc67b7ff000-7fc67b800000 ---p 00000000 00:00 0 
+7fc67b800000-7fc67c000000 rwxp 00000000 00:00 0 
+7fc67c000000-7fc67e03f000 rw-p 00000000 00:00 0 
+7fc67e03f000-7fc680000000 ---p 00000000 00:00 0 
+7fc680000000-7fc680021000 rw-p 00000000 00:00 0 
+7fc680021000-7fc684000000 ---p 00000000 00:00 0 
+7fc684000000-7fc684021000 rw-p 00000000 00:00 0 
+7fc684021000-7fc688000000 ---p 00000000 00:00 0 
+7fc688076000-7fc688079000 ---p 00000000 00:00 0 
+7fc688079000-7fc688177000 rwxp 00000000 00:00 0 
+7fc688177000-7fc6884e5000 r-xp 00000000 08:01 12851694                   /home/elijah/tools/stk11.5.0/bin/libagastro.so
+7fc6884e5000-7fc6886e5000 ---p 0036e000 08:01 12851694                   /home/elijah/tools/stk11.5.0/bin/libagastro.so
+7fc6886e5000-7fc6886e9000 r--p 0036e000 08:01 12851694                   /home/elijah/tools/stk11.5.0/bin/libagastro.so
+7fc6886e9000-7fc688705000 rw-p 00372000 08:01 12851694                   /home/elijah/tools/stk11.5.0/bin/libagastro.so
+7fc688705000-7fc68870a000 rw-p 00000000 00:00 0 
+7fc68870a000-7fc6888a8000 r-xp 00000000 08:01 12852007                   /home/elijah/tools/stk11.5.0/bin/libstkx.so
+7fc6888a8000-7fc688aa8000 ---p 0019e000 08:01 12852007                   /home/elijah/tools/stk11.5.0/bin/libstkx.so
+7fc688aa8000-7fc688ab3000 r--p 0019e000 08:01 12852007                   /home/elijah/tools/stk11.5.0/bin/libstkx.so
+7fc688ab3000-7fc688ab9000 rw-p 001a9000 08:01 12852007                   /home/elijah/tools/stk11.5.0/bin/libstkx.so
+7fc688ab9000-7fc688abd000 rw-p 00000000 00:00 0 
+7fc688abd000-7fc688ac0000 ---p 00000000 00:00 0 
+7fc688ac0000-7fc688bbe000 rwxp 00000000 00:00 0 
+7fc688bbe000-7fc688bc1000 r-xp 00000000 08:01 6294581                    /usr/lib/x86_64-linux-gnu/gconv/UTF-16.so
+7fc688bc1000-7fc688dc0000 ---p 00003000 08:01 6294581                    /usr/lib/x86_64-linux-gnu/gconv/UTF-16.so
+7fc688dc0000-7fc688dc1000 r--p 00002000 08:01 6294581                    /usr/lib/x86_64-linux-gnu/gconv/UTF-16.so
+7fc688dc1000-7fc688dc2000 rw-p 00003000 08:01 6294581                    /usr/lib/x86_64-linux-gnu/gconv/UTF-16.so
+7fc688dc2000-7fc688dd2000 r-xp 00000000 08:01 12851916                   /home/elijah/tools/stk11.5.0/bin/libagutlog.so
+7fc688dd2000-7fc688fd2000 ---p 00010000 08:01 12851916                   /home/elijah/tools/stk11.5.0/bin/libagutlog.so
+7fc688fd2000-7fc688fd3000 r--p 00010000 08:01 12851916                   /home/elijah/tools/stk11.5.0/bin/libagutlog.so
+7fc688fd3000-7fc688fd4000 rw-p 00011000 08:01 12851916                   /home/elijah/tools/stk11.5.0/bin/libagutlog.so
+7fc688fd4000-7fc688fd5000 rw-p 00000000 00:00 0 
+7fc688fd5000-7fc689004000 r-xp 00000000 08:01 12851896                   /home/elijah/tools/stk11.5.0/bin/libagstkxinitialization.so
+7fc689004000-7fc689203000 ---p 0002f000 08:01 12851896                   /home/elijah/tools/stk11.5.0/bin/libagstkxinitialization.so
+7fc689203000-7fc689205000 r--p 0002e000 08:01 12851896                   /home/elijah/tools/stk11.5.0/bin/libagstkxinitialization.so
+7fc689205000-7fc689206000 rw-p 00030000 08:01 12851896                   /home/elijah/tools/stk11.5.0/bin/libagstkxinitialization.so
+7fc689206000-7fc689214000 r-xp 00000000 08:01 12851853                   /home/elijah/tools/stk11.5.0/bin/libagjnistkxinitialization.so
+7fc689214000-7fc689413000 ---p 0000e000 08:01 12851853                   /home/elijah/tools/stk11.5.0/bin/libagjnistkxinitialization.so
+7fc689413000-7fc689414000 r--p 0000d000 08:01 12851853                   /home/elijah/tools/stk11.5.0/bin/libagjnistkxinitialization.so
+7fc689414000-7fc689415000 rw-p 0000e000 08:01 12851853                   /home/elijah/tools/stk11.5.0/bin/libagjnistkxinitialization.so
+7fc689415000-7fc68963a000 r-xp 00000000 08:01 12851838                   /home/elijah/tools/stk11.5.0/bin/libagjnistkgraphics.so
+7fc68963a000-7fc68983a000 ---p 00225000 08:01 12851838                   /home/elijah/tools/stk11.5.0/bin/libagjnistkgraphics.so
+7fc68983a000-7fc68983c000 r--p 00225000 08:01 12851838                   /home/elijah/tools/stk11.5.0/bin/libagjnistkgraphics.so
+7fc68983c000-7fc68983d000 rw-p 00227000 08:01 12851838                   /home/elijah/tools/stk11.5.0/bin/libagjnistkgraphics.so
+7fc68983d000-7fc689c39000 r-xp 00000000 08:01 12851851                   /home/elijah/tools/stk11.5.0/bin/libagjnistkvgt.so
+7fc689c39000-7fc689e39000 ---p 003fc000 08:01 12851851                   /home/elijah/tools/stk11.5.0/bin/libagjnistkvgt.so
+7fc689e39000-7fc689e3b000 r--p 003fc000 08:01 12851851                   /home/elijah/tools/stk11.5.0/bin/libagjnistkvgt.so
+7fc689e3b000-7fc689e3c000 rw-p 003fe000 08:01 12851851                   /home/elijah/tools/stk11.5.0/bin/libagjnistkvgt.so
+7fc689e3c000-7fc68a2a2000 r-xp 00000000 08:01 12851837                   /home/elijah/tools/stk11.5.0/bin/libagjnistkgator.so
+7fc68a2a2000-7fc68a4a2000 ---p 00466000 08:01 12851837                   /home/elijah/tools/stk11.5.0/bin/libagjnistkgator.so
+7fc68a4a2000-7fc68a4a4000 r--p 00466000 08:01 12851837                   /home/elijah/tools/stk11.5.0/bin/libagjnistkgator.so
+7fc68a4a4000-7fc68a4a5000 rw-p 00468000 08:01 12851837                   /home/elijah/tools/stk11.5.0/bin/libagjnistkgator.so
+7fc68a4a5000-7fc68af47000 r-xp 00000000 08:01 12851839                   /home/elijah/tools/stk11.5.0/bin/libagjnistkobjects.so
+7fc68af47000-7fc68b147000 ---p 00aa2000 08:01 12851839                   /home/elijah/tools/stk11.5.0/bin/libagjnistkobjects.so
+7fc68b147000-7fc68b14c000 r--p 00aa2000 08:01 12851839                   /home/elijah/tools/stk11.5.0/bin/libagjnistkobjects.so
+7fc68b14c000-7fc68b14d000 rw-p 00aa7000 08:01 12851839                   /home/elijah/tools/stk11.5.0/bin/libagjnistkobjects.so
+7fc68b14d000-7fc68b1a0000 r-xp 00000000 08:01 12851852                   /home/elijah/tools/stk11.5.0/bin/libagjnistkx.so
+7fc68b1a0000-7fc68b3a0000 ---p 00053000 08:01 12851852                   /home/elijah/tools/stk11.5.0/bin/libagjnistkx.so
+7fc68b3a0000-7fc68b3a1000 r--p 00053000 08:01 12851852                   /home/elijah/tools/stk11.5.0/bin/libagjnistkx.so
+7fc68b3a1000-7fc68b3a2000 rw-p 00054000 08:01 12851852                   /home/elijah/tools/stk11.5.0/bin/libagjnistkx.so
+7fc68b3a2000-7fc68b47e000 r--s 0075e000 08:01 12852049                   /home/elijah/tools/stk11.5.0/bin/agi.stkvgt.jar
+7fc68b47e000-7fc68b4f9000 r-xp 00000000 08:01 12851850                   /home/elijah/tools/stk11.5.0/bin/libagjnistkutil.so
+7fc68b4f9000-7fc68b6f9000 ---p 0007b000 08:01 12851850                   /home/elijah/tools/stk11.5.0/bin/libagjnistkutil.so
+7fc68b6f9000-7fc68b6fa000 r--p 0007b000 08:01 12851850                   /home/elijah/tools/stk11.5.0/bin/libagjnistkutil.so
+7fc68b6fa000-7fc68b6fb000 rw-p 0007c000 08:01 12851850                   /home/elijah/tools/stk11.5.0/bin/libagjnistkutil.so
+7fc68b6fb000-7fc68b81b000 r--s 00893000 08:01 12852046                   /home/elijah/tools/stk11.5.0/bin/agi.stkobjects.astrogator.jar
+7fc68b81b000-7fc68bac1000 r--s 0162d000 08:01 12852047                   /home/elijah/tools/stk11.5.0/bin/agi.stkobjects.jar
+7fc68bb72000-7fc68bc72000 rw-p 00000000 00:00 0 
+7fc68bc72000-7fc68bd72000 ---p 00000000 00:00 0 
+7fc68bd72000-7fc68bdfe000 r--s 00430000 08:01 12852045                   /home/elijah/tools/stk11.5.0/bin/agi.stkgraphics.jar
+7fc68bdfe000-7fc68be01000 ---p 00000000 00:00 0 
+7fc68be01000-7fc68beff000 rwxp 00000000 00:00 0 
+7fc68beff000-7fc68bf02000 ---p 00000000 00:00 0 
+7fc68bf02000-7fc68c000000 rwxp 00000000 00:00 0 
+7fc68c000000-7fc68c021000 rw-p 00000000 00:00 0 
+7fc68c021000-7fc690000000 ---p 00000000 00:00 0 
+7fc690000000-7fc690021000 rw-p 00000000 00:00 0 
+7fc690021000-7fc694000000 ---p 00000000 00:00 0 
+7fc694000000-7fc694021000 rw-p 00000000 00:00 0 
+7fc694021000-7fc698000000 ---p 00000000 00:00 0 
+7fc69807f000-7fc698088000 r-xp 00000000 08:01 10101780                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fc698088000-7fc698287000 ---p 00009000 08:01 10101780                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fc698287000-7fc698288000 r--p 00008000 08:01 10101780                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fc698288000-7fc698289000 rw-p 00009000 08:01 10101780                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fc698289000-7fc69829d000 r-xp 00000000 08:01 15209172                   /lib/x86_64-linux-gnu/libgpg-error.so.0.22.0
+7fc69829d000-7fc69849c000 ---p 00014000 08:01 15209172                   /lib/x86_64-linux-gnu/libgpg-error.so.0.22.0
+7fc69849c000-7fc69849d000 r--p 00013000 08:01 15209172                   /lib/x86_64-linux-gnu/libgpg-error.so.0.22.0
+7fc69849d000-7fc69849e000 rw-p 00014000 08:01 15209172                   /lib/x86_64-linux-gnu/libgpg-error.so.0.22.0
+7fc69849e000-7fc6985b2000 r-xp 00000000 08:01 15209170                   /lib/x86_64-linux-gnu/libgcrypt.so.20.2.1
+7fc6985b2000-7fc6987b1000 ---p 00114000 08:01 15209170                   /lib/x86_64-linux-gnu/libgcrypt.so.20.2.1
+7fc6987b1000-7fc6987b3000 r--p 00113000 08:01 15209170                   /lib/x86_64-linux-gnu/libgcrypt.so.20.2.1
+7fc6987b3000-7fc6987b8000 rw-p 00115000 08:01 15209170                   /lib/x86_64-linux-gnu/libgcrypt.so.20.2.1
+7fc6987b8000-7fc6987b9000 rw-p 00000000 00:00 0 
+7fc6987b9000-7fc6987d4000 r-xp 00000000 08:01 6037875                    /usr/lib/x86_64-linux-gnu/liblz4.so.1.7.1
+7fc6987d4000-7fc6989d3000 ---p 0001b000 08:01 6037875                    /usr/lib/x86_64-linux-gnu/liblz4.so.1.7.1
+7fc6989d3000-7fc6989d4000 r--p 0001a000 08:01 6037875                    /usr/lib/x86_64-linux-gnu/liblz4.so.1.7.1
+7fc6989d4000-7fc6989d5000 rw-p 0001b000 08:01 6037875                    /usr/lib/x86_64-linux-gnu/liblz4.so.1.7.1
+7fc6989d5000-7fc6989f9000 r-xp 00000000 08:01 15209191                   /lib/x86_64-linux-gnu/liblzma.so.5.2.2
+7fc6989f9000-7fc698bf9000 ---p 00024000 08:01 15209191                   /lib/x86_64-linux-gnu/liblzma.so.5.2.2
+7fc698bf9000-7fc698bfa000 r--p 00024000 08:01 15209191                   /lib/x86_64-linux-gnu/liblzma.so.5.2.2
+7fc698bfa000-7fc698bfb000 rw-p 00025000 08:01 15209191                   /lib/x86_64-linux-gnu/liblzma.so.5.2.2
+7fc698bfb000-7fc698c7b000 r-xp 00000000 08:01 15204438                   /lib/x86_64-linux-gnu/libsystemd.so.0.21.0
+7fc698c7b000-7fc698e7a000 ---p 00080000 08:01 15204438                   /lib/x86_64-linux-gnu/libsystemd.so.0.21.0
+7fc698e7a000-7fc698e7d000 r--p 0007f000 08:01 15204438                   /lib/x86_64-linux-gnu/libsystemd.so.0.21.0
+7fc698e7d000-7fc698e7e000 rw-p 00082000 08:01 15204438                   /lib/x86_64-linux-gnu/libsystemd.so.0.21.0
+7fc698e7e000-7fc698e7f000 rw-p 00000000 00:00 0 
+7fc698e7f000-7fc698eef000 r-xp 00000000 08:01 15209253                   /lib/x86_64-linux-gnu/libpcre.so.3.13.3
+7fc698eef000-7fc6990ef000 ---p 00070000 08:01 15209253                   /lib/x86_64-linux-gnu/libpcre.so.3.13.3
+7fc6990ef000-7fc6990f0000 r--p 00070000 08:01 15209253                   /lib/x86_64-linux-gnu/libpcre.so.3.13.3
+7fc6990f0000-7fc6990f1000 rw-p 00071000 08:01 15209253                   /lib/x86_64-linux-gnu/libpcre.so.3.13.3
+7fc6990f1000-7fc6990f8000 r-xp 00000000 08:01 6037509                    /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7fc6990f8000-7fc6992f7000 ---p 00007000 08:01 6037509                    /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7fc6992f7000-7fc6992f8000 r--p 00006000 08:01 6037509                    /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7fc6992f8000-7fc6992f9000 rw-p 00007000 08:01 6037509                    /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7fc6992f9000-7fc699325000 r-xp 00000000 08:01 6037257                    /usr/lib/x86_64-linux-gnu/libatspi.so.0.0.1
+7fc699325000-7fc699525000 ---p 0002c000 08:01 6037257                    /usr/lib/x86_64-linux-gnu/libatspi.so.0.0.1
+7fc699525000-7fc699528000 r--p 0002c000 08:01 6037257                    /usr/lib/x86_64-linux-gnu/libatspi.so.0.0.1
+7fc699528000-7fc699529000 rw-p 0002f000 08:01 6037257                    /usr/lib/x86_64-linux-gnu/libatspi.so.0.0.1
+7fc699529000-7fc699574000 r-xp 00000000 08:01 15209146                   /lib/x86_64-linux-gnu/libdbus-1.so.3.19.4
+7fc699574000-7fc699774000 ---p 0004b000 08:01 15209146                   /lib/x86_64-linux-gnu/libdbus-1.so.3.19.4
+7fc699774000-7fc699775000 r--p 0004b000 08:01 15209146                   /lib/x86_64-linux-gnu/libdbus-1.so.3.19.4
+7fc699775000-7fc699776000 rw-p 0004c000 08:01 15209146                   /lib/x86_64-linux-gnu/libdbus-1.so.3.19.4
+7fc699776000-7fc699889000 r-xp 00000000 08:01 6029655                    /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.3
+7fc699889000-7fc699a89000 ---p 00113000 08:01 6029655                    /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.3
+7fc699a89000-7fc699a8a000 r--p 00113000 08:01 6029655                    /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.3
+7fc699a8a000-7fc699a8b000 rw-p 00114000 08:01 6029655                    /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.3
+7fc699a8b000-7fc699a8c000 rw-p 00000000 00:00 0 
+7fc699a8c000-7fc699ade000 r-xp 00000000 08:01 6029679                    /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.5600.3
+7fc699ade000-7fc699cde000 ---p 00052000 08:01 6029679                    /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.5600.3
+7fc699cde000-7fc699cdf000 r--p 00052000 08:01 6029679                    /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.5600.3
+7fc699cdf000-7fc699ce0000 rw-p 00053000 08:01 6029679                    /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.5600.3
+7fc699ce0000-7fc699d0e000 r-xp 00000000 08:01 6037255                    /usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0
+7fc699d0e000-7fc699f0e000 ---p 0002e000 08:01 6037255                    /usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0
+7fc699f0e000-7fc699f0f000 r--p 0002e000 08:01 6037255                    /usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0
+7fc699f0f000-7fc699f10000 rw-p 0002f000 08:01 6037255                    /usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0
+7fc699f10000-7fc699f11000 rw-p 00000000 00:00 0 
+7fc699f11000-7fc699f33000 r-xp 00000000 08:01 6037253                    /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.22810.1
+7fc699f33000-7fc69a133000 ---p 00022000 08:01 6037253                    /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.22810.1
+7fc69a133000-7fc69a136000 r--p 00022000 08:01 6037253                    /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.22810.1
+7fc69a136000-7fc69a137000 rw-p 00025000 08:01 6037253                    /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.22810.1
+7fc69a137000-7fc69a14e000 r-xp 00000000 08:01 6425293                    /usr/lib/x86_64-linux-gnu/jni/libatk-wrapper.so.6.0.0
+7fc69a14e000-7fc69a34e000 ---p 00017000 08:01 6425293                    /usr/lib/x86_64-linux-gnu/jni/libatk-wrapper.so.6.0.0
+7fc69a34e000-7fc69a34f000 r--p 00017000 08:01 6425293                    /usr/lib/x86_64-linux-gnu/jni/libatk-wrapper.so.6.0.0
+7fc69a34f000-7fc69a350000 rw-p 00018000 08:01 6425293                    /usr/lib/x86_64-linux-gnu/jni/libatk-wrapper.so.6.0.0
+7fc69a350000-7fc69a367000 r-xp 00000000 08:01 10101782                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7fc69a367000-7fc69a566000 ---p 00017000 08:01 10101782                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7fc69a566000-7fc69a567000 r--p 00016000 08:01 10101782                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7fc69a567000-7fc69a568000 rw-p 00017000 08:01 10101782                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnet.so
+7fc69a568000-7fc69a579000 r-xp 00000000 08:01 10101783                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7fc69a579000-7fc69a779000 ---p 00011000 08:01 10101783                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7fc69a779000-7fc69a77a000 r--p 00011000 08:01 10101783                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7fc69a77a000-7fc69a77b000 rw-p 00012000 08:01 10101783                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libnio.so
+7fc69a77b000-7fc69a77e000 ---p 00000000 00:00 0 
+7fc69a77e000-7fc69a87c000 rwxp 00000000 00:00 0 
+7fc69a87c000-7fc69a881000 r-xp 00000000 08:01 6037182                    /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc69a881000-7fc69aa80000 ---p 00005000 08:01 6037182                    /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc69aa80000-7fc69aa81000 r--p 00004000 08:01 6037182                    /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc69aa81000-7fc69aa82000 rw-p 00005000 08:01 6037182                    /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc69aa82000-7fc69aa8b000 r-xp 00000000 08:01 6037174                    /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc69aa8b000-7fc69ac8a000 ---p 00009000 08:01 6037174                    /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc69ac8a000-7fc69ac8b000 r--p 00008000 08:01 6037174                    /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc69ac8b000-7fc69ac8c000 rw-p 00009000 08:01 6037174                    /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc69ac8c000-7fc69ac8f000 ---p 00000000 00:00 0 
+7fc69ac8f000-7fc69ad8d000 rwxp 00000000 00:00 0 
+7fc69ad8d000-7fc69adbe000 r-xp 00000000 08:01 6038031                    /usr/lib/x86_64-linux-gnu/libpng16.so.16.34.0
+7fc69adbe000-7fc69afbd000 ---p 00031000 08:01 6038031                    /usr/lib/x86_64-linux-gnu/libpng16.so.16.34.0
+7fc69afbd000-7fc69afbe000 r--p 00030000 08:01 6038031                    /usr/lib/x86_64-linux-gnu/libpng16.so.16.34.0
+7fc69afbe000-7fc69afbf000 rw-p 00031000 08:01 6038031                    /usr/lib/x86_64-linux-gnu/libpng16.so.16.34.0
+7fc69afbf000-7fc69b06c000 r-xp 00000000 08:01 6037541                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.15.0
+7fc69b06c000-7fc69b26b000 ---p 000ad000 08:01 6037541                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.15.0
+7fc69b26b000-7fc69b272000 r--p 000ac000 08:01 6037541                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.15.0
+7fc69b272000-7fc69b273000 rw-p 000b3000 08:01 6037541                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.15.0
+7fc69b273000-7fc69b2c4000 r-xp 00000000 08:01 10101764                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fc69b2c4000-7fc69b4c4000 ---p 00051000 08:01 10101764                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fc69b4c4000-7fc69b4c6000 r--p 00051000 08:01 10101764                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fc69b4c6000-7fc69b4c7000 rw-p 00053000 08:01 10101764                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fc69b4c7000-7fc69b4d6000 r-xp 00000000 08:01 6037188                    /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc69b4d6000-7fc69b6d5000 ---p 0000f000 08:01 6037188                    /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc69b6d5000-7fc69b6d6000 r--p 0000e000 08:01 6037188                    /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc69b6d6000-7fc69b6d7000 rw-p 0000f000 08:01 6037188                    /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc69b6d7000-7fc69b6dc000 r-xp 00000000 08:01 6037206                    /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc69b6dc000-7fc69b8db000 ---p 00005000 08:01 6037206                    /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc69b8db000-7fc69b8dc000 r--p 00004000 08:01 6037206                    /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc69b8dc000-7fc69b8dd000 rw-p 00005000 08:01 6037206                    /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc69b8dd000-7fc69b8e6000 r-xp 00000000 08:01 6037200                    /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc69b8e6000-7fc69bae5000 ---p 00009000 08:01 6037200                    /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc69bae5000-7fc69bae6000 r--p 00008000 08:01 6037200                    /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc69bae6000-7fc69bae7000 rw-p 00009000 08:01 6037200                    /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc69bae7000-7fc69baf8000 r-xp 00000000 08:01 6037180                    /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc69baf8000-7fc69bcf7000 ---p 00011000 08:01 6037180                    /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc69bcf7000-7fc69bcf8000 r--p 00010000 08:01 6037180                    /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc69bcf8000-7fc69bcf9000 rw-p 00011000 08:01 6037180                    /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc69bcf9000-7fc69bd4d000 r-xp 00000000 08:01 10101762                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt_xawt.so
+7fc69bd4d000-7fc69bf4c000 ---p 00054000 08:01 10101762                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt_xawt.so
+7fc69bf4c000-7fc69bf4d000 r--p 00053000 08:01 10101762                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt_xawt.so
+7fc69bf4d000-7fc69bf50000 rw-p 00054000 08:01 10101762                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt_xawt.so
+7fc69bf50000-7fc69bf51000 rw-p 00000000 00:00 0 
+7fc69bf51000-7fc69bff1000 r-xp 00000000 08:01 10101760                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+7fc69bff1000-7fc69c1f0000 ---p 000a0000 08:01 10101760                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+7fc69c1f0000-7fc69c1f1000 r--p 0009f000 08:01 10101760                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+7fc69c1f1000-7fc69c1fc000 rw-p 000a0000 08:01 10101760                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libawt.so
+7fc69c1fc000-7fc69c221000 rw-p 00000000 00:00 0 
+7fc69c221000-7fc69c234000 r-xp 00000000 08:01 15209127                   /lib/x86_64-linux-gnu/libbsd.so.0.8.7
+7fc69c234000-7fc69c433000 ---p 00013000 08:01 15209127                   /lib/x86_64-linux-gnu/libbsd.so.0.8.7
+7fc69c433000-7fc69c434000 r--p 00012000 08:01 15209127                   /lib/x86_64-linux-gnu/libbsd.so.0.8.7
+7fc69c434000-7fc69c435000 rw-p 00013000 08:01 15209127                   /lib/x86_64-linux-gnu/libbsd.so.0.8.7
+7fc69c435000-7fc69c436000 rw-p 00000000 00:00 0 
+7fc69c436000-7fc69c43b000 r-xp 00000000 08:01 6037178                    /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc69c43b000-7fc69c63a000 ---p 00005000 08:01 6037178                    /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc69c63a000-7fc69c63b000 r--p 00004000 08:01 6037178                    /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc69c63b000-7fc69c63c000 rw-p 00005000 08:01 6037178                    /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc69c63c000-7fc69c63e000 r-xp 00000000 08:01 6037167                    /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc69c63e000-7fc69c83e000 ---p 00002000 08:01 6037167                    /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc69c83e000-7fc69c83f000 r--p 00002000 08:01 6037167                    /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc69c83f000-7fc69c840000 rw-p 00003000 08:01 6037167                    /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc69c840000-7fc69c866000 r-xp 00000000 08:01 6030252                    /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fc69c866000-7fc69ca66000 ---p 00026000 08:01 6030252                    /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fc69ca66000-7fc69ca67000 r--p 00026000 08:01 6030252                    /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fc69ca67000-7fc69ca68000 rw-p 00027000 08:01 6030252                    /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fc69ca68000-7fc69cb9b000 r-xp 00000000 08:01 6030193                    /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc69cb9b000-7fc69cd9b000 ---p 00133000 08:01 6030193                    /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc69cd9b000-7fc69cd9c000 r--p 00133000 08:01 6030193                    /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc69cd9c000-7fc69cda0000 rw-p 00134000 08:01 6030193                    /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc69cda0000-7fc69cdaa000 r-xp 00000000 08:01 12851854                   /home/elijah/tools/stk11.5.0/bin/libagjnix11util.so
+7fc69cdaa000-7fc69cfaa000 ---p 0000a000 08:01 12851854                   /home/elijah/tools/stk11.5.0/bin/libagjnix11util.so
+7fc69cfaa000-7fc69cfab000 r--p 0000a000 08:01 12851854                   /home/elijah/tools/stk11.5.0/bin/libagjnix11util.so
+7fc69cfab000-7fc69cfac000 rw-p 0000b000 08:01 12851854                   /home/elijah/tools/stk11.5.0/bin/libagjnix11util.so
+7fc69cfac000-7fc69cfde000 r-xp 00000000 08:01 12852015                   /home/elijah/tools/stk11.5.0/bin/libtbb.so.2
+7fc69cfde000-7fc69d1de000 ---p 00032000 08:01 12852015                   /home/elijah/tools/stk11.5.0/bin/libtbb.so.2
+7fc69d1de000-7fc69d1e2000 rw-p 00032000 08:01 12852015                   /home/elijah/tools/stk11.5.0/bin/libtbb.so.2
+7fc69d1e2000-7fc69d1e4000 rw-p 00000000 00:00 0 
+7fc69d1e4000-7fc69d22e000 r-xp 00000000 08:01 12852005                   /home/elijah/tools/stk11.5.0/bin/libproj.so.0.7.0
+7fc69d22e000-7fc69d42d000 ---p 0004a000 08:01 12852005                   /home/elijah/tools/stk11.5.0/bin/libproj.so.0.7.0
+7fc69d42d000-7fc69d42e000 r--p 00049000 08:01 12852005                   /home/elijah/tools/stk11.5.0/bin/libproj.so.0.7.0
+7fc69d42e000-7fc69d431000 rw-p 0004a000 08:01 12852005                   /home/elijah/tools/stk11.5.0/bin/libproj.so.0.7.0
+7fc69d431000-7fc69d480000 r-xp 00000000 08:01 12851821                   /home/elijah/tools/stk11.5.0/bin/libagipocojson.so.48
+7fc69d480000-7fc69d67f000 ---p 0004f000 08:01 12851821                   /home/elijah/tools/stk11.5.0/bin/libagipocojson.so.48
+7fc69d67f000-7fc69d681000 r--p 0004e000 08:01 12851821                   /home/elijah/tools/stk11.5.0/bin/libagipocojson.so.48
+7fc69d681000-7fc69d682000 rw-p 00050000 08:01 12851821                   /home/elijah/tools/stk11.5.0/bin/libagipocojson.so.48
+7fc69d682000-7fc69d710000 r-xp 00000000 08:01 12851829                   /home/elijah/tools/stk11.5.0/bin/libagipocoxml.so.48
+7fc69d710000-7fc69d910000 ---p 0008e000 08:01 12851829                   /home/elijah/tools/stk11.5.0/bin/libagipocoxml.so.48
+7fc69d910000-7fc69d916000 r--p 0008e000 08:01 12851829                   /home/elijah/tools/stk11.5.0/bin/libagipocoxml.so.48
+7fc69d916000-7fc69d918000 rw-p 00094000 08:01 12851829                   /home/elijah/tools/stk11.5.0/bin/libagipocoxml.so.48
+7fc69d918000-7fc69e08d000 r-xp 00000000 08:01 12851667                   /home/elijah/tools/stk11.5.0/bin/libNCSEcw.so.5.3.0
+7fc69e08d000-7fc69e28c000 ---p 00775000 08:01 12851667                   /home/elijah/tools/stk11.5.0/bin/libNCSEcw.so.5.3.0
+7fc69e28c000-7fc69e2a1000 r--p 00774000 08:01 12851667                   /home/elijah/tools/stk11.5.0/bin/libNCSEcw.so.5.3.0
+7fc69e2a1000-7fc69e2b9000 rw-p 00789000 08:01 12851667                   /home/elijah/tools/stk11.5.0/bin/libNCSEcw.so.5.3.0
+7fc69e2b9000-7fc69e2c0000 rw-p 00000000 00:00 0 
+7fc69e2c0000-7fc69e30f000 r-xp 00000000 08:01 12851993                   /home/elijah/tools/stk11.5.0/bin/liblti_lidar_dsdk.so.1
+7fc69e30f000-7fc69e50e000 ---p 0004f000 08:01 12851993                   /home/elijah/tools/stk11.5.0/bin/liblti_lidar_dsdk.so.1
+7fc69e50e000-7fc69e511000 rw-p 0004e000 08:01 12851993                   /home/elijah/tools/stk11.5.0/bin/liblti_lidar_dsdk.so.1
+7fc69e511000-7fc69ea34000 r-xp 00000000 08:01 12851995                   /home/elijah/tools/stk11.5.0/bin/libltidsdk.so.9
+7fc69ea34000-7fc69ec34000 ---p 00523000 08:01 12851995                   /home/elijah/tools/stk11.5.0/bin/libltidsdk.so.9
+7fc69ec34000-7fc69ec71000 rw-p 00523000 08:01 12851995                   /home/elijah/tools/stk11.5.0/bin/libltidsdk.so.9
+7fc69ec71000-7fc69ec74000 rw-p 00000000 00:00 0 
+7fc69ec74000-7fc69ecab000 r-xp 00000000 08:01 12851864                   /home/elijah/tools/stk11.5.0/bin/libagpng.so.0.13.0
+7fc69ecab000-7fc69eeaa000 ---p 00037000 08:01 12851864                   /home/elijah/tools/stk11.5.0/bin/libagpng.so.0.13.0
+7fc69eeaa000-7fc69eeab000 r--p 00036000 08:01 12851864                   /home/elijah/tools/stk11.5.0/bin/libagpng.so.0.13.0
+7fc69eeab000-7fc69eeac000 rw-p 00037000 08:01 12851864                   /home/elijah/tools/stk11.5.0/bin/libagpng.so.0.13.0
+7fc69eeac000-7fc69ef2b000 r-xp 00000000 08:01 12851901                   /home/elijah/tools/stk11.5.0/bin/libagtiff.so.5.2.0
+7fc69ef2b000-7fc69f12a000 ---p 0007f000 08:01 12851901                   /home/elijah/tools/stk11.5.0/bin/libagtiff.so.5.2.0
+7fc69f12a000-7fc69f12b000 r--p 0007e000 08:01 12851901                   /home/elijah/tools/stk11.5.0/bin/libagtiff.so.5.2.0
+7fc69f12b000-7fc69f12e000 rw-p 0007f000 08:01 12851901                   /home/elijah/tools/stk11.5.0/bin/libagtiff.so.5.2.0
+7fc69f12e000-7fc69f12f000 rw-p 00000000 00:00 0 
+7fc69f12f000-7fc69f159000 r-xp 00000000 08:01 12851968                   /home/elijah/tools/stk11.5.0/bin/libgeotiff.so.2.1.0
+7fc69f159000-7fc69f358000 ---p 0002a000 08:01 12851968                   /home/elijah/tools/stk11.5.0/bin/libgeotiff.so.2.1.0
+7fc69f358000-7fc69f359000 r--p 00029000 08:01 12851968                   /home/elijah/tools/stk11.5.0/bin/libgeotiff.so.2.1.0
+7fc69f359000-7fc69f362000 rw-p 0002a000 08:01 12851968                   /home/elijah/tools/stk11.5.0/bin/libgeotiff.so.2.1.0
+7fc69f362000-7fc69f3ac000 r-xp 00000000 08:01 12851812                   /home/elijah/tools/stk11.5.0/bin/libagijpeg.so.8.4.0
+7fc69f3ac000-7fc69f5ab000 ---p 0004a000 08:01 12851812                   /home/elijah/tools/stk11.5.0/bin/libagijpeg.so.8.4.0
+7fc69f5ab000-7fc69f5ac000 r--p 00049000 08:01 12851812                   /home/elijah/tools/stk11.5.0/bin/libagijpeg.so.8.4.0
+7fc69f5ac000-7fc69f5ad000 rw-p 0004a000 08:01 12851812                   /home/elijah/tools/stk11.5.0/bin/libagijpeg.so.8.4.0
+7fc69f5ad000-7fc69f943000 r-xp 00000000 08:01 12851832                   /home/elijah/tools/stk11.5.0/bin/libagixerces-c-3.1.so
+7fc69f943000-7fc69fb43000 ---p 00396000 08:01 12851832                   /home/elijah/tools/stk11.5.0/bin/libagixerces-c-3.1.so
+7fc69fb43000-7fc69fb55000 r--p 00396000 08:01 12851832                   /home/elijah/tools/stk11.5.0/bin/libagixerces-c-3.1.so
+7fc69fb55000-7fc69fb7c000 rw-p 003a8000 08:01 12851832                   /home/elijah/tools/stk11.5.0/bin/libagixerces-c-3.1.so
+7fc69fb7c000-7fc69fb93000 r-xp 00000000 08:01 12851805                   /home/elijah/tools/stk11.5.0/bin/libagiboost_system.so.1.66.0
+7fc69fb93000-7fc69fd92000 ---p 00017000 08:01 12851805                   /home/elijah/tools/stk11.5.0/bin/libagiboost_system.so.1.66.0
+7fc69fd92000-7fc69fd93000 r--p 00016000 08:01 12851805                   /home/elijah/tools/stk11.5.0/bin/libagiboost_system.so.1.66.0
+7fc69fd93000-7fc69fd94000 rw-p 00017000 08:01 12851805                   /home/elijah/tools/stk11.5.0/bin/libagiboost_system.so.1.66.0
+7fc69fd94000-7fc69fefe000 r-xp 00000000 08:01 12851970                   /home/elijah/tools/stk11.5.0/bin/libiomp5.so
+7fc69fefe000-7fc6a00fe000 ---p 0016a000 08:01 12851970                   /home/elijah/tools/stk11.5.0/bin/libiomp5.so
+7fc6a00fe000-7fc6a0100000 r--p 0016a000 08:01 12851970                   /home/elijah/tools/stk11.5.0/bin/libiomp5.so
+7fc6a0100000-7fc6a0109000 rw-p 0016c000 08:01 12851970                   /home/elijah/tools/stk11.5.0/bin/libiomp5.so
+7fc6a0109000-7fc6a0138000 rw-p 00000000 00:00 0 
+7fc6a0138000-7fc6a1cc5000 r-xp 00000000 08:01 12851999                   /home/elijah/tools/stk11.5.0/bin/libmkl_agi.so
+7fc6a1cc5000-7fc6a1ec5000 ---p 01b8d000 08:01 12851999                   /home/elijah/tools/stk11.5.0/bin/libmkl_agi.so
+7fc6a1ec5000-7fc6a1ed5000 r--p 01b8d000 08:01 12851999                   /home/elijah/tools/stk11.5.0/bin/libmkl_agi.so
+7fc6a1ed5000-7fc6a1ef8000 rw-p 01b9d000 08:01 12851999                   /home/elijah/tools/stk11.5.0/bin/libmkl_agi.so
+7fc6a1ef8000-7fc6a1f40000 rw-p 00000000 00:00 0 
+7fc6a1f40000-7fc6a1f66000 r-xp 00000000 08:01 12851807                   /home/elijah/tools/stk11.5.0/bin/libagiboost_thread.so.1.66.0
+7fc6a1f66000-7fc6a2165000 ---p 00026000 08:01 12851807                   /home/elijah/tools/stk11.5.0/bin/libagiboost_thread.so.1.66.0
+7fc6a2165000-7fc6a2167000 r--p 00025000 08:01 12851807                   /home/elijah/tools/stk11.5.0/bin/libagiboost_thread.so.1.66.0
+7fc6a2167000-7fc6a2168000 rw-p 00027000 08:01 12851807                   /home/elijah/tools/stk11.5.0/bin/libagiboost_thread.so.1.66.0
+7fc6a2168000-7fc6a2181000 r-xp 00000000 08:01 12851795                   /home/elijah/tools/stk11.5.0/bin/libagiboost_filesystem.so.1.66.0
+7fc6a2181000-7fc6a2380000 ---p 00019000 08:01 12851795                   /home/elijah/tools/stk11.5.0/bin/libagiboost_filesystem.so.1.66.0
+7fc6a2380000-7fc6a2381000 r--p 00018000 08:01 12851795                   /home/elijah/tools/stk11.5.0/bin/libagiboost_filesystem.so.1.66.0
+7fc6a2381000-7fc6a2382000 rw-p 00019000 08:01 12851795                   /home/elijah/tools/stk11.5.0/bin/libagiboost_filesystem.so.1.66.0
+7fc6a2382000-7fc6a23d4000 r-xp 00000000 08:01 12851827                   /home/elijah/tools/stk11.5.0/bin/libagipocoutil.so.48
+7fc6a23d4000-7fc6a25d3000 ---p 00052000 08:01 12851827                   /home/elijah/tools/stk11.5.0/bin/libagipocoutil.so.48
+7fc6a25d3000-7fc6a25d5000 r--p 00051000 08:01 12851827                   /home/elijah/tools/stk11.5.0/bin/libagipocoutil.so.48
+7fc6a25d5000-7fc6a25d6000 rw-p 00053000 08:01 12851827                   /home/elijah/tools/stk11.5.0/bin/libagipocoutil.so.48
+7fc6a25d6000-7fc6a2618000 r-xp 00000000 08:01 12851825                   /home/elijah/tools/stk11.5.0/bin/libagipoconetssl.so.48
+7fc6a2618000-7fc6a2818000 ---p 00042000 08:01 12851825                   /home/elijah/tools/stk11.5.0/bin/libagipoconetssl.so.48
+7fc6a2818000-7fc6a281a000 r--p 00042000 08:01 12851825                   /home/elijah/tools/stk11.5.0/bin/libagipoconetssl.so.48
+7fc6a281a000-7fc6a281b000 rw-p 00044000 08:01 12851825                   /home/elijah/tools/stk11.5.0/bin/libagipoconetssl.so.48
+7fc6a281b000-7fc6a292a000 r-xp 00000000 08:01 12851823                   /home/elijah/tools/stk11.5.0/bin/libagipoconet.so.48
+7fc6a292a000-7fc6a2b2a000 ---p 0010f000 08:01 12851823                   /home/elijah/tools/stk11.5.0/bin/libagipoconet.so.48
+7fc6a2b2a000-7fc6a2b32000 r--p 0010f000 08:01 12851823                   /home/elijah/tools/stk11.5.0/bin/libagipoconet.so.48
+7fc6a2b32000-7fc6a2b35000 rw-p 00117000 08:01 12851823                   /home/elijah/tools/stk11.5.0/bin/libagipoconet.so.48
+7fc6a2b35000-7fc6a2b36000 rw-p 00000000 00:00 0 
+7fc6a2b36000-7fc6a2ddb000 r-xp 00000000 08:01 12851817                   /home/elijah/tools/stk11.5.0/bin/libagipococrypto.so.48
+7fc6a2ddb000-7fc6a2fdb000 ---p 002a5000 08:01 12851817                   /home/elijah/tools/stk11.5.0/bin/libagipococrypto.so.48
+7fc6a2fdb000-7fc6a2ffa000 r--p 002a5000 08:01 12851817                   /home/elijah/tools/stk11.5.0/bin/libagipococrypto.so.48
+7fc6a2ffa000-7fc6a3012000 rw-p 002c4000 08:01 12851817                   /home/elijah/tools/stk11.5.0/bin/libagipococrypto.so.48
+7fc6a3012000-7fc6a3016000 rw-p 00000000 00:00 0 
+7fc6a3016000-7fc6a3d36000 r-xp 00000000 08:01 12851959                   /home/elijah/tools/stk11.5.0/bin/libgdal.so.20.3.0
+7fc6a3d36000-7fc6a3f35000 ---p 00d20000 08:01 12851959                   /home/elijah/tools/stk11.5.0/bin/libgdal.so.20.3.0
+7fc6a3f35000-7fc6a3fea000 r--p 00d1f000 08:01 12851959                   /home/elijah/tools/stk11.5.0/bin/libgdal.so.20.3.0
+7fc6a3fea000-7fc6a3ffc000 rw-p 00dd4000 08:01 12851959                   /home/elijah/tools/stk11.5.0/bin/libgdal.so.20.3.0
+7fc6a3ffc000-7fc6a4000000 rw-p 00000000 00:00 0 
+7fc6a4000000-7fc6a4021000 rw-p 00000000 00:00 0 
+7fc6a4021000-7fc6a8000000 ---p 00000000 00:00 0 
+7fc6a8000000-7fc6a8021000 rw-p 00000000 00:00 0 
+7fc6a8021000-7fc6ac000000 ---p 00000000 00:00 0 
+7fc6ac000000-7fc6ac5d0000 rw-p 00000000 00:00 0 
+7fc6ac5d0000-7fc6b0000000 ---p 00000000 00:00 0 
+7fc6b0000000-7fc6b0316000 rw-p 00000000 00:00 0 
+7fc6b0316000-7fc6b4000000 ---p 00000000 00:00 0 
+7fc6b4000000-7fc6b4021000 rw-p 00000000 00:00 0 
+7fc6b4021000-7fc6b8000000 ---p 00000000 00:00 0 
+7fc6b8000000-7fc6b84bb000 rw-p 00000000 00:00 0 
+7fc6b84bb000-7fc6bc000000 ---p 00000000 00:00 0 
+7fc6bc000000-7fc6bc021000 rw-p 00000000 00:00 0 
+7fc6bc021000-7fc6c0000000 ---p 00000000 00:00 0 
+7fc6c0000000-7fc6c0021000 rw-p 00000000 00:00 0 
+7fc6c0021000-7fc6c4000000 ---p 00000000 00:00 0 
+7fc6c4000000-7fc6c4021000 rw-p 00000000 00:00 0 
+7fc6c4021000-7fc6c8000000 ---p 00000000 00:00 0 
+7fc6c8000000-7fc6c8021000 rw-p 00000000 00:00 0 
+7fc6c8021000-7fc6cc000000 ---p 00000000 00:00 0 
+7fc6cc05f000-7fc6cc066000 r--s 00000000 08:01 6294586                    /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7fc6cc066000-7fc6cc071000 r--s 00060000 08:01 12852051                   /home/elijah/tools/stk11.5.0/bin/agi.stkx.jar
+7fc6cc071000-7fc6cc08a000 r--s 000e2000 08:01 12852048                   /home/elijah/tools/stk11.5.0/bin/agi.stkutil.jar
+7fc6cc08a000-7fc6cc08d000 ---p 00000000 00:00 0 
+7fc6cc08d000-7fc6cc0c3000 rwxp 00000000 00:00 0 
+7fc6cc0c3000-7fc6cc0dc000 r-xp 00000000 08:01 12851935                   /home/elijah/tools/stk11.5.0/bin/libagz.so.1.2.7
+7fc6cc0dc000-7fc6cc2db000 ---p 00019000 08:01 12851935                   /home/elijah/tools/stk11.5.0/bin/libagz.so.1.2.7
+7fc6cc2db000-7fc6cc2dc000 r--p 00018000 08:01 12851935                   /home/elijah/tools/stk11.5.0/bin/libagz.so.1.2.7
+7fc6cc2dc000-7fc6cc2dd000 rw-p 00019000 08:01 12851935                   /home/elijah/tools/stk11.5.0/bin/libagz.so.1.2.7
+7fc6cc2dd000-7fc6cc30f000 r-xp 00000000 08:01 12851973                   /home/elijah/tools/stk11.5.0/bin/libjsoncpp.so.0.10.6
+7fc6cc30f000-7fc6cc50e000 ---p 00032000 08:01 12851973                   /home/elijah/tools/stk11.5.0/bin/libjsoncpp.so.0.10.6
+7fc6cc50e000-7fc6cc50f000 r--p 00031000 08:01 12851973                   /home/elijah/tools/stk11.5.0/bin/libjsoncpp.so.0.10.6
+7fc6cc50f000-7fc6cc510000 rw-p 00032000 08:01 12851973                   /home/elijah/tools/stk11.5.0/bin/libjsoncpp.so.0.10.6
+7fc6cc510000-7fc6cc513000 r-xp 00000000 08:01 12852006                   /home/elijah/tools/stk11.5.0/bin/libsha1.so
+7fc6cc513000-7fc6cc712000 ---p 00003000 08:01 12852006                   /home/elijah/tools/stk11.5.0/bin/libsha1.so
+7fc6cc712000-7fc6cc713000 r--p 00002000 08:01 12852006                   /home/elijah/tools/stk11.5.0/bin/libsha1.so
+7fc6cc713000-7fc6cc714000 rw-p 00003000 08:01 12852006                   /home/elijah/tools/stk11.5.0/bin/libsha1.so
+7fc6cc714000-7fc6cc72c000 r-xp 00000000 08:01 12851815                   /home/elijah/tools/stk11.5.0/bin/libagioops.so
+7fc6cc72c000-7fc6cc92c000 ---p 00018000 08:01 12851815                   /home/elijah/tools/stk11.5.0/bin/libagioops.so
+7fc6cc92c000-7fc6cc92d000 r--p 00018000 08:01 12851815                   /home/elijah/tools/stk11.5.0/bin/libagioops.so
+7fc6cc92d000-7fc6cc92e000 rw-p 00019000 08:01 12851815                   /home/elijah/tools/stk11.5.0/bin/libagioops.so
+7fc6cc92e000-7fc6cc948000 r-xp 00000000 08:01 12851860                   /home/elijah/tools/stk11.5.0/bin/libagnotification.so
+7fc6cc948000-7fc6ccb47000 ---p 0001a000 08:01 12851860                   /home/elijah/tools/stk11.5.0/bin/libagnotification.so
+7fc6ccb47000-7fc6ccb49000 r--p 00019000 08:01 12851860                   /home/elijah/tools/stk11.5.0/bin/libagnotification.so
+7fc6ccb49000-7fc6ccb4a000 rw-p 0001b000 08:01 12851860                   /home/elijah/tools/stk11.5.0/bin/libagnotification.so
+7fc6ccb4a000-7fc6ccb80000 r-xp 00000000 08:01 12851897                   /home/elijah/tools/stk11.5.0/bin/libagstreamfmt.so
+7fc6ccb80000-7fc6ccd7f000 ---p 00036000 08:01 12851897                   /home/elijah/tools/stk11.5.0/bin/libagstreamfmt.so
+7fc6ccd7f000-7fc6ccd81000 r--p 00035000 08:01 12851897                   /home/elijah/tools/stk11.5.0/bin/libagstreamfmt.so
+7fc6ccd81000-7fc6ccd82000 rw-p 00037000 08:01 12851897                   /home/elijah/tools/stk11.5.0/bin/libagstreamfmt.so
+7fc6ccd82000-7fc6ccd91000 r-xp 00000000 08:01 12851898                   /home/elijah/tools/stk11.5.0/bin/libagthreadops.so
+7fc6ccd91000-7fc6ccf90000 ---p 0000f000 08:01 12851898                   /home/elijah/tools/stk11.5.0/bin/libagthreadops.so
+7fc6ccf90000-7fc6ccf91000 r--p 0000e000 08:01 12851898                   /home/elijah/tools/stk11.5.0/bin/libagthreadops.so
+7fc6ccf91000-7fc6ccf92000 rw-p 0000f000 08:01 12851898                   /home/elijah/tools/stk11.5.0/bin/libagthreadops.so
+7fc6ccf92000-7fc6ccfae000 r-xp 00000000 08:01 12851907                   /home/elijah/tools/stk11.5.0/bin/libagunits.so
+7fc6ccfae000-7fc6cd1ae000 ---p 0001c000 08:01 12851907                   /home/elijah/tools/stk11.5.0/bin/libagunits.so
+7fc6cd1ae000-7fc6cd1af000 r--p 0001c000 08:01 12851907                   /home/elijah/tools/stk11.5.0/bin/libagunits.so
+7fc6cd1af000-7fc6cd1b0000 rw-p 0001d000 08:01 12851907                   /home/elijah/tools/stk11.5.0/bin/libagunits.so
+7fc6cd1b0000-7fc6cd1b1000 rw-p 00000000 00:00 0 
+7fc6cd1b1000-7fc6cd1bc000 r-xp 00000000 08:01 12851917                   /home/elijah/tools/stk11.5.0/bin/libagutmem.so
+7fc6cd1bc000-7fc6cd3bb000 ---p 0000b000 08:01 12851917                   /home/elijah/tools/stk11.5.0/bin/libagutmem.so
+7fc6cd3bb000-7fc6cd3bc000 r--p 0000a000 08:01 12851917                   /home/elijah/tools/stk11.5.0/bin/libagutmem.so
+7fc6cd3bc000-7fc6cd3bd000 rw-p 0000b000 08:01 12851917                   /home/elijah/tools/stk11.5.0/bin/libagutmem.so
+7fc6cd3bd000-7fc6cd3cd000 r-xp 00000000 08:01 12851857                   /home/elijah/tools/stk11.5.0/bin/libagmsgops.so
+7fc6cd3cd000-7fc6cd5cc000 ---p 00010000 08:01 12851857                   /home/elijah/tools/stk11.5.0/bin/libagmsgops.so
+7fc6cd5cc000-7fc6cd5cd000 r--p 0000f000 08:01 12851857                   /home/elijah/tools/stk11.5.0/bin/libagmsgops.so
+7fc6cd5cd000-7fc6cd5ce000 rw-p 00010000 08:01 12851857                   /home/elijah/tools/stk11.5.0/bin/libagmsgops.so
+7fc6cd5ce000-7fc6cd7b1000 r-xp 00000000 08:01 12851819                   /home/elijah/tools/stk11.5.0/bin/libagipocofoundation.so.48
+7fc6cd7b1000-7fc6cd9b1000 ---p 001e3000 08:01 12851819                   /home/elijah/tools/stk11.5.0/bin/libagipocofoundation.so.48
+7fc6cd9b1000-7fc6cd9bc000 r--p 001e3000 08:01 12851819                   /home/elijah/tools/stk11.5.0/bin/libagipocofoundation.so.48
+7fc6cd9bc000-7fc6cd9c0000 rw-p 001ee000 08:01 12851819                   /home/elijah/tools/stk11.5.0/bin/libagipocofoundation.so.48
+7fc6cd9c0000-7fc6cd9c1000 rw-p 00000000 00:00 0 
+7fc6cd9c1000-7fc6cdf5c000 r-xp 00000000 08:01 12851914                   /home/elijah/tools/stk11.5.0/bin/libagutil.so
+7fc6cdf5c000-7fc6ce15c000 ---p 0059b000 08:01 12851914                   /home/elijah/tools/stk11.5.0/bin/libagutil.so
+7fc6ce15c000-7fc6ce16b000 r--p 0059b000 08:01 12851914                   /home/elijah/tools/stk11.5.0/bin/libagutil.so
+7fc6ce16b000-7fc6ce179000 rw-p 005aa000 08:01 12851914                   /home/elijah/tools/stk11.5.0/bin/libagutil.so
+7fc6ce179000-7fc6ce1a6000 rw-p 00000000 00:00 0 
+7fc6ce1a6000-7fc6ce1cc000 r-xp 00000000 08:01 12851932                   /home/elijah/tools/stk11.5.0/bin/libagxcom.so
+7fc6ce1cc000-7fc6ce3cb000 ---p 00026000 08:01 12851932                   /home/elijah/tools/stk11.5.0/bin/libagxcom.so
+7fc6ce3cb000-7fc6ce3cd000 r--p 00025000 08:01 12851932                   /home/elijah/tools/stk11.5.0/bin/libagxcom.so
+7fc6ce3cd000-7fc6ce3ce000 rw-p 00027000 08:01 12851932                   /home/elijah/tools/stk11.5.0/bin/libagxcom.so
+7fc6ce3ce000-7fc6ce41f000 r-xp 00000000 08:01 12851835                   /home/elijah/tools/stk11.5.0/bin/libagjnicore.so
+7fc6ce41f000-7fc6ce61e000 ---p 00051000 08:01 12851835                   /home/elijah/tools/stk11.5.0/bin/libagjnicore.so
+7fc6ce61e000-7fc6ce61f000 r--p 00050000 08:01 12851835                   /home/elijah/tools/stk11.5.0/bin/libagjnicore.so
+7fc6ce61f000-7fc6ce620000 rw-p 00051000 08:01 12851835                   /home/elijah/tools/stk11.5.0/bin/libagjnicore.so
+7fc6ce620000-7fc6ce621000 rw-p 00000000 00:00 0 
+7fc6ce621000-7fc6ce622000 ---p 00000000 00:00 0 
+7fc6ce622000-7fc6ce823000 rwxp 00000000 00:00 0 
+7fc6ce823000-7fc6ce824000 ---p 00000000 00:00 0 
+7fc6ce824000-7fc6ce924000 rwxp 00000000 00:00 0 
+7fc6ce924000-7fc6ce925000 ---p 00000000 00:00 0 
+7fc6ce925000-7fc6cea25000 rwxp 00000000 00:00 0 
+7fc6cea25000-7fc6cea26000 ---p 00000000 00:00 0 
+7fc6cea26000-7fc6ceb26000 rwxp 00000000 00:00 0 
+7fc6ceb26000-7fc6ceb29000 ---p 00000000 00:00 0 
+7fc6ceb29000-7fc6cec27000 rwxp 00000000 00:00 0 
+7fc6cec27000-7fc6cf5f6000 r--p 00000000 08:01 6036086                    /usr/lib/locale/locale-archive
+7fc6cf5f6000-7fc6cf7f8000 rwxp 00000000 00:00 0 
+7fc6cf7f8000-7fc6cf7f9000 ---p 00000000 00:00 0 
+7fc6cf7f9000-7fc6cf8f9000 rwxp 00000000 00:00 0 
+7fc6cf8f9000-7fc6d0000000 rw-p 00000000 00:00 0 
+7fc6d0000000-7fc6d0021000 rw-p 00000000 00:00 0 
+7fc6d0021000-7fc6d4000000 ---p 00000000 00:00 0 
+7fc6d4000000-7fc6d4021000 rw-p 00000000 00:00 0 
+7fc6d4021000-7fc6d8000000 ---p 00000000 00:00 0 
+7fc6d8000000-7fc6d8021000 rw-p 00000000 00:00 0 
+7fc6d8021000-7fc6dc000000 ---p 00000000 00:00 0 
+7fc6dc000000-7fc6dc002000 r--s 00005000 08:01 12852050                   /home/elijah/tools/stk11.5.0/bin/agi.stkx.initialization.jar
+7fc6dc002000-7fc6dc00e000 r--s 00036000 08:01 12852032                   /home/elijah/tools/stk11.5.0/bin/agi.stk.core.swing.jar
+7fc6dc00e000-7fc6dc012000 r--s 00012000 08:01 12852031                   /home/elijah/tools/stk11.5.0/bin/agi.stk.core.jar
+7fc6dc012000-7fc6dc025000 r--s 00346000 08:01 10101831                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar
+7fc6dc025000-7fc6dc02a000 r--s 000a0000 08:01 10101826                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar
+7fc6dc02a000-7fc6dc045000 r--s 00394000 08:01 10101803                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar
+7fc6dc045000-7fc6dc8d1000 rw-p 00000000 00:00 0 
+7fc6dc8d1000-7fc6dcaa0000 r--s 03c33000 08:01 10101832                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+7fc6dcaa0000-7fc6e1000000 rw-p 00000000 00:00 0 
+7fc6e1000000-7fc6e13d0000 rwxp 00000000 00:00 0 
+7fc6e13d0000-7fc6f0000000 ---p 00000000 00:00 0 
+7fc6f0000000-7fc6f0366000 rw-p 00000000 00:00 0 
+7fc6f0366000-7fc6f4000000 ---p 00000000 00:00 0 
+7fc6f4000000-7fc6f4001000 r--s 00001000 08:01 12852044                   /home/elijah/tools/stk11.5.0/bin/agi.stkengine.jar
+7fc6f4001000-7fc6f4004000 r--s 0000d000 08:01 12852028                   /home/elijah/tools/stk11.5.0/bin/agi.core.swing.jar
+7fc6f4004000-7fc6f401f000 r--s 001d6000 08:01 10101808                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar
+7fc6f401f000-7fc6f44b9000 rw-p 00000000 00:00 0 
+7fc6f44b9000-7fc6f44ba000 ---p 00000000 00:00 0 
+7fc6f44ba000-7fc6f45ba000 rwxp 00000000 00:00 0 
+7fc6f45ba000-7fc6f45bb000 ---p 00000000 00:00 0 
+7fc6f45bb000-7fc6f46bb000 rwxp 00000000 00:00 0 
+7fc6f46bb000-7fc6f46bc000 ---p 00000000 00:00 0 
+7fc6f46bc000-7fc6f47bc000 rwxp 00000000 00:00 0 
+7fc6f47bc000-7fc6f47bd000 ---p 00000000 00:00 0 
+7fc6f47bd000-7fc6f48bd000 rwxp 00000000 00:00 0 
+7fc6f48bd000-7fc6f48ff000 rw-p 00000000 00:00 0 
+7fc6f48ff000-7fc6f4b4c000 ---p 00000000 00:00 0 
+7fc6f4b4c000-7fc6f4b8e000 rw-p 00000000 00:00 0 
+7fc6f4b8e000-7fc6f4dda000 ---p 00000000 00:00 0 
+7fc6f4dda000-7fc6f4e54000 rw-p 00000000 00:00 0 
+7fc6f4e54000-7fc6f4f22000 ---p 00000000 00:00 0 
+7fc6f4f22000-7fc6f4f33000 rw-p 00000000 00:00 0 
+7fc6f4f33000-7fc6f52e3000 ---p 00000000 00:00 0 
+7fc6f52e3000-7fc6f52eb000 r-xp 00000000 08:01 10101790                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7fc6f52eb000-7fc6f54ea000 ---p 00008000 08:01 10101790                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7fc6f54ea000-7fc6f54eb000 r--p 00007000 08:01 10101790                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7fc6f54eb000-7fc6f54ec000 rw-p 00008000 08:01 10101790                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libzip.so
+7fc6f54ec000-7fc6f54f7000 r-xp 00000000 08:01 15209221                   /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7fc6f54f7000-7fc6f56f6000 ---p 0000b000 08:01 15209221                   /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7fc6f56f6000-7fc6f56f7000 r--p 0000a000 08:01 15209221                   /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7fc6f56f7000-7fc6f56f8000 rw-p 0000b000 08:01 15209221                   /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7fc6f56f8000-7fc6f56fe000 rw-p 00000000 00:00 0 
+7fc6f56fe000-7fc6f5715000 r-xp 00000000 08:01 15209215                   /lib/x86_64-linux-gnu/libnsl-2.27.so
+7fc6f5715000-7fc6f5914000 ---p 00017000 08:01 15209215                   /lib/x86_64-linux-gnu/libnsl-2.27.so
+7fc6f5914000-7fc6f5915000 r--p 00016000 08:01 15209215                   /lib/x86_64-linux-gnu/libnsl-2.27.so
+7fc6f5915000-7fc6f5916000 rw-p 00017000 08:01 15209215                   /lib/x86_64-linux-gnu/libnsl-2.27.so
+7fc6f5916000-7fc6f5918000 rw-p 00000000 00:00 0 
+7fc6f5918000-7fc6f5923000 r-xp 00000000 08:01 15209232                   /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7fc6f5923000-7fc6f5b22000 ---p 0000b000 08:01 15209232                   /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7fc6f5b22000-7fc6f5b23000 r--p 0000a000 08:01 15209232                   /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7fc6f5b23000-7fc6f5b24000 rw-p 0000b000 08:01 15209232                   /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7fc6f5b24000-7fc6f5b2c000 r-xp 00000000 08:01 15209217                   /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7fc6f5b2c000-7fc6f5d2c000 ---p 00008000 08:01 15209217                   /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7fc6f5d2c000-7fc6f5d2d000 r--p 00008000 08:01 15209217                   /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7fc6f5d2d000-7fc6f5d2e000 rw-p 00009000 08:01 15209217                   /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7fc6f5d2e000-7fc6f5d5c000 r-xp 00000000 08:01 10101771                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7fc6f5d5c000-7fc6f5f5b000 ---p 0002e000 08:01 10101771                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7fc6f5f5b000-7fc6f5f5c000 r--p 0002d000 08:01 10101771                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7fc6f5f5c000-7fc6f5f5e000 rw-p 0002e000 08:01 10101771                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjava.so
+7fc6f5f5e000-7fc6f5f6e000 r-xp 00000000 08:01 10101789                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7fc6f5f6e000-7fc6f616d000 ---p 00010000 08:01 10101789                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7fc6f616d000-7fc6f616f000 r--p 0000f000 08:01 10101789                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7fc6f616f000-7fc6f6170000 rw-p 00011000 08:01 10101789                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libverify.so
+7fc6f6170000-7fc6f6177000 r-xp 00000000 08:01 15209272                   /lib/x86_64-linux-gnu/librt-2.27.so
+7fc6f6177000-7fc6f6376000 ---p 00007000 08:01 15209272                   /lib/x86_64-linux-gnu/librt-2.27.so
+7fc6f6376000-7fc6f6377000 r--p 00006000 08:01 15209272                   /lib/x86_64-linux-gnu/librt-2.27.so
+7fc6f6377000-7fc6f6378000 rw-p 00007000 08:01 15209272                   /lib/x86_64-linux-gnu/librt-2.27.so
+7fc6f6378000-7fc6f638f000 r-xp 00000000 08:01 15204393                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc6f638f000-7fc6f658e000 ---p 00017000 08:01 15204393                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc6f658e000-7fc6f658f000 r--p 00016000 08:01 15204393                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc6f658f000-7fc6f6590000 rw-p 00017000 08:01 15204393                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc6f6590000-7fc6f672d000 r-xp 00000000 08:01 15209194                   /lib/x86_64-linux-gnu/libm-2.27.so
+7fc6f672d000-7fc6f692c000 ---p 0019d000 08:01 15209194                   /lib/x86_64-linux-gnu/libm-2.27.so
+7fc6f692c000-7fc6f692d000 r--p 0019c000 08:01 15209194                   /lib/x86_64-linux-gnu/libm-2.27.so
+7fc6f692d000-7fc6f692e000 rw-p 0019d000 08:01 15209194                   /lib/x86_64-linux-gnu/libm-2.27.so
+7fc6f692e000-7fc6f6aa7000 r-xp 00000000 08:01 6029583                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7fc6f6aa7000-7fc6f6ca7000 ---p 00179000 08:01 6029583                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7fc6f6ca7000-7fc6f6cb1000 r--p 00179000 08:01 6029583                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7fc6f6cb1000-7fc6f6cb3000 rw-p 00183000 08:01 6029583                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7fc6f6cb3000-7fc6f6cb7000 rw-p 00000000 00:00 0 
+7fc6f6cb7000-7fc6f7951000 r-xp 00000000 08:01 10101793                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fc6f7951000-7fc6f7b50000 ---p 00c9a000 08:01 10101793                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fc6f7b50000-7fc6f7be4000 r--p 00c99000 08:01 10101793                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fc6f7be4000-7fc6f7c0d000 rw-p 00d2d000 08:01 10101793                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fc6f7c0d000-7fc6f7c3d000 rw-p 00000000 00:00 0 
+7fc6f7c3d000-7fc6f7c57000 r-xp 00000000 08:01 15209264                   /lib/x86_64-linux-gnu/libpthread-2.27.so
+7fc6f7c57000-7fc6f7e56000 ---p 0001a000 08:01 15209264                   /lib/x86_64-linux-gnu/libpthread-2.27.so
+7fc6f7e56000-7fc6f7e57000 r--p 00019000 08:01 15209264                   /lib/x86_64-linux-gnu/libpthread-2.27.so
+7fc6f7e57000-7fc6f7e58000 rw-p 0001a000 08:01 15209264                   /lib/x86_64-linux-gnu/libpthread-2.27.so
+7fc6f7e58000-7fc6f7e5c000 rw-p 00000000 00:00 0 
+7fc6f7e5c000-7fc6f7e5f000 r-xp 00000000 08:01 15209154                   /lib/x86_64-linux-gnu/libdl-2.27.so
+7fc6f7e5f000-7fc6f805e000 ---p 00003000 08:01 15209154                   /lib/x86_64-linux-gnu/libdl-2.27.so
+7fc6f805e000-7fc6f805f000 r--p 00002000 08:01 15209154                   /lib/x86_64-linux-gnu/libdl-2.27.so
+7fc6f805f000-7fc6f8060000 rw-p 00003000 08:01 15209154                   /lib/x86_64-linux-gnu/libdl-2.27.so
+7fc6f8060000-7fc6f807c000 r-xp 00000000 08:01 15209303                   /lib/x86_64-linux-gnu/libz.so.1.2.11
+7fc6f807c000-7fc6f827b000 ---p 0001c000 08:01 15209303                   /lib/x86_64-linux-gnu/libz.so.1.2.11
+7fc6f827b000-7fc6f827c000 r--p 0001b000 08:01 15209303                   /lib/x86_64-linux-gnu/libz.so.1.2.11
+7fc6f827c000-7fc6f827d000 rw-p 0001c000 08:01 15209303                   /lib/x86_64-linux-gnu/libz.so.1.2.11
+7fc6f827d000-7fc6f8464000 r-xp 00000000 08:01 15209131                   /lib/x86_64-linux-gnu/libc-2.27.so
+7fc6f8464000-7fc6f8664000 ---p 001e7000 08:01 15209131                   /lib/x86_64-linux-gnu/libc-2.27.so
+7fc6f8664000-7fc6f8668000 r--p 001e7000 08:01 15209131                   /lib/x86_64-linux-gnu/libc-2.27.so
+7fc6f8668000-7fc6f866a000 rw-p 001eb000 08:01 15209131                   /lib/x86_64-linux-gnu/libc-2.27.so
+7fc6f866a000-7fc6f866e000 rw-p 00000000 00:00 0 
+7fc6f866e000-7fc6f867c000 r-xp 00000000 08:01 10101757                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fc6f867c000-7fc6f887b000 ---p 0000e000 08:01 10101757                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fc6f887b000-7fc6f887c000 r--p 0000d000 08:01 10101757                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fc6f887c000-7fc6f887d000 rw-p 0000e000 08:01 10101757                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fc6f887d000-7fc6f88a4000 r-xp 00000000 08:01 15209103                   /lib/x86_64-linux-gnu/ld-2.27.so
+7fc6f88a4000-7fc6f88a6000 r--s 00016000 08:01 10101824                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar
+7fc6f88a6000-7fc6f88ac000 r--s 00047000 08:01 12852027                   /home/elijah/tools/stk11.5.0/bin/agi.core.jar
+7fc6f88ac000-7fc6f88ad000 r--s 0000a000 08:01 10101806                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar
+7fc6f88ad000-7fc6f88af000 r--s 00008000 08:01 10101809                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar
+7fc6f88af000-7fc6f88b1000 r--s 00007000 08:01 6425291                    /usr/share/java/java-atk-wrapper.jar
+7fc6f88b1000-7fc6f88bb000 r--s 00116000 08:01 10101807                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar
+7fc6f88bb000-7fc6f8986000 rw-p 00000000 00:00 0 
+7fc6f8986000-7fc6f8987000 ---p 00000000 00:00 0 
+7fc6f8987000-7fc6f898a000 ---p 00000000 00:00 0 
+7fc6f898a000-7fc6f8a87000 rwxp 00000000 00:00 0 
+7fc6f8a87000-7fc6f8a89000 rw-p 00000000 00:00 0 
+7fc6f8a89000-7fc6f8a8f000 r--s 0003b000 08:01 10101810                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar
+7fc6f8a8f000-7fc6f8a92000 r--s 0000f000 08:01 10101805                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar
+7fc6f8a92000-7fc6f8a95000 r--s 00038000 08:01 10101811                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar
+7fc6f8a95000-7fc6f8a96000 r--s 00010000 08:01 10101812                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar
+7fc6f8a96000-7fc6f8a98000 r--s 00001000 08:01 10101804                   /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar
+7fc6f8a98000-7fc6f8aa0000 rw-s 00000000 08:01 9175092                    /tmp/hsperfdata_elijah/25864 (deleted)
+7fc6f8aa0000-7fc6f8aa1000 rw-p 00000000 00:00 0 
+7fc6f8aa1000-7fc6f8aa2000 ---p 00000000 00:00 0 
+7fc6f8aa2000-7fc6f8aa4000 rw-p 00000000 00:00 0 
+7fc6f8aa4000-7fc6f8aa5000 r--p 00027000 08:01 15209103                   /lib/x86_64-linux-gnu/ld-2.27.so
+7fc6f8aa5000-7fc6f8aa6000 rw-p 00028000 08:01 15209103                   /lib/x86_64-linux-gnu/ld-2.27.so
+7fc6f8aa6000-7fc6f8aa7000 rw-p 00000000 00:00 0 
+7ffdb8604000-7ffdb8624000 rwxp 00000000 00:00 0                          [stack]
+7ffdb8624000-7ffdb8626000 rw-p 00000000 00:00 0 
+7ffdb87cf000-7ffdb87d2000 r--p 00000000 00:00 0                          [vvar]
+7ffdb87d2000-7ffdb87d4000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Djava.library.path=/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin:/home/elijah/tools/stk11.5.0/bin -Dfile.encoding=UTF-8 
+java_command: Main
+java_class_path (initial): /home/elijah/Workspaces/OSS/NoGraphics/classes:/home/elijah/tools/stk11.5.0/CodeSamples/CustomApplications/Java/Swing_STK/classes:/home/elijah/tools/stk11.5.0/bin/agi.core.jar:/home/elijah/tools/stk11.5.0/bin/agi.core.swing.jar:/home/elijah/tools/stk11.5.0/bin/agi.stk.core.jar:/home/elijah/tools/stk11.5.0/bin/agi.stk.core.swing.jar:/home/elijah/tools/stk11.5.0/bin/agi.stkengine.jar:/home/elijah/tools/stk11.5.0/bin/agi.stkgraphics.jar:/home/elijah/tools/stk11.5.0/bin/agi.stkobjects.jar:/home/elijah/tools/stk11.5.0/bin/agi.stkobjects.astrogator.jar:/home/elijah/tools/stk11.5.0/bin/agi.stkutil.jar:/home/elijah/tools/stk11.5.0/bin/agi.stkvgt.jar:/home/elijah/tools/stk11.5.0/bin/agi.stkx.jar:/home/elijah/tools/stk11.5.0/bin/agi.stkx.initialization.jar:/home/elijah/tools/stk11.5.0/bin/agi.stkx.swing.jar:/home/elijah/tools/stk11.5.0/bin/agi.swing.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+PATH=/home/elijah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+USERNAME=elijah
+LD_LIBRARY_PATH=/home/elijah/tools/stk11.5.0/bin:
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xab2ea0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xab2ea0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x8e87b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x8e87b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x8e87b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x8e87b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x8e8660], sa_mask[0]=00100000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x8e8cd0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x8e8cd0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0x8e8cd0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x8e8cd0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=18.04
+DISTRIB_CODENAME=bionic
+DISTRIB_DESCRIPTION="Ubuntu 18.04.2 LTS"
+
+uname:Linux 4.15.0-48-generic #51-Ubuntu SMP Wed Apr 3 08:28:49 UTC 2019 x86_64
+libc:glibc 2.27 NPTL 2.27 
+rlimit: STACK 8192k, CORE 0k, NPROC 31236, NOFILE 4096, AS infinity
+load average:15.60 3.95 1.72
+
+/proc/meminfo:
+MemTotal:        8039880 kB
+MemFree:         1238288 kB
+MemAvailable:    2134820 kB
+Buffers:          230500 kB
+Cached:           816720 kB
+SwapCached:        17752 kB
+Active:          5230484 kB
+Inactive:        1145528 kB
+Active(anon):    4619360 kB
+Inactive(anon):   680320 kB
+Active(file):     611124 kB
+Inactive(file):   465208 kB
+Unevictable:          64 kB
+Mlocked:              64 kB
+SwapTotal:       2097148 kB
+SwapFree:        2043388 kB
+Dirty:             45104 kB
+Writeback:             0 kB
+AnonPages:       5311716 kB
+Mapped:           485024 kB
+Shmem:             13200 kB
+Slab:             197216 kB
+SReclaimable:      91572 kB
+SUnreclaim:       105644 kB
+KernelStack:       13584 kB
+PageTables:        58436 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6117088 kB
+Committed_AS:   11705988 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:      4096 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      401804 kB
+DirectMap2M:     7858176 kB
+DirectMap1G:     1048576 kB
+
+container (cgroup) information:
+container_type: cgroupv1
+cpu_cpuset_cpus: 0-3
+cpu_memory_nodes: 0
+active_processor_count: 4
+cpu_quota: -1
+cpu_period: 100000
+cpu_shares: -1
+memory_limit_in_bytes: -1
+memory_and_swap_limit_in_bytes: -2
+memory_soft_limit_in_bytes: -1
+memory_usage_in_bytes: 5683720192
+memory_max_usage_in_bytes: 6940631040
+
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 78 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 78
+model name	: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+stepping	: 3
+microcode	: 0xc6
+cpu MHz		: 2700.737
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 78
+model name	: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+stepping	: 3
+microcode	: 0xc6
+cpu MHz		: 2795.672
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 78
+model name	: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+stepping	: 3
+microcode	: 0xc6
+cpu MHz		: 2699.944
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 78
+model name	: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+stepping	: 3
+microcode	: 0xc6
+cpu MHz		: 2739.076
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 8039880k(1238288k free), swap 2097148k(2043388k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.191-b12) for linux-amd64 JRE (1.8.0_191-8u191-b12-2ubuntu0.18.04.1-b12), built on Jan 14 2019 21:02:00 by "buildd" with gcc 7.3.0
+
+time: Tue Apr 30 15:44:58 2019
+elapsed time: 8118 seconds (0d 2h 15m 18s)
+

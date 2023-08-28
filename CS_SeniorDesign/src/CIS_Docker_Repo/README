@@ -1,0 +1,3 @@
+This is a testing repo for our dockerfile. 
+Upon a trigger (like pushing), it will connect with our Dockerhub account and will force an automatic build there with the Dockerfile acossiated with this repo.
+

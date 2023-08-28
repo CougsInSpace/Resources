@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CustomApp_AWT_STK_X_GfxAnalysis_SolarPanelTool" default="compile">
+	<import file="../Swing_STK/common.xml" />
+
+	<path id="build.sourcepath">
+		<pathelement location="src" />
+	</path>
+
+	<path id="build.dependentprojects">
+		<pathelement location="../Swing_STK/build.xml" />
+	</path>
+
+	<path id="build.classpath">
+		<path refid="customapp.swing.stk.classpath" />
+		<pathelement location="../Swing_STK/classes" />
+	</path>
+	
+	<path id="build.resourcepath">
+		<fileset dir="src">
+			<exclude name="**/*.java" />
+		</fileset>
+	</path>
+
+	<property name="main.classname" value="Main" />
+</project>
